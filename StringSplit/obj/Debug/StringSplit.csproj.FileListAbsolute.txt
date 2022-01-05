@@ -1,0 +1,7 @@
+D:\StringSplit\bin\Debug\StringSplit.exe.config
+D:\StringSplit\bin\Debug\StringSplit.exe
+D:\StringSplit\bin\Debug\StringSplit.pdb
+D:\StringSplit\obj\Debug\StringSplit.csproj.AssemblyReference.cache
+D:\StringSplit\obj\Debug\StringSplit.csproj.CoreCompileInputs.cache
+D:\StringSplit\obj\Debug\StringSplit.exe
+D:\StringSplit\obj\Debug\StringSplit.pdb
