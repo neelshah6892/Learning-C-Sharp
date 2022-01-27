@@ -1,0 +1,11 @@
+D:\MiniCalculator\MiniCalculator\bin\Debug\MiniCalculator.exe.config
+D:\MiniCalculator\MiniCalculator\bin\Debug\MiniCalculator.exe
+D:\MiniCalculator\MiniCalculator\bin\Debug\MiniCalculator.pdb
+D:\MiniCalculator\MiniCalculator\bin\Debug\Calculation.dll
+D:\MiniCalculator\MiniCalculator\bin\Debug\Calculation.pdb
+D:\MiniCalculator\MiniCalculator\obj\Debug\MiniCalculator.csprojResolveAssemblyReference.cache
+D:\MiniCalculator\MiniCalculator\obj\Debug\MiniCalculator.Form1.resources
+D:\MiniCalculator\MiniCalculator\obj\Debug\MiniCalculator.Properties.Resources.resources
+D:\MiniCalculator\MiniCalculator\obj\Debug\MiniCalculator.csproj.GenerateResource.Cache
+D:\MiniCalculator\MiniCalculator\obj\Debug\MiniCalculator.exe
+D:\MiniCalculator\MiniCalculator\obj\Debug\MiniCalculator.pdb
