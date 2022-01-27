@@ -1,0 +1,8 @@
+D:\Project1\Project1\bin\Debug\Project1.exe.config
+D:\Project1\Project1\obj\Debug\Interop.Accessibility.dll
+D:\Project1\Project1\obj\Debug\Interop.COMAdmin.dll
+D:\Project1\Project1\obj\Debug\Interop.COMSVCSLib.dll
+D:\Project1\Project1\obj\Debug\Interop.CTVLib.dll
+D:\Project1\Project1\obj\Debug\Interop.CUSTREGLib.dll
+D:\Project1\Project1\obj\Debug\Project1.csproj.ResolveComReference.cache
+D:\Project1\Project1\obj\Debug\Project1.csprojResolveAssemblyReference.cache
