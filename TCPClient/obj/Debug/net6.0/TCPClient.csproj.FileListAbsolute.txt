@@ -1,0 +1,14 @@
+E:\Github\Learning-C-Sharp\TCPClient\bin\Debug\net6.0\TCPClient.exe
+E:\Github\Learning-C-Sharp\TCPClient\bin\Debug\net6.0\TCPClient.deps.json
+E:\Github\Learning-C-Sharp\TCPClient\bin\Debug\net6.0\TCPClient.runtimeconfig.json
+E:\Github\Learning-C-Sharp\TCPClient\bin\Debug\net6.0\TCPClient.dll
+E:\Github\Learning-C-Sharp\TCPClient\bin\Debug\net6.0\ref\TCPClient.dll
+E:\Github\Learning-C-Sharp\TCPClient\bin\Debug\net6.0\TCPClient.pdb
+E:\Github\Learning-C-Sharp\TCPClient\obj\Debug\net6.0\TCPClient.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\Learning-C-Sharp\TCPClient\obj\Debug\net6.0\TCPClient.AssemblyInfoInputs.cache
+E:\Github\Learning-C-Sharp\TCPClient\obj\Debug\net6.0\TCPClient.AssemblyInfo.cs
+E:\Github\Learning-C-Sharp\TCPClient\obj\Debug\net6.0\TCPClient.csproj.CoreCompileInputs.cache
+E:\Github\Learning-C-Sharp\TCPClient\obj\Debug\net6.0\TCPClient.dll
+E:\Github\Learning-C-Sharp\TCPClient\obj\Debug\net6.0\ref\TCPClient.dll
+E:\Github\Learning-C-Sharp\TCPClient\obj\Debug\net6.0\TCPClient.pdb
+E:\Github\Learning-C-Sharp\TCPClient\obj\Debug\net6.0\TCPClient.genruntimeconfig.cache

@@ -1,0 +1,15 @@
+E:\Github\Learning-C-Sharp\TCPServer\obj\Debug\net6.0\TCPServer.csproj.AssemblyReference.cache
+E:\Github\Learning-C-Sharp\TCPServer\obj\Debug\net6.0\TCPServer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\Learning-C-Sharp\TCPServer\obj\Debug\net6.0\TCPServer.AssemblyInfoInputs.cache
+E:\Github\Learning-C-Sharp\TCPServer\obj\Debug\net6.0\TCPServer.AssemblyInfo.cs
+E:\Github\Learning-C-Sharp\TCPServer\obj\Debug\net6.0\TCPServer.csproj.CoreCompileInputs.cache
+E:\Github\Learning-C-Sharp\TCPServer\bin\Debug\net6.0\TCPServer.exe
+E:\Github\Learning-C-Sharp\TCPServer\bin\Debug\net6.0\TCPServer.deps.json
+E:\Github\Learning-C-Sharp\TCPServer\bin\Debug\net6.0\TCPServer.runtimeconfig.json
+E:\Github\Learning-C-Sharp\TCPServer\bin\Debug\net6.0\TCPServer.dll
+E:\Github\Learning-C-Sharp\TCPServer\bin\Debug\net6.0\ref\TCPServer.dll
+E:\Github\Learning-C-Sharp\TCPServer\bin\Debug\net6.0\TCPServer.pdb
+E:\Github\Learning-C-Sharp\TCPServer\obj\Debug\net6.0\TCPServer.dll
+E:\Github\Learning-C-Sharp\TCPServer\obj\Debug\net6.0\ref\TCPServer.dll
+E:\Github\Learning-C-Sharp\TCPServer\obj\Debug\net6.0\TCPServer.pdb
+E:\Github\Learning-C-Sharp\TCPServer\obj\Debug\net6.0\TCPServer.genruntimeconfig.cache
