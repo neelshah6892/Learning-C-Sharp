@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bb97e0ba-f53f-4bfe-ad0e-0304c2ff09e0": {
+      "ProjectGuid": "bb97e0ba-f53f-4bfe-ad0e-0304c2ff09e0",
+      "DisplayName": "TCPClient",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
