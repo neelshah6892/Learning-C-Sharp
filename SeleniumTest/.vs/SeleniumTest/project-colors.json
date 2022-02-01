@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a15e07e8-0cef-4cfe-98cc-8c0f92d882d3": {
+      "ProjectGuid": "a15e07e8-0cef-4cfe-98cc-8c0f92d882d3",
+      "DisplayName": "SeleniumTest",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
