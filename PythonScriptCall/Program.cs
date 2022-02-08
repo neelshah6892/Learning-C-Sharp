@@ -29,8 +29,11 @@ namespace PythonScriptCall
             process.BeginOutputReadLine();
             process.WaitForExit();
             //Console.Read();
-            File.Copy("E:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\02022022.xlsx", "C:\\Users\\Administrator\\Desktop\\02022022.xlsx");
-            //File.Delete("E:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\02022022.xlsx");
+            if (!File.Exists("C:\\Users\\Administrator\\Desktop\\02022022.xlsx"))
+            {
+                File.Copy("E:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\02022022.xlsx", "C:\\Users\\Administrator\\Desktop\\02022022.xlsx");
+            }
+            File.Delete("E:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\02022022.xlsx");
 
         }
 
