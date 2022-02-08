@@ -1,0 +1,15 @@
+E:\Github\Learning-C-Sharp\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.exe
+E:\Github\Learning-C-Sharp\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.deps.json
+E:\Github\Learning-C-Sharp\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.runtimeconfig.json
+E:\Github\Learning-C-Sharp\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.dll
+E:\Github\Learning-C-Sharp\PythonScriptCall\bin\Debug\net6.0\ref\PythonScriptCall.dll
+E:\Github\Learning-C-Sharp\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.pdb
+E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.AssemblyReference.cache
+E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.AssemblyInfoInputs.cache
+E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.AssemblyInfo.cs
+E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.CoreCompileInputs.cache
+E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.dll
+E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\ref\PythonScriptCall.dll
+E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.pdb
+E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.genruntimeconfig.cache
