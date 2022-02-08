@@ -1,27 +1,6 @@
 ﻿using System.Diagnostics;
+using System.IO;
 
-/*string strCmdText;
-string file;
-file = "G:\\Yash_1\\iv_daily\\1.py";
-strCmdText = "python3" + file;
-//Process.Start("CMD.exe", strCmdText);
-
-void run_cmd(string cmd, string args)
-{
-    ProcessStartInfo start = new ProcessStartInfo();
-    start.FileName = "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\python.exe";
-    start.Arguments = string.Format("{0} {1}", cmd, args);
-    start.UseShellExecute = false;
-    start.RedirectStandardOutput = true;
-    using (Process process = Process.Start(start))
-    {
-        using (StreamReader reader = process.StandardOutput)
-        {
-            string result = reader.ReadToEnd();
-            Console.Write(result);
-        }
-    }
-}*/
 namespace PythonScriptCall
 {
     class Program
@@ -33,7 +12,7 @@ namespace PythonScriptCall
             {
                 StartInfo = new ProcessStartInfo
                 {
-                    FileName = "C:\\ProgramData\\Anaconda3\\python.exe",
+                    FileName = "G:\\Yash_1\\venv\\Scripts\\python.exe",
                     Arguments = cmd,
                     UseShellExecute = false,
                     RedirectStandardOutput = true,
@@ -49,7 +28,10 @@ namespace PythonScriptCall
             process.BeginErrorReadLine();
             process.BeginOutputReadLine();
             process.WaitForExit();
-            Console.Read();
+            //Console.Read();
+            File.Copy("E:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\02022022.xlsx", "C:\\Users\\Administrator\\Desktop\\02022022.xlsx");
+            //File.Delete("E:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\02022022.xlsx");
+
         }
 
         static void Process_OutputDataReceived(object sender, DataReceivedEventArgs e)
