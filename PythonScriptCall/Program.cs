@@ -39,7 +39,7 @@ namespace PythonScriptCall
 
             
             WebClient client = new WebClient();
-            client.DownloadFile("https://archives.nseindia.com/content/historical/DERIVATIVES/2022/FEB/fo08FEB2022bhav.csv.zip", "C:\\Users\\Administrator\\Desktop\\demo.zip");
+            client.DownloadFile("https://archives.nseindia.com/content/historical/DERIVATIVES/2022/FEB/fo09FEB2022bhav.csv.zip", "C:\\Users\\Administrator\\Desktop\\demo.zip");
 
             ZipFile.ExtractToDirectory("C:\\Users\\Administrator\\Desktop\\demo.zip", @"C:\\Users\\Administrator\\Desktop\\");
 
