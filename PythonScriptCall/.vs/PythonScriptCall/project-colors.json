@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1ac7150d-d65c-4dbf-9f9b-55bb1909c50f": {
+      "ProjectGuid": "1ac7150d-d65c-4dbf-9f9b-55bb1909c50f",
+      "DisplayName": "PythonScriptCall",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}
