@@ -30,18 +30,18 @@ namespace PythonScriptCall
             process.BeginErrorReadLine();
             process.BeginOutputReadLine();
             process.WaitForExit();
-            //Console.Read();
-            /*if (!File.Exists("C:\\Users\\Administrator\\Desktop\\09022022.xlsx"))
+            if (!File.Exists("C:\\Users\\Administrator\\Desktop\\10022022.xlsx"))
             {
-                File.Copy("E:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\09022022.xlsx", "C:\\Users\\Administrator\\Desktop\\09022022.xlsx");
+                File.Copy("E:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\10022022.xlsx", "C:\\Users\\Administrator\\Desktop\\10022022.xlsx");
             }
-            File.Delete("E:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\09022022.xlsx");*/
+            File.Delete("E:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\10022022.xlsx");
 
             
             WebClient client = new WebClient();
-            client.DownloadFile("https://archives.nseindia.com/content/historical/DERIVATIVES/2022/FEB/fo09FEB2022bhav.csv.zip", "C:\\Users\\Administrator\\Desktop\\demo.zip");
+            client.DownloadFile("https://archives.nseindia.com/content/historical/DERIVATIVES/2022/FEB/fo10FEB2022bhav.csv.zip", "C:\\Users\\Administrator\\Desktop\\demo.zip");
 
             ZipFile.ExtractToDirectory("C:\\Users\\Administrator\\Desktop\\demo.zip", @"C:\\Users\\Administrator\\Desktop\\");
+            File.Delete("C:\\Users\\Administrator\\Desktop\\demo.zip");
 
 
             var cmd2 = "G:\\Yash_1\\iv_daily\\2.py";
@@ -50,7 +50,7 @@ namespace PythonScriptCall
                 StartInfo = new ProcessStartInfo
                 {
                     FileName = "G:\\Yash_1\\venv\\Scripts\\python.exe",
-                    Arguments = cmd,
+                    Arguments = cmd2,
                     UseShellExecute = false,
                     RedirectStandardOutput = true,
                     RedirectStandardError = true,
