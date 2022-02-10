@@ -2,7 +2,7 @@
 Expected Output :
 Hello: Alexandra Abramov*/
 
-Console.WriteLine("Hello");
+/*Console.WriteLine("Hello");
 Console.WriteLine("Alexandra Abramov");
 
 //Write a C# Sharp program to print the sum of two numbers.
@@ -11,18 +11,18 @@ Console.WriteLine(5 + 5);
 //Write a C# Sharp program to print the result of dividing two numbers.
 Console.WriteLine(20/4);
 
-/*Write a C# Sharp program to print the result of the specified operations. Go to the editor
-Test data:
+//Write a C# Sharp program to print the result of the specified operations. Go to the editor
+//Test data:
 
--1 + 4 * 6
-( 35+ 5 ) % 7
-14 + -4 * 6 / 11
-2 + 15 / 6 * 1 - 7 % 2
-Expected Output:
-23
-5
-12
-3*/
+//-1 + 4 * 6
+//( 35+ 5 ) % 7
+//14 + -4 * 6 / 11
+//2 + 15 / 6 * 1 - 7 % 2
+//Expected Output:
+//23
+//5
+//12
+//3
 
 Console.WriteLine(-1 + 4 * 6);
 Console.WriteLine((35 + 5) % 7);
@@ -76,7 +76,65 @@ Console.WriteLine($"The average of {num1}, {num2}, {num3}, {num4} is: {(num1 + n
 //Write a C# Sharp program to that takes three numbers(x,y,z) as input and print the output of (x+y).z and x.y + y.z. 
 Console.WriteLine($"Result of specified numbers {num1}, {num2} and {num3}, (x+y).z is {(num1+num2)*num3} and x.y + y.z is {(num1*num2)+(num2*num3)}");
 
+//Write a C# Sharp program that takes an age (for example 20) as input and prints something as "You look older than 20".
+int age;
+Console.WriteLine("Enter your age");
+age = int.Parse(Console.ReadLine());
+Console.WriteLine($"You look older than {age}");
 
+//Write a C# program to that takes a number as input and display it four times in a row (separated by blank spaces), and then four times in the next row, with no separation. You should do it two times: Use Console. Write and then use {0}. 
+int number;
+Console.Write("Enter a number: ");
+Console.WriteLine();
+number = int.Parse(Console.ReadLine());
+for(int i = 0; i < 4; i++)
+{
+    Console.Write(number);
+    Console.Write(" ");
+}
+Console.WriteLine();
+
+for(int i = 0;i < 4; i++)
+{
+    Console.Write(number);
+}
+
+//Write a C# program that takes a number as input and then displays a rectangle of 3 columns wide and 5 rows tall using that digit. 
+int number;
+Console.Write("Enter a number: ");
+Console.WriteLine();
+number = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < 5; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        Console.Write(number);
+    }
+    Console.WriteLine();
+}
+
+//Write a C# program to convert from celsius degrees to Kelvin and Fahrenheit.
+double weather = 30;
+double kelvin = weather + 273.15;
+Console.WriteLine($"Weather in kelvin is {kelvin} K");
+double fahrenheit = weather * 9/5+32;
+Console.WriteLine($"Weather in fahrenhiet is {fahrenheit} F");
+
+
+//Write a C# program remove specified a character from a non-empty string using index of a character.
+string test = "neelshah";
+for(int i = 0; i < test.Length; i++)
+{
+    if(test[i].ToString() != "e")
+    {
+        Console.Write(test[i]);
+    }
+    else
+    {
+        test.Remove(i);
+    }
+}*/
 
 //https://www.w3resource.com/csharp-exercises/
 //https://techstudy.org/csharp/csharp-programming-example-and-solutions/
