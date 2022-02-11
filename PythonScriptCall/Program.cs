@@ -65,11 +65,16 @@ namespace PythonScriptCall
             process2.BeginErrorReadLine();
             process2.BeginOutputReadLine();
             process2.WaitForExit();
+
+            File.Delete("C:\\Users\\Administrator\\Desktop\\newfile1.xlsx");
+            File.Delete("C:\\Users\\Administrator\\Desktop\\fo11FEB2022bhav.csv");
         }
 
         static void Process_OutputDataReceived(object sender, DataReceivedEventArgs e)
         {
             Console.WriteLine(e.Data);
         }
+
+        
     }
 }
