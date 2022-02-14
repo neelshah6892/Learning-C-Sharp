@@ -190,9 +190,60 @@ if (num1 > num2)
 else
 {
     Console.WriteLine(num2 - num1);
+}
+
+//21. Write a C# program to check the sum of the two given integers and return true if one of the integer is 20 or if their sum is 20.
+int num1 = 80;
+int num2 = 25;
+if((num1 == 20) || (num2 == 20) || (num1 + num2 == 20))
+{
+    Console.WriteLine("True");
+}
+else
+{
+    Console.WriteLine("False");
+}
+
+//22. Write a C# program to check if an given integer is within 20 of 100 or 200.
+if((Math.Abs(num1 - 100) <= 20) || (Math.Abs(num1 - 200) <= 20))
+{
+    Console.WriteLine("Within 20 of 100 or 200");
+}
+else
+{
+    Console.WriteLine("Not within");
+}
+
+//23. Write a C# program to convert a given string into lowercase.
+string test = "HELLOWORLD";
+Console.WriteLine(test.ToLower());
+
+//24. Write a C# program to find the longest word in a string.
+string line = "Hello Worlds";
+string[] words = line.Split(new[] { " " }, StringSplitOptions.None);
+string word = "";
+int ctr = 0;
+foreach (String s in words)
+{
+    if (s.Length > ctr)
+    {
+        word = s;
+        ctr = s.Length;
+    }
+}
+
+Console.WriteLine(word);
+
+//25. Write a C# program to print the odd numbers from 1 to 99. Prints one number per line.
+for (int i = 0; i < 100; i++)
+{
+    if(i %2 != 0)
+    {
+        Console.WriteLine(i);
+    }
 }*/
 
-//21. 
+//26. 
 
 
 //https://www.w3resource.com/csharp-exercises/
