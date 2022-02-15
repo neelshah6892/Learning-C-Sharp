@@ -243,7 +243,37 @@ for (int i = 0; i < 100; i++)
     }
 }*/
 
-//26. 
+//26. Write a C# program to compute the sum of the first 500 prime numbers.
+long sum = 0;
+int ctr = 1;
+int n = 2;
+while(ctr < 501)
+{
+    if(ctr%2 == 0)
+    {
+        Console.WriteLine(ctr);
+        ctr++;
+    }
+    else
+    {
+        Console.Write($"Not Prime: {ctr}");
+        ctr++;
+    }
+}
+
+
+//27. Write a C# program and compute the sum of the digits of an integer. 
+int num1 = 123;
+
+//28. Write a C# program to reverse the words of a sentence. 
+
+
+//29. Write a C# program to find the size of a specified file in bytes.
+
+
+//30. Write a C# program to convert a hexadecimal number to decimal number.
+
+
 
 
 //https://www.w3resource.com/csharp-exercises/
