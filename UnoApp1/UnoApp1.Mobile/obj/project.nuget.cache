@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "B+upzT5EQ90f5T7+9HPJEiwnHUPi3RKD9ZYeIHEMMa7b9+G5V4sBW/JGJqOc8hdUOHTx+Z6eJuNMl+B/YD19mA==",
+  "success": false,
+  "projectFilePath": "E:\\Github\\Learning-C-Sharp\\UnoApp1\\UnoApp1.Mobile\\UnoApp1.Mobile.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1012",
+      "level": "Error",
+      "message": "Platform version is not present for one or more target frameworks, even though they have specified a platform: net6.0-android, net6.0-ios, net6.0-maccatalyst, net6.0-macos"
+    }
+  ]
+}

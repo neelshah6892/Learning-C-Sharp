@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "tj+1+bqBGLm8BlYpIWn6zSHXCLDr3huRgvp4KzLiero=",
+  "Source": "UnoApp1.Wasm",
+  "BasePath": "_content/UnoApp1.Wasm",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "UnoApp1.Wasm\\wwwroot",
+      "Source": "UnoApp1.Wasm",
+      "ContentRoot": "E:\\Github\\Learning-C-Sharp\\UnoApp1\\UnoApp1.Wasm\\wwwroot\\",
+      "BasePath": "_content/UnoApp1.Wasm",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\Github\\Learning-C-Sharp\\UnoApp1\\UnoApp1.Wasm\\wwwroot\\web.config",
+      "SourceId": "UnoApp1.Wasm",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Github\\Learning-C-Sharp\\UnoApp1\\UnoApp1.Wasm\\wwwroot\\",
+      "BasePath": "_content/UnoApp1.Wasm",
+      "RelativePath": "web.config",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\web.config"
+    }
+  ]
+}

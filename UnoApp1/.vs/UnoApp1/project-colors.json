@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4667d41f-3585-4f5c-bcd2-85149e4798e7": {
+      "ProjectGuid": "4667d41f-3585-4f5c-bcd2-85149e4798e7",
+      "DisplayName": "Platforms",
+      "ColorIndex": 0
+    },
+    "6a684d9c-4dc6-46d0-a8af-fb668bf5540f": {
+      "ProjectGuid": "6a684d9c-4dc6-46d0-a8af-fb668bf5540f",
+      "DisplayName": "UnoApp1.UWP",
+      "ColorIndex": 1
+    },
+    "6279c845-92f8-4333-ab99-3d213163593c": {
+      "ProjectGuid": "6279c845-92f8-4333-ab99-3d213163593c",
+      "DisplayName": "UnoApp1.Shared",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
