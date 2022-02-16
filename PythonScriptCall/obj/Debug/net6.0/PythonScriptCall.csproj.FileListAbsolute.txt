@@ -13,3 +13,6 @@ E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.dl
 E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\ref\PythonScriptCall.dll
 E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.pdb
 E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.genruntimeconfig.cache
+E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\Interop.Microsoft.Office.Interop.Excel.dll
+E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.ResolveComReference.cache
+E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\Interop.Microsoft.Office.Core.dll
