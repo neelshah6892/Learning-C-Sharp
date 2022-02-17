@@ -10,7 +10,7 @@ namespace PythonScriptCall
     {
         static void Main(string[] args)
         {
-            /*var cmd = "G:\\Yash_1\\iv_daily\\1.py";
+            var cmd = "G:\\Yash_1\\iv_daily\\1.py";
             var process = new Process
             {
                 StartInfo = new ProcessStartInfo
@@ -74,12 +74,13 @@ namespace PythonScriptCall
         static void Process_OutputDataReceived(object sender, DataReceivedEventArgs e)
         {
             Console.WriteLine(e.Data);
-        }*/
+        }
         
-            Application excelApp = new Application();
+            /*Application excelApp = new Application();
             Workbook workbook = excelApp.Workbooks.Open("C:\\Users\\Administrator\\Desktop\\Vol 2021.xlsb");
             excelApp.Visible = true;
             Worksheet ws = workbook.Worksheets["REPORT"];
+            
             excelApp.WorksheetFunction.VLookup("A2", "'[IV PRINT.xlsx]Sheet1'!$A$2:$H$203", 8, 0);
             //excelApp.WorksheetFunction.VLookup("A2", "'[IV PRINT.xlsx]Sheet1'!$A$2:$H$203", 8, false);
             //ws.Paste("VLOOKUP(A2, '[IV PRINT.xlsx]Sheet1'!$A$2:$H$203, 8,0)");
@@ -87,7 +88,7 @@ namespace PythonScriptCall
 
 
             workbook.Save();
-            excelApp.Quit();
-        }
+            excelApp.Quit();*/
+        
     }
 }
