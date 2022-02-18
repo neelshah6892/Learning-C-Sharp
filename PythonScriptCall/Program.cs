@@ -11,8 +11,18 @@ namespace PythonScriptCall
         static void Main(string[] args)
         {
             DateTime expiry = new DateTime(2022, 02, 24);
-            DateTime yesterday = DateTime.Now.AddDays(-1);
-            DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
+
+            //Tuesday, Wednesday, Thursday, Friday
+            //DateTime yesterday = DateTime.Now.AddDays(-1);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
+
+            //Monday or 2 day holiday
+            DateTime yesterday = DateTime.Now.AddDays(-3);
+            DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
+
+            //1 day holiday
+            //DateTime yesterday = DateTime.Now.AddDays(-2);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-3);
 
             //yesterday = yesterday.AddDays(-2);
             //daybeforeyesterday = daybeforeyesterday.AddDays(-3);
@@ -98,9 +108,12 @@ namespace PythonScriptCall
             File.Delete("C:\\Users\\Administrator\\Desktop\\newfile1.xlsx");
             File.Delete("C:\\Users\\Administrator\\Desktop\\fo" + yesterday.ToString("ddMMMMyyyy") + "bhav.csv");
 
+            Thread.Sleep(2000);
+
             Application excelApp = new Application();
             Workbook workbook = excelApp.Workbooks.Open("C:\\Users\\Administrator\\Desktop\\Vol 2021.xlsb");
             excelApp.Visible = true;
+            excelApp.DisplayAlerts = false;
             Worksheet ws = workbook.Worksheets["REPORT"];
             
             for (int i = 2; i < 204; i++)
@@ -122,6 +135,7 @@ namespace PythonScriptCall
             Application excel = new Application();
             Workbook wbook = excel.Workbooks.Open("C:\\Users\\Administrator\\Desktop\\Vol 2021.xlsb");
             excel.Visible = true;
+            excel.DisplayAlerts = false;
             Worksheet ws2 = wbook.Worksheets["REPORT"];
             excel.Run("COPYDATA");
             
