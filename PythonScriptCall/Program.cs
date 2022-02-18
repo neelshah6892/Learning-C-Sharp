@@ -10,6 +10,8 @@ namespace PythonScriptCall
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Start");
+            //Change over here and 2.py file too, need to do once per month
             DateTime expiry = new DateTime(2022, 02, 24);
 
             //Tuesday, Wednesday, Thursday, Friday
@@ -41,7 +43,7 @@ namespace PythonScriptCall
             }
             else
             {
-                Console.WriteLine("False");
+                //Console.WriteLine("False");
                 Console.WriteLine(daybeforeyesterday.ToString("ddMMMyyyy").ToUpper());
                 Console.WriteLine(yesterday.ToString("ddMMMyyyy").ToUpper());
             }
@@ -54,7 +56,7 @@ namespace PythonScriptCall
             ZipFile.ExtractToDirectory("C:\\Users\\Administrator\\Desktop\\demo.zip", @"C:\\Users\\Administrator\\Desktop\\");
             File.Delete("C:\\Users\\Administrator\\Desktop\\demo.zip");
 
-        
+            Console.WriteLine("Starting Process 1....");
             var cmd = "G:\\Yash_1\\iv_daily\\1.py";
             var process = new Process
             {
@@ -76,6 +78,8 @@ namespace PythonScriptCall
             process.BeginErrorReadLine();
             process.BeginOutputReadLine();
             process.WaitForExit();
+            Console.WriteLine("Ending Process 1....");
+
             if (!File.Exists("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx"))
             {
                 File.Copy("E:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\" + yesterday.ToString("ddMMyyyy") + ".xlsx", "C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
@@ -83,6 +87,8 @@ namespace PythonScriptCall
             File.Delete("E:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
 
             Thread.Sleep(5000);
+
+            Console.WriteLine("Starting Process 2....");
             var cmd2 = "G:\\Yash_1\\iv_daily\\2.py";
             var process2 = new Process
             {
@@ -104,11 +110,14 @@ namespace PythonScriptCall
             process2.BeginErrorReadLine();
             process2.BeginOutputReadLine();
             process2.WaitForExit();
+            Console.WriteLine("Ending Process 2....");
 
             File.Delete("C:\\Users\\Administrator\\Desktop\\newfile1.xlsx");
             File.Delete("C:\\Users\\Administrator\\Desktop\\fo" + yesterday.ToString("ddMMMMyyyy") + "bhav.csv");
 
             Thread.Sleep(2000);
+
+            Console.WriteLine("Performing Vlookup....");
 
             Application excelApp = new Application();
             Workbook workbook = excelApp.Workbooks.Open("C:\\Users\\Administrator\\Desktop\\Vol 2021.xlsb");
@@ -120,9 +129,13 @@ namespace PythonScriptCall
             {
                 string str = ws.Cells[i, 3].Formula = String.Format("=VLOOKUP(A"+ i + ", 'C:\\Users\\Administrator\\Desktop\\[IV PRINT.xlsx]Sheet1'!$A$2:$H$203, 8,0)");
             }
+
+            Console.WriteLine("Performing Paste Special Value");
             ws.Range["C2:C203"].Copy();
             ws.Range["C2:C203"].PasteSpecial(XlPasteType.xlPasteValues, XlPasteSpecialOperation.xlPasteSpecialOperationNone, false, false);
 
+
+            Console.WriteLine("Change of date and value");
             ws.Cells[2, 22] = expiry;
             ws.Cells[1, 22] = yesterday.Date;
             ws.Cells[1, 13] = ws.Cells[1, 23];
@@ -131,7 +144,7 @@ namespace PythonScriptCall
             excelApp.Quit();
 
 
-
+            Console.WriteLine("Macro Process");
             Application excel = new Application();
             Workbook wbook = excel.Workbooks.Open("C:\\Users\\Administrator\\Desktop\\Vol 2021.xlsb");
             excel.Visible = true;
@@ -141,6 +154,7 @@ namespace PythonScriptCall
             
             wbook.Save();
             excel.Quit();
+            Console.WriteLine("Completed");
         }
 
         static void Process_OutputDataReceived(object sender, DataReceivedEventArgs e)
