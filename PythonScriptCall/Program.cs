@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.IO.Compression;
 using System.Net;
-using System.Text.RegularExpressions;
+
 
 namespace PythonScriptCall
 {
@@ -16,13 +16,6 @@ namespace PythonScriptCall
 
             //yesterday = yesterday.AddDays(-2);
             //daybeforeyesterday = daybeforeyesterday.AddDays(-3);
-            WebClient client = new WebClient();
-            Console.WriteLine("https://archives.nseindia.com/content/historical/DERIVATIVES/" + yesterday.ToString("yyyy") + "/" + yesterday.ToString("MMM").ToUpper() + "/fo" + yesterday.ToString("ddMMMyyyy").ToUpper() + "bhav.csv.zip", "C:\\Users\\Administrator\\Desktop\\demo.zip");
-            client.DownloadFile("https://archives.nseindia.com/content/historical/DERIVATIVES/" + yesterday.ToString("yyyy") + "/" + yesterday.ToString("MMM").ToUpper() + "/fo" + yesterday.ToString("ddMMMyyyy").ToUpper() + "bhav.csv.zip", "C:\\Users\\Administrator\\Desktop\\demo.zip");
-
-            ZipFile.ExtractToDirectory("C:\\Users\\Administrator\\Desktop\\demo.zip", @"C:\\Users\\Administrator\\Desktop\\");
-            File.Delete("C:\\Users\\Administrator\\Desktop\\demo.zip");
-
 
             string text = File.ReadAllText(@"G:\\Yash_1\\iv_daily\\2.py");
             text = text.Replace(daybeforeyesterday.ToString("ddMMyyyy"), yesterday.ToString("ddMMyyyy"));
@@ -34,7 +27,7 @@ namespace PythonScriptCall
                 text = text.Replace(daybeforeyesterday.ToString("ddMMMyyyy").ToUpper(), yesterday.ToString("ddMMMyyyy").ToUpper());
                 File.WriteAllText(@"G:\\Yash_1\\iv_daily\\2.py", text);
                 Console.WriteLine(text);
-                
+
             }
             else
             {
@@ -42,7 +35,15 @@ namespace PythonScriptCall
                 Console.WriteLine(daybeforeyesterday.ToString("ddMMMyyyy").ToUpper());
                 Console.WriteLine(yesterday.ToString("ddMMMyyyy").ToUpper());
             }
-            
+
+
+            WebClient client = new WebClient();
+            Console.WriteLine("https://archives.nseindia.com/content/historical/DERIVATIVES/" + yesterday.ToString("yyyy") + "/" + yesterday.ToString("MMM").ToUpper() + "/fo" + yesterday.ToString("ddMMMyyyy").ToUpper() + "bhav.csv.zip", "C:\\Users\\Administrator\\Desktop\\demo.zip");
+            client.DownloadFile("https://archives.nseindia.com/content/historical/DERIVATIVES/" + yesterday.ToString("yyyy") + "/" + yesterday.ToString("MMM").ToUpper() + "/fo" + yesterday.ToString("ddMMMyyyy").ToUpper() + "bhav.csv.zip", "C:\\Users\\Administrator\\Desktop\\demo.zip");
+
+            ZipFile.ExtractToDirectory("C:\\Users\\Administrator\\Desktop\\demo.zip", @"C:\\Users\\Administrator\\Desktop\\");
+            File.Delete("C:\\Users\\Administrator\\Desktop\\demo.zip");
+
         
             var cmd = "G:\\Yash_1\\iv_daily\\1.py";
             var process = new Process
@@ -71,7 +72,7 @@ namespace PythonScriptCall
             }
             File.Delete("E:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
 
-            
+            Thread.Sleep(5000);
             var cmd2 = "G:\\Yash_1\\iv_daily\\2.py";
             var process2 = new Process
             {
@@ -115,22 +116,23 @@ namespace PythonScriptCall
             ws.Cells[1, 14] = ws.Cells[1, 15];
             workbook.Save();
             excelApp.Quit();
+
+
+
+            Application excel = new Application();
+            Workbook wbook = excel.Workbooks.Open("C:\\Users\\Administrator\\Desktop\\Vol 2021.xlsb");
+            excel.Visible = true;
+            Worksheet ws2 = wbook.Worksheets["REPORT"];
+            excel.Run("COPYDATA");
             
-
-
-
-            //Application excel = new Application();
-            //Workbook wbook = excelApp.Workbooks.Open("C:\\Users\\Administrator\\Desktop\\Vol 2021.xlsb");
-            //excelApp.Visible = true;
-            //Worksheet ws2 = wbook.Worksheets["REPORT"];
-
-            //workbook.Save();
-            //excelApp.Quit();
+            wbook.Save();
+            excel.Quit();
         }
 
         static void Process_OutputDataReceived(object sender, DataReceivedEventArgs e)
         {
             Console.WriteLine(e.Data);
         }
+
         }
 }

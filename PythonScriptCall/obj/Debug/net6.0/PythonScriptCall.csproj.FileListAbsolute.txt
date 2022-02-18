@@ -16,3 +16,5 @@ E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.ge
 E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\Interop.Microsoft.Office.Interop.Excel.dll
 E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.ResolveComReference.cache
 E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\Interop.Microsoft.Office.Core.dll
+E:\Github\Learning-C-Sharp\PythonScriptCall\bin\Debug\net6.0\WindowsInput.dll
+E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.CopyComplete
