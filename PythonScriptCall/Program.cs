@@ -154,6 +154,9 @@ namespace PythonScriptCall
             
             wbook.Save();
             excel.Quit();
+
+            File.Copy("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx", "C:\\Users\\Administrator\\Desktop\\One Minute Data" + yesterday.ToString("ddMMyyyy") + ".xlsx");
+            File.Delete("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
             Console.WriteLine("Completed");
         }
 
