@@ -14,12 +14,36 @@ namespace PythonScriptCall
             DateTime yesterday = DateTime.Now.AddDays(-1);
             DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
 
-            /*string text = File.ReadAllText(@"G:\\Yash_1\\iv_daily\\2.py");
-            //text = text.Replace(daybeforeyesterday.ToString("ddMMyyyy"), yesterday.ToString("ddMMyyyy"));
-            text = text.Replace("fo" + daybeforeyesterday.ToString("ddMMMMyyyy") + "bhav.csv", "fo" + yesterday.ToString("ddMMMMyyyy") + "bhav.csv");
-            //Console.WriteLine(text);
-            File.WriteAllText(@"G:\\Yash_1\\iv_daily\\2.py", text);*/
+            //yesterday = yesterday.AddDays(-2);
+            //daybeforeyesterday = daybeforeyesterday.AddDays(-3);
+            WebClient client = new WebClient();
+            Console.WriteLine("https://archives.nseindia.com/content/historical/DERIVATIVES/" + yesterday.ToString("yyyy") + "/" + yesterday.ToString("MMM").ToUpper() + "/fo" + yesterday.ToString("ddMMMyyyy").ToUpper() + "bhav.csv.zip", "C:\\Users\\Administrator\\Desktop\\demo.zip");
+            client.DownloadFile("https://archives.nseindia.com/content/historical/DERIVATIVES/" + yesterday.ToString("yyyy") + "/" + yesterday.ToString("MMM").ToUpper() + "/fo" + yesterday.ToString("ddMMMyyyy").ToUpper() + "bhav.csv.zip", "C:\\Users\\Administrator\\Desktop\\demo.zip");
 
+            ZipFile.ExtractToDirectory("C:\\Users\\Administrator\\Desktop\\demo.zip", @"C:\\Users\\Administrator\\Desktop\\");
+            File.Delete("C:\\Users\\Administrator\\Desktop\\demo.zip");
+
+
+            string text = File.ReadAllText(@"G:\\Yash_1\\iv_daily\\2.py");
+            text = text.Replace(daybeforeyesterday.ToString("ddMMyyyy"), yesterday.ToString("ddMMyyyy"));
+            File.WriteAllText(@"G:\\Yash_1\\iv_daily\\2.py", text);
+
+            if (text.Contains(daybeforeyesterday.ToString("ddMMMyyyy").ToUpper()))
+            {
+                //Console.WriteLine(daybeforeyesterday.ToString("ddMMMyyyy").ToUpper());
+                text = text.Replace(daybeforeyesterday.ToString("ddMMMyyyy").ToUpper(), yesterday.ToString("ddMMMyyyy").ToUpper());
+                File.WriteAllText(@"G:\\Yash_1\\iv_daily\\2.py", text);
+                Console.WriteLine(text);
+                
+            }
+            else
+            {
+                Console.WriteLine("False");
+                Console.WriteLine(daybeforeyesterday.ToString("ddMMMyyyy").ToUpper());
+                Console.WriteLine(yesterday.ToString("ddMMMyyyy").ToUpper());
+            }
+            
+        
             var cmd = "G:\\Yash_1\\iv_daily\\1.py";
             var process = new Process
             {
@@ -48,13 +72,6 @@ namespace PythonScriptCall
             File.Delete("E:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
 
             
-            WebClient client = new WebClient();
-            client.DownloadFile("https://archives.nseindia.com/content/historical/DERIVATIVES/" + yesterday.ToString("yyyy") + "/" + yesterday.ToString("MMMM") + "/fo" + yesterday.ToString("ddMMMMyyyy") + "bhav.csv.zip", "C:\\Users\\Administrator\\Desktop\\demo.zip");
-
-            ZipFile.ExtractToDirectory("C:\\Users\\Administrator\\Desktop\\demo.zip", @"C:\\Users\\Administrator\\Desktop\\");
-            File.Delete("C:\\Users\\Administrator\\Desktop\\demo.zip");
-
-
             var cmd2 = "G:\\Yash_1\\iv_daily\\2.py";
             var process2 = new Process
             {
@@ -115,6 +132,5 @@ namespace PythonScriptCall
         {
             Console.WriteLine(e.Data);
         }
-        
-    }
+        }
 }
