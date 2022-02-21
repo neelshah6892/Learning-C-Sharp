@@ -1,0 +1,17 @@
+E:\Github\Learning-C-Sharp\CreateExcel\bin\Debug\net6.0\CreateExcel.exe
+E:\Github\Learning-C-Sharp\CreateExcel\bin\Debug\net6.0\CreateExcel.deps.json
+E:\Github\Learning-C-Sharp\CreateExcel\bin\Debug\net6.0\CreateExcel.runtimeconfig.json
+E:\Github\Learning-C-Sharp\CreateExcel\bin\Debug\net6.0\CreateExcel.dll
+E:\Github\Learning-C-Sharp\CreateExcel\bin\Debug\net6.0\ref\CreateExcel.dll
+E:\Github\Learning-C-Sharp\CreateExcel\bin\Debug\net6.0\CreateExcel.pdb
+E:\Github\Learning-C-Sharp\CreateExcel\obj\Debug\net6.0\CreateExcel.csproj.AssemblyReference.cache
+E:\Github\Learning-C-Sharp\CreateExcel\obj\Debug\net6.0\Interop.Microsoft.Office.Interop.Excel.dll
+E:\Github\Learning-C-Sharp\CreateExcel\obj\Debug\net6.0\CreateExcel.csproj.ResolveComReference.cache
+E:\Github\Learning-C-Sharp\CreateExcel\obj\Debug\net6.0\CreateExcel.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\Learning-C-Sharp\CreateExcel\obj\Debug\net6.0\CreateExcel.AssemblyInfoInputs.cache
+E:\Github\Learning-C-Sharp\CreateExcel\obj\Debug\net6.0\CreateExcel.AssemblyInfo.cs
+E:\Github\Learning-C-Sharp\CreateExcel\obj\Debug\net6.0\CreateExcel.csproj.CoreCompileInputs.cache
+E:\Github\Learning-C-Sharp\CreateExcel\obj\Debug\net6.0\CreateExcel.dll
+E:\Github\Learning-C-Sharp\CreateExcel\obj\Debug\net6.0\ref\CreateExcel.dll
+E:\Github\Learning-C-Sharp\CreateExcel\obj\Debug\net6.0\CreateExcel.pdb
+E:\Github\Learning-C-Sharp\CreateExcel\obj\Debug\net6.0\CreateExcel.genruntimeconfig.cache

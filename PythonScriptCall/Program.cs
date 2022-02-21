@@ -131,7 +131,7 @@ namespace PythonScriptCall
             
             for (int i = 2; i < 204; i++)
             {
-                string str = ws.Cells[i, 3].Formula = String.Format("=VLOOKUP(A"+ i + ", 'C:\\Users\\Administrator\\Desktop\\[IV PRINT.xlsx]Sheet1'!$A$2:$H$203, 8,0)");
+                ws.Cells[i, 3].Formula = String.Format("=VLOOKUP(A"+ i + ", 'C:\\Users\\Administrator\\Desktop\\[IV PRINT.xlsx]Sheet1'!$A$2:$H$203, 8,0)");
             }
 
             Console.WriteLine("Performing Paste Special Value");

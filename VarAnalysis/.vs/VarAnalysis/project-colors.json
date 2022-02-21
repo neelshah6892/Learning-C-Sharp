@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3219fcdb-9295-4e7f-b768-ff0c8a344fb2": {
+      "ProjectGuid": "3219fcdb-9295-4e7f-b768-ff0c8a344fb2",
+      "DisplayName": "VarAnalysis",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
