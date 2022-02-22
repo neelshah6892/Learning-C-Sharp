@@ -1,0 +1,14 @@
+D:\Dotnet Core\ConditionStatements\bin\Debug\netcoreapp3.1\ConditionStatements.exe
+D:\Dotnet Core\ConditionStatements\bin\Debug\netcoreapp3.1\ConditionStatements.deps.json
+D:\Dotnet Core\ConditionStatements\bin\Debug\netcoreapp3.1\ConditionStatements.runtimeconfig.json
+D:\Dotnet Core\ConditionStatements\bin\Debug\netcoreapp3.1\ConditionStatements.runtimeconfig.dev.json
+D:\Dotnet Core\ConditionStatements\bin\Debug\netcoreapp3.1\ConditionStatements.dll
+D:\Dotnet Core\ConditionStatements\bin\Debug\netcoreapp3.1\ConditionStatements.pdb
+D:\Dotnet Core\ConditionStatements\obj\Debug\netcoreapp3.1\ConditionStatements.csproj.AssemblyReference.cache
+D:\Dotnet Core\ConditionStatements\obj\Debug\netcoreapp3.1\ConditionStatements.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dotnet Core\ConditionStatements\obj\Debug\netcoreapp3.1\ConditionStatements.AssemblyInfoInputs.cache
+D:\Dotnet Core\ConditionStatements\obj\Debug\netcoreapp3.1\ConditionStatements.AssemblyInfo.cs
+D:\Dotnet Core\ConditionStatements\obj\Debug\netcoreapp3.1\ConditionStatements.csproj.CoreCompileInputs.cache
+D:\Dotnet Core\ConditionStatements\obj\Debug\netcoreapp3.1\ConditionStatements.dll
+D:\Dotnet Core\ConditionStatements\obj\Debug\netcoreapp3.1\ConditionStatements.pdb
+D:\Dotnet Core\ConditionStatements\obj\Debug\netcoreapp3.1\ConditionStatements.genruntimeconfig.cache

@@ -1,0 +1,14 @@
+D:\Dotnet Core\RepititionStatements\bin\Debug\netcoreapp3.1\RepititionStatements.exe
+D:\Dotnet Core\RepititionStatements\bin\Debug\netcoreapp3.1\RepititionStatements.deps.json
+D:\Dotnet Core\RepititionStatements\bin\Debug\netcoreapp3.1\RepititionStatements.runtimeconfig.json
+D:\Dotnet Core\RepititionStatements\bin\Debug\netcoreapp3.1\RepititionStatements.runtimeconfig.dev.json
+D:\Dotnet Core\RepititionStatements\bin\Debug\netcoreapp3.1\RepititionStatements.dll
+D:\Dotnet Core\RepititionStatements\bin\Debug\netcoreapp3.1\RepititionStatements.pdb
+D:\Dotnet Core\RepititionStatements\obj\Debug\netcoreapp3.1\RepititionStatements.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dotnet Core\RepititionStatements\obj\Debug\netcoreapp3.1\RepititionStatements.AssemblyInfoInputs.cache
+D:\Dotnet Core\RepititionStatements\obj\Debug\netcoreapp3.1\RepititionStatements.AssemblyInfo.cs
+D:\Dotnet Core\RepititionStatements\obj\Debug\netcoreapp3.1\RepititionStatements.csproj.CoreCompileInputs.cache
+D:\Dotnet Core\RepititionStatements\obj\Debug\netcoreapp3.1\RepititionStatements.dll
+D:\Dotnet Core\RepititionStatements\obj\Debug\netcoreapp3.1\RepititionStatements.pdb
+D:\Dotnet Core\RepititionStatements\obj\Debug\netcoreapp3.1\RepititionStatements.genruntimeconfig.cache
+D:\Dotnet Core\RepititionStatements\obj\Debug\netcoreapp3.1\RepititionStatements.csproj.AssemblyReference.cache

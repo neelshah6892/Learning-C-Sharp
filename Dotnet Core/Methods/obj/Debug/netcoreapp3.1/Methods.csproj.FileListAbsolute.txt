@@ -1,0 +1,13 @@
+D:\Dotnet Core\Methods\bin\Debug\netcoreapp3.1\Methods.exe
+D:\Dotnet Core\Methods\bin\Debug\netcoreapp3.1\Methods.deps.json
+D:\Dotnet Core\Methods\bin\Debug\netcoreapp3.1\Methods.runtimeconfig.json
+D:\Dotnet Core\Methods\bin\Debug\netcoreapp3.1\Methods.runtimeconfig.dev.json
+D:\Dotnet Core\Methods\bin\Debug\netcoreapp3.1\Methods.dll
+D:\Dotnet Core\Methods\bin\Debug\netcoreapp3.1\Methods.pdb
+D:\Dotnet Core\Methods\obj\Debug\netcoreapp3.1\Methods.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dotnet Core\Methods\obj\Debug\netcoreapp3.1\Methods.AssemblyInfoInputs.cache
+D:\Dotnet Core\Methods\obj\Debug\netcoreapp3.1\Methods.AssemblyInfo.cs
+D:\Dotnet Core\Methods\obj\Debug\netcoreapp3.1\Methods.csproj.CoreCompileInputs.cache
+D:\Dotnet Core\Methods\obj\Debug\netcoreapp3.1\Methods.dll
+D:\Dotnet Core\Methods\obj\Debug\netcoreapp3.1\Methods.pdb
+D:\Dotnet Core\Methods\obj\Debug\netcoreapp3.1\Methods.genruntimeconfig.cache

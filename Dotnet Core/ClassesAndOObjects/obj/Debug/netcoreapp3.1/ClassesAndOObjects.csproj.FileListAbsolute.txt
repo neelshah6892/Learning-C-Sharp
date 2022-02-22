@@ -1,0 +1,14 @@
+D:\Dotnet Core\ClassesAndOObjects\bin\Debug\netcoreapp3.1\ClassesAndOObjects.exe
+D:\Dotnet Core\ClassesAndOObjects\bin\Debug\netcoreapp3.1\ClassesAndOObjects.deps.json
+D:\Dotnet Core\ClassesAndOObjects\bin\Debug\netcoreapp3.1\ClassesAndOObjects.runtimeconfig.json
+D:\Dotnet Core\ClassesAndOObjects\bin\Debug\netcoreapp3.1\ClassesAndOObjects.runtimeconfig.dev.json
+D:\Dotnet Core\ClassesAndOObjects\bin\Debug\netcoreapp3.1\ClassesAndOObjects.dll
+D:\Dotnet Core\ClassesAndOObjects\bin\Debug\netcoreapp3.1\ClassesAndOObjects.pdb
+D:\Dotnet Core\ClassesAndOObjects\obj\Debug\netcoreapp3.1\ClassesAndOObjects.csproj.AssemblyReference.cache
+D:\Dotnet Core\ClassesAndOObjects\obj\Debug\netcoreapp3.1\ClassesAndOObjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dotnet Core\ClassesAndOObjects\obj\Debug\netcoreapp3.1\ClassesAndOObjects.AssemblyInfoInputs.cache
+D:\Dotnet Core\ClassesAndOObjects\obj\Debug\netcoreapp3.1\ClassesAndOObjects.AssemblyInfo.cs
+D:\Dotnet Core\ClassesAndOObjects\obj\Debug\netcoreapp3.1\ClassesAndOObjects.csproj.CoreCompileInputs.cache
+D:\Dotnet Core\ClassesAndOObjects\obj\Debug\netcoreapp3.1\ClassesAndOObjects.dll
+D:\Dotnet Core\ClassesAndOObjects\obj\Debug\netcoreapp3.1\ClassesAndOObjects.pdb
+D:\Dotnet Core\ClassesAndOObjects\obj\Debug\netcoreapp3.1\ClassesAndOObjects.genruntimeconfig.cache
