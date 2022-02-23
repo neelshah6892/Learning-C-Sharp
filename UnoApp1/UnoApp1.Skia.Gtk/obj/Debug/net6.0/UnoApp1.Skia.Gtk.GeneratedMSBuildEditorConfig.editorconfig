@@ -20,7 +20,7 @@ build_property.UseWPF =
 build_property.IsUnoHead = true
 build_property.UnoRemoteControlPort = 
 build_property.UnoRemoteControlHost = 
-build_property.UnoRemoteControlProcessorsPath = C:\Users\Administrator\.nuget\packages\uno.ui.remotecontrol\4.0.11\buildTransitive\../tools/rc/processors
+build_property.UnoRemoteControlProcessorsPath = C:\Users\Administrator\.nuget\packages\uno.ui.remotecontrol\4.0.13\buildTransitive\../tools/rc/processors
 build_property.TSBindingsPath = 
 build_property.UseUnoXamlParser = 
 build_property.UnoSkipUserControlsInVisualTree = 
@@ -61,81 +61,3 @@ build_metadata.AdditionalFiles.SourceItemGroup = PRIResource
 build_metadata.AdditionalFiles.Link = 
 build_metadata.AdditionalFiles.FullPath = E:\Github\Learning-C-Sharp\UnoApp1\UnoApp1.Shared\Strings\en\Resources.resw
 build_metadata.AdditionalFiles.Identity = E:\Github\Learning-C-Sharp\UnoApp1\UnoApp1.Shared\Strings\en\Resources.resw
-
-[C:/Program Files/dotnet/sdk/6.0.102/Sdks/Microsoft.NET.Sdk/analyzers/Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll]
-build_metadata.AdditionalFiles.SourceItemGroup = Analyzer
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.FullPath = C:\Program Files\dotnet\sdk\6.0.102\Sdks\Microsoft.NET.Sdk\analyzers\Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
-build_metadata.AdditionalFiles.Identity = C:\Program Files\dotnet\sdk\6.0.102\Sdks\Microsoft.NET.Sdk\analyzers\Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
-
-[C:/Program Files/dotnet/sdk/6.0.102/Sdks/Microsoft.NET.Sdk/analyzers/Microsoft.CodeAnalysis.NetAnalyzers.dll]
-build_metadata.AdditionalFiles.SourceItemGroup = Analyzer
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.FullPath = C:\Program Files\dotnet\sdk\6.0.102\Sdks\Microsoft.NET.Sdk\analyzers\Microsoft.CodeAnalysis.NetAnalyzers.dll
-build_metadata.AdditionalFiles.Identity = C:\Program Files\dotnet\sdk\6.0.102\Sdks\Microsoft.NET.Sdk\analyzers\Microsoft.CodeAnalysis.NetAnalyzers.dll
-
-[C:/Users/Administrator/.nuget/packages/uno.ui/4.0.11/analyzers/Uno.Analyzers.dll]
-build_metadata.AdditionalFiles.SourceItemGroup = Analyzer
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.FullPath = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\Uno.Analyzers.dll
-build_metadata.AdditionalFiles.Identity = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\Uno.Analyzers.dll
-
-[C:/Users/Administrator/.nuget/packages/uno.ui/4.0.11/analyzers/dotnet/cs/Microsoft.ApplicationInsights.dll]
-build_metadata.AdditionalFiles.SourceItemGroup = Analyzer
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.FullPath = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\Microsoft.ApplicationInsights.dll
-build_metadata.AdditionalFiles.Identity = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\Microsoft.ApplicationInsights.dll
-
-[C:/Users/Administrator/.nuget/packages/uno.ui/4.0.11/analyzers/dotnet/cs/Microsoft.DotNet.PlatformAbstractions.dll]
-build_metadata.AdditionalFiles.SourceItemGroup = Analyzer
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.FullPath = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\Microsoft.DotNet.PlatformAbstractions.dll
-build_metadata.AdditionalFiles.Identity = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\Microsoft.DotNet.PlatformAbstractions.dll
-
-[C:/Users/Administrator/.nuget/packages/uno.ui/4.0.11/analyzers/dotnet/cs/Mono.Cecil.Mdb.dll]
-build_metadata.AdditionalFiles.SourceItemGroup = Analyzer
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.FullPath = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\Mono.Cecil.Mdb.dll
-build_metadata.AdditionalFiles.Identity = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\Mono.Cecil.Mdb.dll
-
-[C:/Users/Administrator/.nuget/packages/uno.ui/4.0.11/analyzers/dotnet/cs/Mono.Cecil.Pdb.dll]
-build_metadata.AdditionalFiles.SourceItemGroup = Analyzer
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.FullPath = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\Mono.Cecil.Pdb.dll
-build_metadata.AdditionalFiles.Identity = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\Mono.Cecil.Pdb.dll
-
-[C:/Users/Administrator/.nuget/packages/uno.ui/4.0.11/analyzers/dotnet/cs/Mono.Cecil.Rocks.dll]
-build_metadata.AdditionalFiles.SourceItemGroup = Analyzer
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.FullPath = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\Mono.Cecil.Rocks.dll
-build_metadata.AdditionalFiles.Identity = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\Mono.Cecil.Rocks.dll
-
-[C:/Users/Administrator/.nuget/packages/uno.ui/4.0.11/analyzers/dotnet/cs/Mono.Cecil.dll]
-build_metadata.AdditionalFiles.SourceItemGroup = Analyzer
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.FullPath = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\Mono.Cecil.dll
-build_metadata.AdditionalFiles.Identity = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\Mono.Cecil.dll
-
-[C:/Users/Administrator/.nuget/packages/uno.ui/4.0.11/analyzers/dotnet/cs/System.Diagnostics.DiagnosticSource.dll]
-build_metadata.AdditionalFiles.SourceItemGroup = Analyzer
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.FullPath = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\System.Diagnostics.DiagnosticSource.dll
-build_metadata.AdditionalFiles.Identity = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\System.Diagnostics.DiagnosticSource.dll
-
-[C:/Users/Administrator/.nuget/packages/uno.ui/4.0.11/analyzers/dotnet/cs/Uno.UI.SourceGenerators.dll]
-build_metadata.AdditionalFiles.SourceItemGroup = Analyzer
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.FullPath = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\Uno.UI.SourceGenerators.dll
-build_metadata.AdditionalFiles.Identity = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\Uno.UI.SourceGenerators.dll
-
-[C:/Users/Administrator/.nuget/packages/uno.ui/4.0.11/analyzers/dotnet/cs/Uno.Xaml.dll]
-build_metadata.AdditionalFiles.SourceItemGroup = Analyzer
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.FullPath = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\Uno.Xaml.dll
-build_metadata.AdditionalFiles.Identity = C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\analyzers\dotnet\cs\Uno.Xaml.dll
-
-[C:/Program Files/dotnet/packs/Microsoft.NETCore.App.Ref/6.0.2/analyzers/dotnet/cs/System.Text.Json.SourceGeneration.dll]
-build_metadata.AdditionalFiles.SourceItemGroup = Analyzer
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.FullPath = C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.2\analyzers\dotnet\cs\System.Text.Json.SourceGeneration.dll
-build_metadata.AdditionalFiles.Identity = C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.2\analyzers\dotnet\cs\System.Text.Json.SourceGeneration.dll

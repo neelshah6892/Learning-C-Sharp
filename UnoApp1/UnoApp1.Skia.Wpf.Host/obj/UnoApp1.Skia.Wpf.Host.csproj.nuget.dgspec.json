@@ -58,15 +58,15 @@
             },
             "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
               "target": "Package",
-              "version": "[4.0.11, )"
+              "version": "[4.0.13, )"
             },
             "Uno.UI.RemoteControl": {
               "target": "Package",
-              "version": "[4.0.11, )"
+              "version": "[4.0.13, )"
             },
             "Uno.UI.Skia.Wpf": {
               "target": "Package",
-              "version": "[4.0.11, )"
+              "version": "[4.0.13, )"
             }
           },
           "imports": [
@@ -155,15 +155,15 @@
             },
             "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
               "target": "Package",
-              "version": "[4.0.11, )"
+              "version": "[4.0.13, )"
             },
             "Uno.UI.RemoteControl": {
               "target": "Package",
-              "version": "[4.0.11, )"
+              "version": "[4.0.13, )"
             },
             "Uno.UI.Skia.Wpf": {
               "target": "Package",
-              "version": "[4.0.11, )"
+              "version": "[4.0.13, )"
             }
           },
           "imports": [

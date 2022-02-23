@@ -32,7 +32,7 @@
     <Import Project="$(NuGetPackageRoot)microsoft.netcore.universalwindowsplatform\6.2.11\build\Microsoft.NETCore.UniversalWindowsPlatform.props" Condition="Exists('$(NuGetPackageRoot)microsoft.netcore.universalwindowsplatform\6.2.11\build\Microsoft.NETCore.UniversalWindowsPlatform.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgUno_UI Condition=" '$(PkgUno_UI)' == '' ">C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11</PkgUno_UI>
+    <PkgUno_UI Condition=" '$(PkgUno_UI)' == '' ">C:\Users\Administrator\.nuget\packages\uno.ui\4.0.13</PkgUno_UI>
     <Pkgruntime_win10-x86_Microsoft_Net_UWPCoreRuntimeSdk Condition=" '$(Pkgruntime_win10-x86_Microsoft_Net_UWPCoreRuntimeSdk)' == '' ">C:\Users\Administrator\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11</Pkgruntime_win10-x86_Microsoft_Net_UWPCoreRuntimeSdk>
     <Pkgruntime_win10-x86_Microsoft_Net_Native_SharedLibrary Condition=" '$(Pkgruntime_win10-x86_Microsoft_Net_Native_SharedLibrary)' == '' ">C:\Users\Administrator\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-29512-01</Pkgruntime_win10-x86_Microsoft_Net_Native_SharedLibrary>
     <Pkgruntime_win10-x86_Microsoft_Net_Native_Compiler Condition=" '$(Pkgruntime_win10-x86_Microsoft_Net_Native_Compiler)' == '' ">C:\Users\Administrator\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.2.9-rel-29512-01</Pkgruntime_win10-x86_Microsoft_Net_Native_Compiler>

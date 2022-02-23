@@ -67,22 +67,22 @@
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\system.runtime.compilerservices.unsafe\5.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.core.extensions.logging.singleton\4.0.0-dev.7\lib\netstandard2.0\Uno.Core.Extensions.Logging.Singleton.dll">
+    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.core.extensions.logging.singleton\4.0.1\lib\netstandard2.0\Uno.Core.Extensions.Logging.Singleton.dll">
       <PackagePath>Uno.Core.Extensions.Logging.Singleton.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.diagnostics.eventing\2.0.1\lib\netstandard2.0\Uno.Diagnostics.Eventing.dll">
       <PackagePath>Uno.Diagnostics.Eventing.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.foundation.logging\4.0.11\lib\netstandard2.0\Uno.Foundation.Logging.dll">
+    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.foundation.logging\4.0.13\lib\netstandard2.0\Uno.Foundation.Logging.dll">
       <PackagePath>Uno.Foundation.Logging.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\lib\UAP\Uno.UI.Toolkit.dll">
+    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.ui\4.0.13\lib\UAP\Uno.UI.Toolkit.dll">
       <PackagePath>Uno.UI.Toolkit.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\lib\UAP\Uno.UI.Toolkit\Uno.UI.Toolkit.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.ui\4.0.13\lib\UAP\Uno.UI.Toolkit\Uno.UI.Toolkit.xr.xml">
       <PackagePath>Uno.UI.Toolkit\Uno.UI.Toolkit.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Github\Learning-C-Sharp\UnoApp1\UnoApp1.UWP\Assets\LockScreenLogo.scale-200.png">

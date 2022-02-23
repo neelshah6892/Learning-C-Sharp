@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+/cGmraFbM6WNbX05CmQGGpRCitzInSV0xunJdI1oA8n8GrkUIlJzcmeCMvc0VixN/WujXuOHKJW5n9y67D1bw==",
+  "dgSpecHash": "z50aH3vTtbkp8VYwsvV1HyvLFHD7hauWy8v/WNvi3WTVFXIJzSHGrywGX048lldIJtQ+bUjntZ6WarCZPN3v9Q==",
   "success": true,
   "projectFilePath": "E:\\Github\\Learning-C-Sharp\\UnoApp1\\UnoApp1.Skia.Wpf.Host\\UnoApp1.Skia.Wpf.Host.csproj",
   "expectedPackageFiles": [
@@ -48,13 +48,13 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\uno.core.extensions.logging\\4.0.0-dev.7\\uno.core.extensions.logging.4.0.0-dev.7.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\uno.core.extensions.logging.singleton\\4.0.0-dev.7\\uno.core.extensions.logging.singleton.4.0.0-dev.7.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\uno.diagnostics.eventing\\2.0.1\\uno.diagnostics.eventing.2.0.1.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\uno.foundation.logging\\4.0.11\\uno.foundation.logging.4.0.11.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\uno.foundation.logging\\4.0.13\\uno.foundation.logging.4.0.13.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\uno.sourcegenerationtasks\\4.0.0\\uno.sourcegenerationtasks.4.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\uno.ui\\4.0.11\\uno.ui.4.0.11.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\uno.ui.adapter.microsoft.extensions.logging\\4.0.11\\uno.ui.adapter.microsoft.extensions.logging.4.0.11.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\uno.ui.remotecontrol\\4.0.11\\uno.ui.remotecontrol.4.0.11.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\uno.ui.runtime.skia.wpf\\4.0.11\\uno.ui.runtime.skia.wpf.4.0.11.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\uno.ui.skia.wpf\\4.0.11\\uno.ui.skia.wpf.4.0.11.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\uno.ui\\4.0.13\\uno.ui.4.0.13.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\uno.ui.adapter.microsoft.extensions.logging\\4.0.13\\uno.ui.adapter.microsoft.extensions.logging.4.0.13.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\uno.ui.remotecontrol\\4.0.13\\uno.ui.remotecontrol.4.0.13.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\uno.ui.runtime.skia.wpf\\4.0.13\\uno.ui.runtime.skia.wpf.4.0.13.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\uno.ui.skia.wpf\\4.0.13\\uno.ui.skia.wpf.4.0.13.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\uno.wasm.websockets\\1.1.0\\uno.wasm.websockets.1.1.0.nupkg.sha512"
   ],
   "logs": [

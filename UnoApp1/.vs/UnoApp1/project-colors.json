@@ -15,7 +15,12 @@
       "ProjectGuid": "6279c845-92f8-4333-ab99-3d213163593c",
       "DisplayName": "UnoApp1.Shared",
       "ColorIndex": 2
+    },
+    "ae1d5edb-8b10-425b-9f2d-489cccd33cba": {
+      "ProjectGuid": "ae1d5edb-8b10-425b-9f2d-489cccd33cba",
+      "DisplayName": "UnoApp1.Mobile",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }

@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\Github\Learning-C-Sharp\UnoApp1\UnoApp1.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-02-15T10:29:33.801</Modified>
+      <Modified>2022-02-22T09:53:35.915</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Github\Learning-C-Sharp\UnoApp1\UnoApp1.UWP\bin\x86\Debug\UnoApp1.exe">
       <PackagePath>entrypoint\UnoApp1.exe</PackagePath>
-      <Modified>2022-02-15T10:29:32.504</Modified>
+      <Modified>2022-02-22T09:53:33.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\commonservicelocator\2.0.5\lib\netstandard2.0\CommonServiceLocator.dll">
       <PackagePath>CommonServiceLocator.dll</PackagePath>
@@ -90,29 +90,29 @@
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
       <Modified>2020-10-19T18:46:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.core.extensions.logging.singleton\4.0.0-dev.7\lib\netstandard2.0\Uno.Core.Extensions.Logging.Singleton.dll">
+    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.core.extensions.logging.singleton\4.0.1\lib\netstandard2.0\Uno.Core.Extensions.Logging.Singleton.dll">
       <PackagePath>Uno.Core.Extensions.Logging.Singleton.dll</PackagePath>
-      <Modified>2021-11-10T15:01:28.000</Modified>
+      <Modified>2021-11-24T20:24:40.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.diagnostics.eventing\2.0.1\lib\netstandard2.0\Uno.Diagnostics.Eventing.dll">
       <PackagePath>Uno.Diagnostics.Eventing.dll</PackagePath>
       <Modified>2021-11-25T03:50:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.foundation.logging\4.0.11\lib\netstandard2.0\Uno.Foundation.Logging.dll">
+    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.foundation.logging\4.0.13\lib\netstandard2.0\Uno.Foundation.Logging.dll">
       <PackagePath>Uno.Foundation.Logging.dll</PackagePath>
-      <Modified>2021-12-10T17:32:50.000</Modified>
+      <Modified>2022-01-26T14:01:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\lib\UAP\Uno.UI.Toolkit.dll">
+    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.ui\4.0.13\lib\UAP\Uno.UI.Toolkit.dll">
       <PackagePath>Uno.UI.Toolkit.dll</PackagePath>
-      <Modified>2021-12-10T15:32:56.000</Modified>
+      <Modified>2022-01-26T14:02:18.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T13:06:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11\lib\UAP\Uno.UI.Toolkit\Uno.UI.Toolkit.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\uno.ui\4.0.13\lib\UAP\Uno.UI.Toolkit\Uno.UI.Toolkit.xr.xml">
       <PackagePath>Uno.UI.Toolkit\Uno.UI.Toolkit.xr.xml</PackagePath>
-      <Modified>2021-12-10T15:32:56.000</Modified>
+      <Modified>2022-01-26T14:02:18.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Github\Learning-C-Sharp\UnoApp1\UnoApp1.UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -157,11 +157,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Github\Learning-C-Sharp\UnoApp1\UnoApp1.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-02-15T10:29:32.411</Modified>
+      <Modified>2022-02-22T09:53:33.146</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Github\Learning-C-Sharp\UnoApp1\UnoApp1.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-02-15T10:29:32.411</Modified>
+      <Modified>2022-02-22T09:53:33.146</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -173,11 +173,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Github\Learning-C-Sharp\UnoApp1\UnoApp1.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-02-15T10:07:28.239</Modified>
+      <Modified>2022-02-22T09:53:34.713</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Github\Learning-C-Sharp\UnoApp1\UnoApp1.UWP\bin\x86\Debug\Core\UnoApp1.exe">
       <PackagePath>UnoApp1.exe</PackagePath>
-      <Modified>2022-02-15T10:29:33.797</Modified>
+      <Modified>2022-02-22T09:53:35.904</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\microsoft.ui.xaml\2.6.2\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>

@@ -65,11 +65,11 @@
             },
             "Uno.Core.Extensions.Logging.Singleton": {
               "target": "Package",
-              "version": "[4.0.0-dev.7, )"
+              "version": "[4.0.1, )"
             },
             "Uno.UI": {
               "target": "Package",
-              "version": "[4.0.11, )"
+              "version": "[4.0.13, )"
             }
           },
           "imports": [

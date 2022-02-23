@@ -14,10 +14,10 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)uno.ui.skia.wpf\4.0.11\build\Uno.UI.Skia.Wpf.props" Condition="Exists('$(NuGetPackageRoot)uno.ui.skia.wpf\4.0.11\build\Uno.UI.Skia.Wpf.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.ui.skia.wpf\4.0.13\build\Uno.UI.Skia.Wpf.props" Condition="Exists('$(NuGetPackageRoot)uno.ui.skia.wpf\4.0.13\build\Uno.UI.Skia.Wpf.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgUno_UI Condition=" '$(PkgUno_UI)' == '' ">C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11</PkgUno_UI>
-    <PkgUno_UI_RemoteControl Condition=" '$(PkgUno_UI_RemoteControl)' == '' ">C:\Users\Administrator\.nuget\packages\uno.ui.remotecontrol\4.0.11</PkgUno_UI_RemoteControl>
+    <PkgUno_UI Condition=" '$(PkgUno_UI)' == '' ">C:\Users\Administrator\.nuget\packages\uno.ui\4.0.13</PkgUno_UI>
+    <PkgUno_UI_RemoteControl Condition=" '$(PkgUno_UI_RemoteControl)' == '' ">C:\Users\Administrator\.nuget\packages\uno.ui.remotecontrol\4.0.13</PkgUno_UI_RemoteControl>
   </PropertyGroup>
 </Project>

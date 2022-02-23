@@ -14,14 +14,14 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)uno.wasm.bootstrap\3.1.2\build\Uno.Wasm.Bootstrap.props" Condition="Exists('$(NuGetPackageRoot)uno.wasm.bootstrap\3.1.2\build\Uno.Wasm.Bootstrap.props')" />
-    <Import Project="$(NuGetPackageRoot)uno.ui.runtime.webassembly\4.0.11\buildTransitive\Uno.UI.Runtime.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)uno.ui.runtime.webassembly\4.0.11\buildTransitive\Uno.UI.Runtime.WebAssembly.props')" />
-    <Import Project="$(NuGetPackageRoot)uno.ui.webassembly\4.0.11\build\Uno.UI.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)uno.ui.webassembly\4.0.11\build\Uno.UI.WebAssembly.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.wasm.bootstrap\3.2.0\build\Uno.Wasm.Bootstrap.props" Condition="Exists('$(NuGetPackageRoot)uno.wasm.bootstrap\3.2.0\build\Uno.Wasm.Bootstrap.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.ui.runtime.webassembly\4.0.13\buildTransitive\Uno.UI.Runtime.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)uno.ui.runtime.webassembly\4.0.13\buildTransitive\Uno.UI.Runtime.WebAssembly.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.ui.webassembly\4.0.13\build\Uno.UI.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)uno.ui.webassembly\4.0.13\build\Uno.UI.WebAssembly.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgUno_Wasm_Bootstrap_DevServer Condition=" '$(PkgUno_Wasm_Bootstrap_DevServer)' == '' ">C:\Users\Administrator\.nuget\packages\uno.wasm.bootstrap.devserver\3.1.2</PkgUno_Wasm_Bootstrap_DevServer>
-    <PkgUno_Wasm_Bootstrap Condition=" '$(PkgUno_Wasm_Bootstrap)' == '' ">C:\Users\Administrator\.nuget\packages\uno.wasm.bootstrap\3.1.2</PkgUno_Wasm_Bootstrap>
-    <PkgUno_UI Condition=" '$(PkgUno_UI)' == '' ">C:\Users\Administrator\.nuget\packages\uno.ui\4.0.11</PkgUno_UI>
-    <PkgUno_UI_RemoteControl Condition=" '$(PkgUno_UI_RemoteControl)' == '' ">C:\Users\Administrator\.nuget\packages\uno.ui.remotecontrol\4.0.11</PkgUno_UI_RemoteControl>
+    <PkgUno_Wasm_Bootstrap_DevServer Condition=" '$(PkgUno_Wasm_Bootstrap_DevServer)' == '' ">C:\Users\Administrator\.nuget\packages\uno.wasm.bootstrap.devserver\3.2.0</PkgUno_Wasm_Bootstrap_DevServer>
+    <PkgUno_Wasm_Bootstrap Condition=" '$(PkgUno_Wasm_Bootstrap)' == '' ">C:\Users\Administrator\.nuget\packages\uno.wasm.bootstrap\3.2.0</PkgUno_Wasm_Bootstrap>
+    <PkgUno_UI Condition=" '$(PkgUno_UI)' == '' ">C:\Users\Administrator\.nuget\packages\uno.ui\4.0.13</PkgUno_UI>
+    <PkgUno_UI_RemoteControl Condition=" '$(PkgUno_UI_RemoteControl)' == '' ">C:\Users\Administrator\.nuget\packages\uno.ui.remotecontrol\4.0.13</PkgUno_UI_RemoteControl>
   </PropertyGroup>
 </Project>

@@ -680,7 +680,7 @@
           "lib/net5.0/Uno.Diagnostics.Eventing.dll": {}
         }
       },
-      "Uno.Foundation.Logging/4.0.11": {
+      "Uno.Foundation.Logging/4.0.13": {
         "type": "package",
         "compile": {
           "lib/net6.0/Uno.Foundation.Logging.dll": {}
@@ -701,7 +701,7 @@
           "build/netstandard1.0/Uno.SourceGenerationTasks.targets": {}
         }
       },
-      "Uno.UI/4.0.11": {
+      "Uno.UI/4.0.13": {
         "type": "package",
         "dependencies": {
           "System.Collections.Immutable": "1.3.1",
@@ -709,7 +709,7 @@
           "System.Numerics.Vectors": "4.5.0",
           "System.Runtime.InteropServices.WindowsRuntime": "4.3.0",
           "Uno.Diagnostics.Eventing": "2.0.1",
-          "Uno.Foundation.Logging": "4.0.11",
+          "Uno.Foundation.Logging": "4.0.13",
           "Uno.SourceGenerationTasks": "4.0.0"
         },
         "compile": {
@@ -742,12 +742,12 @@
           "buildTransitive/netstandard2.0/Uno.UI.targets": {}
         }
       },
-      "Uno.UI.Adapter.Microsoft.Extensions.Logging/4.0.11": {
+      "Uno.UI.Adapter.Microsoft.Extensions.Logging/4.0.13": {
         "type": "package",
         "dependencies": {
           "Uno.Core.Extensions.Logging": "4.0.0-dev.7",
           "Uno.Core.Extensions.Logging.Singleton": "4.0.0-dev.7",
-          "Uno.Foundation.Logging": "4.0.11"
+          "Uno.Foundation.Logging": "4.0.13"
         },
         "compile": {
           "lib/net6.0/Uno.Foundation.Logging.dll": {},
@@ -758,12 +758,12 @@
           "lib/net6.0/Uno.UI.Adapter.Microsoft.Extensions.Logging.dll": {}
         }
       },
-      "Uno.UI.RemoteControl/4.0.11": {
+      "Uno.UI.RemoteControl/4.0.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.IO.RecyclableMemoryStream": "2.2.0",
           "Newtonsoft.Json": "12.0.2",
-          "Uno.UI": "4.0.11",
+          "Uno.UI": "4.0.13",
           "Uno.Wasm.WebSockets": "1.1.0"
         },
         "compile": {
@@ -776,14 +776,14 @@
           "buildTransitive/Uno.UI.RemoteControl.targets": {}
         }
       },
-      "Uno.UI.Runtime.Skia.Gtk/4.0.11": {
+      "Uno.UI.Runtime.Skia.Gtk/4.0.13": {
         "type": "package",
         "dependencies": {
           "GtkSharp": "3.24.24.34",
           "Microsoft.Win32.Registry": "4.7.0",
           "SkiaSharp": "2.80.3",
           "SkiaSharp.NativeAssets.Linux": "2.80.3",
-          "Uno.UI": "4.0.11"
+          "Uno.UI": "4.0.13"
         },
         "compile": {
           "lib/netcoreapp3.1/Uno.UI.Runtime.Skia.Gtk.dll": {}
@@ -795,11 +795,11 @@
           "buildTransitive/Uno.UI.Runtime.Skia.Gtk.targets": {}
         }
       },
-      "Uno.UI.Skia.Gtk/4.0.11": {
+      "Uno.UI.Skia.Gtk/4.0.13": {
         "type": "package",
         "dependencies": {
-          "Uno.UI": "4.0.11",
-          "Uno.UI.Runtime.Skia.Gtk": "4.0.11"
+          "Uno.UI": "4.0.13",
+          "Uno.UI.Runtime.Skia.Gtk": "4.0.13"
         },
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -2734,10 +2734,10 @@
         "uno.diagnostics.eventing.nuspec"
       ]
     },
-    "Uno.Foundation.Logging/4.0.11": {
-      "sha512": "J73gVhEnuvsmndb5I+xcfLkaLurQ0cNqElfgls1Ld70IFQj/sVqwfF7m8mO+q5PdNAnalJ9Hgwfin6wM2TlehA==",
+    "Uno.Foundation.Logging/4.0.13": {
+      "sha512": "+DEGU7sIEZRm1V4Pb6CF7Yrk3e+O3Ei6OB/JWtiiBOG36cXhd6YfZEGoz6EnrOQjsG6MNbpP/9thZGjTsBKrlg==",
       "type": "package",
-      "path": "uno.foundation.logging/4.0.11",
+      "path": "uno.foundation.logging/4.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2758,7 +2758,7 @@
         "lib/xamarinios10/Uno.Foundation.Logging.pdb",
         "lib/xamarinmac20/Uno.Foundation.Logging.dll",
         "lib/xamarinmac20/Uno.Foundation.Logging.pdb",
-        "uno.foundation.logging.4.0.11.nupkg.sha512",
+        "uno.foundation.logging.4.0.13.nupkg.sha512",
         "uno.foundation.logging.nuspec",
         "uno.png"
       ]
@@ -3411,10 +3411,10 @@
         "uno.sourcegenerationtasks.nuspec"
       ]
     },
-    "Uno.UI/4.0.11": {
-      "sha512": "WNMnjrV6FCIEko5tGsKShFg2nn2VlSOAhFs9QCKvlWYLmmwHP/OHvakZ3joZQOARq0kQ1soaIic/bL3x6JvACg==",
+    "Uno.UI/4.0.13": {
+      "sha512": "aGECbrxRtkp3yS98Zly+EpIJ6nTfPf+Co54M+aGQouV1K2aiF4cdGK9ELxMMI8/rfo5BVW0ZWkOBqkEXQOpWJw==",
       "type": "package",
-      "path": "uno.ui/4.0.11",
+      "path": "uno.ui/4.0.13",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -3763,14 +3763,14 @@
         "uno-runtime/webassembly/Uno.Xaml.pdb",
         "uno-runtime/webassembly/Uno.dll",
         "uno-runtime/webassembly/Uno.pdb",
-        "uno.ui.4.0.11.nupkg.sha512",
+        "uno.ui.4.0.13.nupkg.sha512",
         "uno.ui.nuspec"
       ]
     },
-    "Uno.UI.Adapter.Microsoft.Extensions.Logging/4.0.11": {
-      "sha512": "kScLO7giGfPA0kle3SRU5eAKziqV1HIvNALZaOk9ogNTtH0ROSQQM8FjZUF22zHVtqS5fKjyL+jg6fKjWGu68A==",
+    "Uno.UI.Adapter.Microsoft.Extensions.Logging/4.0.13": {
+      "sha512": "evgzxzofvh9AtvXVDMVDYSUA0L00fOWj7amaYCMBGaRYKPM/8wZbF49iAtu9RkDIwl8WUB7VYJVZqIxYCH3wqg==",
       "type": "package",
-      "path": "uno.ui.adapter.microsoft.extensions.logging/4.0.11",
+      "path": "uno.ui.adapter.microsoft.extensions.logging/4.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3788,14 +3788,14 @@
         "lib/netstandard2.0/Uno.UI.Adapter.Microsoft.Extensions.Logging.dll.config",
         "lib/netstandard2.0/Uno.UI.Adapter.Microsoft.Extensions.Logging.pdb",
         "uno.png",
-        "uno.ui.adapter.microsoft.extensions.logging.4.0.11.nupkg.sha512",
+        "uno.ui.adapter.microsoft.extensions.logging.4.0.13.nupkg.sha512",
         "uno.ui.adapter.microsoft.extensions.logging.nuspec"
       ]
     },
-    "Uno.UI.RemoteControl/4.0.11": {
-      "sha512": "lSmejTeRc/2q+YTajdqMVQGEOQ2lf3mjO7+meFCm/VLYpC+ia5aYKBj9pspJ8RDRirMAvLxmGz5TRvdtYrqj2w==",
+    "Uno.UI.RemoteControl/4.0.13": {
+      "sha512": "38a+Mw3l9oB8Je5VgX0h1HNmCOfphmdy8r9YO6reBcf7Jo8scNuL8fvGbK47ajUUU1BMZ0Fd3it05EY1m6s6Gg==",
       "type": "package",
-      "path": "uno.ui.remotecontrol/4.0.11",
+      "path": "uno.ui.remotecontrol/4.0.13",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -4007,14 +4007,14 @@
         "uno-runtime/webassembly/Uno.UI.RemoteControl.dll",
         "uno-runtime/webassembly/Uno.UI.RemoteControl.dll.config",
         "uno-runtime/webassembly/Uno.UI.RemoteControl.pdb",
-        "uno.ui.remotecontrol.4.0.11.nupkg.sha512",
+        "uno.ui.remotecontrol.4.0.13.nupkg.sha512",
         "uno.ui.remotecontrol.nuspec"
       ]
     },
-    "Uno.UI.Runtime.Skia.Gtk/4.0.11": {
-      "sha512": "Fvnxk89LgyYnW2c9q5zAr+N6kYmbWoqg2pOG9E1+Gi43lQdVqb1dJ4u3OGnaywICzUIvyaUN7zIj3J1CHwwqvg==",
+    "Uno.UI.Runtime.Skia.Gtk/4.0.13": {
+      "sha512": "llH9KDlBhu0IpY/JMvbIyNjhtgJuBuZNZ+RSVmanOdlho7SPudKTDe2ISD0vJrZeSQshHFIvVHhWFk24uvaMAw==",
       "type": "package",
-      "path": "uno.ui.runtime.skia.gtk/4.0.11",
+      "path": "uno.ui.runtime.skia.gtk/4.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4022,21 +4022,21 @@
         "lib/netcoreapp3.1/Uno.UI.Runtime.Skia.Gtk.dll",
         "lib/netcoreapp3.1/Uno.UI.Runtime.Skia.Gtk.pdb",
         "uno.png",
-        "uno.ui.runtime.skia.gtk.4.0.11.nupkg.sha512",
+        "uno.ui.runtime.skia.gtk.4.0.13.nupkg.sha512",
         "uno.ui.runtime.skia.gtk.nuspec"
       ]
     },
-    "Uno.UI.Skia.Gtk/4.0.11": {
-      "sha512": "UaRhM3v++L+nvCmiK74KlG3jMRdytLONT3ruP1QZP9sN+oGqYGkye5iTJvekd8AZqlcboI8DG58MyokEA/AUzg==",
+    "Uno.UI.Skia.Gtk/4.0.13": {
+      "sha512": "+R70fkrEHY8ybTUC2hfrLRIuiAt/C9vUVo/TOlqD4p4nKvkEjv9b2M0rw+TDZeBQGC1i/cxNiz7TrhXmR/Hwfg==",
       "type": "package",
-      "path": "uno.ui.skia.gtk/4.0.11",
+      "path": "uno.ui.skia.gtk/4.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/Uno.UI.Skia.Gtk.props",
         "build/Uno.UI.Skia.Gtk.targets",
         "lib/netstandard1.0/_._",
-        "uno.ui.skia.gtk.4.0.11.nupkg.sha512",
+        "uno.ui.skia.gtk.4.0.13.nupkg.sha512",
         "uno.ui.skia.gtk.nuspec"
       ]
     },
@@ -4059,9 +4059,9 @@
       "Microsoft.Extensions.Logging >= 5.0.0",
       "Microsoft.Extensions.Logging.Console >= 5.0.0",
       "Refractored.MvvmHelpers >= 1.6.2",
-      "Uno.UI.Adapter.Microsoft.Extensions.Logging >= 4.0.11",
-      "Uno.UI.RemoteControl >= 4.0.11",
-      "Uno.UI.Skia.Gtk >= 4.0.11"
+      "Uno.UI.Adapter.Microsoft.Extensions.Logging >= 4.0.13",
+      "Uno.UI.RemoteControl >= 4.0.13",
+      "Uno.UI.Skia.Gtk >= 4.0.13"
     ]
   },
   "packageFolders": {
@@ -4126,15 +4126,15 @@
           },
           "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
             "target": "Package",
-            "version": "[4.0.11, )"
+            "version": "[4.0.13, )"
           },
           "Uno.UI.RemoteControl": {
             "target": "Package",
-            "version": "[4.0.11, )"
+            "version": "[4.0.13, )"
           },
           "Uno.UI.Skia.Gtk": {
             "target": "Package",
-            "version": "[4.0.11, )"
+            "version": "[4.0.13, )"
           }
         },
         "imports": [

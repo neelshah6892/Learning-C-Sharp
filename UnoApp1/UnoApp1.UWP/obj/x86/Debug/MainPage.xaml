@@ -17,10 +17,14 @@
          
         <TextBlock Text="{Binding Value, ElementName=slider}" Margin="20" FontSize="30" />
         <Slider x:ConnectionId='2' x:Name="slider"/>
+            <Grid>
+                <Button></Button>
+            </Grid>
       <Button>Button 1</Button>
       <Button>Button 2</Button>
       <Button>Button 3</Button>
   </StackPanel>
     </Grid>
+    
 </Page>
 

@@ -48,33 +48,30 @@ namespace ConsoleApplication1
 
                 ExcelWorkSheet = ExcelWorkBook.Worksheets[1]; // Compulsory Line in which sheet you want to write data
 
-                //Writing data into excel of 100 rows with 10 column 
+                DateTime yesterday = DateTime.Now.AddDays(-1);
 
-                for (int r = 1; r < 101; r++) //r stands for ExcelRow and c for ExcelColumn
-
+                for (int i = 2; i<16; i++)
                 {
-
-                    // Excel row and column start positions for writing Row=1 and Col=1
-
-                    for (int c = 1; c < 11; c++)
-
-                        ExcelWorkSheet.Cells[r, c] = "R" + r + "C" + c;
-
+                    ExcelWorkSheet.Cells[1, i] = yesterday.ToString("dd-MM-yyyy");
+                    yesterday = DateTime.Now.AddDays(-i);
                 }
+                
+
+                
 
                 ExcelWorkBook.Worksheets[1].Name = "MySheet";//Renaming the Sheet1 to MySheet
 
-                ExcelWorkBook.SaveAs("e:\\Testing.xlsx");
+                //ExcelWorkBook.SaveAs("e:\\Testing.xlsx");
 
-                ExcelWorkBook.Close();
+                //ExcelWorkBook.Close();
 
                 ExcelApp.Quit();
 
-                Marshal.ReleaseComObject(ExcelWorkSheet);
+                //Marshal.ReleaseComObject(ExcelWorkSheet);
 
-                Marshal.ReleaseComObject(ExcelWorkBook);
+                //Marshal.ReleaseComObject(ExcelWorkBook);
 
-                Marshal.ReleaseComObject(ExcelApp);
+                //Marshal.ReleaseComObject(ExcelApp);
 
             }
 
