@@ -1,0 +1,15 @@
+E:\Github\Learning-C-Sharp\Xamarin\FirstApp\FirstApp\obj\Debug\netstandard2.0\FirstApp.csproj.AssemblyReference.cache
+E:\Github\Learning-C-Sharp\Xamarin\FirstApp\FirstApp\obj\Debug\netstandard2.0\FirstApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\Learning-C-Sharp\Xamarin\FirstApp\FirstApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\Github\Learning-C-Sharp\Xamarin\FirstApp\FirstApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\Github\Learning-C-Sharp\Xamarin\FirstApp\FirstApp\obj\Debug\netstandard2.0\FirstApp.AssemblyInfoInputs.cache
+E:\Github\Learning-C-Sharp\Xamarin\FirstApp\FirstApp\obj\Debug\netstandard2.0\FirstApp.AssemblyInfo.cs
+E:\Github\Learning-C-Sharp\Xamarin\FirstApp\FirstApp\obj\Debug\netstandard2.0\FirstApp.csproj.CoreCompileInputs.cache
+E:\Github\Learning-C-Sharp\Xamarin\FirstApp\FirstApp\obj\Debug\netstandard2.0\FirstApp.dll
+E:\Github\Learning-C-Sharp\Xamarin\FirstApp\FirstApp\obj\Debug\netstandard2.0\ref\FirstApp.dll
+E:\Github\Learning-C-Sharp\Xamarin\FirstApp\FirstApp\obj\Debug\netstandard2.0\FirstApp.pdb
+E:\Github\Learning-C-Sharp\Xamarin\FirstApp\FirstApp\bin\Debug\netstandard2.0\FirstApp.deps.json
+E:\Github\Learning-C-Sharp\Xamarin\FirstApp\FirstApp\bin\Debug\netstandard2.0\FirstApp.dll
+E:\Github\Learning-C-Sharp\Xamarin\FirstApp\FirstApp\bin\Debug\netstandard2.0\ref\FirstApp.dll
+E:\Github\Learning-C-Sharp\Xamarin\FirstApp\FirstApp\bin\Debug\netstandard2.0\FirstApp.pdb
+E:\Github\Learning-C-Sharp\Xamarin\FirstApp\FirstApp\obj\Debug\netstandard2.0\XamlC.stamp

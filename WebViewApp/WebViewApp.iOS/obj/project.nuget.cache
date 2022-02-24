@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "8vzGBPC1Iqimf8NroFlHjWRavG/7MFBLaxUakbrxl7gWOAFrqxYbMme/v8wN1AWfUcE0J3gAHjmySsBbeLrCBw==",
+  "success": true,
+  "projectFilePath": "E:\\Github\\Learning-C-Sharp\\WebViewApp\\WebViewApp.iOS\\WebViewApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

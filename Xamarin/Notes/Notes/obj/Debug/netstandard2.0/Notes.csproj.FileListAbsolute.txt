@@ -1,0 +1,10 @@
+E:\Github\Learning-C-Sharp\Xamarin\Notes\Notes\obj\Debug\netstandard2.0\Notes.csproj.AssemblyReference.cache
+E:\Github\Learning-C-Sharp\Xamarin\Notes\Notes\obj\Debug\netstandard2.0\Notes.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\Learning-C-Sharp\Xamarin\Notes\Notes\obj\Debug\netstandard2.0\Notes.AssemblyInfoInputs.cache
+E:\Github\Learning-C-Sharp\Xamarin\Notes\Notes\obj\Debug\netstandard2.0\Notes.AssemblyInfo.cs
+E:\Github\Learning-C-Sharp\Xamarin\Notes\Notes\obj\Debug\netstandard2.0\Notes.csproj.CoreCompileInputs.cache
+E:\Github\Learning-C-Sharp\Xamarin\Notes\Notes\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\Github\Learning-C-Sharp\Xamarin\Notes\Notes\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+E:\Github\Learning-C-Sharp\Xamarin\Notes\Notes\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+E:\Github\Learning-C-Sharp\Xamarin\Notes\Notes\obj\Debug\netstandard2.0\Views\NoteEntryPage.xaml.g.cs
+E:\Github\Learning-C-Sharp\Xamarin\Notes\Notes\obj\Debug\netstandard2.0\Views\NotesPage.xaml.g.cs

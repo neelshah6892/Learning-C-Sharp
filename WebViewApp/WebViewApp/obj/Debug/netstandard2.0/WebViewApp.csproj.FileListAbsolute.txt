@@ -1,0 +1,15 @@
+E:\Github\Learning-C-Sharp\WebViewApp\WebViewApp\bin\Debug\netstandard2.0\WebViewApp.deps.json
+E:\Github\Learning-C-Sharp\WebViewApp\WebViewApp\bin\Debug\netstandard2.0\WebViewApp.dll
+E:\Github\Learning-C-Sharp\WebViewApp\WebViewApp\bin\Debug\netstandard2.0\ref\WebViewApp.dll
+E:\Github\Learning-C-Sharp\WebViewApp\WebViewApp\bin\Debug\netstandard2.0\WebViewApp.pdb
+E:\Github\Learning-C-Sharp\WebViewApp\WebViewApp\obj\Debug\netstandard2.0\WebViewApp.csproj.AssemblyReference.cache
+E:\Github\Learning-C-Sharp\WebViewApp\WebViewApp\obj\Debug\netstandard2.0\WebViewApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\Learning-C-Sharp\WebViewApp\WebViewApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\Github\Learning-C-Sharp\WebViewApp\WebViewApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\Github\Learning-C-Sharp\WebViewApp\WebViewApp\obj\Debug\netstandard2.0\WebViewApp.AssemblyInfoInputs.cache
+E:\Github\Learning-C-Sharp\WebViewApp\WebViewApp\obj\Debug\netstandard2.0\WebViewApp.AssemblyInfo.cs
+E:\Github\Learning-C-Sharp\WebViewApp\WebViewApp\obj\Debug\netstandard2.0\WebViewApp.csproj.CoreCompileInputs.cache
+E:\Github\Learning-C-Sharp\WebViewApp\WebViewApp\obj\Debug\netstandard2.0\XamlC.stamp
+E:\Github\Learning-C-Sharp\WebViewApp\WebViewApp\obj\Debug\netstandard2.0\WebViewApp.dll
+E:\Github\Learning-C-Sharp\WebViewApp\WebViewApp\obj\Debug\netstandard2.0\ref\WebViewApp.dll
+E:\Github\Learning-C-Sharp\WebViewApp\WebViewApp\obj\Debug\netstandard2.0\WebViewApp.pdb

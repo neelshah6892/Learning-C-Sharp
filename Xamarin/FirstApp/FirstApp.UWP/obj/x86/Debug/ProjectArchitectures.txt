@@ -1,0 +1,1 @@
+E:\Github\Learning-C-Sharp\Xamarin\FirstApp\FirstApp.UWP\FirstApp.UWP.csproj;x86
