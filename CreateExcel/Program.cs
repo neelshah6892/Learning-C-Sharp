@@ -91,9 +91,9 @@ namespace ConsoleApplication1
 
 
 
-                foreach (Process process in Process.GetProcessesByName("Excel"))
+                /*foreach (Process process in Process.GetProcessesByName("Excel"))
 
-                    process.Kill();
+                    process.Kill();*/
 
             }
 
