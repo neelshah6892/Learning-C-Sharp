@@ -1,0 +1,203 @@
+﻿@model IEnumerable   
+<CodeFirstDemo.Models.ProjectModels>  
+  
+@{  
+  
+ViewBag.Title = "Index";  
+  
+}  
+  
+  
+    <style type="text/css">  
+  
+.topDiv  
+  
+{  
+  
+width: 50%;  
+  
+margin: 10px auto;  
+  
+background-color: #f2f2f2;  
+  
+text-align: left;  
+  
+padding: 2%;  
+  
+}  
+  
+</style>  
+    <div class="topDiv">  
+        <fieldset style="margin: 2% auto; width: 90%; background-color: #FFEBCD; text-align: center">  
+            <h4>  
+  
+@Html.ActionLink("Add New project", "AddEditProject")  
+  
+</h4>  
+        </fieldset>  
+        <fieldset>  
+            <table style="margin: 2% auto; padding: 5px; width: 90%">  
+                <tr style="background-color: #FFFACD">  
+                    <th>  
+  
+ProjectName  
+  
+</th>  
+                    <th>  
+  
+Location  
+  
+</th>  
+                    <th>  
+  
+Manage  
+  
+</th>  
+                </tr>  
+  
+@{  
+  
+foreach (var item in Model)  
+  
+{  
+  
+  
+                <tr style="background-color: #FFFFF0">  
+                    <td>  
+  
+@item.ProjectName  
+  
+</td>  
+                    <td>  
+  
+@item.Location  
+  
+</td>  
+                    <td>  
+  
+@Html.ActionLink("Edit", "AddEditProject", new { id = @item.Id }) / @Html.ActionLink("Delete", "Delete", new { id = @item.Id })  
+  
+@* /@Html.ActionLink("Details", "ProjectDetails", new { basePath = @item.basePath })*@  
+  
+</td>  
+                </tr>  
+  
+}  
+  
+}  
+  
+  
+            </table>  
+        </fieldset>  
+    </div>  
+
+Now, again go to AdminController and create new view for AddEditProject action with a right click and write the following code:
+
+AddEditProject.cshtml
+
+
+@model MvcXML.Models.ProjectModels  
+  
+@{  
+  
+ViewBag.Title = "AddEditProject";  
+  
+}  
+  
+  
+<style type="text/css">  
+  
+.topDiv  
+  
+{  
+  
+width: 50%;  
+  
+margin: 10px auto;  
+  
+background-color: #f2f2f2;  
+  
+text-align: center;  
+  
+padding: 2%;  
+  
+}  
+  
+  
+.innerDiv  
+  
+{  
+  
+margin: 0 auto;  
+  
+padding: 1%;  
+  
+color: Gray;  
+  
+}  
+  
+  
+</style>  
+  
+@using (Html.BeginForm())  
+  
+{  
+  
+  
+  
+<div class="topDiv">  
+    <table>  
+        <tr>  
+            <h2>Add/Edit User</h2>  
+        </tr>  
+        <tr>  
+            <td>  
+  
+@Html.LabelFor(m => m.ProjectName) :  
+  
+</td>  
+            <td>  
+                <div class="innerDiv">  
+  
+@Html.TextBoxFor(m => m.ProjectName)  
+  
+@Html.ValidationMessageFor(m => m.ProjectName)  
+  
+</div>  
+            </td>  
+        </tr>  
+        <tr>  
+            <td>  
+  
+@Html.LabelFor(m => m.Location) :  
+  
+</td>  
+            <td>  
+                <div class="innerDiv">  
+  
+@Html.TextBoxFor(m => m.Location)  
+  
+@Html.ValidationMessageFor(m => m.ProjectName)  
+  
+</div>  
+            </td>  
+        </tr>  
+        <tr>  
+            <td colspan="2">  
+                <div class="innerDiv">  
+                    <input id="btnAdd" type="submit" value="@if (Model.IsEdit)  
+  
+{  
+                        <text>Update</text>}  
+  
+else  
+  
+{  
+                        <text>Add</text>}" style=" width:75px" />  
+                    </div>  
+                </td>  
+            </tr>  
+        </table>  
+    </div>  
+  
+}  

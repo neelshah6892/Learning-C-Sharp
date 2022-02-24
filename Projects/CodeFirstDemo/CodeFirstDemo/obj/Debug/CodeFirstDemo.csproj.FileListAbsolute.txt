@@ -1,0 +1,2 @@
+D:\D\Projects\CodeFirstDemo\CodeFirstDemo\obj\Debug\CodeFirstDemo.csproj.AssemblyReference.cache
+D:\D\Projects\CodeFirstDemo\CodeFirstDemo\obj\Debug\CodeFirstDemo.csproj.CoreCompileInputs.cache

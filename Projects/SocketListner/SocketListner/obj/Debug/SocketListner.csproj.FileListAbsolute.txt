@@ -1,0 +1,6 @@
+c:\users\administrator\documents\visual studio 2012\Projects\SocketListner\SocketListner\bin\Debug\SocketListner.exe.config
+c:\users\administrator\documents\visual studio 2012\Projects\SocketListner\SocketListner\bin\Debug\SocketListner.exe
+c:\users\administrator\documents\visual studio 2012\Projects\SocketListner\SocketListner\bin\Debug\SocketListner.pdb
+c:\users\administrator\documents\visual studio 2012\Projects\SocketListner\SocketListner\obj\Debug\SocketListner.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2012\Projects\SocketListner\SocketListner\obj\Debug\SocketListner.exe
+c:\users\administrator\documents\visual studio 2012\Projects\SocketListner\SocketListner\obj\Debug\SocketListner.pdb
