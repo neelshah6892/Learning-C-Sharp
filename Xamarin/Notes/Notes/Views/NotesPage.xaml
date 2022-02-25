@@ -3,6 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Notes.Views.NotesPage"
              Title="Notes">
+
+    <ContentPage.Resources>
+        <!-- Define a visual state for the Selected state of the CollectionView -->
+        <Style TargetType="StackLayout">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor"
+                                        Value="{StaticResource AppPrimaryColor}" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
+
     <!-- Add an item to the toolbar -->
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add"
@@ -11,7 +31,7 @@
 
     <!-- Display notes in a list -->
     <CollectionView x:Name="collectionView"
-                    Margin="20"
+                    Margin="{StaticResource PageMargin}"
                     SelectionMode="Single"
                     SelectionChanged="OnSelectionChanged">
         <CollectionView.ItemsLayout>
@@ -23,9 +43,9 @@
             <DataTemplate>
                 <StackLayout>
                     <Label Text="{Binding Text}"
-                           FontSize="Medium"/>
+                           FontSize="Medium" />
                     <Label Text="{Binding Date}"
-                           TextColor="Silver"
+                           TextColor="{StaticResource TertiaryColor}"
                            FontSize="Small" />
                 </StackLayout>
             </DataTemplate>

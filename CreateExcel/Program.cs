@@ -1,40 +1,32 @@
 ﻿using System;
-
 using System.Collections.Generic;
-
 using System.Linq;
-
 using System.Text;
-
 using System.Diagnostics;
-
 using System.Runtime.InteropServices;
-
 using Microsoft.Office.Interop;
-
 using Microsoft.Office.Interop.Excel;
 
-
-
-namespace ConsoleApplication1
-
+namespace CreateExcel
 {
-
     class Class1
 
     {
-
-        public static void Main(string[] ar)
-
+        public static void Main(string[] args)
         {
+            Application excel = new Application();
+            Workbook workbook = excel.Workbooks.Open("C:\\Users\\Administrator\\Desktop\\RMS Reports\\VAR FILE_14.02.2022.xlsx");
+            excel.Visible = true;
+
+            Worksheet ws = workbook.Worksheets["03.02.2022"];
 
             Application ExcelApp = new Application();
-
+            
             Workbook ExcelWorkBook = null;
 
             Worksheet ExcelWorkSheet = null;
 
-
+            
 
             ExcelApp.Visible = true;
 
@@ -48,30 +40,29 @@ namespace ConsoleApplication1
 
                 ExcelWorkSheet = ExcelWorkBook.Worksheets[1]; // Compulsory Line in which sheet you want to write data
 
-                DateTime yesterday = DateTime.Now.AddDays(-1);
-
-                for (int i = 2; i<16; i++)
-                {
-                    ExcelWorkSheet.Cells[1, i] = yesterday.ToString("dd-MM-yyyy");
-                    yesterday = DateTime.Now.AddDays(-i);
-                }
-                
-
-                
 
                 ExcelWorkBook.Worksheets[1].Name = "MySheet";//Renaming the Sheet1 to MySheet
 
-                //ExcelWorkBook.SaveAs("e:\\Testing.xlsx");
+                ws.Range["A1:A283"].Copy();
+                ExcelWorkSheet.Paste();
+
+                ws.Range["W1:W283"].Copy();
+                ExcelWorkSheet.Range["B1:B283"].Select();
+                ExcelWorkSheet.Paste();
+
+                
+
+                ExcelWorkBook.SaveAs("E:\\Traders Limit.xlsx");
 
                 //ExcelWorkBook.Close();
 
                 ExcelApp.Quit();
+                excel.Quit();
+                Marshal.ReleaseComObject(ExcelWorkSheet);
 
-                //Marshal.ReleaseComObject(ExcelWorkSheet);
+                Marshal.ReleaseComObject(ExcelWorkBook);
 
-                //Marshal.ReleaseComObject(ExcelWorkBook);
-
-                //Marshal.ReleaseComObject(ExcelApp);
+                Marshal.ReleaseComObject(ExcelApp);
 
             }
 
@@ -79,8 +70,7 @@ namespace ConsoleApplication1
 
             {
 
-                Console.WriteLine("Exception: " + exHandle.Message);
-
+                Console.WriteLine("Exception: " + exHandle);
                 Console.ReadLine();
 
             }
@@ -91,12 +81,11 @@ namespace ConsoleApplication1
 
 
 
-                /*foreach (Process process in Process.GetProcessesByName("Excel"))
+                foreach (Process process in Process.GetProcessesByName("Excel"))
 
-                    process.Kill();*/
+                    process.Kill();
 
             }
-
         }
     }
 }

@@ -58,19 +58,19 @@ namespace VarAnalysis
                     if(ws.Cells[i, 26].Value > ws.Cells[i, 27].Value)
                     {
                         ws.Cells[i, 30] = ws.Cells[i, 26].Value;
-                        ws.Cells[i, 32] = ((ws.Cells[i, 30].Value * 100) / ws.Cells[i, 23].Value);
+                        //ws.Cells[i, 32] = ((ws.Cells[i, 30].Value * 100) / ws.Cells[i, 23].Value);
                     }
                     else if(ws.Cells[i, 27].Value > ws.Cells[i, 26].Value)
                     {
                         ws.Cells[i, 30] = ws.Cells[i, 27].Value;
-                        ws.Cells[i, 32] = ((ws.Cells[i, 30].Value * 100) / ws.Cells[i, 23].Value);
+                        //ws.Cells[i, 32] = ((ws.Cells[i, 30].Value * 100) / ws.Cells[i, 23].Value);
                     }
                 }
                 else
                 {
                     ws.Cells[i, 30] = (ws.Cells[i, 28].Value * 5) / 100000;
-                    ws.Cells[i, 31] = (ws.Cells[i, 28].Value * 5);
-                    ws.Cells[i, 32] = ((ws.Cells[i, 30].Value * 100) / ws.Cells[i, 23].Value);
+                    /*ws.Cells[i, 31] = (ws.Cells[i, 28].Value * 5);
+                    ws.Cells[i, 32] = ((ws.Cells[i, 30].Value * 100) / ws.Cells[i, 23].Value);*/
                 }
             }
                 

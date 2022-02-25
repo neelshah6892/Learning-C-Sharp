@@ -2,7 +2,6 @@ E:\Github\Learning-C-Sharp\VarAnalysis\bin\Debug\net6.0\VarAnalysis.exe
 E:\Github\Learning-C-Sharp\VarAnalysis\bin\Debug\net6.0\VarAnalysis.deps.json
 E:\Github\Learning-C-Sharp\VarAnalysis\bin\Debug\net6.0\VarAnalysis.runtimeconfig.json
 E:\Github\Learning-C-Sharp\VarAnalysis\bin\Debug\net6.0\VarAnalysis.dll
-E:\Github\Learning-C-Sharp\VarAnalysis\bin\Debug\net6.0\ref\VarAnalysis.dll
 E:\Github\Learning-C-Sharp\VarAnalysis\bin\Debug\net6.0\VarAnalysis.pdb
 E:\Github\Learning-C-Sharp\VarAnalysis\obj\Debug\net6.0\VarAnalysis.csproj.AssemblyReference.cache
 E:\Github\Learning-C-Sharp\VarAnalysis\obj\Debug\net6.0\Interop.Microsoft.Office.Interop.Excel.dll
@@ -15,3 +14,4 @@ E:\Github\Learning-C-Sharp\VarAnalysis\obj\Debug\net6.0\VarAnalysis.dll
 E:\Github\Learning-C-Sharp\VarAnalysis\obj\Debug\net6.0\ref\VarAnalysis.dll
 E:\Github\Learning-C-Sharp\VarAnalysis\obj\Debug\net6.0\VarAnalysis.pdb
 E:\Github\Learning-C-Sharp\VarAnalysis\obj\Debug\net6.0\VarAnalysis.genruntimeconfig.cache
+E:\Github\Learning-C-Sharp\VarAnalysis\obj\Debug\net6.0\refint\VarAnalysis.dll

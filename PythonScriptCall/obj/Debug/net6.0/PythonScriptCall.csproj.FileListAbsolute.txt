@@ -2,7 +2,6 @@ E:\Github\Learning-C-Sharp\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.ex
 E:\Github\Learning-C-Sharp\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.deps.json
 E:\Github\Learning-C-Sharp\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.runtimeconfig.json
 E:\Github\Learning-C-Sharp\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.dll
-E:\Github\Learning-C-Sharp\PythonScriptCall\bin\Debug\net6.0\ref\PythonScriptCall.dll
 E:\Github\Learning-C-Sharp\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.pdb
 E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.AssemblyReference.cache
 E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.GeneratedMSBuildEditorConfig.editorconfig
@@ -18,3 +17,4 @@ E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.cs
 E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\Interop.Microsoft.Office.Core.dll
 E:\Github\Learning-C-Sharp\PythonScriptCall\bin\Debug\net6.0\WindowsInput.dll
 E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.CopyComplete
+E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\refint\PythonScriptCall.dll
