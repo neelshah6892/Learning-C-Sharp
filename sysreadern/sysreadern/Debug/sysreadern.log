@@ -1,0 +1,490 @@
+﻿Build started 7/1/2021 12:03:40 PM.
+     1>Project "D:\sysreadern\sysreadern\sysreadern.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"D:\sysread_dll_code_02_04_2015\sysreadlibs 04022015\libs_for_sysread\dgc++_1_0_1_3\dgc++_1_0_1_3\include" /I"D:\sysread_dll_code_02_04_2015\sysreadlibs 04022015\libs_for_sysread\boost_1_42_0\boost_1_42_0\boost" /ID:\sysreadern\sysreadern\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D SYSREADERN_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\sysreadern.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"D:\sysread_dll_code_02_04_2015\sysreadlibs 04022015\libs_for_sysread\dgc++_1_0_1_3\dgc++_1_0_1_3\include" /I"D:\sysread_dll_code_02_04_2015\sysreadlibs 04022015\libs_for_sysread\boost_1_42_0\boost_1_42_0\boost" /ID:\sysreadern\sysreadern\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D SYSREADERN_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"D:\sysread_dll_code_02_04_2015\sysreadlibs 04022015\libs_for_sysread\dgc++_1_0_1_3\dgc++_1_0_1_3\include" /I"D:\sysread_dll_code_02_04_2015\sysreadlibs 04022015\libs_for_sysread\boost_1_42_0\boost_1_42_0\boost" /ID:\sysreadern\sysreadern\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D SYSREADERN_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\sysreadern.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt sysreadern.cpp tri_logger.cpp util.cpp
+         util.cpp
+     1>d:\sysreadern\sysreadern\util.cpp(35): warning C4101: 'b' : unreferenced local variable
+         tri_logger.cpp
+         sysreadern.cpp
+     1>d:\sysreadern\sysreadern\sysreadern.h(740): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(742): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(744): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(745): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(746): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(747): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(748): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(749): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(750): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(751): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(752): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(753): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(754): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(755): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(756): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(757): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(758): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(759): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(760): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(761): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(762): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(763): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(764): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(765): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(766): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(767): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(768): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(769): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(770): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(771): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(772): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(774): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(775): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(776): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(777): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(778): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(779): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(780): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(781): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(782): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(783): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(784): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(785): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(786): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(787): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(788): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(789): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(790): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(792): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(793): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(794): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(796): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(797): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(798): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(799): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(800): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(802): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(804): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(809): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(811): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(812): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(813): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(815): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(816): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(817): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(818): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(819): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(820): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(821): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(822): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(823): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(824): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(825): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(826): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(827): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(828): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(829): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(830): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(831): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(832): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(833): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(834): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(835): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(836): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(837): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(838): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(839): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(840): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(841): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(842): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(843): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(844): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(845): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(846): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(847): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(848): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(849): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(850): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(851): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(852): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(853): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(854): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(855): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(856): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(857): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(858): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(859): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(860): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(861): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(862): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(863): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(864): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(865): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(866): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(867): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(869): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(870): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.h(871): warning C4309: 'initializing' : truncation of constant value
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(35): warning C4005: 'IP_ADD_MEMBERSHIP' : macro redefinition
+                 c:\program files (x86)\windows kits\8.0\include\um\winsock.h(341) : see previous definition of 'IP_ADD_MEMBERSHIP'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(36): warning C4005: 'IP_MULTICAST_TTL' : macro redefinition
+                 c:\program files (x86)\windows kits\8.0\include\um\winsock.h(339) : see previous definition of 'IP_MULTICAST_TTL'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(37): warning C4005: 'IP_MULTICAST_IF' : macro redefinition
+                 c:\program files (x86)\windows kits\8.0\include\um\winsock.h(338) : see previous definition of 'IP_MULTICAST_IF'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(135): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(257): warning C4101: 'TotalBuyQuantity' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(258): warning C4101: 'TotalSellQuantity' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(388): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(510): warning C4101: 'TotalBuyQuantity' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(511): warning C4101: 'TotalSellQuantity' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(776): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(778): warning C4996: 'asctime': This function or variable may be unsafe. Consider using asctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\time.h(153) : see declaration of 'asctime'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1013): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1016): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1033): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(987): warning C4101: 'cmbroadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(999): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(985): warning C4101: 'cmmsgHdr' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1114): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1117): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1134): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1087): warning C4101: 'cmbroadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1099): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1085): warning C4101: 'cmmsgHdr' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1212): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1215): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1233): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1274): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1199): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1330): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1354): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1358): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1363): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1369): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1374): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1382): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1404): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1407): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1428): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1442): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1451): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1461): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1471): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1490): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1344): warning C4101: 'cmbroadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1390): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1342): warning C4101: 'cmmsgHdr' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1571): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1574): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1591): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1544): warning C4101: 'cmbroadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1556): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1542): warning C4101: 'cmmsgHdr' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1644): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1653): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1726): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1737): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1754): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1760): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1777): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1785): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1804): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1876): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1879): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1896): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1907): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1850): warning C4101: 'cmbroadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1862): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1848): warning C4101: 'cmmsgHdr' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1955): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1956): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1968): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1971): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1988): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1999): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2000): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2005): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2006): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1940): warning C4101: 'cmbroadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1952): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(1938): warning C4101: 'cmmsgHdr' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2033): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2042): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2047): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2052): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2057): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2108): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2111): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2130): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2172): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2177): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2205): warning C4129: 'G' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2209): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2214): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2219): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2224): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2070): warning C4101: 'cmbroadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2069): warning C4101: 'broadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2091): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2068): warning C4101: 'cmmsgHdr' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2237): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2250): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2254): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2264): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2268): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2313): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2330): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2333): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2354): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2383): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2392): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2421): warning C4129: 'G' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2428): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2432): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2442): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2445): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2284): warning C4101: 'cmbroadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2283): warning C4101: 'broadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2304): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2282): warning C4101: 'cmmsgHdr' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2459): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2474): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2478): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2482): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2487): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2535): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2553): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2557): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2576): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2592): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2612): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2620): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2649): warning C4129: 'G' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2655): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2659): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2663): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2667): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2506): warning C4101: 'cmbroadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2505): warning C4101: 'broadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2526): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2504): warning C4101: 'cmmsgHdr' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2686): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2695): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2700): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2705): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2710): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2761): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2764): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2783): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2811): warning C4244: 'argument' : conversion from 'long' to 'u_short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2814): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2821): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2827): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2833): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2839): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2845): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2851): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2866): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2875): warning C4129: 'G' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2879): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2884): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2889): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2894): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2723): warning C4101: 'cmbroadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2722): warning C4101: 'broadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2744): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(2721): warning C4101: 'cmmsgHdr' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3300): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3303): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3322): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3270): warning C4101: 'cmbroadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3286): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3268): warning C4101: 'cmmsgHdr' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3506): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3509): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3526): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3479): warning C4101: 'cmbroadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3491): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3477): warning C4101: 'cmmsgHdr' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3609): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3612): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3629): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3583): warning C4101: 'cmbroadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3595): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3581): warning C4101: 'cmmsgHdr' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3686): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3725): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3743): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3747): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3767): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3704): warning C4101: 'cmbroadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3716): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3702): warning C4101: 'cmmsgHdr' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3920): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3960): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3978): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3982): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4034): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4051): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(3951): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4114): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4121): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4123): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4124): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4170): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4174): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4230): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4232): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4255): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4257): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4258): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4259): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4260): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4261): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4263): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4264): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4321): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4325): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4371): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4373): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4374): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(4392): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(5063): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(5066): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(5083): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(5036): warning C4101: 'cmbroadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(5048): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(5034): warning C4101: 'cmmsgHdr' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(5212): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(5215): warning C4129: ' ' : unrecognized character escape sequence
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(5232): warning C4244: '+=' : conversion from 'unsigned long' to 'short', possible loss of data
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(5185): warning C4101: 'cmbroadcastOnlyMBP' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(5197): warning C4101: 'token' : unreferenced local variable
+     1>d:\sysreadern\sysreadern\sysreadern.cpp(5183): warning C4101: 'cmmsgHdr' : unreferenced local variable
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\sysreadern\sysreadern\Debug\sysreadern.dll" /INCREMENTAL /NOLOGO /LIBPATH:"D:\sysread_dll_code_02_04_2015\sysreadlibs 04022015\libs_for_sysread\SysreadDll_December_2010_sysreadern_01122010_sysreadern\lib" /LIBPATH:"D:\sysread_dll_code_02_04_2015\sysreadlibs 04022015\libs_for_sysread\sysreadern_src_022310_sysreadern\lib" /LIBPATH:"D:\sysread_dll_code_02_04_2015\sysreadlibs 04022015\libs_for_sysread\C_Program Files_Microsoft SDKs_Windows_v6.0A\Lib" liblzo.lib WS2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\sysreadern\sysreadern\Debug\sysreadern.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\sysreadern\sysreadern\Debug\sysreadern.lib" /MACHINE:X86 /SAFESEH /DLL Debug\dllmain.obj
+         Debug\stdafx.obj
+         Debug\sysreadern.obj
+         Debug\tri_logger.obj
+         Debug\util.obj
+     1>dllmain.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+            Creating library D:\sysreadern\sysreadern\Debug\sysreadern.lib and object D:\sysreadern\sysreadern\Debug\sysreadern.exp
+         sysreadern.vcxproj -> D:\sysreadern\sysreadern\Debug\sysreadern.dll
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\bscmake.exe /nologo /o"D:\sysreadern\sysreadern\Debug\sysreadern.bsc" Debug\dllmain.sbr Debug\stdafx.sbr Debug\sysreadern.sbr Debug\tri_logger.sbr Debug\util.sbr
+     1>Done Building Project "D:\sysreadern\sysreadern\sysreadern.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.16
