@@ -141,9 +141,13 @@ namespace PythonScriptCall
 
             Console.WriteLine("Change of date and value");
             ws.Cells[2, 22] = expiry;
+            Thread.Sleep(1000);
             ws.Cells[1, 22] = yesterday.Date;
+            Thread.Sleep(1000);
             ws.Cells[1, 13] = ws.Cells[1, 23];
-            ws.Cells[1, 14] = ws.Cells[1, 15];
+            Thread.Sleep(1000);
+            ws.Cells[1, 14] = ws.Cells[1, 15].Value;
+            Thread.Sleep(1000);
             workbook.Save();
             excelApp.Quit();
 
