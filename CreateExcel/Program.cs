@@ -22,26 +22,21 @@ namespace CreateExcel
 
             Application ExcelApp = new Application();
             
-            Workbook ExcelWorkBook = null;
+            Workbook? ExcelWorkBook = null;
 
-            Worksheet ExcelWorkSheet = null;
-
-            
+            Worksheet? ExcelWorkSheet = null;
 
             ExcelApp.Visible = true;
 
             ExcelWorkBook = ExcelApp.Workbooks.Add(XlWBATemplate.xlWBATWorksheet);
 
-            // ExcelWorkBook.Worksheets.Add(); //Adding New Sheet in Excel Workbook
+            //ExcelWorkBook.Worksheets.Add(); //Adding New Sheet in Excel Workbook
 
             try
-
             {
+                ExcelWorkSheet = ExcelWorkBook.Worksheets[1]; //Compulsory Line in which sheet you want to write data
 
-                ExcelWorkSheet = ExcelWorkBook.Worksheets[1]; // Compulsory Line in which sheet you want to write data
-
-
-                ExcelWorkBook.Worksheets[1].Name = "MySheet";//Renaming the Sheet1 to MySheet
+                ExcelWorkBook.Worksheets[1].Name = "MySheet"; //Renaming the Sheet1 to MySheet
 
                 ws.Range["A1:A283"].Copy();
                 ExcelWorkSheet.Paste();
@@ -49,8 +44,6 @@ namespace CreateExcel
                 ws.Range["W1:W283"].Copy();
                 ExcelWorkSheet.Range["B1:B283"].Select();
                 ExcelWorkSheet.Paste();
-
-                
 
                 ExcelWorkBook.SaveAs("E:\\Traders Limit.xlsx");
 
@@ -63,28 +56,16 @@ namespace CreateExcel
                 Marshal.ReleaseComObject(ExcelWorkBook);
 
                 Marshal.ReleaseComObject(ExcelApp);
-
             }
-
             catch (Exception exHandle)
-
             {
-
                 Console.WriteLine("Exception: " + exHandle);
                 Console.ReadLine();
-
             }
-
             finally
-
             {
-
-
-
                 foreach (Process process in Process.GetProcessesByName("Excel"))
-
                     process.Kill();
-
             }
         }
     }
