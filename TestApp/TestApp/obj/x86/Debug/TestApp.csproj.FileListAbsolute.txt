@@ -1,0 +1,4 @@
+D:\TestApp\TestApp\bin\Debug\TestApp.exe
+D:\TestApp\TestApp\bin\Debug\TestApp.pdb
+D:\TestApp\TestApp\obj\x86\Debug\TestApp.exe
+D:\TestApp\TestApp\obj\x86\Debug\TestApp.pdb

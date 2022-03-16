@@ -1,0 +1,4 @@
+D:\InternalTradesCheck\InternalTradesCheck\bin\Debug\InternalTradesCheck.exe
+D:\InternalTradesCheck\InternalTradesCheck\bin\Debug\InternalTradesCheck.pdb
+D:\InternalTradesCheck\InternalTradesCheck\obj\x86\Debug\InternalTradesCheck.exe
+D:\InternalTradesCheck\InternalTradesCheck\obj\x86\Debug\InternalTradesCheck.pdb
