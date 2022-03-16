@@ -1,0 +1,62 @@
+=IFERROR(VLOOKUP([@[Client_id]],'LIMIT FILE'!$B$2:$O$5036,14,FALSE),0)
+
+=IFERROR(VLOOKUP(CONCATENATE([@[Client_id]],"",[@[SCRIP_SYMBOL]]),'YESTERDAYS DATA'!A:O,15,FALSE),)
+
+=(IF([@[Client_id]]="","",IF([@[OPTIN_TYPE]]="","EQ",IF([@[OPTIN_TYPE]]="FX","FX",IF([@[OPTIN_TYPE]]="CE",(IF([@[STRIKE_PRICE]]<[@[FUTURE_PRICE]],"ITM",IF([@[STRIKE_PRICE]]=[@[FUTURE_PRICE]],"ATM","OTM"))),(IF([@[STRIKE_PRICE]]<[@[FUTURE_PRICE]],"OTM",IF([@[STRIKE_PRICE]]=[@[FUTURE_PRICE]],"ATM","ITM"))))))))
+
+=IFERROR(VLOOKUP(CONCATENATE([@[Client_id]],[@[SCRIP_SYMBOL]]),'LIMIT FILE'!$D$2:$L$3089,9,0),"")
+
+=IFERROR(VLOOKUP(CONCATENATE([@[Client_id]],[@[SCRIP_SYMBOL]]),'LIMIT FILE'!$D$2:$L$3089,8,0),"")
+
+=IFERROR(VLOOKUP(CONCATENATE([@[Client_id]],[@[SCRIP_SYMBOL]]),'LIMIT FILE'!D:L,6,FALSE),"")
+
+=IFERROR(VLOOKUP([@[Client_id]],'LIMIT FILE'!$B$2:$N$3089,13,0),"")
+
+=IF(OR([@[OPTIN_TYPE]]="CE",[@[OPTIN_TYPE]]="PE"),([@LTP]*-[@NETQTY]),0)/10^5
+
+=IF([@PREMIUM]<>0,IF([@[FX IN AT OUT]]="ITM",([@PREMIUM]-(ABS([@[FUTURE_PRICE]]-[@[STRIKE_PRICE]]))*[@NETQTY]),[@PREMIUM]),"")
+
+=IF([@[OPTIN_TYPE]]="FX",[@NETQTY],0)
+
+=IFERROR(VLOOKUP([@[Scrip_Name]],'LIMIT FILE'!$V$1:$W$6,2,FALSE),0)*[@[Qty_Fut]]/10^7
+
+=IF([@sectore]="INDEX",IF([@NETQTY]>0,IF([@[OPTIN_TYPE]]="CE",[@NETQTY],0),0),0)
+
+=IFERROR(VLOOKUP([@[Scrip_Name]],'LIMIT FILE'!$V$1:$W$3,2,0)*[@[LONG CE]]/10^7,0)
+
+=IF([@sectore]="INDEX",IF([@NETQTY]<0,IF([@[OPTIN_TYPE]]="CE",[@NETQTY],0),0),0)
+
+=IFERROR(VLOOKUP([@[Scrip_Name]],'LIMIT FILE'!$V$1:$W$3,2,0)*[@[SHORT CE]]/10^7,0)
+
+=IF([@sectore]="INDEX",IF([@NETQTY]>0,IF([@[OPTIN_TYPE]]="PE",[@NETQTY],0),0),0)
+
+=IFERROR(VLOOKUP([@[Scrip_Name]],'LIMIT FILE'!$V$1:$W$3,2,0)*[@[LONG PE]]*-1/10^7,0)
+
+=IF([@sectore]="INDEX",IF([@NETQTY]<0,IF([@[OPTIN_TYPE]]="PE",[@NETQTY],0),0),0)
+
+=IFERROR(VLOOKUP([@[Scrip_Name]],'LIMIT FILE'!$V$1:$W$3,2,0)*[@[SHORT PE]]*-1/10^7,0)
+
+=[@[LONG CE VALUE]]+[@[SHORT PE VALUE]]
+
+=[@[SHORT CE VALUE]]+[@[LONG PE VALUE]]
+
+=[@[LONG CE VALUE]]+[@[SHORT CE VALUE]]+[@[LONG PE VALUE]]+[@[SHORT PE VALUE]]
+
+=IFERROR(VLOOKUP(CONCATENATE([@[Client_id]],[@[SCRIP_SYMBOL]]),'YESTERDAYS DATA'!$A:$BP,67,0),0)
+
+=[@[FUTURE_PRICE]]*([@IV]*100)*0.00052
+
+=IF([@[FX IN AT OUT]]="OTM",0,IF([@[OPTIN_TYPE]]="PE",[@NETQTY]*-1,[@NETQTY]))
+
+=IFERROR(VLOOKUP([@[Scrip_Name]],'SCRIPT LIMIT'!$B$2:$E$180,4,0),)
+
+=IFERROR(VLOOKUP(CONCATENATE([@[Client_id]],[@[SCRIP_SYMBOL]]),'YESTERDAYS DATA'!A:L,12,FALSE),0)
+
+=IF([@[OPTIN_TYPE]]<>"",IF([@[BOD QTY]]<0,[@BQTY],IF(AND([@NETQTY]>[@BQTY],[@[BOD QTY]]<>[@NETQTY]),[@BQTY] -ABS([@[BOD QTY]]),"")))
+
+=IF([@[OPTIN_TYPE]]<>"",IF([@[BOD QTY]]>0,[@SQTY],IF(AND([@NETQTY]<[@SQTY],[@[BOD QTY]]<>[@NETQTY]),[@SQTY] +[@[BOD QTY]],"")))
+
+=IF([@[Vega_Price]]>0,[@[Vega_Price]],"")
+
+=IF([@[Vega_Price]]<0,[@[Vega_Price]],"")
+

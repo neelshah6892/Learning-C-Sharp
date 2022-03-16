@@ -1,0 +1,8 @@
+prop tab tab
+
+ctor tab tab
+
+add-migration "initialsetup"
+
+update-database
+

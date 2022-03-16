@@ -1,0 +1,18 @@
+New Daily Movement File:
+=VLOOKUP(A2,  '[New Daily Movement.xlsm]Sheet2'!$A$4:$U$203, 9, 0)
+
+IV Print File:
+=VLOOKUP(A2, '[IV PRINT.xlsx]Sheet1'!$A$2:$H$203, 8,0)
+
+1.py
+bhacopy download
+both files on desktop
+untitles42 notebook
+change date as per file date
+change no of days
+change red field value to left field value
+vlookup from daily vol data
+paste on value and remove formulae
+save file and close
+open file and ctrl+m
+done
