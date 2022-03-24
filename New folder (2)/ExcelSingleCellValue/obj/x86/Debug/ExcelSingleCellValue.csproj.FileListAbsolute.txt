@@ -1,0 +1,7 @@
+C:\Users\Administrator\source\repos\ExcelSingleCellValue\bin\x86\Debug\ExcelSingleCellValue.exe
+C:\Users\Administrator\source\repos\ExcelSingleCellValue\bin\x86\Debug\ExcelSingleCellValue.pdb
+C:\Users\Administrator\source\repos\ExcelSingleCellValue\obj\x86\Debug\ExcelSingleCellValue.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\ExcelSingleCellValue\obj\x86\Debug\ExcelSingleCellValue.csproj.ResolveComReference.cache
+C:\Users\Administrator\source\repos\ExcelSingleCellValue\obj\x86\Debug\ExcelSingleCellValue.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\ExcelSingleCellValue\obj\x86\Debug\ExcelSingleCellValue.exe
+C:\Users\Administrator\source\repos\ExcelSingleCellValue\obj\x86\Debug\ExcelSingleCellValue.pdb

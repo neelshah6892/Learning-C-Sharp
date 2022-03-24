@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "95ea26a2-f76d-497f-ad84-13e241a50ed0": {
+      "ProjectGuid": "95ea26a2-f76d-497f-ad84-13e241a50ed0",
+      "DisplayName": "VWAP",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -1,0 +1,14 @@
+C:\Users\Administrator\source\repos\TradeCheck\bin\Debug\TradeCheck.exe
+C:\Users\Administrator\source\repos\TradeCheck\bin\Debug\TradeCheck.pdb
+C:\Users\Administrator\source\repos\TradeCheck\bin\Debug\LinqToExcel.dll
+C:\Users\Administrator\source\repos\TradeCheck\bin\Debug\Remotion.Data.Linq.dll
+C:\Users\Administrator\source\repos\TradeCheck\bin\Debug\Remotion.dll
+C:\Users\Administrator\source\repos\TradeCheck\bin\Debug\Remotion.Interfaces.dll
+C:\Users\Administrator\source\repos\TradeCheck\bin\Debug\LinqToExcel.xml
+C:\Users\Administrator\source\repos\TradeCheck\obj\Debug\TradeCheck.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\TradeCheck\obj\Debug\TradeCheck.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\TradeCheck\obj\Debug\TradeCheck.csproj.CopyComplete
+C:\Users\Administrator\source\repos\TradeCheck\obj\Debug\TradeCheck.exe
+C:\Users\Administrator\source\repos\TradeCheck\obj\Debug\TradeCheck.pdb
+C:\Users\Administrator\source\repos\TradeCheck\obj\Debug\TradeCheck.csproj.ResolveComReference.cache
+C:\Users\Administrator\source\repos\TradeCheck\bin\Debug\TradeCheck.exe.config

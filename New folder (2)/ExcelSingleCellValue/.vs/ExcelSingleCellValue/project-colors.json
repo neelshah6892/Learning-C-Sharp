@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "cee13a5b-c974-49cd-8a3e-0623d933eb2a": {
+      "ProjectGuid": "cee13a5b-c974-49cd-8a3e-0623d933eb2a",
+      "DisplayName": "ExcelSingleCellValue",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

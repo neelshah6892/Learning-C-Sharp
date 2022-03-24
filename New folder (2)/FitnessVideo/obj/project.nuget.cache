@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DzHiRgWZyC8cPTA1ADdgS07kEhdPrXW9noM8g1jTxU2wSRb16/kzUNZ6+EMJVep4bnR41UE0cjFCNxn2Y6xOBg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\FitnessVideo\\FitnessVideo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\libvlcsharp\\3.6.1\\libvlcsharp.3.6.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\videolan.libvlc.windows\\3.0.16\\videolan.libvlc.windows.3.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

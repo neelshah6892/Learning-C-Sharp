@@ -1,0 +1,15 @@
+C:\Users\Administrator\source\repos\TestApp\bin\x86\Debug\net6.0\TestApp.exe
+C:\Users\Administrator\source\repos\TestApp\bin\x86\Debug\net6.0\TestApp.deps.json
+C:\Users\Administrator\source\repos\TestApp\bin\x86\Debug\net6.0\TestApp.runtimeconfig.json
+C:\Users\Administrator\source\repos\TestApp\bin\x86\Debug\net6.0\TestApp.dll
+C:\Users\Administrator\source\repos\TestApp\bin\x86\Debug\net6.0\ref\TestApp.dll
+C:\Users\Administrator\source\repos\TestApp\bin\x86\Debug\net6.0\TestApp.pdb
+C:\Users\Administrator\source\repos\TestApp\obj\x86\Debug\net6.0\TestApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\TestApp\obj\x86\Debug\net6.0\TestApp.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\TestApp\obj\x86\Debug\net6.0\TestApp.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\TestApp\obj\x86\Debug\net6.0\TestApp.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\TestApp\obj\x86\Debug\net6.0\TestApp.dll
+C:\Users\Administrator\source\repos\TestApp\obj\x86\Debug\net6.0\ref\TestApp.dll
+C:\Users\Administrator\source\repos\TestApp\obj\x86\Debug\net6.0\TestApp.pdb
+C:\Users\Administrator\source\repos\TestApp\obj\x86\Debug\net6.0\TestApp.genruntimeconfig.cache
+C:\Users\Administrator\source\repos\TestApp\obj\x86\Debug\net6.0\TestApp.csproj.AssemblyReference.cache

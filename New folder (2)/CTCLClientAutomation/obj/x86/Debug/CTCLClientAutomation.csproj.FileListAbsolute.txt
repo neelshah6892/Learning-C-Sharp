@@ -1,0 +1,5 @@
+C:\Users\Administrator\source\repos\CTCLClientAutomation\bin\x86\Debug\CTCLClientAutomation.exe
+C:\Users\Administrator\source\repos\CTCLClientAutomation\bin\x86\Debug\CTCLClientAutomation.pdb
+C:\Users\Administrator\source\repos\CTCLClientAutomation\obj\x86\Debug\CTCLClientAutomation.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\CTCLClientAutomation\obj\x86\Debug\CTCLClientAutomation.exe
+C:\Users\Administrator\source\repos\CTCLClientAutomation\obj\x86\Debug\CTCLClientAutomation.pdb

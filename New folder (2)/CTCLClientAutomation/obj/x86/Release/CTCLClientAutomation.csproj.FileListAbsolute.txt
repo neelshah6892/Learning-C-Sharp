@@ -1,0 +1,6 @@
+C:\Users\Administrator\source\repos\CTCLClientAutomation\bin\x86\Release\CTCLClientAutomation.exe
+C:\Users\Administrator\source\repos\CTCLClientAutomation\bin\x86\Release\CTCLClientAutomation.pdb
+C:\Users\Administrator\source\repos\CTCLClientAutomation\obj\x86\Release\CTCLClientAutomation.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\CTCLClientAutomation\obj\x86\Release\CTCLClientAutomation.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\CTCLClientAutomation\obj\x86\Release\CTCLClientAutomation.exe
+C:\Users\Administrator\source\repos\CTCLClientAutomation\obj\x86\Release\CTCLClientAutomation.pdb

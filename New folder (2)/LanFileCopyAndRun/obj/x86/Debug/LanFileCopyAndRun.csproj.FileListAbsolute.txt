@@ -1,0 +1,6 @@
+C:\Users\Administrator\source\repos\LanFileCopyAndRun\bin\x86\Debug\LanFileCopyAndRun.exe
+C:\Users\Administrator\source\repos\LanFileCopyAndRun\bin\x86\Debug\LanFileCopyAndRun.pdb
+C:\Users\Administrator\source\repos\LanFileCopyAndRun\obj\x86\Debug\LanFileCopyAndRun.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\LanFileCopyAndRun\obj\x86\Debug\LanFileCopyAndRun.exe
+C:\Users\Administrator\source\repos\LanFileCopyAndRun\obj\x86\Debug\LanFileCopyAndRun.pdb
+C:\Users\Administrator\source\repos\LanFileCopyAndRun\obj\x86\Debug\LanFileCopyAndRun.csproj.AssemblyReference.cache
