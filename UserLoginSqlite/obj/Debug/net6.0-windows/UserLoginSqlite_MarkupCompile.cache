@@ -1,5 +1,5 @@
 ﻿UserLoginSqlite
-1.0.0.0
+
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 E:\Github\Learning-C-Sharp\UserLoginSqlite\App.xaml
 2-2109507462
 
-6-1695516925
+4209529921
 212763667300
 MainWindow.xaml;SecondPage.xaml;
 
-True
+False
 

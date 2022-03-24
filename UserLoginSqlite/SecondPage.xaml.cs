@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace UserLoginSqlite
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for SecondPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SecondPage : Window
     {
-        public MainWindow()
+        public SecondPage()
         {
             InitializeComponent();
-        }
-
-        private void Click_Click(object sender, RoutedEventArgs e)
-        {
-            SecondPage secondPage = new SecondPage();
-            secondPage.Show();
         }
     }
 }
