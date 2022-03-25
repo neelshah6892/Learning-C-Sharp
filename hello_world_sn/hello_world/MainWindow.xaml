@@ -5,9 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hello_world"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="263,150,0,0" VerticalAlignment="Top" Height="124" Width="246"/>
-        
-    </Grid>
+        AllowsTransparency="True"
+        Title="MainWindow" Height="450" Width="800" Opacity="0.5" Background="White">
+
 </Window>
