@@ -14,3 +14,7 @@ E:\Github\Learning-C-Sharp\AppSettings\AppSettings\obj\Debug\AppSettings.csproj.
 E:\Github\Learning-C-Sharp\AppSettings\AppSettings\obj\Debug\AppSettings.csproj.CoreCompileInputs.cache
 E:\Github\Learning-C-Sharp\AppSettings\AppSettings\obj\Debug\AppSettings.exe
 E:\Github\Learning-C-Sharp\AppSettings\AppSettings\obj\Debug\AppSettings.pdb
+E:\Github\Learning-C-Sharp\AppSettings\AppSettings\obj\Debug\margin_ctrls.g.cs
+E:\Github\Learning-C-Sharp\AppSettings\AppSettings\obj\Debug\margin_ctrls.baml
+E:\Github\Learning-C-Sharp\AppSettings\AppSettings\obj\Debug\grid_cols_rows.g.cs
+E:\Github\Learning-C-Sharp\AppSettings\AppSettings\obj\Debug\grid_cols_rows.baml
