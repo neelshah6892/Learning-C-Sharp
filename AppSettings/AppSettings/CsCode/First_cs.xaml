@@ -1,0 +1,18 @@
+﻿<Window x:Class="AppSettings.CsCode.First_cs"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppSettings.CsCode"
+        mc:Ignorable="d"
+        Title="First_cs" Height="380" Width="545" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="First_button" Content="First Button" HorizontalAlignment="Left" Margin="160,0,0,0" VerticalAlignment="Center" Width="80" Height="80" Click="First_button_Click"/>
+        <Button x:Name="Second_button" Content="Second Button" HorizontalAlignment="Left" Margin="320,0,0,0" VerticalAlignment="Center" Width="80" Height="80" Click="Second_button_Click"/>
+        <Button x:Name="Change_title_button" Content="Change Window Title" HorizontalAlignment="Left" Margin="200,24,0,0" VerticalAlignment="Top" Width="160" Height="80" Click="Change_title_button_Click"/>
+        <Button x:Name="Change_title" Content="Change Title" HorizontalAlignment="Left" Margin="200,254,0,0" VerticalAlignment="Top" Width="160" Height="80" Click="Change_title_Click"/>
+        <Label x:Name="Label" Content="-------" HorizontalAlignment="Left" Margin="258,0,0,0" VerticalAlignment="Center"/>
+        <TextBox x:Name="Textbox" HorizontalAlignment="Left" Margin="400,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

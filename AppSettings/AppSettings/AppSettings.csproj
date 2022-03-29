@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CsCode\First_cs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="grid_cols_rows.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -66,6 +70,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CsCode\First_cs.xaml.cs">
+      <DependentUpon>First_cs.xaml</DependentUpon>
     </Compile>
     <Compile Include="grid_cols_rows.xaml.cs">
       <DependentUpon>grid_cols_rows.xaml</DependentUpon>
