@@ -59,6 +59,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CsCode\img_opf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="grid_cols_rows.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -73,6 +77,9 @@
     </Compile>
     <Compile Include="CsCode\First_cs.xaml.cs">
       <DependentUpon>First_cs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CsCode\img_opf.xaml.cs">
+      <DependentUpon>img_opf.xaml</DependentUpon>
     </Compile>
     <Compile Include="grid_cols_rows.xaml.cs">
       <DependentUpon>grid_cols_rows.xaml</DependentUpon>
@@ -117,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icons8-settings-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CsCode\icons8-settings-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

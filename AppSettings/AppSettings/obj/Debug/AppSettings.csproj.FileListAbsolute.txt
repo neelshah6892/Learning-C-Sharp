@@ -20,3 +20,5 @@ E:\Github\Learning-C-Sharp\AppSettings\AppSettings\obj\Debug\grid_cols_rows.g.cs
 E:\Github\Learning-C-Sharp\AppSettings\AppSettings\obj\Debug\grid_cols_rows.baml
 E:\Github\Learning-C-Sharp\AppSettings\AppSettings\obj\Debug\CsCode\First_cs.g.cs
 E:\Github\Learning-C-Sharp\AppSettings\AppSettings\obj\Debug\CsCode\First_cs.baml
+E:\Github\Learning-C-Sharp\AppSettings\AppSettings\obj\Debug\CsCode\img_opf.g.cs
+E:\Github\Learning-C-Sharp\AppSettings\AppSettings\obj\Debug\CsCode\img_opf.baml

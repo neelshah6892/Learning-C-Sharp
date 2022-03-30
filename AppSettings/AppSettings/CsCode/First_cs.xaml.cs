@@ -32,8 +32,13 @@ namespace AppSettings.CsCode
 
         private void Second_button_Click(object sender, RoutedEventArgs e)
         {
-
+            //This is comment
+            /*
+             This is multi-line comment
+             */
             MessageBox.Show("Second Buttoon Clicked", "Hello");
+            this.Second_button.IsEnabled = false;
+            this.grid_main.IsEnabled = false;
         }
 
         private void Change_title_button_Click(object sender, RoutedEventArgs e)
@@ -46,6 +51,28 @@ namespace AppSettings.CsCode
             Change_title.Content = "New Button Title";
             Label.Content = "Surprise";
             Textbox.Text = "New Text";
+            this.Change_title.Content = "New";
+            this.Label.Content = "Not really a Surprise";
+            this.Background = Brushes.Transparent;
+            this.grid_main.Background = Brushes.Turquoise;
+            this.Textbox.Background = Brushes.Maroon;
+            this.Textbox.Foreground = Brushes.White;
+
+        }
+
+        private void enable_disable_toggle_Click(object sender, RoutedEventArgs e)
+        {
+            this.grid_main.IsEnabled = true;
+        }
+
+        private void show_Click(object sender, RoutedEventArgs e)
+        {
+            this.Second_button.Visibility = Visibility.Visible;
+        }
+
+        private void hide_Click(object sender, RoutedEventArgs e)
+        {
+            this.Second_button.Visibility = Visibility.Hidden;
         }
     }
 }
