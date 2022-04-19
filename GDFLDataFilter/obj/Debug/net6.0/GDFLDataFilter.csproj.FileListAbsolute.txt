@@ -1,0 +1,17 @@
+E:\Github\Learning-C-Sharp\GDFLDataFilter\bin\Debug\net6.0\GDFLDataFilter.exe
+E:\Github\Learning-C-Sharp\GDFLDataFilter\bin\Debug\net6.0\GDFLDataFilter.deps.json
+E:\Github\Learning-C-Sharp\GDFLDataFilter\bin\Debug\net6.0\GDFLDataFilter.runtimeconfig.json
+E:\Github\Learning-C-Sharp\GDFLDataFilter\bin\Debug\net6.0\GDFLDataFilter.dll
+E:\Github\Learning-C-Sharp\GDFLDataFilter\bin\Debug\net6.0\GDFLDataFilter.pdb
+E:\Github\Learning-C-Sharp\GDFLDataFilter\obj\Debug\net6.0\GDFLDataFilter.csproj.AssemblyReference.cache
+E:\Github\Learning-C-Sharp\GDFLDataFilter\obj\Debug\net6.0\Interop.Microsoft.Office.Interop.Excel.dll
+E:\Github\Learning-C-Sharp\GDFLDataFilter\obj\Debug\net6.0\GDFLDataFilter.csproj.ResolveComReference.cache
+E:\Github\Learning-C-Sharp\GDFLDataFilter\obj\Debug\net6.0\GDFLDataFilter.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\Learning-C-Sharp\GDFLDataFilter\obj\Debug\net6.0\GDFLDataFilter.AssemblyInfoInputs.cache
+E:\Github\Learning-C-Sharp\GDFLDataFilter\obj\Debug\net6.0\GDFLDataFilter.AssemblyInfo.cs
+E:\Github\Learning-C-Sharp\GDFLDataFilter\obj\Debug\net6.0\GDFLDataFilter.csproj.CoreCompileInputs.cache
+E:\Github\Learning-C-Sharp\GDFLDataFilter\obj\Debug\net6.0\GDFLDataFilter.dll
+E:\Github\Learning-C-Sharp\GDFLDataFilter\obj\Debug\net6.0\refint\GDFLDataFilter.dll
+E:\Github\Learning-C-Sharp\GDFLDataFilter\obj\Debug\net6.0\GDFLDataFilter.pdb
+E:\Github\Learning-C-Sharp\GDFLDataFilter\obj\Debug\net6.0\GDFLDataFilter.genruntimeconfig.cache
+E:\Github\Learning-C-Sharp\GDFLDataFilter\obj\Debug\net6.0\ref\GDFLDataFilter.dll
