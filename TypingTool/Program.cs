@@ -31,7 +31,6 @@ class TypingTool
         }
         Console.WriteLine($"Match: {match} & Mismatch: {mismatch}");
 
-        
     }
 
     public static double NextDouble(Random rand, double minValue, double maxValue, int decimalPlaces)
