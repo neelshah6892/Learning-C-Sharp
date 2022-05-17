@@ -15,12 +15,12 @@ namespace PythonScriptCall
             DateTime expiry = new DateTime(2022, 05, 26);
 
             //Wednesday, Thursday, Friday
-            //DateTime yesterday = DateTime.Now.AddDays(-1);
-            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
+            DateTime yesterday = DateTime.Now.AddDays(-1);
+            DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
 
             //Monday or 2 day holiday
-            DateTime yesterday = DateTime.Now.AddDays(-3);
-            DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
+            //DateTime yesterday = DateTime.Now.AddDays(-3);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
 
             //Tuesday
             //DateTime yesterday = DateTime.Now.AddDays(-1);
@@ -120,6 +120,7 @@ namespace PythonScriptCall
             File.Delete("C:\\Users\\Administrator\\Desktop\\fo" + yesterday.ToString("ddMMMMyyyy") + "bhav.csv");
 
             Thread.Sleep(2000);
+            
 
             Console.WriteLine("Performing Vlookup....");
 
@@ -128,7 +129,7 @@ namespace PythonScriptCall
             excelApp.Visible = true;
             excelApp.DisplayAlerts = false;
             Worksheet ws = workbook.Worksheets["REPORT"];
-            
+            Thread.Sleep(10000);
             for (int i = 2; i < 204; i++)
             {
                 ws.Cells[i, 3].Formula = String.Format("=VLOOKUP(A"+ i + ", 'C:\\Users\\Administrator\\Desktop\\[IV PRINT.xlsx]Sheet1'!$A$2:$H$203, 8,0)");
