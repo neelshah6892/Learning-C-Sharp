@@ -15,16 +15,16 @@ namespace PythonScriptCall
             DateTime expiry = new DateTime(2022, 06, 30);
 
             //Wednesday, Thursday, Friday
-            DateTime yesterday = DateTime.Now.AddDays(-1);
-            DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+            //DateTime yesterday = DateTime.Now.AddDays(-1);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 
             //Monday or 2 day holiday
             //DateTime yesterday = DateTime.Now.AddDays(-3);
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
 
             //Tuesday
-            //DateTime yesterday = DateTime.Now.AddDays(-1);
-            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
+            DateTime yesterday = DateTime.Now.AddDays(-1);
+            DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
 
             //1 day holiday
             //DateTime yesterday = DateTime.Now.AddDays(-2);
@@ -119,7 +119,7 @@ namespace PythonScriptCall
             File.Delete("C:\\Users\\Administrator\\Desktop\\newfile1.xlsx");
             File.Delete("C:\\Users\\Administrator\\Desktop\\fo" + yesterday.ToString("ddMMMMyyyy") + "bhav.csv");
 
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
             
 
             Console.WriteLine("Performing Vlookup....");
@@ -152,6 +152,13 @@ namespace PythonScriptCall
             workbook.Save();
             excelApp.Quit();
 
+            foreach (Process processes in Process.GetProcessesByName("Excel"))
+            {
+                processes.Kill();
+            }
+                
+
+            Thread.Sleep(2000);
 
             Console.WriteLine("Macro Process");
             Application excel = new Application();
@@ -164,6 +171,11 @@ namespace PythonScriptCall
             
             wbook.Save();
             excel.Quit();
+
+            foreach (Process processes in Process.GetProcessesByName("Excel"))
+            {
+                processes.Kill();
+            }
 
             File.Copy("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx", "C:\\Users\\Administrator\\Desktop\\One Minute Data\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
             File.Delete("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
