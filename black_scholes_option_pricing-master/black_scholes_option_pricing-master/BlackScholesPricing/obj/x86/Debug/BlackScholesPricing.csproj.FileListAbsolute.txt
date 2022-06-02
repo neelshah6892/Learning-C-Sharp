@@ -10,3 +10,9 @@ D:\black_scholes_option_pricing-master\black_scholes_option_pricing-master\Black
 D:\black_scholes_option_pricing-master\black_scholes_option_pricing-master\BlackScholesPricing\obj\x86\Debug\BlackScholesPricing.csproj.CoreCompileInputs.cache
 D:\black_scholes_option_pricing-master\black_scholes_option_pricing-master\BlackScholesPricing\obj\x86\Debug\BlackScholesPricing.exe
 D:\black_scholes_option_pricing-master\black_scholes_option_pricing-master\BlackScholesPricing\obj\x86\Debug\BlackScholesPricing.pdb
+E:\Github\Learning-C-Sharp\black_scholes_option_pricing-master\black_scholes_option_pricing-master\BlackScholesPricing\bin\Debug\BlackScholesPricing.exe
+E:\Github\Learning-C-Sharp\black_scholes_option_pricing-master\black_scholes_option_pricing-master\BlackScholesPricing\bin\Debug\BlackScholesPricing.pdb
+E:\Github\Learning-C-Sharp\black_scholes_option_pricing-master\black_scholes_option_pricing-master\BlackScholesPricing\obj\x86\Debug\BlackScholesPricing.csproj.AssemblyReference.cache
+E:\Github\Learning-C-Sharp\black_scholes_option_pricing-master\black_scholes_option_pricing-master\BlackScholesPricing\obj\x86\Debug\BlackScholesPricing.csproj.CoreCompileInputs.cache
+E:\Github\Learning-C-Sharp\black_scholes_option_pricing-master\black_scholes_option_pricing-master\BlackScholesPricing\obj\x86\Debug\BlackScholesPricing.exe
+E:\Github\Learning-C-Sharp\black_scholes_option_pricing-master\black_scholes_option_pricing-master\BlackScholesPricing\obj\x86\Debug\BlackScholesPricing.pdb
