@@ -117,7 +117,7 @@ namespace PythonScriptCall
             Console.WriteLine("Ended Process 2....");
 
             File.Delete("C:\\Users\\Administrator\\Desktop\\newfile1.xlsx");
-            File.Delete("C:\\Users\\Administrator\\Desktop\\fo" + yesterday.ToString("ddMMMMyyyy") + "bhav.csv");
+            File.Delete("C:\\Users\\Administrator\\Desktop\\fo" + yesterday.ToString("ddMMMyyyy") + "bhav.csv");
 
             Thread.Sleep(1000);
             
