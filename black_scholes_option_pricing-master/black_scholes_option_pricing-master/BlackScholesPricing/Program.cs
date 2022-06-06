@@ -14,15 +14,15 @@ namespace BlackScholesPricing
 
 
             // option objects
-            Pricer obj1 = new Pricer(120.0, 100.0, 0.05, 0.2, 1, 'c');
-            Pricer obj2 = new Pricer(120.0, 100.0, 0.05, 0.2, 1, 'p');
+            Pricer obj1 = new Pricer(686.25, 690, 0.0, 24.86, 27, 'c');
+            Pricer obj2 = new Pricer(686.25, 690, 0.0, 25.39, 27, 'p');
             double callPrice = obj1.bs();
             double putPrice = obj2.bs();
 
 
             // greek objects
-            Greeks greeks1 = new Greeks(120.0, 100.0, 0.05, 0.2, 1, 'c');
-            Greeks greeks2 = new Greeks(120.0, 100.0, 0.05, 0.2, 1, 'p');
+            Greeks greeks1 = new Greeks(686.25, 690, 0.0, 24.86, 27, 'c');
+            Greeks greeks2 = new Greeks(686.25, 690, 0.0, 25.39, 27, 'p');
 
 
             // output
