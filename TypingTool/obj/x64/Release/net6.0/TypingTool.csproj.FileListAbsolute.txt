@@ -1,0 +1,15 @@
+E:\Github\Learning-C-Sharp\TypingTool\bin\x64\Release\net6.0\TypingTool.exe
+E:\Github\Learning-C-Sharp\TypingTool\bin\x64\Release\net6.0\TypingTool.deps.json
+E:\Github\Learning-C-Sharp\TypingTool\bin\x64\Release\net6.0\TypingTool.runtimeconfig.json
+E:\Github\Learning-C-Sharp\TypingTool\bin\x64\Release\net6.0\TypingTool.dll
+E:\Github\Learning-C-Sharp\TypingTool\bin\x64\Release\net6.0\TypingTool.pdb
+E:\Github\Learning-C-Sharp\TypingTool\obj\x64\Release\net6.0\TypingTool.csproj.AssemblyReference.cache
+E:\Github\Learning-C-Sharp\TypingTool\obj\x64\Release\net6.0\TypingTool.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\Learning-C-Sharp\TypingTool\obj\x64\Release\net6.0\TypingTool.AssemblyInfoInputs.cache
+E:\Github\Learning-C-Sharp\TypingTool\obj\x64\Release\net6.0\TypingTool.AssemblyInfo.cs
+E:\Github\Learning-C-Sharp\TypingTool\obj\x64\Release\net6.0\TypingTool.csproj.CoreCompileInputs.cache
+E:\Github\Learning-C-Sharp\TypingTool\obj\x64\Release\net6.0\TypingTool.dll
+E:\Github\Learning-C-Sharp\TypingTool\obj\x64\Release\net6.0\refint\TypingTool.dll
+E:\Github\Learning-C-Sharp\TypingTool\obj\x64\Release\net6.0\TypingTool.pdb
+E:\Github\Learning-C-Sharp\TypingTool\obj\x64\Release\net6.0\TypingTool.genruntimeconfig.cache
+E:\Github\Learning-C-Sharp\TypingTool\obj\x64\Release\net6.0\ref\TypingTool.dll
