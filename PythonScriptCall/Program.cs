@@ -15,12 +15,12 @@ namespace PythonScriptCall
             DateTime expiry = new DateTime(2022, 06, 30);
 
             //Wednesday, Thursday, Friday
-            DateTime yesterday = DateTime.Now.AddDays(-1);
-            DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
+            //DateTime yesterday = DateTime.Now.AddDays(-1);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
 
             //Monday or 2 day holiday
-            //DateTime yesterday = DateTime.Now.AddDays(-3);
-            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
+            DateTime yesterday = DateTime.Now.AddDays(-3);
+            DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
 
             //Tuesday
             //DateTime yesterday = DateTime.Now.AddDays(-1);
@@ -91,7 +91,7 @@ namespace PythonScriptCall
             File.Delete("E:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
 
             Thread.Sleep(5000);
-
+            File.Delete("G:\\Yash_1\\iv_daily\\data\\GFDLNFO_BACKADJUSTED_" + yesterday.ToString("ddMMyyyy") + ".csv");
             Console.WriteLine("Started Process 2....");
             var cmd2 = "G:\\Yash_1\\iv_daily\\2.py";
             var process2 = new Process
@@ -179,7 +179,6 @@ namespace PythonScriptCall
 
             File.Delete("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
             File.Delete("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
-            File.Delete("G:\\Yash_1\\iv_daily\\data\\GFDLNFO_BACKADJUSTED_" + yesterday.ToString("ddMMyyyy") + ".csv");
             Console.WriteLine("Completed");
         }
 
