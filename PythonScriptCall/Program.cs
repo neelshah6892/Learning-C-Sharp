@@ -156,8 +156,8 @@ namespace PythonScriptCall
             {
                 processes.Kill();
             }
-                
 
+            File.Delete("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
             Thread.Sleep(2000);
 
             Console.WriteLine("Macro Process");
@@ -177,8 +177,7 @@ namespace PythonScriptCall
                 processes.Kill();
             }
 
-            File.Delete("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
-            File.Delete("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
+            //File.Delete("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
             Console.WriteLine("Completed");
         }
 
