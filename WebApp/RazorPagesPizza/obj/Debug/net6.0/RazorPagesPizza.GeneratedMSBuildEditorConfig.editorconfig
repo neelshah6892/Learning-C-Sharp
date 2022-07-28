@@ -8,37 +8,41 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RazorPagesPizza
 build_property.RootNamespace = RazorPagesPizza
-build_property.ProjectDir = E:\Github\Learning-C-Sharp\WebApp\RazorPagesPizza\
+build_property.ProjectDir = e:\Github\Learning-C-Sharp\WebApp\RazorPagesPizza\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\Github\Learning-C-Sharp\WebApp\RazorPagesPizza
+build_property.MSBuildProjectDirectory = e:\Github\Learning-C-Sharp\WebApp\RazorPagesPizza
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/Github/Learning-C-Sharp/WebApp/RazorPagesPizza/Pages/Error.cshtml]
+[e:/Github/Learning-C-Sharp/WebApp/RazorPagesPizza/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github/Learning-C-Sharp/WebApp/RazorPagesPizza/Pages/Index.cshtml]
+[e:/Github/Learning-C-Sharp/WebApp/RazorPagesPizza/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github/Learning-C-Sharp/WebApp/RazorPagesPizza/Pages/Privacy.cshtml]
+[e:/Github/Learning-C-Sharp/WebApp/RazorPagesPizza/Pages/Pizza.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGl6emEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Github/Learning-C-Sharp/WebApp/RazorPagesPizza/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github/Learning-C-Sharp/WebApp/RazorPagesPizza/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[e:/Github/Learning-C-Sharp/WebApp/RazorPagesPizza/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github/Learning-C-Sharp/WebApp/RazorPagesPizza/Pages/_ViewImports.cshtml]
+[e:/Github/Learning-C-Sharp/WebApp/RazorPagesPizza/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github/Learning-C-Sharp/WebApp/RazorPagesPizza/Pages/_ViewStart.cshtml]
+[e:/Github/Learning-C-Sharp/WebApp/RazorPagesPizza/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Github/Learning-C-Sharp/WebApp/RazorPagesPizza/Pages/Shared/_Layout.cshtml]
+[e:/Github/Learning-C-Sharp/WebApp/RazorPagesPizza/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2hl0nrvjfs

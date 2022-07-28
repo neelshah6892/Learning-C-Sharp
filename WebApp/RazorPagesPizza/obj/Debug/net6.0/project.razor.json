@@ -16298,6 +16298,11 @@
   "RootNamespace": "RazorPagesPizza",
   "Documents": [
     {
+      "FilePath": "e:\\Github\\Learning-C-Sharp\\WebApp\\RazorPagesPizza\\Pages\\Pizza.cshtml",
+      "TargetPath": "Pages\\Pizza.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\Github\\Learning-C-Sharp\\WebApp\\RazorPagesPizza\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
