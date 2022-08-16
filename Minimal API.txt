@@ -1,0 +1,96 @@
+//To create an api
+
+var builder = WebApplication.CreateBuilder(args);
+var app = builder.Build();
+app.MapGet("/", () => "Hello World!");
+app.Run();
+
+//Api routing
+
+app.MapGet("/todos", await (TodoDb db) => db.Todos.ToListAsync());
+app.MapPost("/todos", await (Todo todo) => {});
+app.MapPut("/todos", (Todo todo) => {});
+app.MapDelete("/todos/{id}", (int id) => {}});
+
+//New project(vscode)
+dotnet new web -o ProjectName -f net6.0
+
+//create builder
+var builder = WebApplication.CreateBuilder(args);
+
+//create an app insatnce from builder
+var app = builder.Build();
+
+//Services property(Cors, entityframework, swagger)
+builder.Services.AddCors(options => {});
+
+//App instance to add middleware
+app.UseCors("some unique string");
+
+//Add swagger package to project
+dotnet add package Swashbuckle.AspNetCore --version 6.2.3
+
+//dotnet versions insatlled on system
+dotnet --list-sdks
+
+//Api working info
+GET -> Returns data
+POST -> Sends data that creates a resource
+PUT -> Sends data that updates a resource
+DELETE -> Removes a resource
+
+//GET
+app.MapGet("/products", () => data);
+app.MapGet("/products/{id}", (int id) => data.SingleOrDefault(product => product.Id == id));
+
+//POST
+app.MapPost("/products", (Product product) => /**/);
+
+//PUT/UPDATE
+app.MapPut("/products", (Product product) => /* Update the data store using the `product` instance */);
+
+//DELETE
+app.MapDelete("/products/{id}", (int id) => /* Remove the record whose unique identifier matches `id` */);
+
+//EF CORE
+//Query data
+var pizzas = await db.Pizzas.ToListAsync();
+
+//Insert data
+await db.pizzas.AddAsync(
+    new Pizza { ID = 1, Name = "Pepperoni", Description = "The classic pepperoni pizza" });
+
+//Delete data
+var pizza = await db.pizzas.FindAsync(id);
+if (pizza is null)
+{
+    //Handle error
+}
+db.pizzas.Remove(pizza);
+
+//Update data
+int id = 1;
+var updatepizza = new Pizza { Name = "Pineapple", Description = "Ummmm?" })
+var pizza = await db.pizzas.FindAsync(id);
+if (pizza is null)
+{
+    //Handle error
+}
+pizza.Item = updatepizza.Item;
+pizza.IsComplete = updatepizza.IsComplete;
+await db.SaveChangesAsync();
+
+//dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 6.0
+
+//dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 6.0
+
+//dotnet tool install --global dotnet-ef
+
+//dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0
+
+//dotnet ef migrations add InitialCreate
+
+//dotnet ef database update
+
+//dotnet ef migrations remove
+
