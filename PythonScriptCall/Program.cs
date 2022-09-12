@@ -19,12 +19,12 @@ namespace PythonScriptCall
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
 
             //Monday or 2 day holiday
-            DateTime yesterday = DateTime.Now.AddDays(-3);
-            DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
+            //DateTime yesterday = DateTime.Now.AddDays(-3);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
 
             //Tuesday
-            //DateTime yesterday = DateTime.Now.AddDays(-1);
-            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
+            DateTime yesterday = DateTime.Now.AddDays(-1);
+            DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
 
             //1 day holiday
             //DateTime yesterday = DateTime.Now.AddDays(-2);
