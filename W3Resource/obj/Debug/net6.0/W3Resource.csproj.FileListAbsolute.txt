@@ -2,7 +2,6 @@ E:\Github\Learning-C-Sharp\W3Resource\bin\Debug\net6.0\W3Resource.exe
 E:\Github\Learning-C-Sharp\W3Resource\bin\Debug\net6.0\W3Resource.deps.json
 E:\Github\Learning-C-Sharp\W3Resource\bin\Debug\net6.0\W3Resource.runtimeconfig.json
 E:\Github\Learning-C-Sharp\W3Resource\bin\Debug\net6.0\W3Resource.dll
-E:\Github\Learning-C-Sharp\W3Resource\bin\Debug\net6.0\ref\W3Resource.dll
 E:\Github\Learning-C-Sharp\W3Resource\bin\Debug\net6.0\W3Resource.pdb
 E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0\W3Resource.csproj.AssemblyReference.cache
 E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0\W3Resource.GeneratedMSBuildEditorConfig.editorconfig
@@ -13,3 +12,4 @@ E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0\W3Resource.dll
 E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0\ref\W3Resource.dll
 E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0\W3Resource.pdb
 E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0\W3Resource.genruntimeconfig.cache
+E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0\refint\W3Resource.dll
