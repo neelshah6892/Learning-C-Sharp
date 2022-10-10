@@ -1,4 +1,9 @@
-﻿/*1. Write a C# Sharp program to print Hello and your name in a separate line. Go to the editor
+﻿using System;
+using System.IO.Compression;
+using System.Net;
+
+
+/*1. Write a C# Sharp program to print Hello and your name in a separate line. Go to the editor
 Expected Output :
 Hello: Alexandra Abramov*/
 
@@ -278,3 +283,18 @@ int num1 = 123;
 
 //https://www.w3resource.com/csharp-exercises/
 //https://techstudy.org/csharp/csharp-programming-example-and-solutions/
+
+
+//Bhavcopy Download
+HttpClient client = new HttpClient();
+
+
+HttpResponseMessage responseMessage = await client.GetAsync("https://google.co.in");
+Console.WriteLine(responseMessage.StatusCode);
+
+
+/*string Filepath = @"G:\\Global Datafeeds\\19092022.zip";
+string Extractpath = @"G:\\Global Datafeeds";
+
+ZipFile.ExtractToDirectory("G:\\Global Datafeeds\\19092022.zip", @"G:\\", true);
+ZipFile.OpenRead(Filepath);*/
