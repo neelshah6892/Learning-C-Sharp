@@ -1,6 +1,9 @@
 ﻿using System;
 using System.IO.Compression;
 using System.Net;
+using Microsoft.Office.Interop.Excel;
+using System.Windows.Forms;
+//using static System.Net.Mime.MediaTypeNames;
 
 
 /*1. Write a C# Sharp program to print Hello and your name in a separate line. Go to the editor
@@ -298,3 +301,17 @@ string Extractpath = @"G:\\Global Datafeeds";
 
 ZipFile.ExtractToDirectory("G:\\Global Datafeeds\\19092022.zip", @"G:\\", true);
 ZipFile.OpenRead(Filepath);*/
+
+
+Application excelApp = new Application();
+Workbook workbook = excelApp.Workbooks.Open("C:\\Users\\Administrator\\Desktop\\GreekExcel\\GreekExcel.xls");
+excelApp.Visible = true;
+excelApp.DisplayAlerts = false;
+Worksheet ws = workbook.Worksheets["Test"];
+Thread.Sleep(10000);
+SendKeys.Send("^+(L)");
+Thread.Sleep(10000);
+
+
+workbook.Save();
+excelApp.Quit();
