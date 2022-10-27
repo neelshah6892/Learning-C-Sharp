@@ -3,6 +3,8 @@ using System.IO.Compression;
 using System.Net;
 using Microsoft.Office.Interop.Excel;
 using System.Windows.Forms;
+using System.Net.Http;
+using Application = Microsoft.Office.Interop.Excel.Application;
 //using static System.Net.Mime.MediaTypeNames;
 
 
@@ -308,8 +310,13 @@ Workbook workbook = excelApp.Workbooks.Open("C:\\Users\\Administrator\\Desktop\\
 excelApp.Visible = true;
 excelApp.DisplayAlerts = false;
 Worksheet ws = workbook.Worksheets["Test"];
-Thread.Sleep(10000);
-SendKeys.Send("^+(L)");
+SendKeys.SendWait("{Enter}");
+Thread.Sleep(1000);
+SendKeys.SendWait("{Enter}");
+Thread.Sleep(1000);
+SendKeys.SendWait("^+L");
+//SendKeys.SendWait("{TAB}");
+//SendKeys.SendWait("{TAB}");
 Thread.Sleep(10000);
 
 

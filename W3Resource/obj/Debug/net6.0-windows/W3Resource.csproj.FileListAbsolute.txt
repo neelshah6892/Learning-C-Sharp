@@ -1,0 +1,17 @@
+E:\Github\Learning-C-Sharp\W3Resource\bin\Debug\net6.0-windows\W3Resource.exe
+E:\Github\Learning-C-Sharp\W3Resource\bin\Debug\net6.0-windows\W3Resource.deps.json
+E:\Github\Learning-C-Sharp\W3Resource\bin\Debug\net6.0-windows\W3Resource.runtimeconfig.json
+E:\Github\Learning-C-Sharp\W3Resource\bin\Debug\net6.0-windows\W3Resource.dll
+E:\Github\Learning-C-Sharp\W3Resource\bin\Debug\net6.0-windows\W3Resource.pdb
+E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0-windows\W3Resource.csproj.AssemblyReference.cache
+E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
+E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0-windows\W3Resource.csproj.ResolveComReference.cache
+E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0-windows\W3Resource.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0-windows\W3Resource.AssemblyInfoInputs.cache
+E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0-windows\W3Resource.AssemblyInfo.cs
+E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0-windows\W3Resource.csproj.CoreCompileInputs.cache
+E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0-windows\W3Resource.dll
+E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0-windows\refint\W3Resource.dll
+E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0-windows\W3Resource.pdb
+E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0-windows\W3Resource.genruntimeconfig.cache
+E:\Github\Learning-C-Sharp\W3Resource\obj\Debug\net6.0-windows\ref\W3Resource.dll
