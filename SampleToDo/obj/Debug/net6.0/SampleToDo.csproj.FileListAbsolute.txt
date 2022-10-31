@@ -1,0 +1,7 @@
+E:\Github\Learning-C-Sharp\SampleToDo\obj\Debug\net6.0\SampleToDo.csproj.AssemblyReference.cache
+E:\Github\Learning-C-Sharp\SampleToDo\obj\Debug\net6.0\SampleToDo.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\Learning-C-Sharp\SampleToDo\obj\Debug\net6.0\SampleToDo.AssemblyInfoInputs.cache
+E:\Github\Learning-C-Sharp\SampleToDo\obj\Debug\net6.0\SampleToDo.AssemblyInfo.cs
+E:\Github\Learning-C-Sharp\SampleToDo\obj\Debug\net6.0\SampleToDo.csproj.CoreCompileInputs.cache
+E:\Github\Learning-C-Sharp\SampleToDo\obj\Debug\net6.0\SampleToDo.MvcApplicationPartsAssemblyInfo.cs
+E:\Github\Learning-C-Sharp\SampleToDo\obj\Debug\net6.0\SampleToDo.MvcApplicationPartsAssemblyInfo.cache
