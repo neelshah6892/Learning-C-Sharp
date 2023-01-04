@@ -15,12 +15,12 @@ namespace PythonScriptCall
             DateTime expiry = new DateTime(2023, 01, 25);
 
             //Wednesday, Thursday, Friday
-            //DateTime yesterday = DateTime.Now.AddDays(-1);
-            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
+            DateTime yesterday = DateTime.Now.AddDays(-1);
+            DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
 
             //Monday or 2 day holiday
-            DateTime yesterday = DateTime.Now.AddDays(-3);
-            DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
+            //DateTime yesterday = DateTime.Now.AddDays(-3);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
 
             //Tuesday
             //DateTime yesterday = DateTime.Now.AddDays(-1);
@@ -69,12 +69,12 @@ namespace PythonScriptCall
             }
 
 
-            WebClient client = new WebClient();
-            Console.WriteLine("https://archives.nseindia.com/content/historical/DERIVATIVES/" + yesterday.ToString("yyyy") + "/" + yesterday.ToString("MMM").ToUpper() + "/fo" + yesterday.ToString("ddMMMyyyy").ToUpper() + "bhav.csv.zip", "C:\\Users\\Administrator\\Desktop\\demo.zip");
-            client.DownloadFile("https://archives.nseindia.com/content/historical/DERIVATIVES/" + yesterday.ToString("yyyy") + "/" + yesterday.ToString("MMM").ToUpper() + "/fo" + yesterday.ToString("ddMMMyyyy").ToUpper() + "bhav.csv.zip", "C:\\Users\\Administrator\\Desktop\\demo.zip");
+            //WebClient client = new WebClient();
+            //Console.WriteLine("https://archives.nseindia.com/content/historical/DERIVATIVES/" + yesterday.ToString("yyyy") + "/" + yesterday.ToString("MMM").ToUpper() + "/fo" + yesterday.ToString("ddMMMyyyy").ToUpper() + "bhav.csv.zip", "C:\\Users\\Administrator\\Desktop\\demo.zip");
+            //client.DownloadFile("https://archives.nseindia.com/content/historical/DERIVATIVES/" + yesterday.ToString("yyyy") + "/" + yesterday.ToString("MMM").ToUpper() + "/fo" + yesterday.ToString("ddMMMyyyy").ToUpper() + "bhav.csv.zip", "C:\\Users\\Administrator\\Desktop\\demo.zip");
 
-            ZipFile.ExtractToDirectory("C:\\Users\\Administrator\\Desktop\\demo.zip", @"C:\\Users\\Administrator\\Desktop\\");
-            File.Delete("C:\\Users\\Administrator\\Desktop\\demo.zip");
+            //ZipFile.ExtractToDirectory("C:\\Users\\Administrator\\Desktop\\demo.zip", @"C:\\Users\\Administrator\\Desktop\\");
+            //File.Delete("C:\\Users\\Administrator\\Desktop\\demo.zip");
 
             Console.WriteLine("Started Process 1....");
             var cmd = "G:\\Yash_1\\iv_daily\\1.py";
