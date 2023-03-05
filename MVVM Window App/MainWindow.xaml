@@ -1,0 +1,29 @@
+﻿<Window x:Class="MVVM_Window_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVM_Window_App"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="350" AllowsTransparency="True" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="Transparent">
+    <Grid>
+        
+        <!--// Background with Dropshadow Effect //-->
+        <Border Style="{StaticResource BackgroundStyle}" />
+        
+        <!--// Header Text //-->
+        <TextBlock Style="{StaticResource HeaderText1}" />
+        <TextBlock Style="{StaticResource HeaderText2}" />
+        
+        <!--// Button to open a new window//-->
+        <Button Style="{StaticResource BtnStyle1}" />
+        
+        <!--// Footer Text//-->
+        <Border Style="{StaticResource Footer}" />
+        <TextBlock Style="{StaticResource FooterText1}" />
+        <TextBlock Style="{StaticResource FooterText2}" />
+        
+        
+
+    </Grid>
+</Window>
