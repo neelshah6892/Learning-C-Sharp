@@ -12,19 +12,19 @@ namespace PythonScriptCall
         {
             Console.WriteLine("Start");
             //Change over here and 2.py file too, need to do once per month
-            DateTime expiry = new DateTime(2023, 02, 23);
+            DateTime expiry = new DateTime(2023, 03, 29);
 
             //Wednesday, Thursday, Friday
             //DateTime yesterday = DateTime.Now.AddDays(-1);
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
 
             //Monday or 2 day holiday
-            //DateTime yesterday = DateTime.Now.AddDays(-3);
-            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
+            DateTime yesterday = DateTime.Now.AddDays(-3);
+            DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
 
             //Tuesday
-            DateTime yesterday = DateTime.Now.AddDays(-1);
-            DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
+            //DateTime yesterday = DateTime.Now.AddDays(-1);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
 
             //1 day holiday
             //DateTime yesterday = DateTime.Now.AddDays(-2);
@@ -136,7 +136,7 @@ namespace PythonScriptCall
 
             File.Delete("C:\\Users\\Administrator\\Desktop\\newfile1.xlsx");
             File.Delete("C:\\Users\\Administrator\\Desktop\\fo" + yesterday.ToString("ddMMMyyyy") + "bhav.csv");
-
+            
             Thread.Sleep(1000);
             
 
