@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "F6qkxFIPJm9J/zUvpI62J7BNi3hb81VDmtya3/bJu5IuNU6994MVZeJcqCEXIvPbnosayGNQg3to2YeVRqJVEg==",
+  "success": true,
+  "projectFilePath": "D:\\Github\\Learning-C-Sharp\\ReadExcel\\ReadExcel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dhwan\\.nuget\\packages\\microsoft.office.interop.excel\\15.0.4795.1001\\microsoft.office.interop.excel.15.0.4795.1001.nupkg.sha512"
+  ],
+  "logs": []
+}
