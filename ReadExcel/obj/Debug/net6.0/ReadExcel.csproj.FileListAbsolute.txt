@@ -3,15 +3,15 @@ D:\Github\Learning-C-Sharp\ReadExcel\bin\Debug\net6.0\ReadExcel.deps.json
 D:\Github\Learning-C-Sharp\ReadExcel\bin\Debug\net6.0\ReadExcel.runtimeconfig.json
 D:\Github\Learning-C-Sharp\ReadExcel\bin\Debug\net6.0\ReadExcel.dll
 D:\Github\Learning-C-Sharp\ReadExcel\bin\Debug\net6.0\ReadExcel.pdb
-D:\Github\Learning-C-Sharp\ReadExcel\bin\Debug\net6.0\Microsoft.Office.Interop.Excel.dll
 D:\Github\Learning-C-Sharp\ReadExcel\obj\Debug\net6.0\ReadExcel.csproj.AssemblyReference.cache
 D:\Github\Learning-C-Sharp\ReadExcel\obj\Debug\net6.0\ReadExcel.GeneratedMSBuildEditorConfig.editorconfig
 D:\Github\Learning-C-Sharp\ReadExcel\obj\Debug\net6.0\ReadExcel.AssemblyInfoInputs.cache
 D:\Github\Learning-C-Sharp\ReadExcel\obj\Debug\net6.0\ReadExcel.AssemblyInfo.cs
 D:\Github\Learning-C-Sharp\ReadExcel\obj\Debug\net6.0\ReadExcel.csproj.CoreCompileInputs.cache
-D:\Github\Learning-C-Sharp\ReadExcel\obj\Debug\net6.0\ReadExcel.csproj.CopyComplete
 D:\Github\Learning-C-Sharp\ReadExcel\obj\Debug\net6.0\ReadExcel.dll
 D:\Github\Learning-C-Sharp\ReadExcel\obj\Debug\net6.0\refint\ReadExcel.dll
 D:\Github\Learning-C-Sharp\ReadExcel\obj\Debug\net6.0\ReadExcel.pdb
 D:\Github\Learning-C-Sharp\ReadExcel\obj\Debug\net6.0\ReadExcel.genruntimeconfig.cache
 D:\Github\Learning-C-Sharp\ReadExcel\obj\Debug\net6.0\ref\ReadExcel.dll
+D:\Github\Learning-C-Sharp\ReadExcel\obj\Debug\net6.0\Interop.Microsoft.Office.Interop.Excel.dll
+D:\Github\Learning-C-Sharp\ReadExcel\obj\Debug\net6.0\ReadExcel.csproj.ResolveComReference.cache

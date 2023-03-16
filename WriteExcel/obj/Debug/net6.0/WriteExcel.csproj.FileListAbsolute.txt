@@ -1,0 +1,17 @@
+D:\Github\Learning-C-Sharp\WriteExcel\bin\Debug\net6.0\WriteExcel.exe
+D:\Github\Learning-C-Sharp\WriteExcel\bin\Debug\net6.0\WriteExcel.deps.json
+D:\Github\Learning-C-Sharp\WriteExcel\bin\Debug\net6.0\WriteExcel.runtimeconfig.json
+D:\Github\Learning-C-Sharp\WriteExcel\bin\Debug\net6.0\WriteExcel.dll
+D:\Github\Learning-C-Sharp\WriteExcel\bin\Debug\net6.0\WriteExcel.pdb
+D:\Github\Learning-C-Sharp\WriteExcel\obj\Debug\net6.0\WriteExcel.csproj.AssemblyReference.cache
+D:\Github\Learning-C-Sharp\WriteExcel\obj\Debug\net6.0\Interop.Microsoft.Office.Interop.Excel.dll
+D:\Github\Learning-C-Sharp\WriteExcel\obj\Debug\net6.0\WriteExcel.csproj.ResolveComReference.cache
+D:\Github\Learning-C-Sharp\WriteExcel\obj\Debug\net6.0\WriteExcel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\Learning-C-Sharp\WriteExcel\obj\Debug\net6.0\WriteExcel.AssemblyInfoInputs.cache
+D:\Github\Learning-C-Sharp\WriteExcel\obj\Debug\net6.0\WriteExcel.AssemblyInfo.cs
+D:\Github\Learning-C-Sharp\WriteExcel\obj\Debug\net6.0\WriteExcel.csproj.CoreCompileInputs.cache
+D:\Github\Learning-C-Sharp\WriteExcel\obj\Debug\net6.0\WriteExcel.dll
+D:\Github\Learning-C-Sharp\WriteExcel\obj\Debug\net6.0\refint\WriteExcel.dll
+D:\Github\Learning-C-Sharp\WriteExcel\obj\Debug\net6.0\WriteExcel.pdb
+D:\Github\Learning-C-Sharp\WriteExcel\obj\Debug\net6.0\WriteExcel.genruntimeconfig.cache
+D:\Github\Learning-C-Sharp\WriteExcel\obj\Debug\net6.0\ref\WriteExcel.dll
