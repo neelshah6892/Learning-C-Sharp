@@ -28,7 +28,8 @@ namespace ReadExcel
                 {
                     if (excelRange.Cells[i,j] != null)
                     {
-                        Console.Write(excelRange.Cells[i,j].ToString()+" ");
+                        Console.Write(excelRange.Cells[i,j].Text.ToString()+" ");
+                        //Console.Write(excelRange.Cells[i, j].Value2.ToString() + " ");
                     }
                 }
             }
