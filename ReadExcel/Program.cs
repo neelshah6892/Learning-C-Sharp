@@ -14,7 +14,7 @@ namespace ReadExcel
         static void Main(string[] args)
         {
             Excel.Application excelApp = new Excel.Application();
-            Excel.Workbook excelWB = excelApp.Workbooks.Open(@"C:\Users\dhwan\Desktop\Sample.xlsx");
+            Excel.Workbook excelWB = excelApp.Workbooks.Open(@"C:\Users\Administrator\Desktop\Sample.xlsx");
             //Excel.Worksheet excelWS = excelWB.Sheets[1];
             Excel._Worksheet excelWS = (Excel._Worksheet)excelWB.Sheets[1];
             Excel.Range excelRange = excelWS.UsedRange;
