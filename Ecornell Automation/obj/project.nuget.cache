@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "3LVvQlxq/FcQBt9Mnd9QnEeXWObX+8JahBdB+els2Rt/8FMf02ljPKca/Ts2zQw7QTKgFeyNYDzSkfCJ3C5DOQ==",
+  "success": true,
+  "projectFilePath": "D:\\Github\\Learning-C-Sharp\\Ecornell Automation\\Ecornell Automation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dhwan\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\dhwan\\.nuget\\packages\\selenium.webdriver\\4.8.2\\selenium.webdriver.4.8.2.nupkg.sha512",
+    "C:\\Users\\dhwan\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512"
+  ],
+  "logs": []
+}

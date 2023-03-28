@@ -1,0 +1,22 @@
+D:\Github\Learning-C-Sharp\Ecornell Automation\bin\Debug\net6.0\selenium-manager\linux\selenium-manager
+D:\Github\Learning-C-Sharp\Ecornell Automation\bin\Debug\net6.0\selenium-manager\macos\selenium-manager
+D:\Github\Learning-C-Sharp\Ecornell Automation\bin\Debug\net6.0\selenium-manager\windows\selenium-manager.exe
+D:\Github\Learning-C-Sharp\Ecornell Automation\bin\Debug\net6.0\Ecornell Automation.exe
+D:\Github\Learning-C-Sharp\Ecornell Automation\bin\Debug\net6.0\Ecornell Automation.deps.json
+D:\Github\Learning-C-Sharp\Ecornell Automation\bin\Debug\net6.0\Ecornell Automation.runtimeconfig.json
+D:\Github\Learning-C-Sharp\Ecornell Automation\bin\Debug\net6.0\Ecornell Automation.dll
+D:\Github\Learning-C-Sharp\Ecornell Automation\bin\Debug\net6.0\Ecornell Automation.pdb
+D:\Github\Learning-C-Sharp\Ecornell Automation\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Github\Learning-C-Sharp\Ecornell Automation\bin\Debug\net6.0\WebDriver.dll
+D:\Github\Learning-C-Sharp\Ecornell Automation\obj\Debug\net6.0\Ecornell Automation.csproj.AssemblyReference.cache
+D:\Github\Learning-C-Sharp\Ecornell Automation\obj\Debug\net6.0\Ecornell Automation.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\Learning-C-Sharp\Ecornell Automation\obj\Debug\net6.0\Ecornell Automation.AssemblyInfoInputs.cache
+D:\Github\Learning-C-Sharp\Ecornell Automation\obj\Debug\net6.0\Ecornell Automation.AssemblyInfo.cs
+D:\Github\Learning-C-Sharp\Ecornell Automation\obj\Debug\net6.0\Ecornell Automation.csproj.CoreCompileInputs.cache
+D:\Github\Learning-C-Sharp\Ecornell Automation\obj\Debug\net6.0\Ecornell Automation.csproj.CopyComplete
+D:\Github\Learning-C-Sharp\Ecornell Automation\obj\Debug\net6.0\Ecornell Automation.dll
+D:\Github\Learning-C-Sharp\Ecornell Automation\obj\Debug\net6.0\refint\Ecornell Automation.dll
+D:\Github\Learning-C-Sharp\Ecornell Automation\obj\Debug\net6.0\Ecornell Automation.pdb
+D:\Github\Learning-C-Sharp\Ecornell Automation\obj\Debug\net6.0\Ecornell Automation.genruntimeconfig.cache
+D:\Github\Learning-C-Sharp\Ecornell Automation\obj\Debug\net6.0\ref\Ecornell Automation.dll
+D:\Github\Learning-C-Sharp\Ecornell Automation\bin\Debug\net6.0\Serilog.dll
