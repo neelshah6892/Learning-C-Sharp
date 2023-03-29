@@ -15,8 +15,8 @@ namespace PythonScriptCall
             DateTime expiry = new DateTime(2023, 04, 27);
 
             //Wednesday, Thursday, Friday
-            DateTime yesterday = DateTime.Now.AddDays(-1);
-            DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
+            //DateTime yesterday = DateTime.Now.AddDays(-1);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
 
             //Monday or 2 day holiday
             //DateTime yesterday = DateTime.Now.AddDays(-3);
@@ -48,8 +48,8 @@ namespace PythonScriptCall
             //DateTime yesterday = DateTime.Now.AddDays(-3);
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
 
-            //yesterday = yesterday.AddDays(-2);
-            //daybeforeyesterday = daybeforeyesterday.AddDays(-3);
+            yesterday = yesterday.AddDays(-2);
+            daybeforeyesterday = daybeforeyesterday.AddDays(-3);
 
             string text = File.ReadAllText(@"G:\\Yash_1\\iv_daily\\2.py");
             text = text.Replace(daybeforeyesterday.ToString("ddMMyyyy"), yesterday.ToString("ddMMyyyy"));
@@ -176,7 +176,7 @@ namespace PythonScriptCall
             }
 
             File.Delete("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
-            Thread.Sleep(2000);
+            /*Thread.Sleep(2000);
 
             Console.WriteLine("Macro Process");
             Application excel = new Application();
@@ -194,7 +194,7 @@ namespace PythonScriptCall
             {
                 processes.Kill();
             }
-
+            */
             //File.Delete("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
             Console.WriteLine("Completed");
         }
