@@ -1,0 +1,28 @@
+D:\Github\Learning-C-Sharp\Ecornell Automation App\bin\Debug\net6.0-windows\Ecornell Automation App.exe
+D:\Github\Learning-C-Sharp\Ecornell Automation App\bin\Debug\net6.0-windows\Ecornell Automation App.deps.json
+D:\Github\Learning-C-Sharp\Ecornell Automation App\bin\Debug\net6.0-windows\Ecornell Automation App.runtimeconfig.json
+D:\Github\Learning-C-Sharp\Ecornell Automation App\bin\Debug\net6.0-windows\Ecornell Automation App.dll
+D:\Github\Learning-C-Sharp\Ecornell Automation App\bin\Debug\net6.0-windows\Ecornell Automation App.pdb
+D:\Github\Learning-C-Sharp\Ecornell Automation App\obj\Debug\net6.0-windows\Ecornell Automation App.csproj.AssemblyReference.cache
+D:\Github\Learning-C-Sharp\Ecornell Automation App\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Github\Learning-C-Sharp\Ecornell Automation App\obj\Debug\net6.0-windows\App.g.cs
+D:\Github\Learning-C-Sharp\Ecornell Automation App\obj\Debug\net6.0-windows\Ecornell Automation App_MarkupCompile.cache
+D:\Github\Learning-C-Sharp\Ecornell Automation App\obj\Debug\net6.0-windows\Ecornell Automation App_MarkupCompile.lref
+D:\Github\Learning-C-Sharp\Ecornell Automation App\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Github\Learning-C-Sharp\Ecornell Automation App\obj\Debug\net6.0-windows\Ecornell Automation App.g.resources
+D:\Github\Learning-C-Sharp\Ecornell Automation App\obj\Debug\net6.0-windows\Ecornell Automation App.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\Learning-C-Sharp\Ecornell Automation App\obj\Debug\net6.0-windows\Ecornell Automation App.AssemblyInfoInputs.cache
+D:\Github\Learning-C-Sharp\Ecornell Automation App\obj\Debug\net6.0-windows\Ecornell Automation App.AssemblyInfo.cs
+D:\Github\Learning-C-Sharp\Ecornell Automation App\obj\Debug\net6.0-windows\Ecornell Automation App.csproj.CoreCompileInputs.cache
+D:\Github\Learning-C-Sharp\Ecornell Automation App\obj\Debug\net6.0-windows\Ecornell Automation App.dll
+D:\Github\Learning-C-Sharp\Ecornell Automation App\obj\Debug\net6.0-windows\refint\Ecornell Automation App.dll
+D:\Github\Learning-C-Sharp\Ecornell Automation App\obj\Debug\net6.0-windows\Ecornell Automation App.pdb
+D:\Github\Learning-C-Sharp\Ecornell Automation App\obj\Debug\net6.0-windows\Ecornell Automation App.genruntimeconfig.cache
+D:\Github\Learning-C-Sharp\Ecornell Automation App\obj\Debug\net6.0-windows\ref\Ecornell Automation App.dll
+D:\Github\Learning-C-Sharp\Ecornell Automation App\bin\Debug\net6.0-windows\selenium-manager\linux\selenium-manager
+D:\Github\Learning-C-Sharp\Ecornell Automation App\bin\Debug\net6.0-windows\selenium-manager\macos\selenium-manager
+D:\Github\Learning-C-Sharp\Ecornell Automation App\bin\Debug\net6.0-windows\selenium-manager\windows\selenium-manager.exe
+D:\Github\Learning-C-Sharp\Ecornell Automation App\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\Github\Learning-C-Sharp\Ecornell Automation App\bin\Debug\net6.0-windows\WebDriver.Support.dll
+D:\Github\Learning-C-Sharp\Ecornell Automation App\bin\Debug\net6.0-windows\WebDriver.dll
+D:\Github\Learning-C-Sharp\Ecornell Automation App\obj\Debug\net6.0-windows\Ecornell Automation App.csproj.CopyComplete
