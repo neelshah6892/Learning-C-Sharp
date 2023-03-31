@@ -45,11 +45,11 @@ namespace PythonScriptCall
             //DateTime yesterday = DateTime.Now.AddDays(-1);
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
 
-            //DateTime yesterday = DateTime.Now.AddDays(-3);
-            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
+            DateTime yesterday = DateTime.Now.AddDays(-3);
+            DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
 
-            yesterday = yesterday.AddDays(-2);
-            daybeforeyesterday = daybeforeyesterday.AddDays(-3);
+            //DateTime yesterday = DateTime.Now.AddDays(-2);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-3);
 
             string text = File.ReadAllText(@"G:\\Yash_1\\iv_daily\\2.py");
             text = text.Replace(daybeforeyesterday.ToString("ddMMyyyy"), yesterday.ToString("ddMMyyyy"));
