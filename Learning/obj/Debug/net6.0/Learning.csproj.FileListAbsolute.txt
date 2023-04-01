@@ -1,0 +1,15 @@
+D:\Neel\Github\Learning-C-Sharp\Learning\bin\Debug\net6.0\Learning.exe
+D:\Neel\Github\Learning-C-Sharp\Learning\bin\Debug\net6.0\Learning.deps.json
+D:\Neel\Github\Learning-C-Sharp\Learning\bin\Debug\net6.0\Learning.runtimeconfig.json
+D:\Neel\Github\Learning-C-Sharp\Learning\bin\Debug\net6.0\Learning.dll
+D:\Neel\Github\Learning-C-Sharp\Learning\bin\Debug\net6.0\Learning.pdb
+D:\Neel\Github\Learning-C-Sharp\Learning\obj\Debug\net6.0\Learning.csproj.AssemblyReference.cache
+D:\Neel\Github\Learning-C-Sharp\Learning\obj\Debug\net6.0\Learning.GeneratedMSBuildEditorConfig.editorconfig
+D:\Neel\Github\Learning-C-Sharp\Learning\obj\Debug\net6.0\Learning.AssemblyInfoInputs.cache
+D:\Neel\Github\Learning-C-Sharp\Learning\obj\Debug\net6.0\Learning.AssemblyInfo.cs
+D:\Neel\Github\Learning-C-Sharp\Learning\obj\Debug\net6.0\Learning.csproj.CoreCompileInputs.cache
+D:\Neel\Github\Learning-C-Sharp\Learning\obj\Debug\net6.0\Learning.dll
+D:\Neel\Github\Learning-C-Sharp\Learning\obj\Debug\net6.0\refint\Learning.dll
+D:\Neel\Github\Learning-C-Sharp\Learning\obj\Debug\net6.0\Learning.pdb
+D:\Neel\Github\Learning-C-Sharp\Learning\obj\Debug\net6.0\Learning.genruntimeconfig.cache
+D:\Neel\Github\Learning-C-Sharp\Learning\obj\Debug\net6.0\ref\Learning.dll
