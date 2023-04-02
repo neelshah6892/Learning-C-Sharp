@@ -19,3 +19,4 @@ D:\Neel\Github\Learning-C-Sharp\Spider\obj\Debug\net6.0\refint\Spider.dll
 D:\Neel\Github\Learning-C-Sharp\Spider\obj\Debug\net6.0\Spider.pdb
 D:\Neel\Github\Learning-C-Sharp\Spider\obj\Debug\net6.0\Spider.genruntimeconfig.cache
 D:\Neel\Github\Learning-C-Sharp\Spider\obj\Debug\net6.0\ref\Spider.dll
+D:\Neel\Github\Learning-C-Sharp\Spider\obj\Debug\net6.0\Spider.csproj.ResolveComReference.cache
