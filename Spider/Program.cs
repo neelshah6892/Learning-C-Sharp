@@ -11,10 +11,18 @@ namespace Spider
         static void Main(string[] args)
         {
             var options = new ChromeOptions();
+
+            //Laptop
+            options.AddArgument("user-data-dir=C:\\Users\\dhwan\\AppData\\Local\\Google\\Chrome\\User Data");
+
+            //dhwani System
             //options.AddArgument("user-data-dir=C:\\Users\\dhs71\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 5");
             //options.AddArgument("--profile_ddirectory=Profile 5");
+
+            //Main laptop
             //options.AddArgument("--profile_directory=Arjun");
-            options.AddArgument("user-data-dir=C:\\Users\\geete\\AppData\\Local\\Google\\Chrome\\User Data\\Arjun");
+            //options.AddArgument("user-data-dir=C:\\Users\\geete\\AppData\\Local\\Google\\Chrome\\User Data\\Arjun");
+
             options.AddArgument("disable-extension");
             options.AddArgument("disable-infobars");
 
