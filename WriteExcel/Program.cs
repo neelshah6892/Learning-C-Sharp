@@ -16,7 +16,12 @@ namespace WriteExcel
             excelWS.Cells[1, 2] = "Last Name";
             excelWS.Cells[2, 1] = "Neel";
             excelWS.Cells[2, 2] = "Shah";
-            excelWb.SaveCopyAs(@"C:\Users\dhwan\Desktop\Demo.xlsx");
+            //excelWb.SaveCopyAs(@"C:\Users\dhwan\Desktop\Demo.xlsx");
+
+            //XLsx to Csv
+            excelWb.SaveAs(@"C:\Users\dhwan\Desktop\Demo.csv", Microsoft.Office.Interop.Excel.XlFileFormat.xlCSV);
+            
+            
             excelWb.Close();
             excelApp.Quit();
         }

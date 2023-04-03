@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\Learning-C-Sharp\\Ecornell Automation\\Ecornell Automation.csproj": {}
+    "D:\\Neel\\Github\\Learning-C-Sharp\\Ecornell Automation\\Ecornell Automation.csproj": {}
   },
   "projects": {
-    "D:\\Github\\Learning-C-Sharp\\Ecornell Automation\\Ecornell Automation.csproj": {
+    "D:\\Neel\\Github\\Learning-C-Sharp\\Ecornell Automation\\Ecornell Automation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\Learning-C-Sharp\\Ecornell Automation\\Ecornell Automation.csproj",
+        "projectUniqueName": "D:\\Neel\\Github\\Learning-C-Sharp\\Ecornell Automation\\Ecornell Automation.csproj",
         "projectName": "Ecornell Automation",
-        "projectPath": "D:\\Github\\Learning-C-Sharp\\Ecornell Automation\\Ecornell Automation.csproj",
-        "packagesPath": "C:\\Users\\dhwan\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\Learning-C-Sharp\\Ecornell Automation\\obj\\",
+        "projectPath": "D:\\Neel\\Github\\Learning-C-Sharp\\Ecornell Automation\\Ecornell Automation.csproj",
+        "packagesPath": "C:\\Users\\dhs71\\.nuget\\packages\\",
+        "outputPath": "D:\\Neel\\Github\\Learning-C-Sharp\\Ecornell Automation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Github\\Learning-C-Sharp\\NuGet.Config",
-          "C:\\Users\\dhwan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "D:\\Neel\\Github\\Learning-C-Sharp\\NuGet.Config",
+          "C:\\Users\\dhs71\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
