@@ -1,6 +1,7 @@
 ﻿using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.DevTools;
 using System.Net;
 using System.IO;
 
@@ -30,6 +31,13 @@ namespace Spider
 
             driver.Manage().Window.Maximize();
             driver.Url = "https://ondemand.ecornell.com/";
+            
+            
+            string pageSource = driver.PageSource;
+            Console.WriteLine(pageSource);
+            var path = "dtat.html";
+            File.WriteAllText(path, pageSource);
+            Console.Read();
 
             /*Thread.Sleep(5000);
             driver.FindElement(By.XPath("//*[@id=\"username\"]")).Click();
@@ -42,6 +50,13 @@ namespace Spider
             Thread.Sleep(100000);
             //driver.FindElement(By.XPath("//*[@id=\"term_skill\"]/a[2]")).Click();
             driver.FindElement(By.XPath("//*[@id=\"term_skill\"]/ul/li[1]/div/label")).Click();
+            
+            string pageSource2 = driver.PageSource;
+            Console.WriteLine(pageSource);
+            var path2 = "data.html";
+            File.WriteAllText(path2, pageSource2);
+            Console.Read();
+            
             Thread.Sleep(10000);
             //driver.SwitchTo().NewWindow(WindowType.Tab);
             driver.FindElement(By.ClassName("uk-card-body uk-link-reset uk-position-relative ec-details-link")).Click();
@@ -53,8 +68,7 @@ namespace Spider
             Thread.Sleep(5000);
             driver.FindElement(By.XPath("//*[@id=\"module_navigation_target\"]/div/div[2]/div/span/a")).Click();
 
-            //driver.Url = "https://google.com/";
-            driver.ExecuteScript("return window.performance.getEntries();");
+            
             //*[@id="term_skill"]/ul/li[1]
 
             
