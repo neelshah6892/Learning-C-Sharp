@@ -31,11 +31,11 @@ namespace PythonScriptCall
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-3);
 
             //1 day holiday(tuesday)
-            DateTime yesterday = DateTime.Now.AddDays(-2);
-            DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
+            //DateTime yesterday = DateTime.Now.AddDays(-2);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
 
-            //DateTime yesterday = DateTime.Now.AddDays(-1);
-            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-3);
+            DateTime yesterday = DateTime.Now.AddDays(-1);
+            DateTime daybeforeyesterday = DateTime.Now.AddDays(-3);
 
             //3 day holiday
             //DateTime yesterday = DateTime.Now.AddDays(-4);
@@ -176,7 +176,7 @@ namespace PythonScriptCall
             }
 
             File.Delete("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
-            /*Thread.Sleep(2000);
+            Thread.Sleep(2000);
 
             Console.WriteLine("Macro Process");
             Application excel = new Application();
@@ -194,7 +194,7 @@ namespace PythonScriptCall
             {
                 processes.Kill();
             }
-            */
+            
             //File.Delete("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
             Console.WriteLine("Completed");
         }
