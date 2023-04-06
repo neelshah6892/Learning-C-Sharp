@@ -1,0 +1,22 @@
+﻿
+
+string URLAuth = url;
+string postString = "http://www.cornermarketms.com/weeklyads/show/0/560"; const string contentType = "application/x-www-form-urlencoded; charset=UTF-8"; HttpWebRequest webRequest = WebRequest.Create(URLAuth) as HttpWebRequest; webRequest.Method = "POST";
+webRequest.ContentType = "application/x-www-form-urlencoded; charset=UTF-8";
+webRequest.Headers["Accept-Language"] = "en-US,en;q=0.9";
+webRequest.Headers ["X-XSRF-TOKEN"] = "df235d48-0f76-486c-8720-b9056676eed1". webRequest.ContentLength = postString.Length.
+webRequest.UserAgent
+=
+"Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36
+(KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36".
+webRequest.Accept = "application/json, text/javascript, */*; q=0.01". webRequest.Headers["X-Requested-With"] "XMLHttpRequest";
+StreamWriter requestWriter = new StreamWriter (webRequest.GetRequestStream()).
+requestWriter.Write(postString).
+requestWriter.Close().
+StreamReader responseReader =
+StreamReader
+new
+(webRequest.GetResponse().GetResponseStream()).
+string responseData = responseReader.ReadToEnd(). responseReader.Close().
+webRequest.GetResponse().Close().
+return responseData.
