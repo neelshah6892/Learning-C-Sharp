@@ -1,0 +1,19 @@
+﻿
+
+HttpWebRequest myWebRequest = (HttpWebRequest) HttpWebRequest.Create(url).
+myWebRequest.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate. myWebRequest.Method = WebRequestMethods.Http.Get.
+myWebRequest.ContentType = "application/json; charset=utf-8".
+myWebRequest.KeepAlive = false.
+myWebRequest.UserAgent = "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36".
+myWebRequest.Accept = "*/*;q=0.5, text/javascript, application/javascript, application/ecmascript, application/x-ecmascript".
+myWebRequest.Headers["Accept-Encoding"] = "gzip, deflate, br"; myWebRequest.Headers["Accept-Language"] = "en-US,en;q=0.9";
+myWebRequest.Headers["Upgrade-Insecure-Requests"] myWebRequest.Timeout = Timeout.Infinite;
+=
+"1";
+HttpWebResponse myWebResponse = (HttpWebResponse) myWebRequest.GetResponse();
+Stream responseStream = myWebResponse.GetResponseStream();
+StreamReader myWebSource = new StreamReader (responseStream, Encoding.Default); string myPageSource = myWebSource.ReadToEnd();
+myWebResponse.Close();
+responseStream.Close();
+if (myPageSource.Contains ("Expire") || myPageSource.Contains("Technical Difficulties")) goto ReAttempt;
+return myPageSource;
