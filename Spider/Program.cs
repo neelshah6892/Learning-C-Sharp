@@ -4,12 +4,16 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.DevTools;
 using System.Net;
 using System.IO;
+using System.Windows.Forms;
+using System.Security.Permissions;
+using OpenQA.Selenium.Interactions;
+using PuppeteerSharp;
 
 namespace Spider
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var options = new ChromeOptions();
 
@@ -31,6 +35,8 @@ namespace Spider
 
             driver.Manage().Window.Maximize();
             //driver.Url = "https://ondemand.ecornell.com/";
+
+            //driver.FindElement(By.XPath("//*[@id=\"term_skill\"]/ul/li[1]/div/label")).Click();
             driver.Url = "https://ondemand.ecornell.com/lesson.do?lessonCode=ILR562OD3";
             
 
@@ -45,16 +51,38 @@ namespace Spider
             /*driver.FindElement(By.XPath("//*[@id=\"nav-tray-portal\"]/span/span/div/div/div/span/button")).Click();
             
             Thread.Sleep(2000);*/
-            driver.FindElement(By.XPath("//*[@id=\"module_navigation_target\"]/div/div[2]/div/span/a")).Click();
 
-            driver.FindElement(By.XPath("//*[@id=\"term_skill\"]/ul/li[1]/div/label")).Click();
-            
-            string pageSource = driver.PageSource;
-            Console.WriteLine(pageSource);
-            var path2 = "data.html";
-            File.WriteAllText(path2, pageSource);
-            //Console.Read();
-            
+            var option = new LaunchOptions
+            {
+                Headless = false,
+                ExecutablePath = "./chromedriver.exe"
+            };
+
+
+            using var browser = await Puppeteer.LaunchAsync(option);
+            var page = await browser.NewPageAsync();
+            page.Request += (sender, e) =>
+            {
+                Console.WriteLine($"Request: {e.Request.Method} {e.Request.Url}");
+                foreach (var header in e.Request.Headers)
+                {
+                    Console.WriteLine($"{header.Key}: {header.Value}");
+                }
+            };
+            await page.GoToAsync("https://lms.ecornell.com/courses/1706761/modules/items/26344322");
+
+            driver.FindElement(By.XPath("//*[@id=\"module_navigation_target\"]/div/div[2]/div/span/a")).Click();
+            Thread.Sleep(5000);
+            SendKeys.SendWait("^(s)");
+            Thread.Sleep(2000);
+            SendKeys.SendWait("~");
+
+            /*Actions rc = new Actions(driver);
+            WebElement link = driver.FindElement(By.XPath("//*[@id=\"application\"]"));
+            rc.ContextClick(link).Perform();*/
+
+
+
             Thread.Sleep(20000);
             //driver.SwitchTo().NewWindow(WindowType.Tab);
             driver.FindElement(By.XPath("//*[@id=\"ecCards\"]/div[2]/div[1]/div[1]/a")).Click();
