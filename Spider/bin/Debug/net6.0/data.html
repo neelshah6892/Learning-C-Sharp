@@ -1,0 +1,3080 @@
+<html><head>
+    <title>On-Demand Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="shortcut icon" href="https://ecornell.cornell.edu/wp-content/themes/ecustom/img/favicon.ico">
+    <link rel="stylesheet" href="/css/uikit.min.css">
+    <link rel="stylesheet" href="/css/uikit.ec-theme.min.css">
+    <link rel="stylesheet" href="/css/ondemand.css">
+
+    <script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/7da8dd3e/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/uikit.min.js"></script>
+    <script type="text/javascript" src="/js/uikit-icons.min.js"></script>
+
+    <script type="text/javascript" src="/js/jquery.resizestop.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.hoverIntent.min.js"></script>
+    <script type="text/javascript" src="/js/ondemand.js"></script>
+    <script type="text/javascript" src="/js/modal-submit.js"></script>
+    <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+
+    <script type="text/javascript">
+
+        var CSRF_parameterName = '_csrf';
+        var CSRF_token = 'bf01613b-ed04-4ae2-b4cb-592998485bee';
+
+        jQuery(function($){
+            var preloadSeal = new Image();
+            preloadSeal.src = '/images/cornell_seal.svg';
+
+            var preload128 = new Image();
+            preload128.src = '/images/spinner128.gif';
+
+            $('img').on('error',function(){ $(this).attr('src','/images/cornell_seal.svg').off('error'); });
+        });
+
+        var youTubeReady = false;
+        function onYouTubeIframeAPIReady() { youTubeReady = true; }
+
+        jQuery.fn.customVideo = function(videoId,origin) {
+            var $t = $(this);
+
+            var containerId = 'cv-container-'+videoId;
+            var dimmerId = 'cv-dimmer-'+videoId;
+            var playerId = 'cv-player-'+videoId+'-'+Math.random();
+
+            var src = 'https://www.youtube.com/embed/'
+                + videoId+'?origin='+origin+'&rel=0&amp;showinfo=0&amp;enablejsapi=1&amp;'
+                + 'modestbranding=1&amp;autohide=1&amp;theme=light&amp;color=white&amp;playsinline=1&amp;'
+                + 'iv_load_policy=3&amp;autoplay=0';
+
+            var $blocker = $('<div>').addClass('blocker');
+
+            var $container = $('<div/>')
+                .attr('id',containerId)
+                .addClass('cv-container cv-page cv-hidden')
+                .append($('<div/>')
+                    .addClass('cv-wrapper')
+                    .append($blocker)
+                    .append($('<iframe allowfullscreen/>').addClass('yt-frame').attr({id:playerId, frameborder:0, src:src}))
+                    .append($('<div/>').addClass('cv-close').attr('uk-icon','icon:close;ratio:3'))
+                );
+            var $dimmer = $('<div/>').attr('id',dimmerId).addClass('cv-dimmer cv-page cv-hidden');
+
+            $('#'+containerId).remove();
+            $('#'+dimmerId).remove();
+            $('body').prepend($container).prepend($dimmer);
+
+            var $close = $('cv-close',$container);
+
+            var waitForYouTube = function() {
+                if(!youTubeReady) {
+                    setTimeout(waitForYouTube,500);
+                } else {
+                    var playerReady = false;
+                    var customPlayer = new YT.Player(playerId, {
+                        events: {
+                            onReady: function() { playerReady = true; },
+                            onStateChange: function(evt) {
+                                console.log(evt.data);
+                                if(evt['data']===3) {
+                                    $container.removeClass('cv-hidden');
+                                    $dimmer.removeClass('cv-hidden');
+                                } //if//
+
+                                if(evt['data']===0) {
+                                    $blocker.show();
+                                } else {
+                                    $blocker.hide();
+                                } //if-else//
+
+                            }
+                        }
+                    });
+
+                    var playVideo = function() {
+                        if(playerReady) customPlayer.playVideo();
+                        else setTimeout(playVideo,500);
+                    };
+
+                    $t.on('click',function(){ playVideo(); });
+
+                    var close = function() {
+                        $container.addClass('cv-hidden');
+                        $dimmer.addClass('cv-hidden');
+                        customPlayer.stopVideo();
+                    }; //close//
+
+                    $container.on('click',close);
+                    $close.on('click',close);
+                } //if-else//
+            };
+            waitForYouTube();
+        }; //customVideo//
+
+    </script>
+</head>
+<body>
+
+<nav class="uk-navbar-container uk-navbar" uk-navbar="" id="topNav" style="position:fixed;z-index:1000;width:100%;">
+    <div class="uk-navbar-item uk-logo" href="#"><img style="height:48px;" src="https://ecornell.cornell.edu/wp-content/themes/ecustom16/img/ec-logo-transparent-white-text.png"></div>
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+            <li class="uk-visible@m"><a href="https://lms.ecornell.com" target="_blank">EXPERT-LED</a></li>
+            <li class="uk-visible@m uk-active"><a href="#">ON-DEMAND</a></li>
+            <li class="uk-visible@m"><a href="https://keynotes.ecornell.com" target="_blank">KEYNOTES</a></li>
+            <li id="profileImgWrapper">
+                
+                    
+                        <a href="#" id="profileLink" aria-expanded="false">SANKET</a>
+                        <div class="uk-navbar-dropdown uk-drop" uk-drop="pos:bottom-right; mode:click;">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a id="dsone_admin" href="/admin.do" target="_blank">Admin</a></li>
+                                <li><a id="dsone_transcript" href="/transcript.do" target="_blank">Transcript</a></li>
+                                <li><a href="http://ecornell.force.com/help/pkb_Home?q=OnDemand&amp;l=en_US&amp;c=Student_Services%3AOn_Demand_Lessons" target="_blank">Help</a></li>
+                                <li><a href="#" uk-toggle="#changePasswordModal">Change Password</a></li>
+
+                                <li><a href="/logout.do">Logout</a></li>
+                                <li class="uk-hidden@m uk-nav-divider"></li>
+                                <li class="uk-hidden@m"><a href="https://lms.ecornell.com">EXPERT-LED</a></li>
+                                <li class="uk-hidden@m uk-active"><a href="#">ON-DEMAND</a></li>
+                                <li class="uk-hidden@m"><a href="https://keynotes.ecornell.com" target="_blank">KEYNOTES</a></li>
+                            </ul>
+                        </div>
+                    
+                    
+                
+            </li>
+            <li id="sealWrapper"><a id="sealLink" href="http://www.cornell.edu/" target="_blank"><img class="uk-height-1-1" src="https://ecornell.cornell.edu/wp-content/themes/ecustom16/img/cornell-seal-44x44.svg"></a></li>
+        </ul>
+    </div>
+</nav>
+
+<div style="padding-top:50px">
+
+
+
+
+
+
+<script type="text/javascript">
+
+    jQuery(function(){
+        let $odFilter = $('#odFilter');
+
+        $odFilter.load(
+            '/filterLoad.do',
+            function() {
+                $odFilter.addClass('uk-background-secondary uk-light');
+                onDemand.init();
+            }
+        );
+
+        $('#videoContainer').on('click',function(){ $('.wholePage').addClass('hidden'); });
+
+    });
+
+    var banner_failover = '/images/banner_placeholder.svg';
+    $('img.banner-image').on('error',function(evt){
+        if(this.src != banner_failover) this.src = banner_failover;
+    });
+
+    var profile_failover = '/images/square_placeholder.svg';
+    $('img.profile-image').on('error',function(){
+        if(this.src != profile_failover) this.src = profile_failover;
+    });
+</script>
+
+<style type="text/css">
+    @media (min-width: 960px) { #odFilter { width:256px; } }
+
+    html .disabled { color: #999; }
+    html .disabled input[type="checkbox"] { border-color: #999; }
+</style>
+
+
+<h1 id="smallTitle" class="uk-heading-primary uk-hidden@m uk-text-center odTitle">On-Demand Lessons</h1>
+
+<div class="uk-grid-collapse uk-flex uk-grid" uk-grid="">
+
+    <div class="uk-width-1-1 ec-min-height-body@m uk-position-relative uk-first-column uk-background-secondary uk-light" id="odFilter">
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    let contentLoadStart = Date.now();
+    let lastLoader = null;
+
+    let selectPage;
+
+    jQuery(function($){
+        let $filterForm = $('#ecFilterForm');
+        let $query = $('#query',$filterForm);
+        let $clearBtn = $('#ecClear',$filterForm);
+        let $searchIcon = $('#ecSearchIcon');
+        let $content = $('#odContent');
+
+        let loader = function($target,params) {
+            let t = this;
+            this.stop = false;
+
+            let done = function($target,stop,data){
+                if(!stop) {
+                    $target.html(data);
+                    onDemand.init();
+                } //if//
+            };
+
+            if(params.search("&author=") !== -1) params += '&author=foo';
+
+            $.ajax({
+                url: '/indexLoad.do',
+                data: params,
+                method: 'POST'
+            }).done(function(data) {
+                done.call(t,$target,t.stop,data);
+            }).fail(function(){
+                // reload page:
+                console.log("AJAX failed; reloading page.");
+                location.reload();
+            }); //ajax//
+        };
+
+        let applyFilter = function(resetPage,useCustomHeader) {
+            let $target = $content;
+            if(resetPage) $('input[name="page"]',$filterForm).val(1);
+            let params = $filterForm.serialize();
+
+            
+                if(typeof useCustomHeader === 'undefined') useCustomHeader = false;
+
+                if(useCustomHeader) {
+                    params += (params!=='' ? '&' : '')+'includeCustomHeader=1';
+                } else {
+                    $target = $('#ecCards');
+                } //if-else//
+            
+
+            $target.empty()
+                .append(
+                    $('<div></div>')
+                        .css('width','100%')
+                        .append(
+                            $('<div></div>')
+                                .addClass('spinner128 uk-margin-large-top')
+                        )
+                ).append(
+                $('<div></div>')
+                    .addClass('loading-message')
+                    .append('We are searching through our lessons.<br>This may take a few seconds.')
+            );
+            contentLoadStart = Date.now();
+
+            if(lastLoader) lastLoader.stop = true;
+            lastLoader = new loader($target,params);
+
+            let $filter = $('#ecFilterWrapper');
+            $('input[type="checkbox"]',$filter)
+                .prop('disabled',true)
+                .each(function(){ $(this).parents('li').first().addClass('disabled'); });
+
+            $('.count',$filter).empty();
+        }; //applyFilter//
+
+        let $page = $('input[name="page"]',$filterForm);
+        selectPage = function(page) {
+            $page.val(page);
+            applyFilter(false,false);
+        }; //selectPage//
+
+        applyFilter(true,true);
+
+        $query.on('keydown',function(evt){
+            if(evt.which===13) {
+                $('input[type="checkbox"]',$filterForm).prop('checked',false);
+                applyFilter(true,false);
+                return false;
+            } //if//
+        });
+
+        $clearBtn.on('click',function(evt){
+            evt.preventDefault();
+            $query.val('');
+            $('input[type="checkbox"]',$filterForm).prop('checked',false);
+            applyFilter(true,false);
+            return false;
+        });
+
+        $searchIcon.on('click', function(){
+            $('input[type="checkbox"]',$filterForm).prop('checked',false);
+            applyFilter(true,false);
+
+        });
+        $('input[type="radio"]',$filterForm).on('change',function(){applyFilter(true,false);});
+
+        $($filterForm).on('mousedown',function(evt){
+            $('input[type="radio"]',$('.learningPath')).data('actualChecked',false);
+
+            let $learningPath = $(evt.target).parents('.learningPath');
+            if($learningPath.length > 0) {
+                let $radio = $('input[type="radio"]',$learningPath);
+                $radio.data('actualChecked',$radio.prop('checked'));
+            } //if//
+        });
+
+        $('input[name="learningPathId"]',$filterForm).on('click',function(){
+            if($(this).data('actualChecked')) {
+                let val= $(this).val();
+                let $target = $('input[name="learningPathId"][value!="'+val+'"]',$filterForm).first();
+                $target.trigger('click');
+            } //if//
+        });
+
+        $('input[type="checkbox"]',$filterForm).on('change',function(){applyFilter(true,false);});
+    });
+</script>
+
+<style type="text/css">
+    .ec-plan-filter .uk-progress {
+        height: 3px;
+        background-color: #484848;
+    }
+
+
+    .loading-message {
+        text-align: center;
+        color: #666;
+        font-weight:600;
+        margin-top:50px;
+        width:100%;
+    }
+
+    @media (min-width: 960px) {
+        #ecFilterWrapper {
+            position:fixed;
+            width:256px;
+            box-sizing:border-box;
+            height:100vh;
+            max-height:calc(100vh - 50px);
+            overflow-y:auto;
+        }
+
+        #ecClear {
+            padding:1px 10px;
+            line-height:inherit;
+            text-transform:uppercase;
+            font-weight:600;
+            font-size:0.75em;
+            white-space:nowrap;
+            border-width:2px;
+        }
+    }
+
+    /* Firefox */
+    #ecFilterWrapper {
+        scrollbar-width: thin;          /* "auto" or "thin" */
+        scrollbar-color: gray #2e3233; /* scroll thumb and track */
+    }
+
+    /* other browsers */
+    #ecFilterWrapper::-webkit-scrollbar {
+        width: 12px;               /* width of the entire scrollbar */
+    }
+
+    #ecFilterWrapper::-webkit-scrollbar-track {
+        background: #2e3233;        /* color of the tracking area */
+    }
+
+    #ecFilterWrapper::-webkit-scrollbar-thumb {
+        background-color: gray;    /* color of the scroll thumb */
+        border-radius: 20px;       /* roundness of the scroll thumb */
+        border: 3px solid #2e3233;  /* creates padding around scroll thumb */
+    }
+
+    /* The switch - the box around the slider */
+    .switch { position: relative; display: inline-block; width: 34px; height: 21px; margin-right:5px; }
+
+    /* Hide default HTML checkbox */
+    .switch input { opacity: 0; width: 0; height: 0; }
+
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 13px;
+        width: 13px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider { background-color: #2196F3; }
+
+    input:focus + .slider { box-shadow: 0 0 1px #2196F3; }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(13px);
+        -ms-transform: translateX(13px);
+        transform: translateX(13px);
+    }
+
+    /* Rounded sliders */
+    .slider.round { border-radius: 21px; }
+
+    .slider.round:before { border-radius: 50%; }
+
+
+
+    /* The switch - the box around the slider */
+    .ec-radio { position: relative; display: inline-block; width: 21px; height: 21px; margin-right:5px; }
+
+    /* Hide default HTML checkbox */
+    .ec-radio input { opacity: 0; width: 0; height: 0; }
+
+    /* The slider */
+    .radio {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .radio:before {
+        position: absolute;
+        content: "";
+        height: 13px;
+        width: 13px;
+        left: 2px;
+        bottom: 2px;
+        border:2px solid #2e3233;
+        background-color: #2e3233;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:hover + .radio:before { background-color: green; }
+
+    input:checked + .radio:before { background-color: #00ff00; }
+
+    /* Rounded sliders */
+    .radio.round { border-radius: 21px; }
+
+    .radio.round:before { border-radius: 50%; }
+</style>
+
+<div id="ecFilterWrapper" class="uk-padding-small uk-padding-remove-bottom uk-width-1-1 uk-width-2-3@s uk-width-1-1@m uk-margin-auto" role="search">
+    <form id="ecFilterForm" class="uk-visible@m" action="/filterLoad.do" method="post">
+        <input id="page" name="page" type="hidden" value="1">
+
+        
+
+        <div uk-toggle="target:#ecFilterForm; cls:uk-visible@m">
+            <div style="font-size:1.5rem;font-weight:600;" class="uk-text-center uk-text-left@m uk-margin-remove-bottom" uk-toggle="target:.oc-menu-display-icon">
+                Refine Results
+                <span class="oc-menu-display-icon uk-hidden@m uk-icon" uk-icon="icon: chevron-down; ratio:2"><svg width="40" height="40" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="chevron-down"><polyline fill="none" stroke="#000" stroke-width="1.03" points="16 7 10 13 4 7"></polyline></svg></span>
+                <span class="oc-menu-display-icon uk-hidden@m uk-icon" uk-icon="icon: chevron-up; ratio:2" hidden=""><svg width="40" height="40" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="chevron-up"><polyline fill="none" stroke="#000" stroke-width="1.03" points="4 13 10 7 16 13"></polyline></svg></span>
+            </div>
+        </div>
+
+        <div class="uk-grid-small uk-margin-bottom uk-text-center uk-text-left@m uk-grid uk-grid-stack" uk-grid="">
+            <div class="uk-width-3-4 uk-width-1-2@s uk-width-1-1@m">
+                <div uk-toggle="target:.oc-menu-display-icon">
+                    <button class="uk-button uk-button-default uk-width-1-1 uk-hidden@m" uk-toggle="target:#ecFilterForm; cls:uk-visible@m">Apply Filters</button>
+                </div>
+            </div>
+            <div class="uk-width-3-4 uk-width-1-2@s uk-width-1-1@m uk-first-column">
+                <button id="ecClear" class="uk-button uk-button-default uk-width-1-1 uk-width-auto@m" type="button">Clear Filters</button>
+            </div>
+        </div>
+
+        <div class="uk-inline uk-width-1-1">
+            <span id="ecSearchIcon" style="cursor:pointer;position:absolute;right:0;margin:10px 0" uk-icon="icon: search" aria-label="Click to apply search filter" class="uk-icon">&nbsp;<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="search"><circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9" r="7"></circle><path fill="none" stroke="#000" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z"></path></svg></span>
+            <input id="query" name="query" style="z-index:1" placeholder="Start Typing Here..." class="uk-input uk-form-blank uk-padding-remove-left uk-width-9-10" aria-label="Filter results here" type="text" value="">
+        </div>
+
+        <hr class="uk-margin-small-top">
+
+        
+        
+        
+
+        <fieldset class="uk-fieldset">
+            <div class="uk-clearfix">
+                <a href="#" uk-toggle="target:.ec-sort-filter; animation: uk-animation-fade" class="uk-float-right">
+                    <span class="uk-float-right ec-sort-filter uk-icon" uk-icon="icon: minus; ratio:.87" title="collapse"><svg width="17.4" height="17.4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="minus"><rect height="1" width="18" y="9" x="1"></rect></svg></span>
+                    <span class="uk-float-right ec-sort-filter uk-icon" uk-icon="icon: plus; ratio:.87" title="expand" hidden=""><svg width="17.4" height="17.4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus"><rect x="9" y="1" width="1" height="17"></rect><rect x="1" y="9" width="17" height="1"></rect></svg></span>
+                </a>
+                <legend class="uk-float-left uk-legend" id="legendStatus">Status</legend>
+            </div>
+            <a class="sr-only" href="#legendDuration">Skip to next filter</a>
+            <ul class="uk-list uk-text-small uk-margin-small-top ec-sort-filter">
+                <li class="disabled"><input id="status1" name="status" class="uk-checkbox" type="checkbox" value="New Arrival" disabled=""><input type="hidden" name="_status" value="on"><label for="status1"> New</label><span class="count"></span></li>
+                <li class="disabled"><input id="status2" name="status" class="uk-checkbox" type="checkbox" value="Not Started" disabled=""><input type="hidden" name="_status" value="on"><label for="status2"> Not Started</label><span class="count"></span></li>
+                <li class="disabled"><input id="status3" name="status" class="uk-checkbox" type="checkbox" value="In Progress" disabled=""><input type="hidden" name="_status" value="on"><label for="status3"> In Progress</label><span class="count"></span></li>
+                <li class="disabled"><input id="status4" name="status" class="uk-checkbox" type="checkbox" value="Complete" disabled=""><input type="hidden" name="_status" value="on"><label for="status4"> Complete</label><span class="count"></span></li>
+            </ul>
+        </fieldset>
+
+        <hr class="uk-margin-small-top">
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+
+<fieldset class="uk-fieldset" id="term_duration">
+    <div class="uk-clearfix" style="display:flex; align-items:center; width:100%">
+        <legend style="flex-grow:1;" class="uk-float-left uk-legend" id="legendDuration">Duration</legend>
+        <a href="#" uk-toggle="target:.ec-duration-filter; animation: uk-animation-fade" class="uk-float-right">
+            <span class="ec-duration-filter uk-icon" uk-icon="icon: minus; ratio:.87" title="collapse"><svg width="17.4" height="17.4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="minus"><rect height="1" width="18" y="9" x="1"></rect></svg></span>
+            <span class="ec-duration-filter uk-icon" uk-icon="icon: plus; ratio:.87" title="expand" hidden=""><svg width="17.4" height="17.4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus"><rect x="9" y="1" width="1" height="17"></rect><rect x="1" y="9" width="17" height="1"></rect></svg></span>
+        </a>
+    </div>
+    <a class="sr-only" href="#legendTopic">Skip to next filter</a>
+    <ul class="uk-list uk-text-small uk-margin-small-top ec-duration-filter ">
+        
+            
+            <li style="display:flex;" class="disabled">
+                <input id="duration1" name="duration" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="120 minutes" disabled=""><input type="hidden" name="_duration" value="on">
+                <div>
+                    <label for="duration1"> 120 minutes</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li style="display:flex;" class="disabled">
+                <input id="duration2" name="duration" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="30 minutes" disabled=""><input type="hidden" name="_duration" value="on">
+                <div>
+                    <label for="duration2"> 30 minutes</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li style="display:flex;" class="disabled">
+                <input id="duration3" name="duration" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="45 minutes" disabled=""><input type="hidden" name="_duration" value="on">
+                <div>
+                    <label for="duration3"> 45 minutes</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-duration-filter-more disabled" style="display:flex;">
+                <input id="duration4" name="duration" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="60 minutes" disabled=""><input type="hidden" name="_duration" value="on">
+                <div>
+                    <label for="duration4"> 60 minutes</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-duration-filter-more disabled" style="display:flex;">
+                <input id="duration5" name="duration" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="75 minutes" disabled=""><input type="hidden" name="_duration" value="on">
+                <div>
+                    <label for="duration5"> 75 minutes</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-duration-filter-more disabled" style="display:flex;">
+                <input id="duration6" name="duration" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="90 minutes" disabled=""><input type="hidden" name="_duration" value="on">
+                <div>
+                    <label for="duration6"> 90 minutes</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+    </ul>
+
+    
+        <!-- if more than 3, add Show More -->
+        <a class="ec-duration-filter" uk-toggle="target: .ec-duration-filter-more; animation: uk-animation-fade" href="#">
+            <div class="uk-text-small uk-text-bold">
+                <span class="ec-duration-filter-more">+</span><span class="ec-duration-filter-more" hidden="">-</span> Show <span class="ec-duration-filter-more">More</span><span class="ec-duration-filter-more" hidden="">Less</span>
+            </div>
+        </a>
+    
+</fieldset>
+
+<hr class="duration uk-margin-small-top">
+
+
+        
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+<fieldset class="uk-fieldset" id="term_topic">
+    <div class="uk-clearfix" style="display:flex; align-items:center; width:100%">
+        <legend style="flex-grow:1;" class="uk-float-left uk-legend" id="legendTopic">Topic</legend>
+        <a href="#" uk-toggle="target:.ec-topic-filter; animation: uk-animation-fade" class="uk-float-right">
+            <span class="ec-topic-filter uk-icon" uk-icon="icon: minus; ratio:.87" title="collapse"><svg width="17.4" height="17.4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="minus"><rect height="1" width="18" y="9" x="1"></rect></svg></span>
+            <span class="ec-topic-filter uk-icon" uk-icon="icon: plus; ratio:.87" title="expand" hidden=""><svg width="17.4" height="17.4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus"><rect x="9" y="1" width="1" height="17"></rect><rect x="1" y="9" width="17" height="1"></rect></svg></span>
+        </a>
+    </div>
+    <a class="sr-only" href="#legendSkill">Skip to next filter</a>
+    <ul class="uk-list uk-text-small uk-margin-small-top ec-topic-filter ">
+        
+            
+            <li style="display:flex;" class="disabled">
+                <input id="topic1" name="topic" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Business and Finance" disabled=""><input type="hidden" name="_topic" value="on">
+                <div>
+                    <label for="topic1"> Business and Finance</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li style="display:flex;" class="disabled">
+                <input id="topic2" name="topic" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Data Science &amp; Analytics" disabled=""><input type="hidden" name="_topic" value="on">
+                <div>
+                    <label for="topic2"> Data Science &amp; Analytics</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li style="display:flex;" class="disabled">
+                <input id="topic3" name="topic" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Diversity and Inclusion" disabled=""><input type="hidden" name="_topic" value="on">
+                <div>
+                    <label for="topic3"> Diversity and Inclusion</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-topic-filter-more disabled" style="display:flex;">
+                <input id="topic4" name="topic" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Engineering" disabled=""><input type="hidden" name="_topic" value="on">
+                <div>
+                    <label for="topic4"> Engineering</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-topic-filter-more disabled" style="display:flex;">
+                <input id="topic5" name="topic" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Environmental, Social, Governance" disabled=""><input type="hidden" name="_topic" value="on">
+                <div>
+                    <label for="topic5"> Environmental, Social, Governance</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-topic-filter-more disabled" style="display:flex;">
+                <input id="topic6" name="topic" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Food and Plant Science" disabled=""><input type="hidden" name="_topic" value="on">
+                <div>
+                    <label for="topic6"> Food and Plant Science</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-topic-filter-more disabled" style="display:flex;">
+                <input id="topic7" name="topic" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Healthcare" disabled=""><input type="hidden" name="_topic" value="on">
+                <div>
+                    <label for="topic7"> Healthcare</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-topic-filter-more disabled" style="display:flex;">
+                <input id="topic8" name="topic" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Human Resources" disabled=""><input type="hidden" name="_topic" value="on">
+                <div>
+                    <label for="topic8"> Human Resources</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-topic-filter-more disabled" style="display:flex;">
+                <input id="topic9" name="topic" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Law" disabled=""><input type="hidden" name="_topic" value="on">
+                <div>
+                    <label for="topic9"> Law</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-topic-filter-more disabled" style="display:flex;">
+                <input id="topic10" name="topic" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Leadership" disabled=""><input type="hidden" name="_topic" value="on">
+                <div>
+                    <label for="topic10"> Leadership</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-topic-filter-more disabled" style="display:flex;">
+                <input id="topic11" name="topic" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Marketing" disabled=""><input type="hidden" name="_topic" value="on">
+                <div>
+                    <label for="topic11"> Marketing</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-topic-filter-more disabled" style="display:flex;">
+                <input id="topic12" name="topic" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Nutrition" disabled=""><input type="hidden" name="_topic" value="on">
+                <div>
+                    <label for="topic12"> Nutrition</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-topic-filter-more disabled" style="display:flex;">
+                <input id="topic13" name="topic" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Project Management" disabled=""><input type="hidden" name="_topic" value="on">
+                <div>
+                    <label for="topic13"> Project Management</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-topic-filter-more disabled" style="display:flex;">
+                <input id="topic14" name="topic" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Real Estate" disabled=""><input type="hidden" name="_topic" value="on">
+                <div>
+                    <label for="topic14"> Real Estate</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-topic-filter-more disabled" style="display:flex;">
+                <input id="topic15" name="topic" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Technology" disabled=""><input type="hidden" name="_topic" value="on">
+                <div>
+                    <label for="topic15"> Technology</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+    </ul>
+
+    
+        <!-- if more than 3, add Show More -->
+        <a class="ec-topic-filter" uk-toggle="target: .ec-topic-filter-more; animation: uk-animation-fade" href="#">
+            <div class="uk-text-small uk-text-bold">
+                <span class="ec-topic-filter-more">+</span><span class="ec-topic-filter-more" hidden="">-</span> Show <span class="ec-topic-filter-more">More</span><span class="ec-topic-filter-more" hidden="">Less</span>
+            </div>
+        </a>
+    
+</fieldset>
+
+<hr class="topic uk-margin-small-top">
+
+        
+
+        
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+<fieldset class="uk-fieldset" id="term_skill">
+    <div class="uk-clearfix" style="display:flex; align-items:center; width:100%">
+        <legend style="flex-grow:1;" class="uk-float-left uk-legend" id="legendSkill">Skill</legend>
+        <a href="#" uk-toggle="target:.ec-skill-filter; animation: uk-animation-fade" class="uk-float-right">
+            <span class="ec-skill-filter uk-icon" uk-icon="icon: minus; ratio:.87" title="collapse"><svg width="17.4" height="17.4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="minus"><rect height="1" width="18" y="9" x="1"></rect></svg></span>
+            <span class="ec-skill-filter uk-icon" uk-icon="icon: plus; ratio:.87" title="expand" hidden=""><svg width="17.4" height="17.4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus"><rect x="9" y="1" width="1" height="17"></rect><rect x="1" y="9" width="17" height="1"></rect></svg></span>
+        </a>
+    </div>
+    <a class="sr-only" href="#legendAudience">Skip to next filter</a>
+    <ul class="uk-list uk-text-small uk-margin-small-top ec-skill-filter ">
+        
+            
+            <li style="display:flex;" class="disabled">
+                <input id="skill1" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Building Teams" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill1"> Building Teams</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li style="display:flex;" class="disabled">
+                <input id="skill2" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Business Acumen" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill2"> Business Acumen</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li style="display:flex;" class="disabled">
+                <input id="skill3" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Career Services" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill3"> Career Services</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill4" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Change Management" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill4"> Change Management</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill5" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Coaching" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill5"> Coaching</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill6" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Communications" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill6"> Communications</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill7" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Cultural Sensitivity" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill7"> Cultural Sensitivity</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill8" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Customer Service" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill8"> Customer Service</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill9" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Data Analytics" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill9"> Data Analytics</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill10" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Dealing with Conflict" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill10"> Dealing with Conflict</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill11" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Decision Making" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill11"> Decision Making</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill12" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Developing Teams" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill12"> Developing Teams</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill13" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Employee Benefits" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill13"> Employee Benefits</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill14" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Employee Development" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill14"> Employee Development</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill15" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Examining Bias" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill15"> Examining Bias</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill16" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Goal Setting" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill16"> Goal Setting</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill17" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Human Resources" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill17"> Human Resources</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill18" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Human Resources Consulting" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill18"> Human Resources Consulting</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill19" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Human Resources Strategy" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill19"> Human Resources Strategy</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill20" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Improve the Business" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill20"> Improve the Business</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill21" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Increasing Credibility" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill21"> Increasing Credibility</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill22" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Influence" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill22"> Influence</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill23" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Innovation in Organizations" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill23"> Innovation in Organizations</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill24" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Labor Relations" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill24"> Labor Relations</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill25" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Leading Teams" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill25"> Leading Teams</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill26" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Managing Diversity" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill26"> Managing Diversity</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill27" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Managing Teams" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill27"> Managing Teams</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill28" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Marketing" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill28"> Marketing</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill29" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Motivating Others" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill29"> Motivating Others</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill30" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Moving into Leadership" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill30"> Moving into Leadership</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill31" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Negotiations" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill31"> Negotiations</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill32" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Performance Measurement" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill32"> Performance Measurement</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill33" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Personal Interest" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill33"> Personal Interest</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill34" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Predictive Analytics" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill34"> Predictive Analytics</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill35" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Project Management" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill35"> Project Management</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill36" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Remote Teams" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill36"> Remote Teams</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill37" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Sales" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill37"> Sales</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill38" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Time Management" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill38"> Time Management</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-skill-filter-more disabled" style="display:flex;">
+                <input id="skill39" name="skill" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Understanding the Business" disabled=""><input type="hidden" name="_skill" value="on">
+                <div>
+                    <label for="skill39"> Understanding the Business</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+    </ul>
+
+    
+        <!-- if more than 3, add Show More -->
+        <a class="ec-skill-filter" uk-toggle="target: .ec-skill-filter-more; animation: uk-animation-fade" href="#">
+            <div class="uk-text-small uk-text-bold">
+                <span class="ec-skill-filter-more">+</span><span class="ec-skill-filter-more" hidden="">-</span> Show <span class="ec-skill-filter-more">More</span><span class="ec-skill-filter-more" hidden="">Less</span>
+            </div>
+        </a>
+    
+</fieldset>
+
+<hr class="skill uk-margin-small-top">
+
+        
+
+        
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+<fieldset class="uk-fieldset" id="term_audience">
+    <div class="uk-clearfix" style="display:flex; align-items:center; width:100%">
+        <legend style="flex-grow:1;" class="uk-float-left uk-legend" id="legendAudience">Audience</legend>
+        <a href="#" uk-toggle="target:.ec-audience-filter; animation: uk-animation-fade" class="uk-float-right">
+            <span class="ec-audience-filter uk-icon" uk-icon="icon: minus; ratio:.87" title="collapse"><svg width="17.4" height="17.4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="minus"><rect height="1" width="18" y="9" x="1"></rect></svg></span>
+            <span class="ec-audience-filter uk-icon" uk-icon="icon: plus; ratio:.87" title="expand" hidden=""><svg width="17.4" height="17.4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus"><rect x="9" y="1" width="1" height="17"></rect><rect x="1" y="9" width="17" height="1"></rect></svg></span>
+        </a>
+    </div>
+    <a class="sr-only" href="#legendAuthor">Skip to next filter</a>
+    <ul class="uk-list uk-text-small uk-margin-small-top ec-audience-filter uk-margin-small-bottom">
+        
+            
+            <li style="display:flex;" class="disabled">
+                <input id="audience1" name="audience" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Individual Contributor" disabled=""><input type="hidden" name="_audience" value="on">
+                <div>
+                    <label for="audience1"> Individual Contributor</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li style="display:flex;" class="disabled">
+                <input id="audience2" name="audience" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Manager" disabled=""><input type="hidden" name="_audience" value="on">
+                <div>
+                    <label for="audience2"> Manager</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li style="display:flex;" class="disabled">
+                <input id="audience3" name="audience" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Senior Leader" disabled=""><input type="hidden" name="_audience" value="on">
+                <div>
+                    <label for="audience3"> Senior Leader</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+    </ul>
+
+    
+</fieldset>
+
+<hr class="audience uk-margin-small-top">
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+
+<fieldset class="uk-fieldset" id="term_author">
+    <div class="uk-clearfix" style="display:flex; align-items:center; width:100%">
+        <legend style="flex-grow:1;" class="uk-float-left uk-legend" id="legendAuthor">Author</legend>
+        <a href="#" uk-toggle="target:.ec-author-filter; animation: uk-animation-fade" class="uk-float-right">
+            <span class="ec-author-filter uk-icon" uk-icon="icon: minus; ratio:.87" title="collapse"><svg width="17.4" height="17.4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="minus"><rect height="1" width="18" y="9" x="1"></rect></svg></span>
+            <span class="ec-author-filter uk-icon" uk-icon="icon: plus; ratio:.87" title="expand" hidden=""><svg width="17.4" height="17.4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus"><rect x="9" y="1" width="1" height="17"></rect><rect x="1" y="9" width="17" height="1"></rect></svg></span>
+        </a>
+    </div>
+    
+    <ul class="uk-list uk-text-small uk-margin-small-top ec-author-filter ">
+        
+            
+            <li style="display:flex;" class="disabled">
+                <input id="author1" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Adolfo Villagomez" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author1"> Adolfo Villagomez</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li style="display:flex;" class="disabled">
+                <input id="author2" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Aija Leiponen" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author2"> Aija Leiponen</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li style="display:flex;" class="disabled">
+                <input id="author3" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Alex Susskind" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author3"> Alex Susskind</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author4" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Alexander Colvin" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author4"> Alexander Colvin</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author5" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Alexander Travis" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author5"> Alexander Travis</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author6" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Allan Filipowicz" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author6"> Allan Filipowicz</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author7" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Allison Elias" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author7"> Allison Elias</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author8" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Allison Fumai" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author8"> Allison Fumai</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author9" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Amy Newman" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author9"> Amy Newman</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author10" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Andrea Ippolito" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author10"> Andrea Ippolito</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author11" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Andrew Quagliata" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author11"> Andrew Quagliata</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author12" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Angela Noble-Grange" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author12"> Angela Noble-Grange</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author13" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Ann Charles Vegdahl" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author13"> Ann Charles Vegdahl</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author14" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Anna Katharine Mansfield" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author14"> Anna Katharine Mansfield</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author15" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Ariel Avgar" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author15"> Ariel Avgar</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author16" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Barbara E. Mink" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author16"> Barbara E. Mink</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author17" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Barry Perlus" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author17"> Barry Perlus</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author18" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Beth Livingston" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author18"> Beth Livingston</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author19" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Beth McKinney" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author19"> Beth McKinney</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author20" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Brad Bell" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author20"> Brad Bell</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author21" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Brad Wellstead" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author21"> Brad Wellstead</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author22" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Bradley Wendel" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author22"> Bradley Wendel</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author23" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Bruno Meireles Xavier" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author23"> Bruno Meireles Xavier</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author24" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Cathy Enz" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author24"> Cathy Enz</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author25" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Celia Bigoness" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author25"> Celia Bigoness</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author26" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Charles Whitehead" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author26"> Charles Whitehead</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author27" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Chekitan Dev" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author27"> Chekitan Dev</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author28" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Cheryl Stanley" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author28"> Cheryl Stanley</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author29" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Cheryl Strauss Einhorn" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author29"> Cheryl Strauss Einhorn</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author30" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Chris Gerling" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author30"> Chris Gerling</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author31" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Christopher Byrne" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author31"> Christopher Byrne</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author32" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Christopher Collins" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author32"> Christopher Collins</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author33" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Christopher Gaulke" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author33"> Christopher Gaulke</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author34" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Christopher Marquis" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author34"> Christopher Marquis</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author35" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Cindy van Es" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author35"> Cindy van Es</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author36" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Clarence Lee" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author36"> Clarence Lee</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author37" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Courtney L. McCluney" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author37"> Courtney L. McCluney</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author38" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Craig R. Snow" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author38"> Craig R. Snow</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author39" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Cynthia S. James" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author39"> Cynthia S. James</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author40" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Dan Awrey" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author40"> Dan Awrey</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author41" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Danielle Eiseman" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author41"> Danielle Eiseman</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author42" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="David Feldshuh" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author42"> David Feldshuh</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author43" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="David Levitsky" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author43"> David Levitsky</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author44" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="David Schneider" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author44"> David Schneider</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author45" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="David Sherwyn" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author45"> David Sherwyn</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author46" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="David Taylor" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author46"> David Taylor</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author47" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Deborah Streeter" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author47"> Deborah Streeter</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author48" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Derek Cabrera" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author48"> Derek Cabrera</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author49" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Devon Proudfoot" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author49"> Devon Proudfoot</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author50" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Diane Burton" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author50"> Diane Burton</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author51" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Donna Haeger" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author51"> Donna Haeger</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author52" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Doug Stayman" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author52"> Doug Stayman</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author53" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Dr. Katelin Olson" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author53"> Dr. Katelin Olson</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author54" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Drew David Pascarella" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author54"> Drew David Pascarella</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author55" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Elizabeth Mannix" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author55"> Elizabeth Mannix</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author56" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Erica Dawson" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author56"> Erica Dawson</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author57" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Eve Klein" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author57"> Eve Klein</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author58" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Gen Meredith" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author58"> Gen Meredith</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author59" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="General George W. Casey, Jr." disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author59"> General George W. Casey, Jr.</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author60" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="George A. Hay" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author60"> George A. Hay</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author61" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Gilly Leshed" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author61"> Gilly Leshed</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author62" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Giulia Friso" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author62"> Giulia Friso</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author63" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Glen W.S. Dowell" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author63"> Glen W.S. Dowell</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author64" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Harry Katz" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author64"> Harry Katz</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author65" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Homayoun Hatami" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author65"> Homayoun Hatami</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author66" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="JR Keller" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author66"> JR Keller</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author67" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Jan Katz" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author67"> Jan Katz</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author68" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Jan deRoos" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author68"> Jan deRoos</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author69" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Jeanne Varney" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author69"> Jeanne Varney</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author70" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Jed Stiglitz" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author70"> Jed Stiglitz</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author71" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Ji Won Kim" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author71"> Ji Won Kim</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author72" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Jim Fulton" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author72"> Jim Fulton</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author73" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Joanne Reiter" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author73"> Joanne Reiter</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author74" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Joe Grasso" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author74"> Joe Grasso</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author75" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="John Callies" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author75"> John Callies</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author76" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="John Hausknecht" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author76"> John Hausknecht</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author77" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="John Mathiason" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author77"> John Mathiason</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author78" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="John Tobin-de la Puente" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author78"> John Tobin-de la Puente</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author79" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Jon McKenzie" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author79"> Jon McKenzie</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author80" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Jonathan St. George" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author80"> Jonathan St. George</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author81" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Juan Bueno" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author81"> Juan Bueno</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author82" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Judi Brownell" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author82"> Judi Brownell</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author83" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Justin Johnson" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author83"> Justin Johnson</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author84" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Karan Girotra" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author84"> Karan Girotra</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author85" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Kate Walsh" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author85"> Kate Walsh</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author86" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Katrina Nobles" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author86"> Katrina Nobles</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author87" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Kaylyn Kirkpatrick" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author87"> Kaylyn Kirkpatrick</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author88" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Keith Cowing" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author88"> Keith Cowing</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author89" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Kelly Mahon Tullier" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author89"> Kelly Mahon Tullier</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author90" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Ken Rother" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author90"> Ken Rother</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author91" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Kevin Hallock" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author91"> Kevin Hallock</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author92" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Kristie Busch" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author92"> Kristie Busch</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author93" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Kristie Busch, D.O." disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author93"> Kristie Busch, D.O.</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author94" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Laura Cabrera" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author94"> Laura Cabrera</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author95" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Lauren Chambliss" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author95"> Lauren Chambliss</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author96" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Laurie Sedgwick" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author96"> Laurie Sedgwick</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author97" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Leonard J. Kennedy" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author97"> Leonard J. Kennedy</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author98" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Linda Barrington" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author98"> Linda Barrington</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author99" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Linda Nozick" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author99"> Linda Nozick</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author100" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Lisa Nishii" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author100"> Lisa Nishii</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author101" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Liz Karns" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author101"> Liz Karns</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author102" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Manoj Thomas" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author102"> Manoj Thomas</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author103" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Mardelle Shepley" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author103"> Mardelle Shepley</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author104" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Maria Lame" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author104"> Maria Lame</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author105" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Maria Valdivieso" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author105"> Maria Valdivieso</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author106" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Maria Wolfe" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author106"> Maria Wolfe</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author107" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Mark Milstein" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author107"> Mark Milstein</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author108" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Mark Underberg" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author108"> Mark Underberg</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author109" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Mary Gail Gearns" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author109"> Mary Gail Gearns</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author110" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Matt Morrison" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author110"> Matt Morrison</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author111" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Matthew Schneider" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author111"> Matthew Schneider</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author112" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Michael C. Dorf" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author112"> Michael C. Dorf</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author113" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Michael Fontaine" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author113"> Michael Fontaine</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author114" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Michael Hoffmann" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author114"> Michael Hoffmann</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author115" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Michele Lefebvre" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author115"> Michele Lefebvre</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author116" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Mikaila Brown" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author116"> Mikaila Brown</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author117" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Mukti Khaire" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author117"> Mukti Khaire</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author118" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Natalia Santamaría" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author118"> Natalia Santamaría</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author119" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Nathalia Bernardo" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author119"> Nathalia Bernardo</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author120" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Neel Naik" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author120"> Neel Naik</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author121" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Nick Fabrizio" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author121"> Nick Fabrizio</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author122" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Nina Bassuk" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author122"> Nina Bassuk</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author123" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Nina Scholtz" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author123"> Nina Scholtz</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author124" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Olga I. Padilla-Zakour" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author124"> Olga I. Padilla-Zakour</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author125" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Oskar Liivak" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author125"> Oskar Liivak</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author126" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Pamela Stepp" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author126"> Pamela Stepp</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author127" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Patrick Schulze" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author127"> Patrick Schulze</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author128" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Patti Mandel" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author128"> Patti Mandel</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author129" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Pedro Pérez" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author129"> Pedro Pérez</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author130" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Peggy Odom-Reed" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author130"> Peggy Odom-Reed</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author131" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Peter Greenwald" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author131"> Peter Greenwald</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author132" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Pär Edin" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author132"> Pär Edin</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author133" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="René Langen" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author133"> René Langen</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author134" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Richard John" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author134"> Richard John</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author135" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Risa Mish" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author135"> Risa Mish</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author136" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Rob Kwortnik" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author136"> Rob Kwortnik</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author137" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Robert Bloomfield" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author137"> Robert Bloomfield</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author138" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Robert Green" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author138"> Robert Green</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author139" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Robert Hillman" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author139"> Robert Hillman</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author140" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Robert Karpman" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author140"> Robert Karpman</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author141" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Robert Newman" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author141"> Robert Newman</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author142" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Rohit Verma" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author142"> Rohit Verma</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author143" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Roland John" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author143"> Roland John</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author144" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Russell Moss" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author144"> Russell Moss</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author145" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Russell Weaver" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author145"> Russell Weaver</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author146" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Sachin Gupta" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author146"> Sachin Gupta</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author147" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Sally Klingel" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author147"> Sally Klingel</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author148" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Sam Magavern" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author148"> Sam Magavern</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author149" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Samuel Bacharach" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author149"> Samuel Bacharach</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author150" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Sara Prince" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author150"> Sara Prince</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author151" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Sarosh Kuruvilla" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author151"> Sarosh Kuruvilla</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author152" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Saule Omarova" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author152"> Saule Omarova</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author153" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Scott Gibson" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author153"> Scott Gibson</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author154" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Scott Stewart" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author154"> Scott Stewart</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author155" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Sean Fath" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author155"> Sean Fath</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author156" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Seth Harris" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author156"> Seth Harris</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author157" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Sital Kalantry" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author157"> Sital Kalantry</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author158" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Stephanie Cartin" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author158"> Stephanie Cartin</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author159" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Stephanie Thomas" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author159"> Stephanie Thomas</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author160" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Stephen P. Garvey" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author160"> Stephen P. Garvey</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author161" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Stephen W. Yale-Loehr" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author161"> Stephen W. Yale-Loehr</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author162" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Steve Mutkoski" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author162"> Steve Mutkoski</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author163" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Steven Carvell" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author163"> Steven Carvell</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author164" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Stewart J. Schwab" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author164"> Stewart J. Schwab</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author165" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Susan Fleming" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author165"> Susan Fleming</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author166" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Susanne Bruyère" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author166"> Susanne Bruyère</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author167" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Tasha Lewis" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author167"> Tasha Lewis</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author168" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Theomary Karamanis" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author168"> Theomary Karamanis</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author169" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Thomas Evans" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author169"> Thomas Evans</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author170" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Tom Schryver" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author170"> Tom Schryver</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author171" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Tony Simons" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author171"> Tony Simons</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author172" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Traci Nathans-Kelly" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author172"> Traci Nathans-Kelly</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author173" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Vithala R. Rao" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author173"> Vithala R. Rao</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author174" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Y. Connie Yuan" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author174"> Y. Connie Yuan</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author175" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Yael Bacharach" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author175"> Yael Bacharach</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+            
+            <li hidden="" class="ec-author-filter-more disabled" style="display:flex;">
+                <input id="author176" name="author" style="margin-top:0;margin-right:5px;" class="uk-checkbox" type="checkbox" value="Zachary Rood" disabled=""><input type="hidden" name="_author" value="on">
+                <div>
+                    <label for="author176"> Zachary Rood</label>
+                    <span class="count"></span>
+                </div>
+            </li>
+        
+    </ul>
+
+    
+        <!-- if more than 3, add Show More -->
+        <a class="ec-author-filter" uk-toggle="target: .ec-author-filter-more; animation: uk-animation-fade" href="#">
+            <div class="uk-text-small uk-text-bold">
+                <span class="ec-author-filter-more">+</span><span class="ec-author-filter-more" hidden="">-</span> Show <span class="ec-author-filter-more">More</span><span class="ec-author-filter-more" hidden="">Less</span>
+            </div>
+        </a>
+    
+</fieldset>
+
+
+
+
+        <br>
+    <div>
+<input type="hidden" name="_csrf" value="bf01613b-ed04-4ae2-b4cb-592998485bee">
+</div></form>
+</div>
+</div>
+
+    <div class="uk-width-1-1 uk-width-expand@m uk-position-relative" id="odContent">
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    jQuery(function($){
+        console.log("content load time: "+((Date.now()-contentLoadStart)/1000.0)+" seconds");
+
+        let height = 0;
+        let $containers = $('.custom-container');
+        $containers
+            .each(function(){ height = Math.max(height,$(this).height()); })
+            .css('height',height);
+
+        let $slideshow = $('#slideshow');
+        let $slideItems = $('ul',$slideshow).eq(0);
+
+        let $open = $('.customOpen');
+        $('.customClose').on('click keypress',function(){
+            $slideItems.css('height',150);
+            $containers.addClass('small-header').css('height','auto');
+            $open.removeClass('hide-when-large');
+        });
+
+        $open.on('click keypress',function(){
+            $slideItems.css('height',height+40);
+            $containers.removeClass('small-header').css('height',height);
+            $open.addClass('hide-when-large');
+        });
+
+        $('#smallTitle').text('On-Demand Lessons');
+
+        $('.custom-video').each(function(){
+            $(this).customVideo($(this).data('video'),'https%3A%2F%2Fondemand.ecornell.com');
+        });
+
+        $slideItems.addClass('uk-slideshow-items').css('height',height+40);
+        let params = {
+            'animation': 'fade',
+            'autoplay': true,
+            'autoplay-interval': 10000,
+            'ratio': false,
+            'pause-on-hover': true
+        };
+        UIkit.slideshow('#slideshow',params);
+
+        // Remove focus from a slideshow nav element after it is clicked, so it doesn't remain highlighted when
+        // autoplay moves to another slide:
+        let blurNavAfterClick = function() {
+            let $lis = $('li',$('.uk-slideshow-nav'));
+            if($lis.length === 0) setTimeout(blurNavAfterClick,100);
+            else $lis.on('click',function(){ $('a',$(this)).blur(); });
+        };
+        blurNavAfterClick();
+
+        // autoplay turns off when you click anything on the banner, so restart it:
+        $slideshow.on('click',function(){
+            setTimeout(function(){ UIkit.slideshow('#slideshow').startAutoplay(); },500);
+        });
+
+        $('.uk-slideshow-pause').on('click', function(){
+            UIkit.slideshow('#slideshow').stopAutoplay();
+        });
+    });
+</script>
+
+<div class="">
+    
+        <div id="slideshow" class="uk-visible@m uk-slideshow" role="region" aria-label="carousel">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                <ul style="padding-left: 0px; height: 150px; min-height: 0px;" class="uk-slideshow-items">
+
+                
+                
+                    
+                    <li aria-label="slide 1 of 1" tabindex="-1" class="uk-active uk-transition-active" style="z-index: -1;">
+                        <div class="cover-container uk-visible@m">
+                            
+                                <img class="custom-hero" src="https://ecornell.cornell.edu/wp-content/uploads/sites/8/2013/03/Cornell_University-01-copy-1.png" alt="">
+                            
+
+                            <div class="custom-container" style="height: 110px;">
+                                
+
+                                
+                                    <div class="custom-headline" role="heading" aria-level="1">Cornell's Senior Executive Leadership Program</div>
+                                
+
+                                
+
+                                <a class="customOpen custom-widget hide-when-large uk-icon" uk-icon="icon:chevron-down;ratio:2" role="button" tabindex="0" aria-label="Show banner content"><svg width="40" height="40" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="chevron-down"><polyline fill="none" stroke="#000" stroke-width="1.03" points="16 7 10 13 4 7"></polyline></svg></a>
+
+                                <div class="customClose custom-widget hide-when-small uk-icon" uk-icon="icon:chevron-up;ratio:2" role="button" tabindex="0" aria-label="Hide banner content"><svg width="40" height="40" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="chevron-up"><polyline fill="none" stroke="#000" stroke-width="1.03" points="4 13 10 7 16 13"></polyline></svg></div>
+
+                                
+                            </div>
+                        </div>
+                    </li>
+                
+                </ul>
+            </div>
+
+            
+        </div>
+    
+
+    <div class="uk-container uk-container-expand uk-margin-medium-top uk-margin-large-bottom" id="main" role="main">
+        
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@l uk-child-width-1-4@xl uk-grid-medium ec-filter-target uk-grid uk-grid-stack" id="ecCards" uk-grid="margin:dummy-margin" uk-height-match="target: > .ec-card-wrapper:not(.ec-filtered):not(.ec-card-open) > .ec-prod-card"><div style="width: 100%;" class="uk-first-column"><div class="spinner128 uk-margin-large-top"></div></div><div class="loading-message dummy-margin uk-first-column">We are searching through our lessons.<br>This may take a few seconds.</div></div>
+    </div>
+</div><!-- /uk-container -->
+
+<a class="uk-position-fixed uk-button uk-button-primary uk-padding-remove" id="backToTop" href="#" uk-scroll="">
+    <span uk-icon="icon: chevron-up; ratio:2" title="collapse" class="uk-icon"><svg width="40" height="40" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="chevron-up"><polyline fill="none" stroke="#000" stroke-width="1.03" points="4 13 10 7 16 13"></polyline></svg></span>
+</a>
+
+<div class="uk-hidden-notouch"><!--solely here for js to assess if this is a touch screen--></div>
+
+<!-- This is the modal -->
+<div id="changePasswordModal" uk-modal="esc-close:false; bg-close:false" style="min-width:600px;" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <div class="uk-modal-header">
+            <h3 class="uk-modal-title uk-text-large">Change password</h3>
+        </div>
+        <div class="uk-modal-body">
+<!-- modal top end -->
+
+    
+    <form class="uk-form-stacked" method="post" action="/changePassword.do" id="changePasswordBean">
+    <div class="uk-grid uk-grid-small">
+        <div class="uk-width-1-1">
+            <label class="uk-form-label label" style="font-size:1em;" for="currentPassword">Current Password</label>
+            <input class="uk-input uk-form-small " type="password" id="currentPassword" name="currentPassword" value="">
+        </div>
+    </div>
+
+    <div class="uk-grid uk-grid-small">
+        <div class="uk-width-1-1">
+            <label class="uk-form-label label" style="font-size:1em;" for="newPassword">New Password</label>
+            <input class="uk-input uk-form-small " type="password" id="newPassword" name="newPassword" value="">
+        </div>
+    </div>
+
+    <div class="uk-grid uk-grid-small">
+        <div class="uk-width-1-1">
+            <label class="uk-form-label label" style="font-size:1em;" for="confirmPassword">Confirm New Password</label>
+            <input class="uk-input uk-form-small " type="password" id="confirmPassword" name="confirmPassword" value="">
+        </div>
+    </div>
+
+</form>
+        </div>
+        <div class="uk-modal-footer">
+            <div class="uk-grid uk-grid-small">
+                <div class="uk-width-1-2 " style="display: flex; justify-content: flex-start;">
+                    <div class="uk-modal-message uk-text-small" style="position: relative; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;"></div>
+                </div>
+                <div class="uk-width-1-2 uk-text-right">
+                    <button class="uk-modal-close uk-button uk-button-default uk-margin-right" type="button">Cancel</button>
+                    <button class="uk-button uk-button-primary" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    jQuery(function($){
+        var $modal = $('#changePasswordModal');
+
+        $modal
+            .modalSubmit()
+            .on('modalClose',function(event){
+                $('.uk-form-danger',$modal).removeClass('uk-form-danger');
+                $('div.uk-modal-message',$modal).first().empty();
+                if($('form',$modal).length>0) $('form',$modal).get(0).reset();
+            });
+    });
+</script>
+<!-- modal bottom end -->
+
+</div>
+
+</div>
+
+
+
+<div class="uk-hidden-notouch"><!--solely here for js to assess if this is a touch screen--></div>
+
+<script src="//rum-static.pingdom.net/pa-5b636e41c587a20015000064.js" async=""></script>
+</div>
+
+
+</body></html>
