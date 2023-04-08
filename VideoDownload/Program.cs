@@ -11,3 +11,10 @@ page.Request += (sender, e) =>
     }
 };
 await page.GoToAsync("https://ondemand.ecornell.com/lesson.do?lessonCode=ILR562OD3");
+
+//Link Crwaler
+
+//driver.Url = "https://ondemand.ecornell.com/";
+
+//driver.FindElement(By.XPath("//*[@id=\"term_skill\"]/ul/li[1]/div/label")).Click();
+
