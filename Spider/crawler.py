@@ -17,6 +17,8 @@ time.sleep(30)
 #//*[@id="ecCards"]/div[26]/div[4]
 #class="uk-card-title"
 
+#F/On Demand/Skill/Courses/Content
+
 skills = driver.find_elements(By.XPATH, '//*[@id="term_skill"]/ul/li')
 
 for item in skills:
