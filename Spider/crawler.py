@@ -13,7 +13,9 @@ time.sleep(30)
 #element = driver.find_element(By.NAME, 'uk-card-title')
 #element.click()
 
-
+#//*[@id="term_skill"]/ul/li[1]/div/label
+#//*[@id="ecCards"]/div[26]/div[4]
+#class="uk-card-title"
 
 skills = driver.find_elements(By.XPATH, '//*[@id="term_skill"]/ul/li')
 
