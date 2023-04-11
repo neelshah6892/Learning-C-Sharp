@@ -18,6 +18,7 @@ time.sleep(30)
 #class="uk-card-title"
 
 #F/On Demand/Skill/Courses/Content
+#https://www.geeksforgeeks.org/opening-and-closing-tabs-using-selenium/
 
 skills = driver.find_elements(By.XPATH, '//*[@id="term_skill"]/ul/li')
 
