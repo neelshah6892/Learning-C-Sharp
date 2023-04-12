@@ -46,7 +46,7 @@ for item in skills:
 lnks=driver.find_elements(By.CLASS_NAME, "startLesson")
 for lnk in lnks:
    # get_attribute() to get all href
-   file = open("D:/links.txt", "a")
+   file = open("D:/links.txt", "a+")
    print(lnk.get_attribute('href'))
    file.write(lnk.get_attribute('href')+ "\n")
    file.close()
@@ -57,7 +57,7 @@ if driver.find_element(By.CLASS_NAME, 'paginateNext'):
 lnks=driver.find_elements(By.CLASS_NAME, "startLesson")
 for lnk in lnks:
    # get_attribute() to get all href
-   file = open("D:/links.txt", "a")
+   file = open("D:/links.txt", "a+")
    print(lnk.get_attribute('href'))
    file.write(lnk.get_attribute('href')+ "\n")
    file.close()
