@@ -3,13 +3,12 @@ import time
 from selenium.webdriver.common.by import By
 import re
 import wget
-#from bs4 import BeautifulSoup
 import codecs
-from ahk import AHK
 import os
 import pyautogui
-
-ahk = AHK()
+from PIL import Image
+from Screenshot import Screenshot
+#from Screenshot import Screenshot_Clipping
 
 
 options = webdriver.ChromeOptions()
@@ -31,11 +30,11 @@ driver.get('https://ondemand.ecornell.com/lesson.do?lessonCode=ILR562OD3')
 time.sleep(45)
 
 title = driver.title
-folder_title = "".join(ch for ch in title if ch.isalnum())
+folder_title = re.sub(r'[^a-zA-Z0-9\s]+', '', title)
 print(folder_title)
 
 directory = folder_title
-parent_dir = "D:/"
+parent_dir = "D:/Ecornell"
 path = os.path.join(parent_dir, directory)
 os.mkdir(path)
 
@@ -51,15 +50,19 @@ os.mkdir(path)
 # fileToWrite.write(pageSource)
 # fileToWrite.close()
 
-# pageSource = driver.execute_script("return document.body.innerHTML;")
-# fileToWrite = open("inner.html", "w")
-# fileToWrite.write(pageSource)
-# fileToWrite.close()
-
-pageSource = driver.execute_script("return document.documentElement.outerHTML;")
-fileToWrite = open("outer.html", "w")
+pageSource = driver.execute_script("return document.body.innerHTML;")
+fileToWrite = open("inner.html", "w", encoding='utf8')
 fileToWrite.write(pageSource)
 fileToWrite.close()
+
+pageSource = driver.execute_script("return document.documentElement.outerHTML;")
+fileToWrite = open("outer.html", "w", encoding='utf8')
+fileToWrite.write(pageSource)
+fileToWrite.close()
+
+#Save SS
+#ss = Screenshot_Clipping.Screenshot()
+#ss.full_Screenshot(driver, save_path=r'.' , image_name='name.png')
 
 #Start Click
 element = driver.find_element(By.XPATH, '//*[@id=\"wiki_page_show\"]/div[3]/table/tbody/tr[5]/td[2]/a')
