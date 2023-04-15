@@ -5,29 +5,20 @@ import re
 import wget
 import codecs
 import os
+from pathlib import Path
+
 
 parent_dir = "D:/Ecornell/Building Teams 33/"
-sub_dir = ""
-directory = ""
-
-def CreateCourseFolder():
-    title = driver.title
-    folder_title = re.sub(r'[^a-zA-Z0-9\s]+', '', title)
-    print(folder_title)
-    directory = folder_title
-    path = os.path.join(parent_dir, directory)
-    sub_dir = path
-    os.mkdir(path)
 
 def SaveInnerHTML():
     pageSource = driver.execute_script("return document.body.innerHTML;")
-    fileToWrite = open(directory+"inner.html", "w", encoding='utf8')
+    fileToWrite = open(sub_dir+" inner.html", "w", encoding='utf8')
     fileToWrite.write(pageSource)
     fileToWrite.close()
 
 def SaveOuterHTML():
     pageSource = driver.execute_script("return document.documentElement.outerHTML;")
-    fileToWrite = open(directory+"outer.html", "w", encoding='utf8')
+    fileToWrite = open(sub_dir+" outer.html", "w", encoding='utf8')
     fileToWrite.write(pageSource)
     fileToWrite.close()
 
@@ -159,7 +150,13 @@ for line in Lines:
     time.sleep(30)
 
     #Create course folder
-    CreateCourseFolder()
+    title = driver.title
+    folder_title = re.sub(r'[^a-zA-Z0-9\s]+', '', title)
+    print(folder_title)
+    directory = folder_title
+    path = os.path.join(parent_dir, directory)
+    os.mkdir(path)
+    sub_dir = path
 
     #Save Start Page
     SaveInnerHTML()
