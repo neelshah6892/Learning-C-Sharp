@@ -69,19 +69,68 @@ for line in Lines:
     #Click Start
     StartClick()
     time.sleep(30)
-    licount = 1
-    for i in driver.find_elements(By.XPATH, '//*[@id="sticky-container"]/nav/ul[2]/li/ul/li['+str(licount)+']/span/div/a'):
-        print(str(i.get_attribute('href')))
-        print(i.get_attribute('href'))
-        licount+=1
-    
-    menu = driver.find_elements(By.XPATH, '//*[@id="sticky-container"]/nav/ul[2]/li/ul')
-    for item in menu:
-        print(item.text)
+    #licount = 1
 
-    if driver.find_element(By.CLASS_NAME, 'module-sequence-footer-button--next'):
-        RunAll()
-    else:
-        RunAll()
-        driver.close()
-        driver.switch_to.window(driver.window_handles[0])
+    #//*[@id="sticky-container"]/nav/ul[2]/li/ul/li[2]/span/div/a
+    length = len(driver.find_elements(By.XPATH, '//*[@id="sticky-container"]/nav/ul[2]/li/ul/li/span/div/a'))
+    print(length)
+    #for i in driver.find_elements(By.XPATH, '//*[@id="sticky-container"]/nav/ul[2]/li/ul/li['+str(licount)+']/span/div/a'):
+    for i in range(length):
+        i+=1
+        el = driver.find_element(By.XPATH, '//*[@id="sticky-container"]/nav/ul[2]/li/ul/li['+str(i)+']/span/div/a')
+        time.sleep(30)
+        print(el.get_attribute("innerText"))
+        print(el.get_attribute('href'))
+        
+        pageName = str(el.get_attribute("innerText"))
+        #Create Sub folder
+        title = pageName
+        folder = re.sub(r'[^a-zA-Z0-9\s]+', '', title)
+        print(folder)
+        dir = folder
+        subpath = os.path.join(path, dir)
+        os.mkdir(subpath)
+
+        n = os.path.join(subpath, dir+".html")
+        f = codecs.open(n, "w", "utf−8")
+        pageSource = driver.execute_script("return document.body.innerHTML;")
+        f.write(pageSource)
+
+        time.sleep(10)
+        if driver.find_element(By.XPATH, '//*[@id=\"kaltura1\"]'):
+            driver.find_element(By.XPATH, '//*[@id=\"kaltura1\"]').click()
+        else:
+            pass
+        time.sleep(30)
+        for request in driver.requests:
+            if request.response:
+                #print(
+                #    request.url,
+                #    request.response.status_code,
+                #    request.response.headers['Content-Type']
+                #)
+                if(re.search("https://cfvod.kaltura.com" and "index.m3u8", request.url)):
+                    print(request.url)
+                    videolink = request.url
+                    videolink = videolink.replace("https://cfvod.kaltura.com/hls" or "https://cfvod.kaltura.com/scf", "https://cfvod.kaltura.com/pd")
+                    print(videolink)
+                    
+                    file = (subpath+"/"+dir+".mp4")
+                    wget.download(videolink, file)
+                    time.sleep(30)
+                    
+                    if driver.find_element(By.CLASS_NAME, 'module-sequence-footer-button--next'):
+                        driver.find_element(By.CLASS_NAME, 'module-sequence-footer-button--next').click()
+                        time.sleep(30)
+                    else:
+                        pass
+
+            else:
+                pass
+        
+    #licount+=1
+
+    driver.close()
+    driver.switch_to.window(driver.window_handles[0])
+        
+
