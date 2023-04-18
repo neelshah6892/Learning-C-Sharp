@@ -7,7 +7,7 @@ import codecs
 import os
 
 
-parent_dir = "D:/Ecornell/Building Teams 33/"
+parent_dir = "F:/Ecornell/Building Teams 33/"
 
 def NextClick():
     if driver.find_element(By.CLASS_NAME, 'module-sequence-footer-button--next'):
@@ -123,6 +123,22 @@ for line in Lines:
             else:
                 pass
         
+        #Transript
+        if driver.findelemnt(By.CLASS_NAME, 'transcript-menu-item downloadWrapper'):
+            driver.findelemnt(By.CLASS_NAME, 'transcript-menu-item downloadWrapper').click()
+            time.sleep(10)
+        else:
+            pass
+        
+        for request in driver.requests:
+            if request.response:
+                if re.search("https://ecornell.s3.amazonaws.com"):
+                    filelink = request.url
+                else:
+                    pass
+            else:
+                pass
+
         if driver.find_element(By.CLASS_NAME, 'module-sequence-footer-button--next'):
             driver.find_element(By.CLASS_NAME, 'module-sequence-footer-button--next').click()
             time.sleep(30)
