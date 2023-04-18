@@ -119,15 +119,15 @@ for line in Lines:
                     wget.download(videolink, file)
                     time.sleep(30)
                     
-                    if driver.find_element(By.CLASS_NAME, 'module-sequence-footer-button--next'):
-                        driver.find_element(By.CLASS_NAME, 'module-sequence-footer-button--next').click()
-                        time.sleep(30)
-                    else:
-                        pass
 
             else:
                 pass
         
+        if driver.find_element(By.CLASS_NAME, 'module-sequence-footer-button--next'):
+            driver.find_element(By.CLASS_NAME, 'module-sequence-footer-button--next').click()
+            time.sleep(30)
+        else:
+            pass
     #licount+=1
 
     driver.close()
