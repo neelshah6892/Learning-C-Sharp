@@ -8,7 +8,7 @@ import os
 import shutil
 
 
-parent_dir = "D:/Ecornell/Building Teams 33/"
+parent_dir = "D:/Ecornell/Human Resources Consulting 5/"
 
 def NextClick():
     if driver.find_element(By.CLASS_NAME, 'module-sequence-footer-button--next'):
@@ -43,7 +43,7 @@ driver.get('https://ondemand.ecornell.com/')
 time.sleep(45)
 
 #Read txt file for course links
-file1 = open(parent_dir+'Building Teams 33 Course Links.txt', 'r')
+file1 = open(parent_dir+'Human Resources Consulting 5 Course Links.txt', 'r')
 Lines = file1.readlines()
 count = 0
 # Strips the newline character
@@ -102,6 +102,7 @@ for line in Lines:
         time.sleep(10)
         
         if driver.find_elements(By.XPATH, '//*[@id=\"kaltura1\"]'):
+            driver.implicitly_wait(10)
             driver.find_element(By.XPATH, '//*[@id=\"kaltura1\"]').click()
         else:
             pass
@@ -135,7 +136,7 @@ for line in Lines:
         if driver.find_elements(By.CLASS_NAME, 'active-elements'):
             driver.find_element(By.CLASS_NAME, 'active-elements').click()
             time.sleep(5)
-            shutil.move("C:/Users/dhwan/Downloads/transcript.txt", subpath+"/transcript.txt")
+            shutil.move("C:/Users/dhs71/Downloads/transcript.txt", subpath+"/transcript.txt")
         else:
             pass
         
@@ -150,36 +151,7 @@ for line in Lines:
             else:
                 pass
         
-        #Quiz Part
-        if driver.find_elements(By.XPATH, '/html/head/title') == "Lesson Quiz":
-            quizlink = driver.find_element(By.CLASS_NAME, 'btn').get_attribute('href')
-            print(str(quizlink))
-            driver.execute_script("window.open('');")
-            driver.switch_to.window(driver.window_handles[2])
-            driver.get(str(quizlink))
-            time.sleep(10)
-
-            title = pageName
-            folder = re.sub(r'[^a-zA-Z0-9\s]+', '', title)
-            print(folder)
-            dir = folder
-            subpath = os.path.join(path, dir)
-            os.mkdir(subpath)
-
-            n = os.path.join(subpath, dir+".html")
-            f = codecs.open(n, "w", "utf−8")
-            pageSource = driver.execute_script("return document.body.innerHTML;")
-            f.write(pageSource)
-
-            time.sleep(10)
-
-            driver.close()
-            driver.switch_to.window(driver.window_handles[1])
-        else:
-            pass
-
-
-        #Last Page Transcript Download
+        
 
 
 
