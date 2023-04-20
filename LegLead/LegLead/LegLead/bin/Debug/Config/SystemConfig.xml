@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SystemConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ApplicationName>LegLead</ApplicationName>
+  <Version>1.0.0</Version>
+  <NseCmBroadcastIp>233.1.2.5</NseCmBroadcastIp>
+  <NseCmBroadcastPort>34074</NseCmBroadcastPort>
+  <NseFoBroadcastIp>233.1.2.5</NseFoBroadcastIp>
+  <NseFoBroadcastPort>34330</NseFoBroadcastPort>
+  <Gateway>172.16.2.91</Gateway>
+  <IndexIntervalAboveTwenty>1</IndexIntervalAboveTwenty>
+  <IndexIntervalTenToTwenty>1.25</IndexIntervalTenToTwenty>
+  <IndexIntervalFiveToTen>1.5</IndexIntervalFiveToTen>
+  <IndexIntervalBelowFive>2</IndexIntervalBelowFive>
+  <StockIntervalAboveTwenty>3</StockIntervalAboveTwenty>
+  <StockIntervalTenToTwenty>4</StockIntervalTenToTwenty>
+  <StockIntervalFiveToTen>4.5</StockIntervalFiveToTen>
+  <StockIntervalBelowFive>5</StockIntervalBelowFive>
+  <SymbolPairFilePath>D:\nseContractFile\SymbolSector.csv</SymbolPairFilePath>
+  <SymboldiffFilePath>D:\Symbol_Diff\symboldiff.txt</SymboldiffFilePath>
+  <Iv_PercentileFilePath>D:\DATABASETABLE\implied_volatility_rank_percentile.csv</Iv_PercentileFilePath>
+  <IVPHigh>5</IVPHigh>
+  <IVPLow>15</IVPLow>
+  <LogFilePath>D:\LegLeadLogs\</LogFilePath>
+  <IvPastData>D:\DATABASETABLE\iv_past_data.csv</IvPastData>
+</SystemConfiguration>

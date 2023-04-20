@@ -1,0 +1,30 @@
+D:\LegLead\LegLead\bin\Debug\LegLead.exe
+D:\LegLead\LegLead\bin\Debug\LegLead.pdb
+D:\LegLead\LegLead\obj\x86\Debug\LegLead.LegLead.resources
+D:\LegLead\LegLead\obj\x86\Debug\LegLead.Properties.Resources.resources
+D:\LegLead\LegLead\obj\x86\Debug\LegLead.csproj.GenerateResource.Cache
+D:\LegLead\LegLead\obj\x86\Debug\LegLead.exe
+D:\LegLead\LegLead\obj\x86\Debug\LegLead.pdb
+D:\LeadlegCode\New folder\LegLead\LegLead\obj\x86\Debug\LegLead.exe
+D:\LeadlegCode\New folder\LegLead\LegLead\obj\x86\Debug\LegLead.pdb
+D:\LeadlegCode\New folder\LegLead\LegLead\bin\Debug\LegLead.exe
+D:\LeadlegCode\New folder\LegLead\LegLead\bin\Debug\LegLead.pdb
+D:\LeadlegCode\New folder\LegLead\LegLead\obj\x86\Debug\LegLead.csprojResolveAssemblyReference.cache
+D:\LeadlegCode\New folder\LegLead\LegLead\obj\x86\Debug\LegLead.LegLead.resources
+D:\LeadlegCode\New folder\LegLead\LegLead\obj\x86\Debug\LegLead.Properties.Resources.resources
+D:\LeadlegCode\New folder\LegLead\LegLead\obj\x86\Debug\LegLead.csproj.GenerateResource.Cache
+D:\LegLead\LegLead\LegLead\obj\x86\Debug\LegLead.exe
+D:\LegLead\LegLead\LegLead\obj\x86\Debug\LegLead.pdb
+D:\LegLead\LegLead\LegLead\bin\Debug\LegLead.exe
+D:\LegLead\LegLead\LegLead\bin\Debug\LegLead.pdb
+D:\LegLead\LegLead\LegLead\obj\x86\Debug\LegLead.LegLead.resources
+D:\LegLead\LegLead\LegLead\obj\x86\Debug\LegLead.Properties.Resources.resources
+D:\LegLead\LegLead\LegLead\obj\x86\Debug\LegLead.csproj.GenerateResource.Cache
+D:\LegLead\LegLead\LegLead\obj\x86\Debug\LegLead.csprojResolveAssemblyReference.cache
+D:\KIFS19\LegLead\LegLead\LegLead\obj\x86\Debug\LegLead.exe
+D:\KIFS19\LegLead\LegLead\LegLead\obj\x86\Debug\LegLead.pdb
+D:\KIFS19\LegLead\LegLead\LegLead\bin\Debug\LegLead.exe
+D:\KIFS19\LegLead\LegLead\LegLead\bin\Debug\LegLead.pdb
+D:\KIFS19\LegLead\LegLead\LegLead\obj\x86\Debug\LegLead.LegLead.resources
+D:\KIFS19\LegLead\LegLead\LegLead\obj\x86\Debug\LegLead.Properties.Resources.resources
+D:\KIFS19\LegLead\LegLead\LegLead\obj\x86\Debug\LegLead.csproj.GenerateResource.Cache
