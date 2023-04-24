@@ -8,7 +8,7 @@ import os
 import shutil
 
 
-parent_dir = "D:/Ecornell/Customer Service 24/"
+parent_dir = "D:/Ecornell/Human Resources Strategy 12/"
 
 def NextClick():
     if driver.find_element(By.CLASS_NAME, 'module-sequence-footer-button--next'):
@@ -43,7 +43,7 @@ driver.get('https://ondemand.ecornell.com/')
 time.sleep(45)
 
 #Read txt file for course links
-file1 = open(parent_dir+'Customer Service 24 Course Links.txt', 'r')
+file1 = open(parent_dir+'Human Resources Strategy 12 Course Links.txt', 'r')
 Lines = file1.readlines()
 count = 0
 # Strips the newline character
