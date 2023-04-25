@@ -7,6 +7,7 @@ import codecs
 import os
 import shutil
 
+#https://stackoverflow.com/questions/69215070/response-403-with-selenium-web-scraper-how-to-fix
 #https://stackoverflow.com/questions/34692009/download-image-from-url-using-python-urllib-but-receiving-http-error-403-forbid
 #https://stackoverflow.com/questions/62955392/how-do-you-correctly-parse-web-links-to-avoid-a-403-error-when-using-wget
 
