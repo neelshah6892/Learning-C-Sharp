@@ -7,8 +7,11 @@ import codecs
 import os
 import shutil
 
+#https://stackoverflow.com/questions/34692009/download-image-from-url-using-python-urllib-but-receiving-http-error-403-forbid
+#https://stackoverflow.com/questions/62955392/how-do-you-correctly-parse-web-links-to-avoid-a-403-error-when-using-wget
 
-parent_dir = "D:/Ecornell/Human Resources Strategy 12/"
+parent_dir = "D:/Ecornell/Sales 25/"
+
 
 def NextClick():
     if driver.find_element(By.CLASS_NAME, 'module-sequence-footer-button--next'):
@@ -31,6 +34,8 @@ def StartClick():
         element.click()
 
 options = webdriver.ChromeOptions()
+custom_user_agent = "Mozilla/5.0 (Linux; Android 11; 100011886A Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.69 Safari/537.36"
+options.add_argument(f'user-agent={custom_user_agent}')
 options.add_argument('ignore-certificate-errors')
 options = {
     'request_storage': 'memory'  # Store requests and responses in memory only
@@ -43,7 +48,7 @@ driver.get('https://ondemand.ecornell.com/')
 time.sleep(45)
 
 #Read txt file for course links
-file1 = open(parent_dir+'Human Resources Strategy 12 Course Links.txt', 'r')
+file1 = open(parent_dir+'Sales 25 Course Links.txt', 'r')
 Lines = file1.readlines()
 count = 0
 # Strips the newline character
