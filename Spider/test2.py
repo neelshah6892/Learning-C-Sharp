@@ -147,15 +147,15 @@ for line in Lines:
             pass
         
         #Attachment Download
-        allLinks = driver.find_elements(By.TAG_NAME, 'a')
-        for link in allLinks:
-            if re.findall("https://ecornell.s3.amazonaws.com/", link.get_attribute('href')):
-                print(link.get_attribute('href'))
-                file = (subpath+"/")
-                wget.download(link.get_attribute('href'), file)
-                time.sleep(10)
-            else:
-                pass
+        #allLinks = driver.find_elements(By.TAG_NAME, 'a')
+        #for link in allLinks:
+        #    if re.findall("https://ecornell.s3.amazonaws.com/", link.get_attribute('href')):
+        #        print(link.get_attribute('href'))
+        #        file = (subpath+"/")
+        #        wget.download(link.get_attribute('href'), file)
+        #        time.sleep(10)
+        #    else:
+        #        pass
         
         
 
