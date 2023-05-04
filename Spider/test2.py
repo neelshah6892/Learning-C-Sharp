@@ -11,7 +11,7 @@ import shutil
 #https://stackoverflow.com/questions/34692009/download-image-from-url-using-python-urllib-but-receiving-http-error-403-forbid
 #https://stackoverflow.com/questions/62955392/how-do-you-correctly-parse-web-links-to-avoid-a-403-error-when-using-wget
 
-parent_dir = "D:/Ecornell/Sales 25/"
+parent_dir = "D:/Ecornell/Improve the Business 330/"
 
 
 def NextClick():
@@ -49,7 +49,7 @@ driver.get('https://ondemand.ecornell.com/')
 time.sleep(45)
 
 #Read txt file for course links
-file1 = open(parent_dir+'Sales 25 Course Links.txt', 'r')
+file1 = open(parent_dir+'Improve the Business 330 Course Links.txt', 'r')
 Lines = file1.readlines()
 count = 0
 # Strips the newline character
@@ -147,15 +147,15 @@ for line in Lines:
             pass
         
         #Attachment Download
-        allLinks = driver.find_elements(By.TAG_NAME, 'a')
-        for link in allLinks:
-            if re.findall("https://ecornell.s3.amazonaws.com/", link.get_attribute('href')):
-                print(link.get_attribute('href'))
-                file = (subpath+"/")
-                wget.download(link.get_attribute('href'), file)
-                time.sleep(10)
-            else:
-                pass
+        #allLinks = driver.find_elements(By.TAG_NAME, 'a')
+        #for link in allLinks:
+        #    if re.findall("https://ecornell.s3.amazonaws.com/", link.get_attribute('href')):
+        #        print(link.get_attribute('href'))
+        #        file = (subpath+"/")
+        #        wget.download(link.get_attribute('href'), file)
+        #        time.sleep(10)
+        #    else:
+        #        pass
         
         
 
