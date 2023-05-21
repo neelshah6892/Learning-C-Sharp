@@ -1,0 +1,15 @@
+D:\Neel\Github\Learning-C-Sharp\nickchapsas\obj\Debug\net7.0\nickchapsas.csproj.AssemblyReference.cache
+D:\Neel\Github\Learning-C-Sharp\nickchapsas\obj\Debug\net7.0\nickchapsas.GeneratedMSBuildEditorConfig.editorconfig
+D:\Neel\Github\Learning-C-Sharp\nickchapsas\obj\Debug\net7.0\nickchapsas.AssemblyInfoInputs.cache
+D:\Neel\Github\Learning-C-Sharp\nickchapsas\obj\Debug\net7.0\nickchapsas.AssemblyInfo.cs
+D:\Neel\Github\Learning-C-Sharp\nickchapsas\obj\Debug\net7.0\nickchapsas.csproj.CoreCompileInputs.cache
+D:\Neel\Github\Learning-C-Sharp\nickchapsas\bin\Debug\net7.0\nickchapsas.exe
+D:\Neel\Github\Learning-C-Sharp\nickchapsas\bin\Debug\net7.0\nickchapsas.deps.json
+D:\Neel\Github\Learning-C-Sharp\nickchapsas\bin\Debug\net7.0\nickchapsas.runtimeconfig.json
+D:\Neel\Github\Learning-C-Sharp\nickchapsas\bin\Debug\net7.0\nickchapsas.dll
+D:\Neel\Github\Learning-C-Sharp\nickchapsas\bin\Debug\net7.0\nickchapsas.pdb
+D:\Neel\Github\Learning-C-Sharp\nickchapsas\obj\Debug\net7.0\nickchapsas.dll
+D:\Neel\Github\Learning-C-Sharp\nickchapsas\obj\Debug\net7.0\refint\nickchapsas.dll
+D:\Neel\Github\Learning-C-Sharp\nickchapsas\obj\Debug\net7.0\nickchapsas.pdb
+D:\Neel\Github\Learning-C-Sharp\nickchapsas\obj\Debug\net7.0\nickchapsas.genruntimeconfig.cache
+D:\Neel\Github\Learning-C-Sharp\nickchapsas\obj\Debug\net7.0\ref\nickchapsas.dll
