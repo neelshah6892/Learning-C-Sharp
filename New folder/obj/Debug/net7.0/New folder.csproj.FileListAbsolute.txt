@@ -1,0 +1,17 @@
+C:\Users\dhs71\OneDrive\Documents\New folder\bin\Debug\net7.0\New folder.exe
+C:\Users\dhs71\OneDrive\Documents\New folder\bin\Debug\net7.0\New folder.deps.json
+C:\Users\dhs71\OneDrive\Documents\New folder\bin\Debug\net7.0\New folder.runtimeconfig.json
+C:\Users\dhs71\OneDrive\Documents\New folder\bin\Debug\net7.0\New folder.dll
+C:\Users\dhs71\OneDrive\Documents\New folder\bin\Debug\net7.0\New folder.pdb
+C:\Users\dhs71\OneDrive\Documents\New folder\bin\Debug\net7.0\Microsoft.Office.Interop.Excel.dll
+C:\Users\dhs71\OneDrive\Documents\New folder\obj\Debug\net7.0\New folder.csproj.AssemblyReference.cache
+C:\Users\dhs71\OneDrive\Documents\New folder\obj\Debug\net7.0\New folder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dhs71\OneDrive\Documents\New folder\obj\Debug\net7.0\New folder.AssemblyInfoInputs.cache
+C:\Users\dhs71\OneDrive\Documents\New folder\obj\Debug\net7.0\New folder.AssemblyInfo.cs
+C:\Users\dhs71\OneDrive\Documents\New folder\obj\Debug\net7.0\New folder.csproj.CoreCompileInputs.cache
+C:\Users\dhs71\OneDrive\Documents\New folder\obj\Debug\net7.0\New folder.csproj.CopyComplete
+C:\Users\dhs71\OneDrive\Documents\New folder\obj\Debug\net7.0\New folder.dll
+C:\Users\dhs71\OneDrive\Documents\New folder\obj\Debug\net7.0\refint\New folder.dll
+C:\Users\dhs71\OneDrive\Documents\New folder\obj\Debug\net7.0\New folder.pdb
+C:\Users\dhs71\OneDrive\Documents\New folder\obj\Debug\net7.0\New folder.genruntimeconfig.cache
+C:\Users\dhs71\OneDrive\Documents\New folder\obj\Debug\net7.0\ref\New folder.dll

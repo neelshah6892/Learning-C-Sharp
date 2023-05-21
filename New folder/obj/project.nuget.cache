@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UkNUjATgI/AX6U2VMm1isSPfeFKDfeelQBEw7GAo1mMOEDrTDww5aKa20iVo9NbUM7eDspen0hn8dd2KeIentw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dhs71\\OneDrive\\Documents\\New folder\\New folder.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dhs71\\.nuget\\packages\\microsoft.office.interop.excel\\15.0.4795.1001\\microsoft.office.interop.excel.15.0.4795.1001.nupkg.sha512"
+  ],
+  "logs": []
+}
