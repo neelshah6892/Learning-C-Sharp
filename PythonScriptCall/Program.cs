@@ -140,7 +140,7 @@ namespace PythonScriptCall
             Thread.Sleep(1000);
             
 
-            Console.WriteLine("Performing Vlookup....");
+            /*Console.WriteLine("Performing Vlookup....");
 
             Application excelApp = new Application();
             Workbook workbook = excelApp.Workbooks.Open("C:\\Users\\Administrator\\Desktop\\Vol 2021.xlsb");
@@ -193,7 +193,7 @@ namespace PythonScriptCall
             foreach (Process processes in Process.GetProcessesByName("Excel"))
             {
                 processes.Kill();
-            }
+            }*/
             
             //File.Delete("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
             Console.WriteLine("Completed");
