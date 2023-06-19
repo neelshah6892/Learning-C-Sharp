@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Neel\\Github\\Learning-C-Sharp\\nickchapsas\\nickchapsas.csproj": {}
+    "d:\\Neel\\Github\\Learning-C-Sharp\\nickchapsas\\nickchapsas.csproj": {}
   },
   "projects": {
-    "D:\\Neel\\Github\\Learning-C-Sharp\\nickchapsas\\nickchapsas.csproj": {
+    "d:\\Neel\\Github\\Learning-C-Sharp\\nickchapsas\\nickchapsas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Neel\\Github\\Learning-C-Sharp\\nickchapsas\\nickchapsas.csproj",
+        "projectUniqueName": "d:\\Neel\\Github\\Learning-C-Sharp\\nickchapsas\\nickchapsas.csproj",
         "projectName": "nickchapsas",
-        "projectPath": "D:\\Neel\\Github\\Learning-C-Sharp\\nickchapsas\\nickchapsas.csproj",
+        "projectPath": "d:\\Neel\\Github\\Learning-C-Sharp\\nickchapsas\\nickchapsas.csproj",
         "packagesPath": "C:\\Users\\dhs71\\.nuget\\packages\\",
-        "outputPath": "D:\\Neel\\Github\\Learning-C-Sharp\\nickchapsas\\obj\\",
+        "outputPath": "d:\\Neel\\Github\\Learning-C-Sharp\\nickchapsas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Neel\\Github\\Learning-C-Sharp\\NuGet.Config",
+          "d:\\Neel\\Github\\Learning-C-Sharp\\NuGet.Config",
           "C:\\Users\\dhs71\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
