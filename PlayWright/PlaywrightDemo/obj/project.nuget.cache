@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "w70/8FmheFsfvjKE4f44kfg5n8sJ4mhlZcMZ6YMPEpie1qz6hiCE4azckuAUpzNjn53aGabFUGCm1a9+0qM2nA==",
+  "success": true,
+  "projectFilePath": "D:\\Neel\\Github\\Learning-C-Sharp\\PlayWright\\PlaywrightDemo\\PlaywrightDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dhs71\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
+    "C:\\Users\\dhs71\\.nuget\\packages\\microsoft.playwright\\1.36.0\\microsoft.playwright.1.36.0.nupkg.sha512",
+    "C:\\Users\\dhs71\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\dhs71\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\dhs71\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
