@@ -11,12 +11,12 @@ import requests
 try: 
     token = '6089546082:AAER5JC6mZS8Hiu3ruFuoqmmhpD1vz15Xsg'
     chat_id = '986993403'
-    message = 'Program Started'
+    message = 'Program Started at Dhwani/Ecornell 1/Managing Diversity 23'
     url = f"https://api.telegram.org/bot{token}/sendMessage?chat_id={chat_id}&text={message}"
     print(requests.get(url).json()) # this sends the message
 
 
-    parent_dir = "D:/Ecornell/Career Services 8/"
+    parent_dir = "D:/Ecornell/Managing Diversity 23/"
 
 
     def NextClick():
@@ -65,7 +65,7 @@ try:
     time.sleep(15)
 
     #Read txt file for course links
-    file1 = open(parent_dir+'Career Services 8 Course Links.txt', 'r')
+    file1 = open(parent_dir+'Managing Diversity 23 Course Links.txt', 'r')
     Lines = file1.readlines()
     count = 0
     # Strips the newline character
@@ -192,6 +192,6 @@ try:
 except:
     token = '6089546082:AAER5JC6mZS8Hiu3ruFuoqmmhpD1vz15Xsg'
     chat_id = '986993403'
-    message = 'Program Stopped'
+    message = 'Program Stopped at Dhwani/Ecornell 1/Managing Diversity 23'
     url = f"https://api.telegram.org/bot{token}/sendMessage?chat_id={chat_id}&text={message}"
     print(requests.get(url).json())
