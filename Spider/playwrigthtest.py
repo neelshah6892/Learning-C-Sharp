@@ -18,6 +18,7 @@ with sync_playwright() as p:
     Lines = file1.readlines()
     count = 0
     page.goto("https://ondemand.ecornell.com/lesson.do?lessonCode=ILR562OD3")
+    time.sleep(5)
     page.click("#wiki_page_show > div.show-content.user_content.clearfix.enhanced > table > tbody > tr:nth-child(5) > td.start-btn-wrapper > a")
     heading = page.inner_text("#wiki_page_show > div > h1.watch.custom-heading")
     print(heading)
