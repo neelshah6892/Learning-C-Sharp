@@ -97,10 +97,9 @@ try:
         time.sleep(20)
         #licount = 1
 
-        #//*[@id="sticky-container"]/nav/ul[2]/li/ul/li[2]/span/div/a
+        
         length = len(driver.find_elements(By.XPATH, '//*[@id="sticky-container"]/nav/ul[2]/li/ul/li/span/div/a'))
         print(length)
-        #for i in driver.find_elements(By.XPATH, '//*[@id="sticky-container"]/nav/ul[2]/li/ul/li['+str(licount)+']/span/div/a'):
         for i in range(length):
             i+=1
             el = driver.find_element(By.XPATH, '//*[@id="sticky-container"]/nav/ul[2]/li/ul/li['+str(i)+']/span/div/a')
@@ -133,11 +132,6 @@ try:
 
             for request in driver.requests:
                 if request.response:
-                    #print(
-                    #    request.url,
-                    #    request.response.status_code,
-                    #    request.response.headers['Content-Type']
-                    #)
                     if(re.search("https://cfvod.kaltura.com" and "index.m3u8", request.url)):
                         print(request.url)
                         videolink = request.url

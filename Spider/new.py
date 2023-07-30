@@ -100,18 +100,28 @@ for line in Lines:
     #Save Page
 
     #Attachment Downloads
-
+    def downloads():
+        pass
 
     #Lesson Quiz
+    def quiz():
+        pass
 
     #Wrap-up
+    def wrapup():
+        pass
 
     #Transcript
-
+    def transcript():
+        pass
+    
     #Next
+    def next():
+        pass
 
     #back
-    
+    def back():
+        pass
 
 
     #Multiple Video
