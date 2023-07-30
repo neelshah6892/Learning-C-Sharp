@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Neel\\Github\\Learning-C-Sharp\\PlayWright\\PlaywrightDemo\\PlaywrightDemo.csproj": {}
+    "d:\\Neel\\Github\\Learning-C-Sharp\\PlayWright\\PlaywrightDemo\\PlaywrightDemo.csproj": {}
   },
   "projects": {
-    "D:\\Neel\\Github\\Learning-C-Sharp\\PlayWright\\PlaywrightDemo\\PlaywrightDemo.csproj": {
+    "d:\\Neel\\Github\\Learning-C-Sharp\\PlayWright\\PlaywrightDemo\\PlaywrightDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Neel\\Github\\Learning-C-Sharp\\PlayWright\\PlaywrightDemo\\PlaywrightDemo.csproj",
+        "projectUniqueName": "d:\\Neel\\Github\\Learning-C-Sharp\\PlayWright\\PlaywrightDemo\\PlaywrightDemo.csproj",
         "projectName": "PlaywrightDemo",
-        "projectPath": "D:\\Neel\\Github\\Learning-C-Sharp\\PlayWright\\PlaywrightDemo\\PlaywrightDemo.csproj",
+        "projectPath": "d:\\Neel\\Github\\Learning-C-Sharp\\PlayWright\\PlaywrightDemo\\PlaywrightDemo.csproj",
         "packagesPath": "C:\\Users\\dhs71\\.nuget\\packages\\",
-        "outputPath": "D:\\Neel\\Github\\Learning-C-Sharp\\PlayWright\\PlaywrightDemo\\obj\\",
+        "outputPath": "d:\\Neel\\Github\\Learning-C-Sharp\\PlayWright\\PlaywrightDemo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Neel\\Github\\Learning-C-Sharp\\NuGet.Config",
+          "d:\\Neel\\Github\\Learning-C-Sharp\\NuGet.Config",
           "C:\\Users\\dhs71\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
