@@ -1,0 +1,14 @@
+D:\Github\Learning-C-Sharp\MAUI\ExtractGDFLFile\bin\Debug\net6.0\ExtractGDFLFile.exe
+D:\Github\Learning-C-Sharp\MAUI\ExtractGDFLFile\bin\Debug\net6.0\ExtractGDFLFile.deps.json
+D:\Github\Learning-C-Sharp\MAUI\ExtractGDFLFile\bin\Debug\net6.0\ExtractGDFLFile.runtimeconfig.json
+D:\Github\Learning-C-Sharp\MAUI\ExtractGDFLFile\bin\Debug\net6.0\ExtractGDFLFile.dll
+D:\Github\Learning-C-Sharp\MAUI\ExtractGDFLFile\bin\Debug\net6.0\ExtractGDFLFile.pdb
+D:\Github\Learning-C-Sharp\MAUI\ExtractGDFLFile\obj\Debug\net6.0\ExtractGDFLFile.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\Learning-C-Sharp\MAUI\ExtractGDFLFile\obj\Debug\net6.0\ExtractGDFLFile.AssemblyInfoInputs.cache
+D:\Github\Learning-C-Sharp\MAUI\ExtractGDFLFile\obj\Debug\net6.0\ExtractGDFLFile.AssemblyInfo.cs
+D:\Github\Learning-C-Sharp\MAUI\ExtractGDFLFile\obj\Debug\net6.0\ExtractGDFLFile.csproj.CoreCompileInputs.cache
+D:\Github\Learning-C-Sharp\MAUI\ExtractGDFLFile\obj\Debug\net6.0\ExtractGDFLFile.dll
+D:\Github\Learning-C-Sharp\MAUI\ExtractGDFLFile\obj\Debug\net6.0\refint\ExtractGDFLFile.dll
+D:\Github\Learning-C-Sharp\MAUI\ExtractGDFLFile\obj\Debug\net6.0\ExtractGDFLFile.pdb
+D:\Github\Learning-C-Sharp\MAUI\ExtractGDFLFile\obj\Debug\net6.0\ExtractGDFLFile.genruntimeconfig.cache
+D:\Github\Learning-C-Sharp\MAUI\ExtractGDFLFile\obj\Debug\net6.0\ref\ExtractGDFLFile.dll
