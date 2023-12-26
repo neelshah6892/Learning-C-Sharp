@@ -18,3 +18,63 @@ E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\Interop.Microsoft.O
 E:\Github\Learning-C-Sharp\PythonScriptCall\bin\Debug\net6.0\WindowsInput.dll
 E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.CopyComplete
 E:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\refint\PythonScriptCall.dll
+D:\Neel\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.exe
+D:\Neel\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.deps.json
+D:\Neel\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.runtimeconfig.json
+D:\Neel\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.dll
+D:\Neel\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.pdb
+D:\Neel\PythonScriptCall\bin\Debug\net6.0\WindowsInput.dll
+D:\Neel\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.AssemblyReference.cache
+D:\Neel\PythonScriptCall\obj\Debug\net6.0\Interop.Microsoft.Office.Interop.Excel.dll
+D:\Neel\PythonScriptCall\obj\Debug\net6.0\Interop.Microsoft.Office.Core.dll
+D:\Neel\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.ResolveComReference.cache
+D:\Neel\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.GeneratedMSBuildEditorConfig.editorconfig
+D:\Neel\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.AssemblyInfoInputs.cache
+D:\Neel\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.AssemblyInfo.cs
+D:\Neel\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.CoreCompileInputs.cache
+D:\Neel\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.CopyComplete
+D:\Neel\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.dll
+D:\Neel\PythonScriptCall\obj\Debug\net6.0\refint\PythonScriptCall.dll
+D:\Neel\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.pdb
+D:\Neel\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.genruntimeconfig.cache
+D:\Neel\PythonScriptCall\obj\Debug\net6.0\ref\PythonScriptCall.dll
+D:\New folder\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.exe
+D:\New folder\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.deps.json
+D:\New folder\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.runtimeconfig.json
+D:\New folder\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.dll
+D:\New folder\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.pdb
+D:\New folder\PythonScriptCall\bin\Debug\net6.0\WindowsInput.dll
+D:\New folder\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.AssemblyReference.cache
+D:\New folder\PythonScriptCall\obj\Debug\net6.0\Interop.Microsoft.Office.Interop.Excel.dll
+D:\New folder\PythonScriptCall\obj\Debug\net6.0\Interop.Microsoft.Office.Core.dll
+D:\New folder\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.ResolveComReference.cache
+D:\New folder\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.AssemblyInfoInputs.cache
+D:\New folder\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.AssemblyInfo.cs
+D:\New folder\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.CoreCompileInputs.cache
+D:\New folder\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.CopyComplete
+D:\New folder\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.dll
+D:\New folder\PythonScriptCall\obj\Debug\net6.0\refint\PythonScriptCall.dll
+D:\New folder\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.pdb
+D:\New folder\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.genruntimeconfig.cache
+D:\New folder\PythonScriptCall\obj\Debug\net6.0\ref\PythonScriptCall.dll
+D:\New\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.exe
+D:\New\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.deps.json
+D:\New\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.runtimeconfig.json
+D:\New\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.dll
+D:\New\PythonScriptCall\bin\Debug\net6.0\PythonScriptCall.pdb
+D:\New\PythonScriptCall\bin\Debug\net6.0\WindowsInput.dll
+D:\New\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.AssemblyReference.cache
+D:\New\PythonScriptCall\obj\Debug\net6.0\Interop.Microsoft.Office.Interop.Excel.dll
+D:\New\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.ResolveComReference.cache
+D:\New\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.GeneratedMSBuildEditorConfig.editorconfig
+D:\New\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.AssemblyInfoInputs.cache
+D:\New\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.AssemblyInfo.cs
+D:\New\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.CoreCompileInputs.cache
+D:\New\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.CopyComplete
+D:\New\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.dll
+D:\New\PythonScriptCall\obj\Debug\net6.0\refint\PythonScriptCall.dll
+D:\New\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.pdb
+D:\New\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.genruntimeconfig.cache
+D:\New\PythonScriptCall\obj\Debug\net6.0\ref\PythonScriptCall.dll
+D:\New\PythonScriptCall\obj\Debug\net6.0\Interop.Microsoft.Office.Core.dll

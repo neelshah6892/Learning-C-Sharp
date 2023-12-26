@@ -12,11 +12,11 @@ namespace PythonScriptCall
         {
             Console.WriteLine("Start");
             //Change over here and 2.py file too, need to do once per month
-            DateTime expiry = new DateTime(2023, 06, 29);
+            DateTime expiry = new DateTime(2024, 01, 25);
 
             //Wednesday, Thursday, Friday
-            DateTime yesterday = DateTime.Now.AddDays(-1);
-            DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
+            //DateTime yesterday = DateTime.Now.AddDays(-1);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
 
             //Monday or 2 day holiday
             //DateTime yesterday = DateTime.Now.AddDays(-3);
@@ -42,8 +42,8 @@ namespace PythonScriptCall
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
 
             //next day to 3 day holiday
-            //DateTime yesterday = DateTime.Now.AddDays(-1);
-            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
+            DateTime yesterday = DateTime.Now.AddDays(-1);
+            DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
 
             //DateTime yesterday = DateTime.Now.AddDays(-3);
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
@@ -51,15 +51,15 @@ namespace PythonScriptCall
             //DateTime yesterday = DateTime.Now.AddDays(-2);
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-3);
 
-            string text = File.ReadAllText(@"G:\\Yash_1\\iv_daily\\2.py");
+            string text = File.ReadAllText(@"D:\\Github\\KIFS-Python\\Yash\\2.py");
             text = text.Replace(daybeforeyesterday.ToString("ddMMyyyy"), yesterday.ToString("ddMMyyyy"));
-            File.WriteAllText(@"G:\\Yash_1\\iv_daily\\2.py", text);
+            File.WriteAllText(@"D:\\Github\\KIFS-Python\\Yash\\2.py", text);
 
             if (text.Contains(daybeforeyesterday.ToString("ddMMMyyyy").ToUpper()))
             {
                 //Console.WriteLine(daybeforeyesterday.ToString("ddMMMyyyy").ToUpper());
                 text = text.Replace(daybeforeyesterday.ToString("ddMMMyyyy").ToUpper(), yesterday.ToString("ddMMMyyyy").ToUpper());
-                File.WriteAllText(@"G:\\Yash_1\\iv_daily\\2.py", text);
+                File.WriteAllText(@"D:\\Github\\KIFS-Python\\Yash\\2.py", text);
                 Console.WriteLine(text);
 
             }
@@ -79,12 +79,12 @@ namespace PythonScriptCall
             //File.Delete("C:\\Users\\Administrator\\Desktop\\demo.zip");
 
             Console.WriteLine("Started Process 1....");
-            var cmd = "G:\\Yash_1\\iv_daily\\1.py";
+            var cmd = "D:\\Github\\KIFS-Python\\Yash\\1.py";
             var process = new Process
             {
                 StartInfo = new ProcessStartInfo
                 {
-                    FileName = "G:\\Yash_1\\venv\\Scripts\\python.exe",
+                    FileName = "D:\\Github\\KIFS-Python\\Yash\\.venv\\Scripts\\python.exe",
                     Arguments = cmd,
                     UseShellExecute = false,
                     RedirectStandardOutput = true,
@@ -102,21 +102,21 @@ namespace PythonScriptCall
             process.WaitForExit();
             Console.WriteLine("Ended Process 1....");
 
-            if (!File.Exists("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx"))
+            if (!File.Exists("D:\\" + yesterday.ToString("ddMMyyyy") + ".xlsx"))
             {
-                File.Copy("E:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\" + yesterday.ToString("ddMMyyyy") + ".xlsx", "C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
+                File.Copy("D:\\New\\PythonScriptCall\\bin\\Debug\\net6.0\\" + yesterday.ToString("ddMMyyyy") + ".xlsx", "D:\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
             }
-            File.Delete("E:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
+            File.Delete("D:\\New\\PythonScriptCall\\bin\\Debug\\net6.0\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
 
             Thread.Sleep(5000);
-            File.Delete("G:\\Yash_1\\iv_daily\\data\\GFDLNFO_BACKADJUSTED_" + yesterday.ToString("ddMMyyyy") + ".csv");
+            File.Delete("D:\\Github\\KIFS-Python\\Yash\\data\\GFDLNFO_BACKADJUSTED_" + yesterday.ToString("ddMMyyyy") + ".csv");
             Console.WriteLine("Started Process 2....");
-            var cmd2 = "G:\\Yash_1\\iv_daily\\2.py";
+            var cmd2 = "D:\\Github\\KIFS-Python\\Yash\\2.py";
             var process2 = new Process
             {
                 StartInfo = new ProcessStartInfo
                 {
-                    FileName = "G:\\Yash_1\\venv\\Scripts\\python.exe",
+                    FileName = "D:\\Github\\KIFS-Python\\Yash\\.venv\\Scripts\\python.exe",
                     Arguments = cmd2,
                     UseShellExecute = false,
                     RedirectStandardOutput = true,
@@ -134,8 +134,8 @@ namespace PythonScriptCall
             process2.WaitForExit();
             Console.WriteLine("Ended Process 2....");
 
-            File.Delete("C:\\Users\\Administrator\\Desktop\\newfile1.xlsx");
-            File.Delete("C:\\Users\\Administrator\\Desktop\\fo" + yesterday.ToString("ddMMMyyyy") + "bhav.csv");
+            File.Delete("D:\\newfile1.xlsx");
+            File.Delete("D:\\fo" + yesterday.ToString("ddMMMyyyy") + "bhav.csv");
             
             Thread.Sleep(1000);
             
@@ -143,14 +143,14 @@ namespace PythonScriptCall
             Console.WriteLine("Performing Vlookup....");
 
             Application excelApp = new Application();
-            Workbook workbook = excelApp.Workbooks.Open("C:\\Users\\Administrator\\Desktop\\Vol 2021.xlsb");
+            Workbook workbook = excelApp.Workbooks.Open("D:\\Github\\Parth\\Vol 2021.xlsb");
             excelApp.Visible = true;
             excelApp.DisplayAlerts = false;
             Worksheet ws = workbook.Worksheets["REPORT"];
             Thread.Sleep(10000);
             for (int i = 2; i < 204; i++)
             {
-                ws.Cells[i, 3].Formula = String.Format("=VLOOKUP(A"+ i + ", 'C:\\Users\\Administrator\\Desktop\\[IV PRINT.xlsx]Sheet1'!$A$2:$H$203, 8,0)");
+                ws.Cells[i, 3].Formula = String.Format("=VLOOKUP(A"+ i + ", 'D:\\Github\\Parth\\[IV PRINT.xlsx]Sheet1'!$A$2:$H$203, 8,0)");
             }
 
             Console.WriteLine("Performing Paste Special Value");
@@ -175,12 +175,12 @@ namespace PythonScriptCall
                 processes.Kill();
             }
 
-            File.Delete("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
+            File.Delete("D:\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
             Thread.Sleep(2000);
 
             Console.WriteLine("Macro Process");
             Application excel = new Application();
-            Workbook wbook = excel.Workbooks.Open("C:\\Users\\Administrator\\Desktop\\Vol 2021.xlsb");
+            Workbook wbook = excel.Workbooks.Open("D:\\Github\\Parth\\Vol 2021.xlsb");
             excel.Visible = true;
             excel.DisplayAlerts = false;
             Worksheet ws2 = wbook.Worksheets["REPORT"];
@@ -195,7 +195,7 @@ namespace PythonScriptCall
                 processes.Kill();
             }
             
-            //File.Delete("C:\\Users\\Administrator\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
+            //File.Delete("C:\\Users\\dhs71\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
             Console.WriteLine("Completed");
         }
 
