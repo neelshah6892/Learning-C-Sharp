@@ -15,8 +15,8 @@ namespace PythonScriptCall
             DateTime expiry = new DateTime(2024, 01, 25);
 
             //Wednesday, Thursday, Friday
-            //DateTime yesterday = DateTime.Now.AddDays(-1);
-            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
+            DateTime yesterday = DateTime.Now.AddDays(-1);
+            DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
 
             //Monday or 2 day holiday
             //DateTime yesterday = DateTime.Now.AddDays(-3);
@@ -42,8 +42,8 @@ namespace PythonScriptCall
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
 
             //next day to 3 day holiday
-            DateTime yesterday = DateTime.Now.AddDays(-1);
-            DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
+            //DateTime yesterday = DateTime.Now.AddDays(-1);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
 
             //DateTime yesterday = DateTime.Now.AddDays(-3);
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
@@ -104,9 +104,9 @@ namespace PythonScriptCall
 
             if (!File.Exists("D:\\" + yesterday.ToString("ddMMyyyy") + ".xlsx"))
             {
-                File.Copy("D:\\New\\PythonScriptCall\\bin\\Debug\\net6.0\\" + yesterday.ToString("ddMMyyyy") + ".xlsx", "D:\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
+                File.Copy("D:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\" + yesterday.ToString("ddMMyyyy") + ".xlsx", "D:\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
             }
-            File.Delete("D:\\New\\PythonScriptCall\\bin\\Debug\\net6.0\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
+            File.Delete("D:\\Github\\Learning-C-Sharp\\PythonScriptCall\\bin\\Debug\\net6.0\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
 
             Thread.Sleep(5000);
             File.Delete("D:\\Github\\KIFS-Python\\Yash\\data\\GFDLNFO_BACKADJUSTED_" + yesterday.ToString("ddMMyyyy") + ".csv");
