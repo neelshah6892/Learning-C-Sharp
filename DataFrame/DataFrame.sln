@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataFrame", "DataFrame.csproj", "{C3190153-C124-427E-A4FD-7626A3711EEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3190153-C124-427E-A4FD-7626A3711EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3190153-C124-427E-A4FD-7626A3711EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3190153-C124-427E-A4FD-7626A3711EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3190153-C124-427E-A4FD-7626A3711EEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7A91C77-C2B2-47CA-8B3D-2ED2FFDFC7DC}
+	EndGlobalSection
+EndGlobal
