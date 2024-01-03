@@ -176,7 +176,7 @@ namespace PythonScriptCall
             }
 
             File.Delete("D:\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
-            /*Thread.Sleep(2000);
+            Thread.Sleep(2000);
 
             Console.WriteLine("Macro Process");
             Application excel = new Application();
@@ -193,7 +193,7 @@ namespace PythonScriptCall
             foreach (Process processes in Process.GetProcessesByName("Excel"))
             {
                 processes.Kill();
-            }*/
+            }
             
             //File.Delete("C:\\Users\\dhs71\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
             Console.WriteLine("Completed");
