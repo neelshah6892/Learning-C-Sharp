@@ -12,7 +12,7 @@ namespace PythonScriptCall
         {
             Console.WriteLine("Start");
             //Change over here and 2.py file too, need to do once per month
-            DateTime expiry = new DateTime(2024, 01, 25);
+            DateTime expiry = new DateTime(2024, 02, 29);
 
             //Wednesday, Thursday, Friday
             DateTime yesterday = DateTime.Now.AddDays(-1);
