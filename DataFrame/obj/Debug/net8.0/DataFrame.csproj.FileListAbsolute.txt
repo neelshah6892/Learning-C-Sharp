@@ -18,3 +18,4 @@ D:\Github\Learning-C-Sharp\DataFrame\obj\Debug\net8.0\refint\DataFrame.dll
 D:\Github\Learning-C-Sharp\DataFrame\obj\Debug\net8.0\DataFrame.pdb
 D:\Github\Learning-C-Sharp\DataFrame\obj\Debug\net8.0\DataFrame.genruntimeconfig.cache
 D:\Github\Learning-C-Sharp\DataFrame\obj\Debug\net8.0\ref\DataFrame.dll
+D:\Github\Learning-C-Sharp\DataFrame\bin\Debug\net8.0\Spectre.Console.dll

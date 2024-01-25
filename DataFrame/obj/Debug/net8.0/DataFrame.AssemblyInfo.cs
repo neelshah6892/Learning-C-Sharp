@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DataFrame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7427c07bc9ab237e22acd9cc46a461e62c6d6f2f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e2a29d4cfdd53ccbd636cc04f010a343d1af0d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("DataFrame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DataFrame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "M+y21JkM9/DWEq3Ywwlo7QWoyakFm7lwspxJoNF9ItgDjBphY4Fo6lYaa1iwEJCRnnPvqOoaphIBG9NYzXW+1Q==",
+  "dgSpecHash": "gEdE2Tb7nNRTjqK6LsWilOUNXDJoJkoPaXDtYG2tKzq1/3YdbgvfGItEz/Ta1y+x292Ngy3cdzECem1P4fNy6A==",
   "success": true,
   "projectFilePath": "D:\\Github\\Learning-C-Sharp\\DataFrame\\DataFrame.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dhwan\\.nuget\\packages\\apache.arrow\\11.0.0\\apache.arrow.11.0.0.nupkg.sha512",
     "C:\\Users\\dhwan\\.nuget\\packages\\microsoft.data.analysis\\0.21.0\\microsoft.data.analysis.0.21.0.nupkg.sha512",
     "C:\\Users\\dhwan\\.nuget\\packages\\microsoft.ml.dataview\\3.0.0\\microsoft.ml.dataview.3.0.0.nupkg.sha512",
+    "C:\\Users\\dhwan\\.nuget\\packages\\spectre.console\\0.48.0\\spectre.console.0.48.0.nupkg.sha512",
     "C:\\Users\\dhwan\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\dhwan\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
     "C:\\Users\\dhwan\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
