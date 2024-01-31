@@ -1,0 +1,5 @@
+D:\Github\Learning-C-Sharp\AES256\obj\Debug\net8.0\AES256.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\Learning-C-Sharp\AES256\obj\Debug\net8.0\AES256.AssemblyInfoInputs.cache
+D:\Github\Learning-C-Sharp\AES256\obj\Debug\net8.0\AES256.AssemblyInfo.cs
+D:\Github\Learning-C-Sharp\AES256\obj\Debug\net8.0\AES256.csproj.CoreCompileInputs.cache
+D:\Github\Learning-C-Sharp\AES256\obj\Debug\net8.0\AES256.sourcelink.json
