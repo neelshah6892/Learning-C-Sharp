@@ -3,3 +3,13 @@ D:\Github\Learning-C-Sharp\AES256\obj\Debug\net8.0\AES256.AssemblyInfoInputs.cac
 D:\Github\Learning-C-Sharp\AES256\obj\Debug\net8.0\AES256.AssemblyInfo.cs
 D:\Github\Learning-C-Sharp\AES256\obj\Debug\net8.0\AES256.csproj.CoreCompileInputs.cache
 D:\Github\Learning-C-Sharp\AES256\obj\Debug\net8.0\AES256.sourcelink.json
+D:\Github\Learning-C-Sharp\AES256\bin\Debug\net8.0\AES256.exe
+D:\Github\Learning-C-Sharp\AES256\bin\Debug\net8.0\AES256.deps.json
+D:\Github\Learning-C-Sharp\AES256\bin\Debug\net8.0\AES256.runtimeconfig.json
+D:\Github\Learning-C-Sharp\AES256\bin\Debug\net8.0\AES256.dll
+D:\Github\Learning-C-Sharp\AES256\bin\Debug\net8.0\AES256.pdb
+D:\Github\Learning-C-Sharp\AES256\obj\Debug\net8.0\AES256.dll
+D:\Github\Learning-C-Sharp\AES256\obj\Debug\net8.0\refint\AES256.dll
+D:\Github\Learning-C-Sharp\AES256\obj\Debug\net8.0\AES256.pdb
+D:\Github\Learning-C-Sharp\AES256\obj\Debug\net8.0\AES256.genruntimeconfig.cache
+D:\Github\Learning-C-Sharp\AES256\obj\Debug\net8.0\ref\AES256.dll
