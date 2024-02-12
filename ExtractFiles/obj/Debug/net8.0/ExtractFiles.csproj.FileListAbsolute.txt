@@ -1,0 +1,15 @@
+D:\Github\Learning-C-Sharp\ExtractFiles\bin\Debug\net8.0\ExtractFiles.exe
+D:\Github\Learning-C-Sharp\ExtractFiles\bin\Debug\net8.0\ExtractFiles.deps.json
+D:\Github\Learning-C-Sharp\ExtractFiles\bin\Debug\net8.0\ExtractFiles.runtimeconfig.json
+D:\Github\Learning-C-Sharp\ExtractFiles\bin\Debug\net8.0\ExtractFiles.dll
+D:\Github\Learning-C-Sharp\ExtractFiles\bin\Debug\net8.0\ExtractFiles.pdb
+D:\Github\Learning-C-Sharp\ExtractFiles\obj\Debug\net8.0\ExtractFiles.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\Learning-C-Sharp\ExtractFiles\obj\Debug\net8.0\ExtractFiles.AssemblyInfoInputs.cache
+D:\Github\Learning-C-Sharp\ExtractFiles\obj\Debug\net8.0\ExtractFiles.AssemblyInfo.cs
+D:\Github\Learning-C-Sharp\ExtractFiles\obj\Debug\net8.0\ExtractFiles.csproj.CoreCompileInputs.cache
+D:\Github\Learning-C-Sharp\ExtractFiles\obj\Debug\net8.0\ExtractFiles.sourcelink.json
+D:\Github\Learning-C-Sharp\ExtractFiles\obj\Debug\net8.0\ExtractFiles.dll
+D:\Github\Learning-C-Sharp\ExtractFiles\obj\Debug\net8.0\refint\ExtractFiles.dll
+D:\Github\Learning-C-Sharp\ExtractFiles\obj\Debug\net8.0\ExtractFiles.pdb
+D:\Github\Learning-C-Sharp\ExtractFiles\obj\Debug\net8.0\ExtractFiles.genruntimeconfig.cache
+D:\Github\Learning-C-Sharp\ExtractFiles\obj\Debug\net8.0\ref\ExtractFiles.dll
