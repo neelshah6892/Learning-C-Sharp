@@ -93,9 +93,9 @@ D:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.As
 D:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.AssemblyInfo.cs
 D:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.CoreCompileInputs.cache
 D:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.sourcelink.json
-D:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.csproj.CopyComplete
 D:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.dll
 D:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\refint\PythonScriptCall.dll
 D:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.pdb
 D:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonScriptCall.genruntimeconfig.cache
 D:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\ref\PythonScriptCall.dll
+D:\Github\Learning-C-Sharp\PythonScriptCall\obj\Debug\net6.0\PythonSc.261B377B.Up2Date
