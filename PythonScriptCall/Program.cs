@@ -15,16 +15,16 @@ namespace PythonScriptCall
             DateTime expiry = new DateTime(2024, 03, 28);
 
             //Wednesday, Thursday, Friday
-            //DateTime yesterday = DateTime.Now.AddDays(-1);
-            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
+            DateTime yesterday = DateTime.Now.AddDays(-1);
+            DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
 
             //Monday or 2 day holiday
             //DateTime yesterday = DateTime.Now.AddDays(-3);
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
 
             //Tuesday
-            DateTime yesterday = DateTime.Now.AddDays(-1);
-            DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
+            //DateTime yesterday = DateTime.Now.AddDays(-1);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
 
             //1 day holiday
             //DateTime yesterday = DateTime.Now.AddDays(-2);
@@ -49,7 +49,7 @@ namespace PythonScriptCall
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
 
             //DateTime yesterday = DateTime.Now.AddDays(-2);
-            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-3);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
 
             string text = File.ReadAllText(@"D:\\Github\\KIFS-Python\\Yash\\2.py");
             text = text.Replace(daybeforeyesterday.ToString("ddMMyyyy"), yesterday.ToString("ddMMyyyy"));
