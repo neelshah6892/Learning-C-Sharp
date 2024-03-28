@@ -15,8 +15,8 @@ namespace PythonScriptCall
             DateTime expiry = new DateTime(2024, 04, 25);
 
             //Wednesday, Thursday, Friday
-            DateTime yesterday = DateTime.Now.AddDays(-1);
-            DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
+            //DateTime yesterday = DateTime.Now.AddDays(-1);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
 
             //Monday or 2 day holiday
             //DateTime yesterday = DateTime.Now.AddDays(-3);
@@ -38,8 +38,8 @@ namespace PythonScriptCall
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-3);
 
             //3 day holiday
-            //DateTime yesterday = DateTime.Now.AddDays(-4);
-            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
+            DateTime yesterday = DateTime.Now.AddDays(-4);
+            DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
 
             //next day to 3 day holiday
             //DateTime yesterday = DateTime.Now.AddDays(-1);
@@ -176,7 +176,7 @@ namespace PythonScriptCall
             }
 
             File.Delete("D:\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
-            Thread.Sleep(2000);
+            /*Thread.Sleep(2000);
 
             Console.WriteLine("Macro Process");
             Application excel = new Application();
@@ -193,7 +193,7 @@ namespace PythonScriptCall
             foreach (Process processes in Process.GetProcessesByName("Excel"))
             {
                 processes.Kill();
-            }
+            }*/
             
             //File.Delete("C:\\Users\\dhs71\\Desktop\\" + yesterday.ToString("ddMMyyyy") + ".xlsx");
             Console.WriteLine("Completed");
