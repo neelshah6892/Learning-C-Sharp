@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "As0r/4XnUXg7bugp9SSSEXCM/aLRmRzmzvq7N3kATNPtNJoxMI9n990yJErs8fMnaXy+7rzcXQsj/tOpUYT64g==",
+  "success": true,
+  "projectFilePath": "D:\\Github\\Learning-C-Sharp\\BSEFilesDownload\\BSEFilesDownload.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dhwan\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\dhwan\\.nuget\\packages\\selenium.webdriver\\4.19.0\\selenium.webdriver.4.19.0.nupkg.sha512"
+  ],
+  "logs": []
+}
