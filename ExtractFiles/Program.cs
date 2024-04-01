@@ -5,15 +5,21 @@ class Program
 {
     static void Main(string[] args)
     {
-        
-        //string startPath = @"C:\Users\dhwan\Downloads\";
-        string zipPath = @"09022024.zip";
-        string extractPath = @"C:\Users\dhwan\Downloads";
+        string dirName = "New";
+        string zipname = "28032024.zip";
 
-        Console.WriteLine(Directory.GetParent(extractPath));
+        using var archive = ZipFile.OpenRead(zipname);
 
-        //ZipFile.CreateFromDirectory(startPath, zipPath);
+        foreach (var entry in archive.Entries)
+        {
+            Console.WriteLine(entry.Name);
+        }
 
-        ZipFile.ExtractToDirectory(zipPath, extractPath);
+        if (Directory.Exists(dirName))
+        {
+            Directory.Delete(dirName, true);
+        }
+
+        ZipFile.ExtractToDirectory(zipname, dirName, true);
     }
 }

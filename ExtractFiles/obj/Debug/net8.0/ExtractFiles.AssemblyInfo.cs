@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExtractFiles")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11041e47b06159b7bfccdca5c5b27c43e019c640")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cb12dc78bc46fab717f5dcf097b88540517f794")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExtractFiles")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExtractFiles")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
