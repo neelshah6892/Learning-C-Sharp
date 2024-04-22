@@ -12,7 +12,7 @@ namespace PythonScriptCall
         {
             Console.WriteLine("Start");
             //Change over here and 2.py file too, need to do once per month
-            DateTime expiry = new DateTime(2024, 04, 25);
+            DateTime expiry = new DateTime(2024, 05, 30);
 
             //Wednesday, Thursday, Friday
             //DateTime yesterday = DateTime.Now.AddDays(-1);
@@ -23,8 +23,8 @@ namespace PythonScriptCall
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
 
             //Tuesday
-            //DateTime yesterday = DateTime.Now.AddDays(-1);
-            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
+            DateTime yesterday = DateTime.Now.AddDays(-1);
+            DateTime daybeforeyesterday = DateTime.Now.AddDays(-4);
 
             //1 day holiday
             //DateTime yesterday = DateTime.Now.AddDays(-2);
@@ -34,8 +34,8 @@ namespace PythonScriptCall
             //DateTime yesterday = DateTime.Now.AddDays(-2);
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
 
-            DateTime yesterday = DateTime.Now.AddDays(-1);
-            DateTime daybeforeyesterday = DateTime.Now.AddDays(-3);
+            //DateTime yesterday = DateTime.Now.AddDays(-1);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-3);
 
             //3 day holiday
             //DateTime yesterday = DateTime.Now.AddDays(-4);
