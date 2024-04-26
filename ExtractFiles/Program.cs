@@ -1,25 +1,24 @@
-﻿using System;
-using System.IO.Compression;
+﻿using System.IO.Compression;
 
-class Program
+var zipFilePath = "C:\\Users\\dhwan\\Downloads\\24042024.zip";
+
+// Open the zip file for reading
+using (ZipArchive zip = ZipFile.Open(zipFilePath, ZipArchiveMode.Read))
 {
-    static void Main(string[] args)
+    foreach (ZipArchiveEntry entry in zip.Entries)
     {
-        string dirName = "New";
-        string zipname = "28032024.zip";
-
-        using var archive = ZipFile.OpenRead(zipname);
-
-        foreach (var entry in archive.Entries)
-        {
-            Console.WriteLine(entry.Name);
-        }
-
-        if (Directory.Exists(dirName))
-        {
-            Directory.Delete(dirName, true);
-        }
-
-        ZipFile.ExtractToDirectory(zipname, dirName, true);
+        // Access individual entry properties
+        Console.WriteLine($"File Name: {entry.Name}");
+        // You can read the entry's content here if needed
     }
+       
 }
+
+string extractPath = "C:\\Users\\dhwan\\Downloads";
+
+using (ZipArchive zip = ZipFile.Open(zipFilePath, ZipArchiveMode.Read))
+    foreach (ZipArchiveEntry entry in zip.Entries)
+        if (entry.Name == "GFDLNFO_BACKADJUSTED_24042024.csv")
+            entry.ExtractToFile("GFDLNFO_BACKADJUSTED_24042024.csv");
+
+//ZipFile.ExtractToDirectory(zipFilePath, extractPath);
