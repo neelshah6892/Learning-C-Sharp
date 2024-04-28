@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Github\\Learning-C-Sharp\\ContosoCrafts.Website\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{565D41D2-D59C-4508-9479-CCB2A7E13D8B}|ContosoCrafts.Website.csproj|d:\\github\\learning-c-sharp\\contosocrafts.website\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{565D41D2-D59C-4508-9479-CCB2A7E13D8B}|ContosoCrafts.Website.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{565D41D2-D59C-4508-9479-CCB2A7E13D8B}|ContosoCrafts.Website.csproj|d:\\github\\learning-c-sharp\\contosocrafts.website\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{565D41D2-D59C-4508-9479-CCB2A7E13D8B}|ContosoCrafts.Website.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{565D41D2-D59C-4508-9479-CCB2A7E13D8B}|ContosoCrafts.Website.csproj|d:\\github\\learning-c-sharp\\contosocrafts.website\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{565D41D2-D59C-4508-9479-CCB2A7E13D8B}|ContosoCrafts.Website.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{565D41D2-D59C-4508-9479-CCB2A7E13D8B}|ContosoCrafts.Website.csproj|d:\\github\\learning-c-sharp\\contosocrafts.website\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{565D41D2-D59C-4508-9479-CCB2A7E13D8B}|ContosoCrafts.Website.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{565D41D2-D59C-4508-9479-CCB2A7E13D8B}|ContosoCrafts.Website.csproj|d:\\github\\learning-c-sharp\\contosocrafts.website\\wwwroot\\data\\products.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{565D41D2-D59C-4508-9479-CCB2A7E13D8B}|ContosoCrafts.Website.csproj|solutionrelative:wwwroot\\data\\products.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\Github\\Learning-C-Sharp\\ContosoCrafts.Website\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
+              "ToolTip": "D:\\Github\\Learning-C-Sharp\\ContosoCrafts.Website\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Index.cshtml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T16:06:05.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Github\\Learning-C-Sharp\\ContosoCrafts.Website\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Github\\Learning-C-Sharp\\ContosoCrafts.Website\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T13:43:07.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Github\\Learning-C-Sharp\\ContosoCrafts.Website\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "D:\\Github\\Learning-C-Sharp\\ContosoCrafts.Website\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T13:17:11.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "products.json",
+              "DocumentMoniker": "D:\\Github\\Learning-C-Sharp\\ContosoCrafts.Website\\wwwroot\\data\\products.json",
+              "RelativeDocumentMoniker": "wwwroot\\data\\products.json",
+              "ToolTip": "D:\\Github\\Learning-C-Sharp\\ContosoCrafts.Website\\wwwroot\\data\\products.json",
+              "RelativeToolTip": "wwwroot\\data\\products.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-28T13:04:47.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Github\\Learning-C-Sharp\\ContosoCrafts.Website\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "D:\\Github\\Learning-C-Sharp\\ContosoCrafts.Website\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-28T12:38:18.715Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
