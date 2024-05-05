@@ -14,11 +14,11 @@ using (ZipArchive zip = ZipFile.Open(zipFilePath, ZipArchiveMode.Read))
        
 }
 
-string extractPath = "C:\\Users\\dhwan\\Downloads";
+string extractPath = "D:\\bsefiles\\";
 
 using (ZipArchive zip = ZipFile.Open(zipFilePath, ZipArchiveMode.Read))
     foreach (ZipArchiveEntry entry in zip.Entries)
-        if (entry.Name == "GFDLNFO_BACKADJUSTED_24042024.csv")
-            entry.ExtractToFile("GFDLNFO_BACKADJUSTED_24042024.csv");
+        if (entry.Name == "GFDLNFO_BACKADJUSTED_24042024.zip")
+            entry.ExtractToFile(extractPath+ "GFDLNFO_BACKADJUSTED_24042024.zip");
 
 //ZipFile.ExtractToDirectory(zipFilePath, extractPath);
