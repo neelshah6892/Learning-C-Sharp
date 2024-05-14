@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PythonScriptCall")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b59172d0f04704703ddc490d8302c4a4c1035e7a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1cfd3f082d6f7b1de494b7ee72916a54315ffc98")]
 [assembly: System.Reflection.AssemblyProductAttribute("PythonScriptCall")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PythonScriptCall")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
