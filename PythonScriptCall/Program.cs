@@ -15,8 +15,8 @@ namespace PythonScriptCall
             DateTime expiry = new DateTime(2024, 06, 27);
 
             //Wednesday, Thursday, Friday
-            //DateTime yesterday = DateTime.Now.AddDays(-1);
-            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
+            DateTime yesterday = DateTime.Now.AddDays(-1);
+            DateTime daybeforeyesterday = DateTime.Now.AddDays(-2);
 
             //Monday or 2 day holiday
             //DateTime yesterday = DateTime.Now.AddDays(-3);
@@ -42,8 +42,8 @@ namespace PythonScriptCall
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
 
             //next day to 3 day holiday
-            DateTime yesterday = DateTime.Now.AddDays(-1);
-            DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
+            //DateTime yesterday = DateTime.Now.AddDays(-1);
+            //DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
 
             //DateTime yesterday = DateTime.Now.AddDays(-3);
             //DateTime daybeforeyesterday = DateTime.Now.AddDays(-5);
