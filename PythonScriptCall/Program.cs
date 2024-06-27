@@ -150,7 +150,8 @@ namespace PythonScriptCall
             Thread.Sleep(10000);
             for (int i = 2; i < 204; i++)
             {
-                ws.Cells[i, 3].Formula = String.Format("=VLOOKUP(A"+ i + ", 'D:\\Github\\Parth\\[IV PRINT.xlsx]Sheet1'!$A$2:$H$203, 8,0)");
+                //ws.Cells[i, 3].Formula = String.Format("=VLOOKUP(A"+ i + ", 'D:\\Github\\Parth\\[IV PRINT.xlsx]Sheet1'!$A$2:$H$203, 8,0)");
+                ws.Cells[i, 3].Formula = String.Format("=VLOOKUP(A"+ i + ", 'D:\\Github\\Parth\\[New Daily Movement.xlsm]Sheet2'!$A$2:$H$203, 9,0)");
             }
 
             Console.WriteLine("Performing Paste Special Value");
