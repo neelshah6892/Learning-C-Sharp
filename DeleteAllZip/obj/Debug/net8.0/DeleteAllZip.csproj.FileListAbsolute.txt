@@ -1,0 +1,15 @@
+E:\Github\Learning-C-Sharp\DeleteAllZip\bin\Debug\net8.0\DeleteAllZip.exe
+E:\Github\Learning-C-Sharp\DeleteAllZip\bin\Debug\net8.0\DeleteAllZip.deps.json
+E:\Github\Learning-C-Sharp\DeleteAllZip\bin\Debug\net8.0\DeleteAllZip.runtimeconfig.json
+E:\Github\Learning-C-Sharp\DeleteAllZip\bin\Debug\net8.0\DeleteAllZip.dll
+E:\Github\Learning-C-Sharp\DeleteAllZip\bin\Debug\net8.0\DeleteAllZip.pdb
+E:\Github\Learning-C-Sharp\DeleteAllZip\obj\Debug\net8.0\DeleteAllZip.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\Learning-C-Sharp\DeleteAllZip\obj\Debug\net8.0\DeleteAllZip.AssemblyInfoInputs.cache
+E:\Github\Learning-C-Sharp\DeleteAllZip\obj\Debug\net8.0\DeleteAllZip.AssemblyInfo.cs
+E:\Github\Learning-C-Sharp\DeleteAllZip\obj\Debug\net8.0\DeleteAllZip.csproj.CoreCompileInputs.cache
+E:\Github\Learning-C-Sharp\DeleteAllZip\obj\Debug\net8.0\DeleteAllZip.sourcelink.json
+E:\Github\Learning-C-Sharp\DeleteAllZip\obj\Debug\net8.0\DeleteAllZip.dll
+E:\Github\Learning-C-Sharp\DeleteAllZip\obj\Debug\net8.0\refint\DeleteAllZip.dll
+E:\Github\Learning-C-Sharp\DeleteAllZip\obj\Debug\net8.0\DeleteAllZip.pdb
+E:\Github\Learning-C-Sharp\DeleteAllZip\obj\Debug\net8.0\DeleteAllZip.genruntimeconfig.cache
+E:\Github\Learning-C-Sharp\DeleteAllZip\obj\Debug\net8.0\ref\DeleteAllZip.dll
