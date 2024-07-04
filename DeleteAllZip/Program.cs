@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             // Change this path to the directory you want to read
-            string path = "G:\\";
+            string path = "C:\\Users\\Administrator\\Desktop\\Greekexcel\\";
             DirectoryInfo dir = new DirectoryInfo(path);
             Console.WriteLine("File Name                       Size        Creation Date and Time");
             Console.WriteLine("=================================================================");
@@ -16,7 +16,7 @@
                 DateTime creationTime = flInfo.CreationTime;
                 Console.WriteLine("{0, -30:g} {1,-12:N0} {2} ", name, size, creationTime);
             }
-            foreach (FileInfo file in dir.GetFiles("*.exe"))
+            foreach (FileInfo file in dir.GetFiles("*.gz"))
             {
                 file.Delete();
             }
