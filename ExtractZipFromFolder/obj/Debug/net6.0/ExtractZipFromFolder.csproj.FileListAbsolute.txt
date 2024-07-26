@@ -3,7 +3,6 @@ E:\Github\Learning-C-Sharp\ExtractZipFromFolder\bin\Debug\net6.0\ExtractZipFromF
 E:\Github\Learning-C-Sharp\ExtractZipFromFolder\bin\Debug\net6.0\ExtractZipFromFolder.runtimeconfig.json
 E:\Github\Learning-C-Sharp\ExtractZipFromFolder\bin\Debug\net6.0\ExtractZipFromFolder.dll
 E:\Github\Learning-C-Sharp\ExtractZipFromFolder\bin\Debug\net6.0\ExtractZipFromFolder.pdb
-E:\Github\Learning-C-Sharp\ExtractZipFromFolder\obj\Debug\net6.0\ExtractZipFromFolder.csproj.AssemblyReference.cache
 E:\Github\Learning-C-Sharp\ExtractZipFromFolder\obj\Debug\net6.0\ExtractZipFromFolder.GeneratedMSBuildEditorConfig.editorconfig
 E:\Github\Learning-C-Sharp\ExtractZipFromFolder\obj\Debug\net6.0\ExtractZipFromFolder.AssemblyInfoInputs.cache
 E:\Github\Learning-C-Sharp\ExtractZipFromFolder\obj\Debug\net6.0\ExtractZipFromFolder.AssemblyInfo.cs
@@ -13,3 +12,4 @@ E:\Github\Learning-C-Sharp\ExtractZipFromFolder\obj\Debug\net6.0\refint\ExtractZ
 E:\Github\Learning-C-Sharp\ExtractZipFromFolder\obj\Debug\net6.0\ExtractZipFromFolder.pdb
 E:\Github\Learning-C-Sharp\ExtractZipFromFolder\obj\Debug\net6.0\ExtractZipFromFolder.genruntimeconfig.cache
 E:\Github\Learning-C-Sharp\ExtractZipFromFolder\obj\Debug\net6.0\ref\ExtractZipFromFolder.dll
+E:\Github\Learning-C-Sharp\ExtractZipFromFolder\obj\Debug\net6.0\ExtractZipFromFolder.sourcelink.json
