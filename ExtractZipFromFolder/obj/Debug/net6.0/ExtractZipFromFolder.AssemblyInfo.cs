@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExtractZipFromFolder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be6b31bfa6583b70082f93a10713ca89f8888c9d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ca7a5f921b67be58838f8524249c7d170f90847")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExtractZipFromFolder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExtractZipFromFolder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
