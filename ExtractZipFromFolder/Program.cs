@@ -7,12 +7,12 @@ namespace unzip_file
     {
         static void Main(string[] args)
         {
-            string zipFilePath = @"E:\BhavCopy_NSE_FO_0_0_0_20240725_F_0000.csv.zip";
-            string extractionPath = @"E:\";
+            string zipFilePath = @"C:\Users\dhwan\Downloads\BhavCopy_NSE_FO_0_0_0_20240809_F_0000.csv.zip";
+            string extractionPath = @"D:\bsefiles\";
             ZipFile.ExtractToDirectory(zipFilePath, extractionPath);
             Console.WriteLine("Extracted Successfully");
 
-            string zipFilePath1 = @"E:\25072024.zip";
+            /*string zipFilePath1 = @"E:\25072024.zip";
             string extractionPath1 = @"E:\";
             ZipFile.ExtractToDirectory(zipFilePath1, extractionPath1);
             Console.WriteLine("Extracted Successfully");
@@ -27,7 +27,7 @@ namespace unzip_file
             File.Delete("E:\\GFDLNFO_CONTRACT_25072024.zip");
 
             File.Move(@"E:\GFDLNFO_BACKADJUSTED_25072024.csv", @"G:\GFDLNFO_BACKADJUSTED_25072024.csv");
-            Console.WriteLine("File Moved");
+            Console.WriteLine("File Moved");*/
 
 
         }
