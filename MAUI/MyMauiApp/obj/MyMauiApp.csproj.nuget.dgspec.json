@@ -1,25 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\Learning-C-Sharp\\MAUI\\MyMauiApp\\MyMauiApp.csproj": {}
+    "E:\\Github\\Learning-C-Sharp\\MAUI\\MyMauiApp\\MyMauiApp.csproj": {}
   },
   "projects": {
-    "D:\\Github\\Learning-C-Sharp\\MAUI\\MyMauiApp\\MyMauiApp.csproj": {
+    "E:\\Github\\Learning-C-Sharp\\MAUI\\MyMauiApp\\MyMauiApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\Learning-C-Sharp\\MAUI\\MyMauiApp\\MyMauiApp.csproj",
+        "projectUniqueName": "E:\\Github\\Learning-C-Sharp\\MAUI\\MyMauiApp\\MyMauiApp.csproj",
         "projectName": "MyMauiApp",
-        "projectPath": "D:\\Github\\Learning-C-Sharp\\MAUI\\MyMauiApp\\MyMauiApp.csproj",
-        "packagesPath": "C:\\Users\\dhwan\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\Learning-C-Sharp\\MAUI\\MyMauiApp\\obj\\",
+        "projectPath": "E:\\Github\\Learning-C-Sharp\\MAUI\\MyMauiApp\\MyMauiApp.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\Github\\Learning-C-Sharp\\MAUI\\MyMauiApp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Github\\Learning-C-Sharp\\NuGet.Config",
-          "C:\\Users\\dhwan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "E:\\Github\\Learning-C-Sharp\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -38,15 +38,15 @@
           "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet6/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0-android31.0": {
+          "net6.0-android21.0": {
             "targetAlias": "net6.0-android",
             "projectReferences": {}
           },
-          "net6.0-ios16.1": {
+          "net6.0-ios": {
             "targetAlias": "net6.0-ios",
             "projectReferences": {}
           },
-          "net6.0-maccatalyst16.1": {
+          "net6.0-maccatalyst": {
             "targetAlias": "net6.0-maccatalyst",
             "projectReferences": {}
           },
@@ -59,23 +59,16 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net6.0-android31.0": {
+        "net6.0-android21.0": {
           "targetAlias": "net6.0-android",
-          "dependencies": {
-            "Microsoft.Maui.Dependencies": {
-              "target": "Package",
-              "version": "[6.0.553, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Maui.Extensions": {
-              "target": "Package",
-              "version": "[6.0.553, )",
-              "autoReferenced": true
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -89,100 +82,31 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.Android.Ref.31",
-              "version": "[32.0.509, 32.0.509]"
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.32, 6.0.32]"
             },
             {
-              "name": "Microsoft.Android.Runtime.31.android-arm",
-              "version": "[32.0.509, 32.0.509]"
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.32, 6.0.32]"
             },
             {
-              "name": "Microsoft.Android.Runtime.31.android-arm64",
-              "version": "[32.0.509, 32.0.509]"
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.32, 6.0.32]"
             },
             {
-              "name": "Microsoft.Android.Runtime.31.android-x64",
-              "version": "[32.0.509, 32.0.509]"
-            },
-            {
-              "name": "Microsoft.Android.Runtime.31.android-x86",
-              "version": "[32.0.509, 32.0.509]"
-            },
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-              "version": "[6.0.21, 6.0.21]"
-            },
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.linux-arm64",
-              "version": "[6.0.21, 6.0.21]"
-            },
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-              "version": "[6.0.21, 6.0.21]"
-            },
-            {
-              "name": "Microsoft.Maui.Controls.Ref.android",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.Maui.Controls.Runtime.android",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.Maui.Core.Ref.android",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.Maui.Core.Runtime.android",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.Maui.Essentials.Ref.android",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.Maui.Essentials.Runtime.android",
-              "version": "[6.0.553, 6.0.553]"
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.32, 6.0.32]"
             }
           ],
           "frameworkReferences": {
-            "Microsoft.Android": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Maui.Controls": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Maui.Core": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Maui.Essentials": {
-              "privateAssets": "all"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         },
-        "net6.0-ios16.1": {
+        "net6.0-ios": {
           "targetAlias": "net6.0-ios",
-          "dependencies": {
-            "Microsoft.Maui.Dependencies": {
-              "target": "Package",
-              "version": "[6.0.553, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Maui.Extensions": {
-              "target": "Package",
-              "version": "[6.0.553, )",
-              "autoReferenced": true
-            },
-            "System.Runtime.InteropServices.NFloat.Internal": {
-              "target": "Package",
-              "version": "[6.0.1, )",
-              "autoReferenced": true
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -196,78 +120,32 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.iOS.Ref",
-              "version": "[16.4.60, 16.4.60]"
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.32, 6.0.32]"
             },
             {
-              "name": "Microsoft.iOS.Runtime.iossimulator-x64",
-              "version": "[16.4.60, 16.4.60]"
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.32, 6.0.32]"
             },
             {
-              "name": "Microsoft.Maui.Controls.Ref.ios",
-              "version": "[6.0.553, 6.0.553]"
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.32, 6.0.32]"
             },
             {
-              "name": "Microsoft.Maui.Controls.Runtime.ios",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.Maui.Core.Ref.ios",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.Maui.Core.Runtime.ios",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.Maui.Essentials.Ref.ios",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.Maui.Essentials.Runtime.ios",
-              "version": "[6.0.553, 6.0.553]"
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.32, 6.0.32]"
             }
           ],
           "frameworkReferences": {
-            "Microsoft.iOS": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Maui.Controls": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Maui.Core": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Maui.Essentials": {
-              "privateAssets": "all"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         },
-        "net6.0-maccatalyst16.1": {
+        "net6.0-maccatalyst": {
           "targetAlias": "net6.0-maccatalyst",
-          "dependencies": {
-            "Microsoft.Maui.Dependencies": {
-              "target": "Package",
-              "version": "[6.0.553, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Maui.Extensions": {
-              "target": "Package",
-              "version": "[6.0.553, )",
-              "autoReferenced": true
-            },
-            "System.Runtime.InteropServices.NFloat.Internal": {
-              "target": "Package",
-              "version": "[6.0.1, )",
-              "autoReferenced": true
-            }
-          },
           "imports": [
-            "xamarinios10",
             "net461",
             "net462",
             "net47",
@@ -280,71 +158,31 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.MacCatalyst.Ref",
-              "version": "[16.4.60, 16.4.60]"
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.32, 6.0.32]"
             },
             {
-              "name": "Microsoft.MacCatalyst.Runtime.maccatalyst-x64",
-              "version": "[16.4.60, 16.4.60]"
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.32, 6.0.32]"
             },
             {
-              "name": "Microsoft.Maui.Controls.Ref.maccatalyst",
-              "version": "[6.0.553, 6.0.553]"
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.32, 6.0.32]"
             },
             {
-              "name": "Microsoft.Maui.Controls.Runtime.maccatalyst",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.Maui.Core.Ref.maccatalyst",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.Maui.Core.Runtime.maccatalyst",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.Maui.Essentials.Ref.maccatalyst",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.Maui.Essentials.Runtime.maccatalyst",
-              "version": "[6.0.553, 6.0.553]"
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.32, 6.0.32]"
             }
           ],
           "frameworkReferences": {
-            "Microsoft.MacCatalyst": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Maui.Controls": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Maui.Core": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Maui.Essentials": {
-              "privateAssets": "all"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         },
         "net6.0-windows10.0.19041": {
           "targetAlias": "net6.0-windows10.0.19041.0",
-          "dependencies": {
-            "Microsoft.Maui.Dependencies": {
-              "target": "Package",
-              "version": "[6.0.553, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Maui.Extensions": {
-              "target": "Package",
-              "version": "[6.0.553, )",
-              "autoReferenced": true
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -358,56 +196,27 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[6.0.21, 6.0.21]"
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.32, 6.0.32]"
             },
             {
-              "name": "Microsoft.Maui.Controls.Ref.win",
-              "version": "[6.0.553, 6.0.553]"
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.32, 6.0.32]"
             },
             {
-              "name": "Microsoft.Maui.Controls.Runtime.win",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.Maui.Core.Ref.win",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.Maui.Core.Runtime.win",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.Maui.Essentials.Ref.win",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.Maui.Essentials.Runtime.win",
-              "version": "[6.0.553, 6.0.553]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[6.0.21, 6.0.21]"
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.32, 6.0.32]"
             },
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
-              "version": "[10.0.19041.29, 10.0.19041.29]"
+              "version": "[10.0.19041.31, 10.0.19041.31]"
             },
             {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[6.0.21, 6.0.21]"
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.32, 6.0.32]"
             }
           ],
           "frameworkReferences": {
-            "Microsoft.Maui.Controls": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Maui.Core": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Maui.Essentials": {
-              "privateAssets": "all"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             },
@@ -415,30 +224,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "android-arm": {
-          "#import": []
-        },
-        "android-arm64": {
-          "#import": []
-        },
-        "android-x64": {
-          "#import": []
-        },
-        "android-x86": {
-          "#import": []
-        },
-        "iossimulator-x64": {
-          "#import": []
-        },
-        "maccatalyst-x64": {
-          "#import": []
-        },
-        "win10-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }
