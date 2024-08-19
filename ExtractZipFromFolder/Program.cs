@@ -1,16 +1,47 @@
 ﻿using System;
 using System.IO.Compression;
+using System.Runtime.InteropServices;
 
 namespace unzip_file
 {
     class Program
     {
+        [StructLayout(LayoutKind.Sequential)]
+        public struct SYSTEMTIME
+        {
+            public short wYear;
+            public short wMonth;
+            public short wDayOfWeek;
+            public short wDay;
+            public short wHour;
+            public short wMinute;
+            public short wSecond;
+            public short wMilliseconds;
+        }
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        public static extern bool SetSystemTime(ref SYSTEMTIME st);
+
         static void Main(string[] args)
         {
-            string zipFilePath = @"C:\Users\dhwan\Downloads\BhavCopy_NSE_FO_0_0_0_20240809_F_0000.csv.zip";
+            
+               
+            SYSTEMTIME st = new SYSTEMTIME();
+            st.wYear = 2024; // must be short
+            st.wMonth = 8;
+            st.wDay = 20;
+            st.wHour = 0;
+            st.wMinute = 0;
+            st.wSecond = 0;
+
+            SetSystemTime(ref st); // invoke this method.
+
+            Console.WriteLine(st);
+
+            /*string zipFilePath = @"C:\Users\dhwan\Downloads\BhavCopy_NSE_FO_0_0_0_20240809_F_0000.csv.zip";
             string extractionPath = @"D:\bsefiles\";
             ZipFile.ExtractToDirectory(zipFilePath, extractionPath);
-            Console.WriteLine("Extracted Successfully");
+            Console.WriteLine("Extracted Successfully");*/
 
             /*string zipFilePath1 = @"E:\25072024.zip";
             string extractionPath1 = @"E:\";
