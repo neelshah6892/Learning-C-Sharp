@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "dgSpecHash": "2jKwgseDN+k=",
+  "success": false,
+  "projectFilePath": "E:\\Github\\Learning-C-Sharp\\SampleMAUI\\SampleMAUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.34\\microsoft.windows.sdk.net.ref.10.0.19041.34.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Microsoft.Extensions.Configuration.Abstractions.8.0.0' from 'https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg'.\r\nAn error occurred while sending the request.\r\n  The request was aborted: Could not create SSL/TLS secure channel."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "The feed 'public [https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json]' lists package 'Microsoft.Extensions.Configuration.Abstractions.8.0.0' but multiple attempts to download the nupkg have failed. The feed is either invalid or required packages were removed while the current operation was in progress. Verify the package exists on the feed and try again."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "The feed 'public [https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json]' lists package 'Microsoft.Extensions.Configuration.Abstractions.8.0.0' but multiple attempts to download the nupkg have failed. The feed is either invalid or required packages were removed while the current operation was in progress. Verify the package exists on the feed and try again."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Xamarin.Google.Guava.ListenableFuture.1.0.0.14' from 'https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/xamarin.google.guava.listenablefuture/1.0.0.14/xamarin.google.guava.listenablefuture.1.0.0.14.nupkg'.\r\nAn error occurred while sending the request.\r\n  The request was aborted: Could not create SSL/TLS secure channel."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Xamarin.AndroidX.Interpolator.1.0.0.19' from 'https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/xamarin.androidx.interpolator/1.0.0.19/xamarin.androidx.interpolator.1.0.0.19.nupkg'.\r\nAn error occurred while sending the request.\r\n  The request was aborted: Could not create SSL/TLS secure channel."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Xamarin.AndroidX.Core.1.10.1.2' from 'https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/xamarin.androidx.core/1.10.1.2/xamarin.androidx.core.1.10.1.2.nupkg'.\r\nAn error occurred while sending the request.\r\n  The request was aborted: Could not create SSL/TLS secure channel."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Xamarin.AndroidX.Collection.1.2.0.9' from 'https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/xamarin.androidx.collection/1.2.0.9/xamarin.androidx.collection.1.2.0.9.nupkg'.\r\nAn error occurred while sending the request.\r\n  The request was aborted: Could not create SSL/TLS secure channel."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "The feed 'public [https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json]' lists package 'Xamarin.AndroidX.Interpolator.1.0.0.19' but multiple attempts to download the nupkg have failed. The feed is either invalid or required packages were removed while the current operation was in progress. Verify the package exists on the feed and try again."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "The feed 'public [https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json]' lists package 'Xamarin.AndroidX.Core.1.10.1.2' but multiple attempts to download the nupkg have failed. The feed is either invalid or required packages were removed while the current operation was in progress. Verify the package exists on the feed and try again."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Xamarin.Kotlin.StdLib.1.9.0.1' from 'https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/xamarin.kotlin.stdlib/1.9.0.1/xamarin.kotlin.stdlib.1.9.0.1.nupkg'.\r\nAn error occurred while sending the request.\r\n  The request was aborted: Could not create SSL/TLS secure channel."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Xamarin.AndroidX.Annotation.Jvm.1.6.0.2' from 'https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/xamarin.androidx.annotation.jvm/1.6.0.2/xamarin.androidx.annotation.jvm.1.6.0.2.nupkg'.\r\nAn error occurred while sending the request.\r\n  The request was aborted: Could not create SSL/TLS secure channel."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "The feed 'public [https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json]' lists package 'Xamarin.Kotlin.StdLib.1.9.0.1' but multiple attempts to download the nupkg have failed. The feed is either invalid or required packages were removed while the current operation was in progress. Verify the package exists on the feed and try again."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "The feed 'public [https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json]' lists package 'Xamarin.AndroidX.Annotation.Jvm.1.6.0.2' but multiple attempts to download the nupkg have failed. The feed is either invalid or required packages were removed while the current operation was in progress. Verify the package exists on the feed and try again."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "The feed 'public [https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json]' lists package 'Microsoft.Extensions.Configuration.Abstractions.8.0.0' but multiple attempts to download the nupkg have failed. The feed is either invalid or required packages were removed while the current operation was in progress. Verify the package exists on the feed and try again."
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-android34.0": {},
+    "net8.0-android34.0/android-arm": {},
+    "net8.0-android34.0/android-arm64": {},
+    "net8.0-android34.0/android-x64": {},
+    "net8.0-android34.0/android-x86": {},
+    "net8.0-android34.0/iossimulator-x64": {},
+    "net8.0-android34.0/maccatalyst-x64": {},
+    "net8.0-android34.0/win10-x64": {},
+    "net8.0-ios17.5": {},
+    "net8.0-ios17.5/android-arm": {},
+    "net8.0-ios17.5/android-arm64": {},
+    "net8.0-ios17.5/android-x64": {},
+    "net8.0-ios17.5/android-x86": {},
+    "net8.0-ios17.5/iossimulator-x64": {},
+    "net8.0-ios17.5/maccatalyst-x64": {},
+    "net8.0-ios17.5/win10-x64": {},
+    "net8.0-maccatalyst17.5": {},
+    "net8.0-maccatalyst17.5/android-arm": {},
+    "net8.0-maccatalyst17.5/android-arm64": {},
+    "net8.0-maccatalyst17.5/android-x64": {},
+    "net8.0-maccatalyst17.5/android-x86": {},
+    "net8.0-maccatalyst17.5/iossimulator-x64": {},
+    "net8.0-maccatalyst17.5/maccatalyst-x64": {},
+    "net8.0-maccatalyst17.5/win10-x64": {},
+    "net8.0-windows10.0.19041": {},
+    "net8.0-windows10.0.19041/android-arm": {},
+    "net8.0-windows10.0.19041/android-arm64": {},
+    "net8.0-windows10.0.19041/android-x64": {},
+    "net8.0-windows10.0.19041/android-x86": {},
+    "net8.0-windows10.0.19041/iossimulator-x64": {},
+    "net8.0-windows10.0.19041/maccatalyst-x64": {},
+    "net8.0-windows10.0.19041/win10-x64": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net8.0-android34.0": [
+      "Microsoft.Extensions.Logging.Debug >= 8.0.0",
+      "Microsoft.Maui.Controls >= 8.0.72",
+      "Microsoft.Maui.Controls.Compatibility >= 8.0.72",
+      "Microsoft.NET.ILLink.Tasks >= 8.0.8"
+    ],
+    "net8.0-ios17.5": [
+      "Microsoft.Extensions.Logging.Debug >= 8.0.0",
+      "Microsoft.Maui.Controls >= 8.0.72",
+      "Microsoft.Maui.Controls.Compatibility >= 8.0.72",
+      "Microsoft.NET.ILLink.Tasks >= 8.0.8"
+    ],
+    "net8.0-maccatalyst17.5": [
+      "Microsoft.Extensions.Logging.Debug >= 8.0.0",
+      "Microsoft.Maui.Controls >= 8.0.72",
+      "Microsoft.Maui.Controls.Compatibility >= 8.0.72",
+      "Microsoft.NET.ILLink.Tasks >= 8.0.8"
+    ],
+    "net8.0-windows10.0.19041": [
+      "Microsoft.Extensions.Logging.Debug >= 8.0.0",
+      "Microsoft.Maui.Controls >= 8.0.72",
+      "Microsoft.Maui.Controls.Compatibility >= 8.0.72"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\Github\\Learning-C-Sharp\\SampleMAUI\\SampleMAUI.csproj",
+      "projectName": "SampleMAUI",
+      "projectPath": "E:\\Github\\Learning-C-Sharp\\SampleMAUI\\SampleMAUI.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "E:\\Github\\Learning-C-Sharp\\SampleMAUI\\obj\\",
+      "projectStyle": "PackageReference",
+      "crossTargeting": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "E:\\Github\\Learning-C-Sharp\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-android",
+        "net8.0-ios",
+        "net8.0-maccatalyst",
+        "net8.0-windows10.0.19041.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/azure-public/vside/_packaging/xamarin-impl/nuget/v3/index.json": {},
+        "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json": {},
+        "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet6/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0-android34.0": {
+          "targetAlias": "net8.0-android",
+          "projectReferences": {}
+        },
+        "net8.0-ios17.5": {
+          "targetAlias": "net8.0-ios",
+          "projectReferences": {}
+        },
+        "net8.0-maccatalyst17.5": {
+          "targetAlias": "net8.0-maccatalyst",
+          "projectReferences": {}
+        },
+        "net8.0-windows10.0.19041": {
+          "targetAlias": "net8.0-windows10.0.19041.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0-android34.0": {
+        "targetAlias": "net8.0-android",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
+          "Microsoft.Maui.Controls": {
+            "target": "Package",
+            "version": "[8.0.72, )"
+          },
+          "Microsoft.Maui.Controls.Compatibility": {
+            "target": "Package",
+            "version": "[8.0.72, )"
+          },
+          "Microsoft.NET.ILLink.Tasks": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[8.0.8, )",
+            "autoReferenced": true
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.Android": {
+            "privateAssets": "all"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+      },
+      "net8.0-ios17.5": {
+        "targetAlias": "net8.0-ios",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
+          "Microsoft.Maui.Controls": {
+            "target": "Package",
+            "version": "[8.0.72, )"
+          },
+          "Microsoft.Maui.Controls.Compatibility": {
+            "target": "Package",
+            "version": "[8.0.72, )"
+          },
+          "Microsoft.NET.ILLink.Tasks": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[8.0.8, )",
+            "autoReferenced": true
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.iOS": {
+            "privateAssets": "all"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+      },
+      "net8.0-maccatalyst17.5": {
+        "targetAlias": "net8.0-maccatalyst",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
+          "Microsoft.Maui.Controls": {
+            "target": "Package",
+            "version": "[8.0.72, )"
+          },
+          "Microsoft.Maui.Controls.Compatibility": {
+            "target": "Package",
+            "version": "[8.0.72, )"
+          },
+          "Microsoft.NET.ILLink.Tasks": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[8.0.8, )",
+            "autoReferenced": true
+          }
+        },
+        "imports": [
+          "xamarinios10",
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.MacCatalyst": {
+            "privateAssets": "all"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+      },
+      "net8.0-windows10.0.19041": {
+        "targetAlias": "net8.0-windows10.0.19041.0",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
+          "Microsoft.Maui.Controls": {
+            "target": "Package",
+            "version": "[8.0.72, )"
+          },
+          "Microsoft.Maui.Controls.Compatibility": {
+            "target": "Package",
+            "version": "[8.0.72, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.Windows.SDK.NET.Ref",
+            "version": "[10.0.19041.34, 10.0.19041.34]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.Windows.SDK.NET.Ref": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "android-arm": {
+        "#import": []
+      },
+      "android-arm64": {
+        "#import": []
+      },
+      "android-x64": {
+        "#import": []
+      },
+      "android-x86": {
+        "#import": []
+      },
+      "iossimulator-x64": {
+        "#import": []
+      },
+      "maccatalyst-x64": {
+        "#import": []
+      },
+      "win10-x64": {
+        "#import": []
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Microsoft.Extensions.Configuration.Abstractions.8.0.0' from 'https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg'.\r\nAn error occurred while sending the request.\r\n  The request was aborted: Could not create SSL/TLS secure channel."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "The feed 'public [https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json]' lists package 'Microsoft.Extensions.Configuration.Abstractions.8.0.0' but multiple attempts to download the nupkg have failed. The feed is either invalid or required packages were removed while the current operation was in progress. Verify the package exists on the feed and try again."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "The feed 'public [https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json]' lists package 'Microsoft.Extensions.Configuration.Abstractions.8.0.0' but multiple attempts to download the nupkg have failed. The feed is either invalid or required packages were removed while the current operation was in progress. Verify the package exists on the feed and try again."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Xamarin.Google.Guava.ListenableFuture.1.0.0.14' from 'https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/xamarin.google.guava.listenablefuture/1.0.0.14/xamarin.google.guava.listenablefuture.1.0.0.14.nupkg'.\r\nAn error occurred while sending the request.\r\n  The request was aborted: Could not create SSL/TLS secure channel."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Xamarin.AndroidX.Interpolator.1.0.0.19' from 'https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/xamarin.androidx.interpolator/1.0.0.19/xamarin.androidx.interpolator.1.0.0.19.nupkg'.\r\nAn error occurred while sending the request.\r\n  The request was aborted: Could not create SSL/TLS secure channel."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Xamarin.AndroidX.Core.1.10.1.2' from 'https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/xamarin.androidx.core/1.10.1.2/xamarin.androidx.core.1.10.1.2.nupkg'.\r\nAn error occurred while sending the request.\r\n  The request was aborted: Could not create SSL/TLS secure channel."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Xamarin.AndroidX.Collection.1.2.0.9' from 'https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/xamarin.androidx.collection/1.2.0.9/xamarin.androidx.collection.1.2.0.9.nupkg'.\r\nAn error occurred while sending the request.\r\n  The request was aborted: Could not create SSL/TLS secure channel."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "The feed 'public [https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json]' lists package 'Xamarin.AndroidX.Interpolator.1.0.0.19' but multiple attempts to download the nupkg have failed. The feed is either invalid or required packages were removed while the current operation was in progress. Verify the package exists on the feed and try again."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "The feed 'public [https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json]' lists package 'Xamarin.AndroidX.Core.1.10.1.2' but multiple attempts to download the nupkg have failed. The feed is either invalid or required packages were removed while the current operation was in progress. Verify the package exists on the feed and try again."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Xamarin.Kotlin.StdLib.1.9.0.1' from 'https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/xamarin.kotlin.stdlib/1.9.0.1/xamarin.kotlin.stdlib.1.9.0.1.nupkg'.\r\nAn error occurred while sending the request.\r\n  The request was aborted: Could not create SSL/TLS secure channel."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Xamarin.AndroidX.Annotation.Jvm.1.6.0.2' from 'https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/xamarin.androidx.annotation.jvm/1.6.0.2/xamarin.androidx.annotation.jvm.1.6.0.2.nupkg'.\r\nAn error occurred while sending the request.\r\n  The request was aborted: Could not create SSL/TLS secure channel."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "The feed 'public [https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json]' lists package 'Xamarin.Kotlin.StdLib.1.9.0.1' but multiple attempts to download the nupkg have failed. The feed is either invalid or required packages were removed while the current operation was in progress. Verify the package exists on the feed and try again."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "The feed 'public [https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json]' lists package 'Xamarin.AndroidX.Annotation.Jvm.1.6.0.2' but multiple attempts to download the nupkg have failed. The feed is either invalid or required packages were removed while the current operation was in progress. Verify the package exists on the feed and try again."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "The feed 'public [https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json]' lists package 'Microsoft.Extensions.Configuration.Abstractions.8.0.0' but multiple attempts to download the nupkg have failed. The feed is either invalid or required packages were removed while the current operation was in progress. Verify the package exists on the feed and try again."
+    }
+  ]
+}
