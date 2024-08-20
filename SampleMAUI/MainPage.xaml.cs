@@ -3,6 +3,7 @@
     public partial class MainPage : ContentPage
     {
         int count = 0;
+        int labelCount = 0;
 
         public MainPage()
         {
@@ -19,6 +20,16 @@
                 CounterBtn.Text = $"Clicked {count} times";
 
             SemanticScreenReader.Announce(CounterBtn.Text);
+
+            labelCount++;
+            var newLabel = new Label()
+            {
+                Text = $"Label{labelCount}",
+                FontSize = 18,
+                HorizontalOptions = LayoutOptions.Center,
+            };
+
+            MainStackLayout.Children.Add(newLabel);
         }
     }
 

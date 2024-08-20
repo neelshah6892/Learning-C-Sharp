@@ -4,7 +4,8 @@
              x:Class="SampleMAUI.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
+        <VerticalStackLayout 
+            x:Name="MainStackLayout"
             Padding="30,0"
             Spacing="25">
             <Image

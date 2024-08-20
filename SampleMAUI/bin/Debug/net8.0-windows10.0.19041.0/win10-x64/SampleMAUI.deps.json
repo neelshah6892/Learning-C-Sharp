@@ -10,8 +10,9 @@
       "SampleMAUI/1.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Debug": "8.0.0",
-          "Microsoft.Maui.Controls": "8.0.72",
-          "Microsoft.Maui.Controls.Compatibility": "8.0.72",
+          "Microsoft.Maui.Controls": "8.0.80",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.80",
+          "sqlite-net-pcl": "1.9.172",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.34"
         },
         "runtime": {
@@ -131,7 +132,7 @@
       },
       "Microsoft.Graphics.Win2D/1.2.0": {
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.5.240607001"
+          "Microsoft.WindowsAppSDK": "1.5.240627000"
         },
         "runtime": {
           "lib/net6.0-windows10.0.19041.0/Microsoft.Graphics.Canvas.Interop.dll": {
@@ -145,46 +146,54 @@
           }
         }
       },
-      "Microsoft.Maui.Controls/8.0.72": {
-        "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "8.0.72",
-          "Microsoft.Maui.Controls.Core": "8.0.72",
-          "Microsoft.Maui.Controls.Xaml": "8.0.72",
-          "Microsoft.Maui.Resizetizer": "8.0.72"
+      "Microsoft.IO.RecyclableMemoryStream/3.0.1": {
+        "runtime": {
+          "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.1.0"
+          }
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/8.0.72": {
+      "Microsoft.Maui.Controls/8.0.80": {
         "dependencies": {
-          "Microsoft.Maui.Controls.Core": "8.0.72",
-          "Microsoft.Maui.Controls.Xaml": "8.0.72"
+          "Microsoft.Maui.Controls.Build.Tasks": "8.0.80",
+          "Microsoft.Maui.Controls.Core": "8.0.80",
+          "Microsoft.Maui.Controls.Xaml": "8.0.80",
+          "Microsoft.Maui.Resizetizer": "8.0.80"
         }
       },
-      "Microsoft.Maui.Controls.Compatibility/8.0.72": {
+      "Microsoft.Maui.Controls.Build.Tasks/8.0.80": {
+        "dependencies": {
+          "Microsoft.Maui.Controls.Core": "8.0.80",
+          "Microsoft.Maui.Controls.Xaml": "8.0.80"
+        }
+      },
+      "Microsoft.Maui.Controls.Compatibility/8.0.80": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Maui.Controls.Core": "8.0.72",
-          "Microsoft.Maui.Controls.Xaml": "8.0.72"
+          "Microsoft.Maui.Controls.Core": "8.0.80",
+          "Microsoft.Maui.Controls.Xaml": "8.0.80"
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Compatibility.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "8.0.7224.40507"
+            "fileVersion": "8.0.8024.40620"
           }
         }
       },
-      "Microsoft.Maui.Controls.Core/8.0.72": {
+      "Microsoft.Maui.Controls.Core/8.0.80": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Maui.Core": "8.0.72"
+          "Microsoft.Maui.Core": "8.0.80"
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "8.0.7224.40507"
+            "fileVersion": "8.0.8024.40620"
           }
         },
         "resources": {
@@ -292,86 +301,87 @@
           }
         }
       },
-      "Microsoft.Maui.Controls.Xaml/8.0.72": {
+      "Microsoft.Maui.Controls.Xaml/8.0.80": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
-          "Microsoft.Maui.Controls.Core": "8.0.72",
-          "Microsoft.Maui.Core": "8.0.72"
+          "Microsoft.Maui.Controls.Core": "8.0.80",
+          "Microsoft.Maui.Core": "8.0.80"
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Xaml.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "8.0.7224.40507"
+            "fileVersion": "8.0.8024.40620"
           }
         }
       },
-      "Microsoft.Maui.Core/8.0.72": {
+      "Microsoft.Maui.Core/8.0.80": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
           "Microsoft.Graphics.Win2D": "1.2.0",
-          "Microsoft.Maui.Essentials": "8.0.72",
-          "Microsoft.Maui.Graphics": "8.0.72",
-          "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": "8.0.72",
+          "Microsoft.Maui.Essentials": "8.0.80",
+          "Microsoft.Maui.Graphics": "8.0.80",
+          "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": "8.0.80",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.756",
-          "Microsoft.WindowsAppSDK": "1.5.240607001"
+          "Microsoft.WindowsAppSDK": "1.5.240627000"
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "8.0.7224.40507"
+            "fileVersion": "8.0.8024.40620"
           }
         }
       },
-      "Microsoft.Maui.Essentials/8.0.72": {
+      "Microsoft.Maui.Essentials/8.0.80": {
         "dependencies": {
-          "Microsoft.Maui.Graphics": "8.0.72",
-          "Microsoft.WindowsAppSDK": "1.5.240607001"
+          "Microsoft.Maui.Graphics": "8.0.80",
+          "Microsoft.WindowsAppSDK": "1.5.240627000"
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Essentials.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "8.0.7224.40507"
+            "fileVersion": "8.0.8024.40620"
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.72": {
+      "Microsoft.Maui.Graphics/8.0.80": {
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.2.0",
-          "Microsoft.WindowsAppSDK": "1.5.240607001"
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "Microsoft.WindowsAppSDK": "1.5.240627000"
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Graphics.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "8.0.7224.40507"
+            "fileVersion": "8.0.8024.40620"
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/8.0.72": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/8.0.80": {
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.2.0",
-          "Microsoft.Maui.Graphics": "8.0.72",
-          "Microsoft.WindowsAppSDK": "1.5.240607001"
+          "Microsoft.Maui.Graphics": "8.0.80",
+          "Microsoft.WindowsAppSDK": "1.5.240627000"
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "8.0.7224.40507"
+            "fileVersion": "8.0.8024.40620"
           }
         }
       },
-      "Microsoft.Maui.Resizetizer/8.0.72": {},
+      "Microsoft.Maui.Resizetizer/8.0.80": {},
       "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {},
-      "Microsoft.WindowsAppSDK/1.5.240607001": {
+      "Microsoft.WindowsAppSDK/1.5.240627000": {
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.756"
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.26105.1001"
+            "fileVersion": "10.0.26105.1002"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.WinUI.dll": {
             "assemblyVersion": "3.0.0.0",
@@ -435,7 +445,60 @@
             "fileVersion": "1.5.0.0"
           }
         }
-      }
+      },
+      "sqlite-net-pcl/1.9.172": {
+        "dependencies": {
+          "SQLitePCLRaw.bundle_green": "2.1.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLite-net.dll": {
+            "assemblyVersion": "1.9.172.0",
+            "fileVersion": "1.9.172.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.bundle_green/2.1.2": {
+        "dependencies": {
+          "SQLitePCLRaw.lib.e_sqlite3": "2.1.2",
+          "SQLitePCLRaw.provider.e_sqlite3": "2.1.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll": {
+            "assemblyVersion": "2.1.2.1721",
+            "fileVersion": "2.1.2.1721"
+          }
+        }
+      },
+      "SQLitePCLRaw.core/2.1.2": {
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {
+            "assemblyVersion": "2.1.2.1721",
+            "fileVersion": "2.1.2.1721"
+          }
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3/2.1.2": {
+        "native": {
+          "runtimes/win-x64/native/e_sqlite3.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3/2.1.2": {
+        "dependencies": {
+          "SQLitePCLRaw.core": "2.1.2"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/SQLitePCLRaw.provider.e_sqlite3.dll": {
+            "assemblyVersion": "2.1.2.1721",
+            "fileVersion": "2.1.2.1721"
+          }
+        }
+      },
+      "System.Memory/4.5.3": {}
     }
   },
   "libraries": {
@@ -519,75 +582,82 @@
       "path": "microsoft.graphics.win2d/1.2.0",
       "hashPath": "microsoft.graphics.win2d.1.2.0.nupkg.sha512"
     },
-    "Microsoft.Maui.Controls/8.0.72": {
+    "Microsoft.IO.RecyclableMemoryStream/3.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fbbdhcttsYnUPCaqKI076H/E4IFG4IkDe060k07SUWxzzNYwKQYXFFA4kY+1tElkz9Bu4ALhk9WYXJsV5BZNdQ==",
-      "path": "microsoft.maui.controls/8.0.72",
-      "hashPath": "microsoft.maui.controls.8.0.72.nupkg.sha512"
+      "sha512": "sha512-s/s20YTVY9r9TPfTrN5g8zPF1YhwxyqO6PxUkrYTGI2B+OGPe9AdajWZrLhFqXIvqIW23fnUE4+ztrUWNU1+9g==",
+      "path": "microsoft.io.recyclablememorystream/3.0.1",
+      "hashPath": "microsoft.io.recyclablememorystream.3.0.1.nupkg.sha512"
     },
-    "Microsoft.Maui.Controls.Build.Tasks/8.0.72": {
+    "Microsoft.Maui.Controls/8.0.80": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lhvI4OeezTmZo+xbpqPKvJ7fqdE/+Nv0EeCoA8JpQE468Hnf4KyPQdz6Rtd4bg+DXbhhkio0SSn9yNdDgJYO1g==",
-      "path": "microsoft.maui.controls.build.tasks/8.0.72",
-      "hashPath": "microsoft.maui.controls.build.tasks.8.0.72.nupkg.sha512"
+      "sha512": "sha512-Fg2HrQ8Ok8mVAPj/AGXjfZNk+JDZp/jPPYnc72g1WP6oo8TfW4ngAExyLQP+1V1u+Ay7/qr0zGgfmpGpnl1QQg==",
+      "path": "microsoft.maui.controls/8.0.80",
+      "hashPath": "microsoft.maui.controls.8.0.80.nupkg.sha512"
     },
-    "Microsoft.Maui.Controls.Compatibility/8.0.72": {
+    "Microsoft.Maui.Controls.Build.Tasks/8.0.80": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lhsT0U6Pnnq/JOrJJzJRll5SGXB+BGlHt6OsEo82rXW8hHvaQkNIDy2RdTuczvAxVSQgjn8RXqw7gNU91ZEWKw==",
-      "path": "microsoft.maui.controls.compatibility/8.0.72",
-      "hashPath": "microsoft.maui.controls.compatibility.8.0.72.nupkg.sha512"
+      "sha512": "sha512-oSBim1EPFBP9m30PONcnssoA2iJmjNWdLPpq8F7YbuYob3VOJlQSePVnlcAP9pdAGvEvlKsWrr9XQaUoxyBDaQ==",
+      "path": "microsoft.maui.controls.build.tasks/8.0.80",
+      "hashPath": "microsoft.maui.controls.build.tasks.8.0.80.nupkg.sha512"
     },
-    "Microsoft.Maui.Controls.Core/8.0.72": {
+    "Microsoft.Maui.Controls.Compatibility/8.0.80": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TDdtgftNTJC+XR/kZ6tlUxGrssqvT5OiO3/SdUy6vi2HJAaFI3VFMyLYPBCMBorV370hrB8u6fQSTSeUGv6o1g==",
-      "path": "microsoft.maui.controls.core/8.0.72",
-      "hashPath": "microsoft.maui.controls.core.8.0.72.nupkg.sha512"
+      "sha512": "sha512-6ou+5T56LwB8uQ0Y7Pkmz3hwqcvbdfTDXGLcMVAhOx1PklExqBXaE0zC3SLKUZvSzDwPXSRTuC85sA0imjbNiQ==",
+      "path": "microsoft.maui.controls.compatibility/8.0.80",
+      "hashPath": "microsoft.maui.controls.compatibility.8.0.80.nupkg.sha512"
     },
-    "Microsoft.Maui.Controls.Xaml/8.0.72": {
+    "Microsoft.Maui.Controls.Core/8.0.80": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FSP3XevCUdGmdH+2gH0vFoPKbATxtLQNdC5R2G0UnSYMXAH9iUKWOZTloVVRdM00BjK540K9zaHb4p95rHUcgA==",
-      "path": "microsoft.maui.controls.xaml/8.0.72",
-      "hashPath": "microsoft.maui.controls.xaml.8.0.72.nupkg.sha512"
+      "sha512": "sha512-UcPor0WxvCh9+Q2+OsVVLEtYGJiHLSTLZ1cwXCsm1J1qwJQ7RRMEgB2vTl5g1cOI59PkDsAwOwzJu7e3smMkmw==",
+      "path": "microsoft.maui.controls.core/8.0.80",
+      "hashPath": "microsoft.maui.controls.core.8.0.80.nupkg.sha512"
     },
-    "Microsoft.Maui.Core/8.0.72": {
+    "Microsoft.Maui.Controls.Xaml/8.0.80": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pZpITikBUUTd9TmeOWSiJ3VgTdQBZRkzcVY24GNF7mAPtEJ8jOY0QwQKRjqtR2gp+XgDGZfcrhH2IUqAZHBEDw==",
-      "path": "microsoft.maui.core/8.0.72",
-      "hashPath": "microsoft.maui.core.8.0.72.nupkg.sha512"
+      "sha512": "sha512-VnjPXtODsnOcYmSjBKPBKY+qYjGpDY6oUmLgHs12sqcd9Q+JrxTcfysvabWxiSu/Bc/QSFRRjp3WVvY2y6liOA==",
+      "path": "microsoft.maui.controls.xaml/8.0.80",
+      "hashPath": "microsoft.maui.controls.xaml.8.0.80.nupkg.sha512"
     },
-    "Microsoft.Maui.Essentials/8.0.72": {
+    "Microsoft.Maui.Core/8.0.80": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vREpr0rnqxUI5JeTlUeh1pNtc0wjuh2XpNHELMeWvilJlhgsc9rasJ2iN6/GKvp6Hjx1CU17SJndBSwahH+PfQ==",
-      "path": "microsoft.maui.essentials/8.0.72",
-      "hashPath": "microsoft.maui.essentials.8.0.72.nupkg.sha512"
+      "sha512": "sha512-Epdw2/8a8L9l3i2h9H47c61mteiHp7Sms5XVCrJRNimhDEbmLsyOTGT7nI4zP0WkGTq7zaUTgDkPmdlboJ0HPw==",
+      "path": "microsoft.maui.core/8.0.80",
+      "hashPath": "microsoft.maui.core.8.0.80.nupkg.sha512"
     },
-    "Microsoft.Maui.Graphics/8.0.72": {
+    "Microsoft.Maui.Essentials/8.0.80": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8aon/JsbkxEcxWB9gtd5Y5kXY5XB7Bvkm/RFjJ0bQPW39V56tnKQtWt3hz9/S1reIgs/w/q61E3TrPu5HjXCeA==",
-      "path": "microsoft.maui.graphics/8.0.72",
-      "hashPath": "microsoft.maui.graphics.8.0.72.nupkg.sha512"
+      "sha512": "sha512-vHMa159ZPBs4gtUwvmtF72A747D37qkWCmatZdZxIfIsLoZJ77FMXpqFN9mbUXNLrg1dgc7RAPk6MtrnsRHOUw==",
+      "path": "microsoft.maui.essentials/8.0.80",
+      "hashPath": "microsoft.maui.essentials.8.0.80.nupkg.sha512"
     },
-    "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/8.0.72": {
+    "Microsoft.Maui.Graphics/8.0.80": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zSmIwluppZjw+2cbA8ULXuuxM63CLJcqLO32MrwafXQuULulnn78wCOLaVhT3v3Gk0p+SN8XvC8rWfh7PCjo6Q==",
-      "path": "microsoft.maui.graphics.win2d.winui.desktop/8.0.72",
-      "hashPath": "microsoft.maui.graphics.win2d.winui.desktop.8.0.72.nupkg.sha512"
+      "sha512": "sha512-wmLZlKhrlorIj9E/AbR8wWDxg5Monoe7q8N2ZGW7Q/QFEOBO+2GrAlzMlIme0UVsweHek5reQ2vigq5wwRMlFA==",
+      "path": "microsoft.maui.graphics/8.0.80",
+      "hashPath": "microsoft.maui.graphics.8.0.80.nupkg.sha512"
     },
-    "Microsoft.Maui.Resizetizer/8.0.72": {
+    "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/8.0.80": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7MmYYGaA6Hv9mca4+k9B9lJ+fWWO5wytP5PxOwLuC5w6p7J5+w8q7JdgtltqeY677JSQRCNxChgMou1Zy4nzzA==",
-      "path": "microsoft.maui.resizetizer/8.0.72",
-      "hashPath": "microsoft.maui.resizetizer.8.0.72.nupkg.sha512"
+      "sha512": "sha512-+eL8IA5pmaCNO7u8M52S2fYhUyNE+8R+Cw9lEBKh0TBPzLYRRM6TREP117jBSg5/q7gW1zTUX3ead4vgGG2TtA==",
+      "path": "microsoft.maui.graphics.win2d.winui.desktop/8.0.80",
+      "hashPath": "microsoft.maui.graphics.win2d.winui.desktop.8.0.80.nupkg.sha512"
+    },
+    "Microsoft.Maui.Resizetizer/8.0.80": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O6awNUxGYicOWz2ltWGATtvXpaUEnbdEqNJa4CMEQRBXLbBiD0FOzMp1rfGv/Fix5x22KCKkzw3CNS8/KwqFVw==",
+      "path": "microsoft.maui.resizetizer/8.0.80",
+      "hashPath": "microsoft.maui.resizetizer.8.0.80.nupkg.sha512"
     },
     "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {
       "type": "package",
@@ -596,12 +666,54 @@
       "path": "microsoft.windows.sdk.buildtools/10.0.22621.756",
       "hashPath": "microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512"
     },
-    "Microsoft.WindowsAppSDK/1.5.240607001": {
+    "Microsoft.WindowsAppSDK/1.5.240627000": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hwPYYUGPlneZi7Uwhm2zAIzSnvGGoL1bIqlisba7Adi5fYbwsj1GvGqiFiyYxRV9bhs3ykQNnJ1LW1cdXvvLiQ==",
-      "path": "microsoft.windowsappsdk/1.5.240607001",
-      "hashPath": "microsoft.windowsappsdk.1.5.240607001.nupkg.sha512"
+      "sha512": "sha512-qzzWG8rxZyzKzBuUdwr4ApezMINf+NT2b8EiEE5fchczNJJmDwlHImMWxX1pHK1W8Yby99alqLyC8DB0fIrhuA==",
+      "path": "microsoft.windowsappsdk/1.5.240627000",
+      "hashPath": "microsoft.windowsappsdk.1.5.240627000.nupkg.sha512"
+    },
+    "sqlite-net-pcl/1.9.172": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-go533+huyvg5bOMmCpX+DyvLrcVRiEBIpqEiDHgXRijWIBBNkWnyMr/w+5ZzrUArKY+4ApucsbBnFtP3QITrJg==",
+      "path": "sqlite-net-pcl/1.9.172",
+      "hashPath": "sqlite-net-pcl.1.9.172.nupkg.sha512"
+    },
+    "SQLitePCLRaw.bundle_green/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-e2FRX87YHoSer+tLFX9P/povHLK0uH7UcdimHRPnfTSam+NZChVVXjBxe1MYnyBGlwX5dSs5sTlDg/yZBM7iVw==",
+      "path": "sqlitepclraw.bundle_green/2.1.2",
+      "hashPath": "sqlitepclraw.bundle_green.2.1.2.nupkg.sha512"
+    },
+    "SQLitePCLRaw.core/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A8EBepVqY2lnAp3a8jnhbgzF2tlj2S3HcJQGANTYg/TbYbKa8Z5cM1h74An/vy0svhfzT7tVY0sFmUglLgv+2g==",
+      "path": "sqlitepclraw.core/2.1.2",
+      "hashPath": "sqlitepclraw.core.2.1.2.nupkg.sha512"
+    },
+    "SQLitePCLRaw.lib.e_sqlite3/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zibGtku8M4Eea1R3ZCAxc86QbNvyEN17mAcQkvWKBuHvRpMiK2g5anG4R5Be7cWKSd1i6baYz8y4dMMAKcXKPg==",
+      "path": "sqlitepclraw.lib.e_sqlite3/2.1.2",
+      "hashPath": "sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512"
+    },
+    "SQLitePCLRaw.provider.e_sqlite3/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lxCZarZdvAsMl2zw9bXHrXK6RxVhB4b23iTFhCOdHFhxfbsxLxWf+ocvswJwR/9Wh/E//ddMi+wJGqUKV7VwoA==",
+      "path": "sqlitepclraw.provider.e_sqlite3/2.1.2",
+      "hashPath": "sqlitepclraw.provider.e_sqlite3.2.1.2.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
     }
   }
 }
