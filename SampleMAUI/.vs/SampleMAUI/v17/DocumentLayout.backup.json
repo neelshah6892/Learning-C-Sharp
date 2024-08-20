@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Github\\Learning-C-Sharp\\SampleMAUI\\",
+  "WorkspaceRootPath": "D:\\Github\\Learning-C-Sharp\\SampleMAUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E689803D-89DB-4AC8-B5D7-D12C577CF2DE}|SampleMAUI.csproj|e:\\github\\learning-c-sharp\\samplemaui\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{E689803D-89DB-4AC8-B5D7-D12C577CF2DE}|SampleMAUI.csproj|d:\\github\\learning-c-sharp\\samplemaui\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E689803D-89DB-4AC8-B5D7-D12C577CF2DE}|SampleMAUI.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E689803D-89DB-4AC8-B5D7-D12C577CF2DE}|SampleMAUI.csproj|e:\\github\\learning-c-sharp\\samplemaui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E689803D-89DB-4AC8-B5D7-D12C577CF2DE}|SampleMAUI.csproj|d:\\github\\learning-c-sharp\\samplemaui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E689803D-89DB-4AC8-B5D7-D12C577CF2DE}|SampleMAUI.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E689803D-89DB-4AC8-B5D7-D12C577CF2DE}|SampleMAUI.csproj|e:\\github\\learning-c-sharp\\samplemaui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E689803D-89DB-4AC8-B5D7-D12C577CF2DE}|SampleMAUI.csproj|d:\\github\\learning-c-sharp\\samplemaui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E689803D-89DB-4AC8-B5D7-D12C577CF2DE}|SampleMAUI.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,24 +32,23 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "E:\\Github\\Learning-C-Sharp\\SampleMAUI\\MainPage.xaml.cs",
+              "DocumentMoniker": "D:\\Github\\Learning-C-Sharp\\SampleMAUI\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
-              "ToolTip": "E:\\Github\\Learning-C-Sharp\\SampleMAUI\\MainPage.xaml.cs",
+              "ToolTip": "D:\\Github\\Learning-C-Sharp\\SampleMAUI\\MainPage.xaml.cs",
               "RelativeToolTip": "MainPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T05:10:42.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-20T05:10:42.434Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainPage.xaml",
-              "DocumentMoniker": "E:\\Github\\Learning-C-Sharp\\SampleMAUI\\MainPage.xaml",
+              "DocumentMoniker": "D:\\Github\\Learning-C-Sharp\\SampleMAUI\\MainPage.xaml",
               "RelativeDocumentMoniker": "MainPage.xaml",
-              "ToolTip": "E:\\Github\\Learning-C-Sharp\\SampleMAUI\\MainPage.xaml",
+              "ToolTip": "D:\\Github\\Learning-C-Sharp\\SampleMAUI\\MainPage.xaml",
               "RelativeToolTip": "MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-08-19T04:16:19.603Z",
               "EditorCaption": ""
@@ -58,14 +57,13 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MauiProgram.cs",
-              "DocumentMoniker": "E:\\Github\\Learning-C-Sharp\\SampleMAUI\\MauiProgram.cs",
+              "DocumentMoniker": "D:\\Github\\Learning-C-Sharp\\SampleMAUI\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
-              "ToolTip": "E:\\Github\\Learning-C-Sharp\\SampleMAUI\\MauiProgram.cs",
+              "ToolTip": "D:\\Github\\Learning-C-Sharp\\SampleMAUI\\MauiProgram.cs",
               "RelativeToolTip": "MauiProgram.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T04:16:06.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-19T04:16:06.557Z"
             }
           ]
         }
