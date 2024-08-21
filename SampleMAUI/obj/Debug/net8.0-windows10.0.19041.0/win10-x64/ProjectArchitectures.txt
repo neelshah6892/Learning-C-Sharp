@@ -1,1 +1,1 @@
-D:\Github\Learning-C-Sharp\SampleMAUI\SampleMAUI.csproj;x64
+E:\Github\Learning-C-Sharp\SampleMAUI\SampleMAUI.csproj;x64

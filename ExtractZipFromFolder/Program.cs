@@ -24,8 +24,32 @@ namespace unzip_file
 
         static void Main(string[] args)
         {
-            
-               
+
+            string gdfldate = DateTime.Now.AddDays(-1).ToString("ddMMyyyy");
+            string gdflzip = @"C:\Users\Administrator\Downloads\"+gdfldate+".zip";
+
+            string bhavcopydate = DateTime.Now.AddDays(-1).ToString("yyyyMMdd");
+            string bhavcopyzip = @"C:\Users\Administrator\Downloads\BhavCopy_NSE_FO_0_0_0_" + bhavcopydate + "_F_0000.csv.zip";
+
+            if (File.Exists(bhavcopyzip)){
+                string extractionPath = @"D:\bsefiles\";
+                ZipFile.ExtractToDirectory(bhavcopyzip, extractionPath);
+                Console.WriteLine("Bhavcopy Extracted Successfully");
+            }
+
+            if (File.Exists(gdflzip))
+            {
+                string extractionPath = @"C:\Users\Administrator\";
+                ZipFile.ExtractToDirectory(gdflzip, extractionPath);
+                Console.WriteLine("Extracted Successfully");
+
+                string extractionPath2 = @"D:\bsefiles\";
+                string gdflbackadjusted = @"C:\Users\Administrator\Downloads\GFDLNFO_BACKADJUSTED_" + gdfldate+".zip";
+                ZipFile.ExtractToDirectory(gdflbackadjusted, extractionPath2);
+                Console.WriteLine("GDFL Extracted Successfully");
+            }
+
+
             SYSTEMTIME st = new SYSTEMTIME();
             st.wYear = 2024; // must be short
             st.wMonth = 8;
