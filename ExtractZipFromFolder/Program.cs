@@ -24,22 +24,28 @@ namespace unzip_file
 
         static void Main(string[] args)
         {
-
+              
             string gdfldate = DateTime.Now.AddDays(-1).ToString("ddMMyyyy");
             string gdflzip = @"C:\Users\Administrator\Downloads\"+gdfldate+".zip";
 
             string bhavcopydate = DateTime.Now.AddDays(-1).ToString("yyyyMMdd");
             string bhavcopyzip = @"C:\Users\Administrator\Downloads\BhavCopy_NSE_FO_0_0_0_" + bhavcopydate + "_F_0000.csv.zip";
 
-            if (File.Exists(bhavcopyzip)){
+            string path1 = @"D:\bsefiles\" + gdfldate + ".zip";
+            string path2 = @"D:\bsefiles\BhavCopy_NSE_FO_0_0_0_" + bhavcopydate + "_F_0000.csv.zip";
+            File.Copy(gdflzip, path1, true);
+            File.Copy(bhavcopyzip, path2, true);
+
+
+            if (File.Exists(path2)){
                 string extractionPath = @"D:\bsefiles\";
                 ZipFile.ExtractToDirectory(bhavcopyzip, extractionPath);
                 Console.WriteLine("Bhavcopy Extracted Successfully");
             }
 
-            if (File.Exists(gdflzip))
+            if (File.Exists(path1))
             {
-                string extractionPath = @"C:\Users\Administrator\";
+                string extractionPath = @"D:\bsefiles\";
                 ZipFile.ExtractToDirectory(gdflzip, extractionPath);
                 Console.WriteLine("Extracted Successfully");
 
