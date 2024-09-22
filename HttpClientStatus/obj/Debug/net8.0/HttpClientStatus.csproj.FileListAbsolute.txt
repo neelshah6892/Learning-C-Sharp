@@ -1,0 +1,15 @@
+D:\Github\Learning-C-Sharp\HttpClientStatus\bin\Debug\net8.0\HttpClientStatus.exe
+D:\Github\Learning-C-Sharp\HttpClientStatus\bin\Debug\net8.0\HttpClientStatus.deps.json
+D:\Github\Learning-C-Sharp\HttpClientStatus\bin\Debug\net8.0\HttpClientStatus.runtimeconfig.json
+D:\Github\Learning-C-Sharp\HttpClientStatus\bin\Debug\net8.0\HttpClientStatus.dll
+D:\Github\Learning-C-Sharp\HttpClientStatus\bin\Debug\net8.0\HttpClientStatus.pdb
+D:\Github\Learning-C-Sharp\HttpClientStatus\obj\Debug\net8.0\HttpClientStatus.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\Learning-C-Sharp\HttpClientStatus\obj\Debug\net8.0\HttpClientStatus.AssemblyInfoInputs.cache
+D:\Github\Learning-C-Sharp\HttpClientStatus\obj\Debug\net8.0\HttpClientStatus.AssemblyInfo.cs
+D:\Github\Learning-C-Sharp\HttpClientStatus\obj\Debug\net8.0\HttpClientStatus.csproj.CoreCompileInputs.cache
+D:\Github\Learning-C-Sharp\HttpClientStatus\obj\Debug\net8.0\HttpClientStatus.sourcelink.json
+D:\Github\Learning-C-Sharp\HttpClientStatus\obj\Debug\net8.0\HttpClientStatus.dll
+D:\Github\Learning-C-Sharp\HttpClientStatus\obj\Debug\net8.0\refint\HttpClientStatus.dll
+D:\Github\Learning-C-Sharp\HttpClientStatus\obj\Debug\net8.0\HttpClientStatus.pdb
+D:\Github\Learning-C-Sharp\HttpClientStatus\obj\Debug\net8.0\HttpClientStatus.genruntimeconfig.cache
+D:\Github\Learning-C-Sharp\HttpClientStatus\obj\Debug\net8.0\ref\HttpClientStatus.dll

@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Github\\Learning-C-Sharp\\ExtractZipFromFolder\\",
+  "WorkspaceRootPath": "D:\\Github\\Learning-C-Sharp\\HttpClientStatus\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{92705AC8-5E44-49C5-9648-FB24FA5CE95B}|ExtractZipFromFolder.csproj|d:\\github\\learning-c-sharp\\extractzipfromfolder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92705AC8-5E44-49C5-9648-FB24FA5CE95B}|ExtractZipFromFolder.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6163CF29-D393-405C-8A84-1D8AEB5F6B93}|HttpClientStatus.csproj|d:\\github\\learning-c-sharp\\httpclientstatus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6163CF29-D393-405C-8A84-1D8AEB5F6B93}|HttpClientStatus.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,13 +24,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Github\\Learning-C-Sharp\\ExtractZipFromFolder\\Program.cs",
+              "DocumentMoniker": "D:\\Github\\Learning-C-Sharp\\HttpClientStatus\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Github\\Learning-C-Sharp\\ExtractZipFromFolder\\Program.cs",
+              "ToolTip": "D:\\Github\\Learning-C-Sharp\\HttpClientStatus\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T05:34:37.468Z",
+              "WhenOpened": "2024-09-21T07:15:36.745Z",
               "EditorCaption": ""
             }
           ]
