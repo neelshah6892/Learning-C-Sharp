@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Github\\Learning-C-Sharp\\ExtractZipFromFolder\\",
+  "WorkspaceRootPath": "D:\\Github\\Learning-C-Sharp\\ExtractZipFromFolder\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{92705AC8-5E44-49C5-9648-FB24FA5CE95B}|ExtractZipFromFolder.csproj|e:\\github\\learning-c-sharp\\extractzipfromfolder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{92705AC8-5E44-49C5-9648-FB24FA5CE95B}|ExtractZipFromFolder.csproj|d:\\github\\learning-c-sharp\\extractzipfromfolder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92705AC8-5E44-49C5-9648-FB24FA5CE95B}|ExtractZipFromFolder.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Github\\Learning-C-Sharp\\ExtractZipFromFolder\\Program.cs",
+              "DocumentMoniker": "D:\\Github\\Learning-C-Sharp\\ExtractZipFromFolder\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\Github\\Learning-C-Sharp\\ExtractZipFromFolder\\Program.cs",
+              "ToolTip": "D:\\Github\\Learning-C-Sharp\\ExtractZipFromFolder\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA5wC8AAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T05:34:37.468Z",
               "EditorCaption": ""
