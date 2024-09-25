@@ -1,13 +1,36 @@
-﻿/*using System.Net;
+﻿using System.Net;
+using System.IO.Compression;
 
-DateTime yesterday = DateTime.Now.AddDays(-1);
-
-using (var client = new WebClient())
+class HttpClientStatus
 {
-    client.DownloadFile("https://nsearchives.nseindia.com/content/fo/BhavCopy_NSE_FO_0_0_0_20240920_F_0000.csv.zip", "D:/bsefiles/BhavCopy_NSE_FO_0_0_0_20240920_F_0000.csv.zip");
-}*/
+    public static void Main(string[] args)
+    {
+        var yesterday = DateTime.Now.AddDays(-1).ToString("yyyyMMdd");
 
-using System;
+        //yesterday.ToString("yyyyMMdd");
+
+        Console.WriteLine(yesterday);
+
+        using (var client = new WebClient())
+        {
+            client.DownloadFile("https://nsearchives.nseindia.com/content/fo/BhavCopy_NSE_FO_0_0_0_"+yesterday+"_F_0000.csv.zip", "D:/bsefiles/BhavCopy_NSE_FO_0_0_0_"+yesterday+"_F_0000.csv.zip");
+        }
+
+        string dirName = "D:/bsefiles/";
+        string zipName = "D:/bsefiles/BhavCopy_NSE_FO_0_0_0_" + yesterday+"_F_0000.csv.zip";
+
+        /*if (Directory.Exists(dirName))
+        {
+            Directory.Delete(dirName, true);
+        }*/
+
+        ZipFile.ExtractToDirectory(zipName, dirName);
+    }
+}
+    
+
+
+/*using System;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -47,4 +70,4 @@ class Program
             }
         }
     }
-}
+}*/

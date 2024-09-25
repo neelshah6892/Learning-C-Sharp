@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\Github\\Learning-C-Sharp\\HttpClientStatus\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6163CF29-D393-405C-8A84-1D8AEB5F6B93}|HttpClientStatus.csproj|d:\\github\\learning-c-sharp\\httpclientstatus\\zip\\readcontents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6163CF29-D393-405C-8A84-1D8AEB5F6B93}|HttpClientStatus.csproj|solutionrelative:zip\\readcontents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6163CF29-D393-405C-8A84-1D8AEB5F6B93}|HttpClientStatus.csproj|d:\\github\\learning-c-sharp\\httpclientstatus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6163CF29-D393-405C-8A84-1D8AEB5F6B93}|HttpClientStatus.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6163CF29-D393-405C-8A84-1D8AEB5F6B93}|HttpClientStatus.csproj|d:\\github\\learning-c-sharp\\httpclientstatus\\zip\\extract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{6163CF29-D393-405C-8A84-1D8AEB5F6B93}|HttpClientStatus.csproj|solutionrelative:zip\\createzipspecificfiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6163CF29-D393-405C-8A84-1D8AEB5F6B93}|HttpClientStatus.csproj|d:\\github\\learning-c-sharp\\httpclientstatus\\zip\\createzip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6163CF29-D393-405C-8A84-1D8AEB5F6B93}|HttpClientStatus.csproj|solutionrelative:zip\\createzip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6163CF29-D393-405C-8A84-1D8AEB5F6B93}|HttpClientStatus.csproj|d:\\github\\learning-c-sharp\\httpclientstatus\\zip\\readcontents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6163CF29-D393-405C-8A84-1D8AEB5F6B93}|HttpClientStatus.csproj|solutionrelative:zip\\readcontents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6163CF29-D393-405C-8A84-1D8AEB5F6B93}|HttpClientStatus.csproj|d:\\github\\learning-c-sharp\\httpclientstatus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6163CF29-D393-405C-8A84-1D8AEB5F6B93}|HttpClientStatus.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6163CF29-D393-405C-8A84-1D8AEB5F6B93}|HttpClientStatus.csproj|d:\\github\\learning-c-sharp\\httpclientstatus\\zip\\createzip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6163CF29-D393-405C-8A84-1D8AEB5F6B93}|HttpClientStatus.csproj|solutionrelative:zip\\createzip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,13 +38,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ReadContents.cs",
               "DocumentMoniker": "D:\\Github\\Learning-C-Sharp\\HttpClientStatus\\ZIP\\ReadContents.cs",
               "RelativeDocumentMoniker": "ZIP\\ReadContents.cs",
               "ToolTip": "D:\\Github\\Learning-C-Sharp\\HttpClientStatus\\ZIP\\ReadContents.cs",
               "RelativeToolTip": "ZIP\\ReadContents.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T06:04:51.26Z",
               "EditorCaption": ""
@@ -70,35 +70,36 @@
               "RelativeDocumentMoniker": "ZIP\\CreateZipSpecificFiles.cs",
               "ToolTip": "D:\\Github\\Learning-C-Sharp\\HttpClientStatus\\ZIP\\CreateZipSpecificFiles.cs",
               "RelativeToolTip": "ZIP\\CreateZipSpecificFiles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T06:03:47.585Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CreateZip.cs",
               "DocumentMoniker": "D:\\Github\\Learning-C-Sharp\\HttpClientStatus\\ZIP\\CreateZip.cs",
               "RelativeDocumentMoniker": "ZIP\\CreateZip.cs",
               "ToolTip": "D:\\Github\\Learning-C-Sharp\\HttpClientStatus\\ZIP\\CreateZip.cs",
               "RelativeToolTip": "ZIP\\CreateZip.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T04:47:11.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Github\\Learning-C-Sharp\\HttpClientStatus\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Github\\Learning-C-Sharp\\HttpClientStatus\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T07:15:36.745Z"
+              "WhenOpened": "2024-09-21T07:15:36.745Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,4 +1,4 @@
-﻿using System.IO.Compression;
+﻿/*using System.IO.Compression;
 
 string zipName = "archive.zip";
 
@@ -14,4 +14,4 @@ using var archive = ZipFile.Open(zipName, ZipArchiveMode.Create);
 foreach (var file in files)
 {
     archive.CreateEntryFromFile(file, Path.GetFileName(file));
-}
+}*/
