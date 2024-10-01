@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AnimalMatchingGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+fb7daa37086fe04363aadbdd39c13ea665d49c44")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+5ce3e9d76afb9eb792b29a1e727ad390487183af")]
 [assembly: System.Reflection.AssemblyProductAttribute("AnimalMatchingGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AnimalMatchingGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
