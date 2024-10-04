@@ -1,0 +1,15 @@
+D:\Github\Learning-C-Sharp\MyFirstConsoleApp\bin\Debug\net8.0\MyFirstConsoleApp.exe
+D:\Github\Learning-C-Sharp\MyFirstConsoleApp\bin\Debug\net8.0\MyFirstConsoleApp.deps.json
+D:\Github\Learning-C-Sharp\MyFirstConsoleApp\bin\Debug\net8.0\MyFirstConsoleApp.runtimeconfig.json
+D:\Github\Learning-C-Sharp\MyFirstConsoleApp\bin\Debug\net8.0\MyFirstConsoleApp.dll
+D:\Github\Learning-C-Sharp\MyFirstConsoleApp\bin\Debug\net8.0\MyFirstConsoleApp.pdb
+D:\Github\Learning-C-Sharp\MyFirstConsoleApp\obj\Debug\net8.0\MyFirstConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\Learning-C-Sharp\MyFirstConsoleApp\obj\Debug\net8.0\MyFirstConsoleApp.AssemblyInfoInputs.cache
+D:\Github\Learning-C-Sharp\MyFirstConsoleApp\obj\Debug\net8.0\MyFirstConsoleApp.AssemblyInfo.cs
+D:\Github\Learning-C-Sharp\MyFirstConsoleApp\obj\Debug\net8.0\MyFirstConsoleApp.csproj.CoreCompileInputs.cache
+D:\Github\Learning-C-Sharp\MyFirstConsoleApp\obj\Debug\net8.0\MyFirstConsoleApp.sourcelink.json
+D:\Github\Learning-C-Sharp\MyFirstConsoleApp\obj\Debug\net8.0\MyFirstConsoleApp.dll
+D:\Github\Learning-C-Sharp\MyFirstConsoleApp\obj\Debug\net8.0\refint\MyFirstConsoleApp.dll
+D:\Github\Learning-C-Sharp\MyFirstConsoleApp\obj\Debug\net8.0\MyFirstConsoleApp.pdb
+D:\Github\Learning-C-Sharp\MyFirstConsoleApp\obj\Debug\net8.0\MyFirstConsoleApp.genruntimeconfig.cache
+D:\Github\Learning-C-Sharp\MyFirstConsoleApp\obj\Debug\net8.0\ref\MyFirstConsoleApp.dll
