@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeleteAllZip")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8eaed4d1f5ba5de948af11562c599ca07a2e16be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a730eabd02fbe84010474352eba651c2710fb1b5")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeleteAllZip")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeleteAllZip")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
