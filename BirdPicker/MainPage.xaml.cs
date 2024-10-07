@@ -18,7 +18,11 @@
 
         private void AddBird_Clicked(object sender, EventArgs e)
         {
-            Birds.Text = Birds.Text + Environment.NewLine + BirdPicker.SelectedItem;
+            if (!String.IsNullOrEmpty(Birds.Text))
+            {
+                Birds.Text = Birds.Text + Environment.NewLine;
+            }
+            Birds.Text += BirdPicker.SelectedItem;
         }
     }
 

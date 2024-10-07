@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BirdPicker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+78736b9315715ca08df49b63ff57931255f4b09b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+0c6e8fe559c00684f50b2b169b88e764be1995e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("BirdPicker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BirdPicker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
