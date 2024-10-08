@@ -1,0 +1,17 @@
+D:\Github\Learning-C-Sharp\SampleDATA\obj\Debug\net8.0\Interop.Microsoft.Office.Interop.Excel.dll
+D:\Github\Learning-C-Sharp\SampleDATA\bin\Debug\net8.0\Apache.Arrow.dll
+D:\Github\Learning-C-Sharp\SampleDATA\bin\Debug\net8.0\Microsoft.Data.Analysis.dll
+D:\Github\Learning-C-Sharp\SampleDATA\bin\Debug\net8.0\Microsoft.ML.DataView.dll
+D:\Github\Learning-C-Sharp\SampleDATA\bin\Debug\net8.0\System.Collections.Immutable.dll
+D:\Github\Learning-C-Sharp\SampleDATA\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Github\Learning-C-Sharp\SampleDATA\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+D:\Github\Learning-C-Sharp\SampleDATA\obj\Debug\net8.0\SampleDATA.csproj.AssemblyReference.cache
+D:\Github\Learning-C-Sharp\SampleDATA\obj\Debug\net8.0\SampleDATA.csproj.ResolveComReference.cache
+D:\Github\Learning-C-Sharp\SampleDATA\obj\Debug\net8.0\SampleDATA.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\Learning-C-Sharp\SampleDATA\obj\Debug\net8.0\SampleDATA.AssemblyInfoInputs.cache
+D:\Github\Learning-C-Sharp\SampleDATA\obj\Debug\net8.0\SampleDATA.AssemblyInfo.cs
+D:\Github\Learning-C-Sharp\SampleDATA\obj\Debug\net8.0\SampleDATA.csproj.CoreCompileInputs.cache
+D:\Github\Learning-C-Sharp\SampleDATA\obj\Debug\net8.0\SampleDATA.sourcelink.json
+D:\Github\Learning-C-Sharp\SampleDATA\obj\Debug\net8.0\SampleDATA.dll
+D:\Github\Learning-C-Sharp\SampleDATA\obj\Debug\net8.0\refint\SampleDATA.dll
+D:\Github\Learning-C-Sharp\SampleDATA\obj\Debug\net8.0\SampleDATA.pdb
