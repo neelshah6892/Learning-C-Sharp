@@ -153,3 +153,13 @@ static void TrySomeLoops()
     }
     Console.WriteLine("The answer is " + count);
 }*/
+
+int Multiply(int factor1, int factor2)
+{
+    int product = factor1 * factor2;
+    return product;
+}
+
+int height = 179;
+int width = 83;
+int area = Multiply(height, width);
