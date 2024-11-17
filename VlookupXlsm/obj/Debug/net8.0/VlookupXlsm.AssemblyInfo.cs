@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VlookupXlsm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d3e10d9953972d476be6513c90e99de842da86a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc369b062de626fe15f03b6cab038d3869410ebe")]
 [assembly: System.Reflection.AssemblyProductAttribute("VlookupXlsm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VlookupXlsm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

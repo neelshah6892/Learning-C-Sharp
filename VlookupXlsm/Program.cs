@@ -1,5 +1,5 @@
 ﻿//using ClosedXML.Excel;
-using Microsoft.Office.Interop.Excel;
+/*using Microsoft.Office.Interop.Excel;
 
 Console.WriteLine("Performing Vlookup....");
 
@@ -19,6 +19,7 @@ for (int i = 2; i < 204; i++)
 //Console.WriteLine("Performing Paste Special Value");
 //ws.Range["C2:C203"].Copy();
 //ws.Range["C2:C203"].PasteSpecial(XlPasteType.xlPasteValues, XlPasteSpecialOperation.xlPasteSpecialOperationNone, false, false);
+*/
 
 /*using ClosedXML.Excel;
 
@@ -87,3 +88,28 @@ class Program
     }
 }*/
 
+/*using ClosedXML.Excel;
+
+var workbook = new XLWorkbook("D:\\bsefiles\\Neel\\Vol 2021.xlsb");
+var worksheet = workbook.Worksheet("Report");
+
+string lookupValue = "value_to_lookup";
+string result = null;
+
+foreach (var row in worksheet.RowsUsed())
+{
+    if (row.Cell(1).GetValue<string>() == lookupValue) // Assuming lookup value is in the first column
+    {
+        result = row.Cell(2).GetValue<string>(); // Assuming the value you want is in the second column
+        break;
+    }
+}
+
+if (result != null)
+{
+    Console.WriteLine($"Found value: {result}");
+}
+else
+{
+    Console.WriteLine("Value not found.");
+}*/
