@@ -15,6 +15,8 @@ build_property.RootNamespace = AnimalMatchingGame
 build_property.ProjectDir = D:\Github\Learning-C-Sharp\AnimalMatchingGame\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
 [D:/Github/Learning-C-Sharp/AnimalMatchingGame/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

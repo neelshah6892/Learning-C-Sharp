@@ -163,3 +163,10 @@ int Multiply(int factor1, int factor2)
 int height = 179;
 int width = 83;
 int area = Multiply(height, width);
+
+string? line = Console.ReadLine();
+
+if (int.TryParse(line, out int numberOfCards))
+{
+
+}
